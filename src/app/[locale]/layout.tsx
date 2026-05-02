@@ -1,6 +1,7 @@
 import { NextIntlClientProvider } from 'next-intl';
 import { getMessages, getTranslations } from 'next-intl/server';
 import Link from 'next/link';
+import Image from 'next/image';
 import { locales } from '../../i18n';
 import '../globals.css';
 
@@ -45,8 +46,9 @@ export default async function LocaleLayout({
         <NextIntlClientProvider messages={messages}>
           <nav className="fixed top-0 w-full z-50 bg-[#F5F2ED]/90 backdrop-blur-md border-b border-black/5 transition-all">
             <div className="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
-              <Link href={`/${locale}`} className="text-lg font-light tracking-[4px] text-[#1F1F1F]">
-                CHENGDU JOURNEYS
+              <Link href={`/${locale}`} className="flex items-center gap-3 text-[#1F1F1F]">
+                <Image src="/logo.svg" alt="Chengdu Journeys" width={28} height={28} className="opacity-90" />
+                <span className="text-lg font-light tracking-[4px]">CHENGDU JOURNEYS</span>
               </Link>
               <div className="hidden md:flex items-center gap-8 text-xs tracking-[2px] uppercase">
                 <Link href={`/${locale}#trips`} className="text-stone-500 hover:text-[#8C3B2E] transition-colors">{t('trips')}</Link>

@@ -27,8 +27,9 @@ export default async function Home({ params: { locale } }: { params: { locale: s
       {/* ==============================
           HERO
           ============================== */}
-      <section className="relative min-h-screen flex items-center bg-[#D9D0C5] overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-br from-[#E8E1D9]/85 via-transparent to-[#1F1F1F]/50 z-10" />
+      <section className="relative min-h-screen flex items-center overflow-hidden">
+        <div className="absolute inset-0 bg-cover bg-center opacity-40" style={{ backgroundImage: 'url(https://images.unsplash.com/photo-1579187626396-5a9dc3e09522?w=1920&q=80)' }} />
+        <div className="absolute inset-0 bg-gradient-to-br from-[#E8E1D9]/90 via-[#E8E1D9]/60 to-[#1F1F1F]/60 z-10" />
         <div className="relative z-20 px-6 max-w-6xl mx-auto w-full pt-24 pb-20">
           <p className="text-[10px] font-semibold tracking-[5px] uppercase text-[#8C3B2E] mb-7">
             {t('brand')}
@@ -75,11 +76,12 @@ export default async function Home({ params: { locale } }: { params: { locale: s
               <h2 className="text-3xl md:text-5xl font-light tracking-[-0.5px] leading-tight mb-6">{te('title')}</h2>
               <p className="text-base leading-relaxed text-stone-500 max-w-md">{te('text')}</p>
             </div>
-            <div className="aspect-[4/5] bg-[#E8E1D9] rounded-sm relative overflow-hidden">
-              <div className="w-full h-full flex items-center justify-center text-xs tracking-[2px] text-stone-300 bg-gradient-to-br from-transparent to-[#8C3B2E]/5">
-                Tibetan quarter street · Chengdu
-              </div>
-              <span className="absolute bottom-4 left-4 text-[9px] tracking-[2px] uppercase text-stone-400">Wuhou Tibetan District, 2025</span>
+            <div
+              className="aspect-[4/5] rounded-sm relative overflow-hidden bg-cover bg-center"
+              style={{ backgroundImage: 'url(https://images.unsplash.com/photo-1544735716-392fe2489ffa?w=800&q=80)' }}
+            >
+              <div className="absolute inset-0 bg-[#1F1F1F]/10" />
+              <span className="absolute bottom-4 left-4 text-[9px] tracking-[2px] uppercase text-white/80">Wuhou Tibetan District, Chengdu</span>
             </div>
           </div>
         </div>
@@ -143,21 +145,33 @@ export default async function Home({ params: { locale } }: { params: { locale: s
         <div className="max-w-7xl mx-auto">
           <SectionTitle label={tg('label')} title={tg('title')} />
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mt-12" style={{ gridTemplateRows: 'repeat(2, 240px)' }}>
-            <div className="md:row-span-2 col-span-2 rounded-sm overflow-hidden relative bg-gradient-to-br from-[#C5B8A8] to-[#A8947D]">
-              <div className="w-full h-full flex items-center justify-center text-xs tracking-[2px] text-white/30">Tibetan quarter · Litang</div>
-              <span className="absolute bottom-3 left-3 text-[9px] tracking-[2px] uppercase text-white/70">{tg('caption1')}</span>
+            <div
+              className="md:row-span-2 col-span-2 rounded-sm overflow-hidden relative bg-cover bg-center"
+              style={{ backgroundImage: 'url(https://images.unsplash.com/photo-1529688530647-93a6e1916f5f?w=800&q=80)' }}
+            >
+              <div className="absolute inset-0 bg-[#1F1F1F]/20" />
+              <span className="absolute bottom-3 left-3 text-[9px] tracking-[2px] uppercase text-white/80">{tg('caption1')}</span>
             </div>
-            <div className="rounded-sm overflow-hidden relative bg-gradient-to-br from-[#B8C4CB] to-[#8A9AA8]">
-              <div className="w-full h-full flex items-center justify-center text-xs tracking-[2px] text-white/30">Mount Gongga</div>
-              <span className="absolute bottom-3 left-3 text-[9px] tracking-[2px] uppercase text-white/70">{tg('caption2')}</span>
+            <div
+              className="rounded-sm overflow-hidden relative bg-cover bg-center"
+              style={{ backgroundImage: 'url(https://images.unsplash.com/photo-1579187626396-5a9dc3e09522?w=600&q=80)' }}
+            >
+              <div className="absolute inset-0 bg-[#1F1F1F]/15" />
+              <span className="absolute bottom-3 left-3 text-[9px] tracking-[2px] uppercase text-white/80">{tg('caption2')}</span>
             </div>
-            <div className="rounded-sm overflow-hidden relative bg-gradient-to-br from-[#D4C5B0] to-[#B89B7A]">
-              <div className="w-full h-full flex items-center justify-center text-xs tracking-[2px] text-white/30">Tea with family · Tagong</div>
-              <span className="absolute bottom-3 left-3 text-[9px] tracking-[2px] uppercase text-white/70">{tg('caption3')}</span>
+            <div
+              className="rounded-sm overflow-hidden relative bg-cover bg-center"
+              style={{ backgroundImage: 'url(https://images.unsplash.com/photo-1506744038136-46273834b3fb?w=600&q=80)' }}
+            >
+              <div className="absolute inset-0 bg-[#1F1F1F]/15" />
+              <span className="absolute bottom-3 left-3 text-[9px] tracking-[2px] uppercase text-white/80">{tg('caption3')}</span>
             </div>
-            <div className="rounded-sm overflow-hidden relative bg-gradient-to-br from-[#C9BFB0] to-[#A59882]">
-              <div className="w-full h-full flex items-center justify-center text-xs tracking-[2px] text-white/30">Prayer flags at Zheduo Pass</div>
-              <span className="absolute bottom-3 left-3 text-[9px] tracking-[2px] uppercase text-white/70">{tg('caption4')}</span>
+            <div
+              className="rounded-sm overflow-hidden relative bg-cover bg-center"
+              style={{ backgroundImage: 'url(https://images.unsplash.com/photo-1600269452121-4f2416e55c28?w=600&q=80)' }}
+            >
+              <div className="absolute inset-0 bg-[#1F1F1F]/20" />
+              <span className="absolute bottom-3 left-3 text-[9px] tracking-[2px] uppercase text-white/80">{tg('caption4')}</span>
             </div>
           </div>
         </div>
