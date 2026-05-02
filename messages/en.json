@@ -1,47 +1,91 @@
 {
   "nav": {
     "home": "Home",
-    "routes": "Routes",
-    "about": "About",
+    "trips": "Trips",
+    "why": "Why Us",
+    "gallery": "Gallery",
     "contact": "Contact"
   },
   "hero": {
-    "title": "Tibet in Sichuan",
-    "subtitle": "Explore the place closest to heaven",
-    "cta": "Explore Routes"
+    "brand": "CHENGDU JOURNEYS",
+    "title": "Start in Chengdu. <em>Go beyond.</em>",
+    "subtitle": "Small-group journeys into Tibetan culture and the wild landscapes of Western China.",
+    "cta": "View Experiences",
+    "learnMore": "Learn More"
+  },
+  "expect": {
+    "label": "Beyond the postcard",
+    "title": "Not all of China is what you expect.",
+    "text": "Most travelers see cities. We take you further — into places where cultures shift, landscapes open, and the journey becomes the destination."
   },
   "routes": {
-    "title": "Featured Routes",
-    "subtitle": "Three carefully designed routes to immerse yourself in Tibetan culture",
+    "title": "Three ways to go deeper.",
+    "subtitle": "Our journeys",
+    "ctaAll": "Explore All Trips",
     "route1": {
-      "name": "Tibetan Area Walk Tour in Chengdu",
-      "tagline": "Experience Tibetan culture in the heart of the city",
-      "description": "Dive into Chengdu's Tibetan quarter, visit Tibetan shops along Wuhouci Hengjie, savor authentic Tibetan cuisine, and explore Tibetan Buddhist temples. This route lets you experience rich Tibetan culture right in the city center without traveling far.",
-      "duration": "Duration: 1 Day",
-      "highlights": ["Tibetan Cultural Street at Wuhouci", "Tibetan Tea House Experience", "Tibetan Buddhist Temple Visit", "Authentic Tibetan Lunch"]
+      "name": "Chengdu Tibetan Walking Tour",
+      "tagline": "Tibetan culture hidden inside the city",
+      "duration": "2 Hours · In the City",
+      "tier": "Starter",
+      "description": "A two-hour introduction to Tibetan culture hidden inside the city — temples, tea houses, and living traditions most visitors never find.",
+      "highlights": ["Wuhouci Tibetan Quarter", "Traditional Tea House", "Buddhist Temple Visit", "Tibetan Snack Tasting"]
     },
     "route2": {
-      "name": "Go West Go Tibet",
-      "tagline": "An epic journey from Sichuan to Tibet",
-      "description": "Follow the Sichuan-Tibet Highway westward through the magnificent Hengduan Mountains, visiting Kangding, Litang, Batang and other Tibetan strongholds, before reaching the holy city of Lhasa. A life-changing pilgrimage.",
-      "duration": "Duration: 10 Days",
-      "highlights": ["Kangding Love Song Town", "Litang Grasslands", "Batang Khampa Culture", "Potala Palace"]
+      "name": "Highland Roads & Temple Views",
+      "tagline": "Escape the city into Sichuan's highlands",
+      "duration": "3–4 Days · Sichuan Highlands",
+      "tier": "Popular",
+      "description": "Escape the city and explore highland roads, ancient temples, and mountain panoramas across the Tibetan plateau's eastern edge.",
+      "highlights": ["Kangding Gateway Town", "Tagong Grasslands", "Lhagang Temple", "Zheduo Pass at 4,298m"]
     },
     "route3": {
-      "name": "Tibetan Nomad",
-      "tagline": "Live like a Tibetan on the high plateau",
-      "description": "Venture deep into the pastoral areas of western Sichuan, live with a Tibetan nomadic family, learn to milk yaks, make butter tea, and pitch a black yak-hair tent. Experience the most authentic nomadic life on grasslands at 4,000 meters above sea level.",
-      "duration": "Duration: 5 Days",
-      "highlights": ["Nomadic Family Homestay", "Yak Milking Workshop", "Black Tent Building", "Grassland Horse Riding"]
+      "name": "The West China Journey",
+      "tagline": "A deeper journey into Tibetan regions",
+      "duration": "12 Days · Deep West China",
+      "tier": "Signature",
+      "description": "A deeper journey into Tibetan regions — across high passes, through villages unchanged for centuries, into landscapes that redefine scale.",
+      "highlights": ["Minya Konka Range", "Litang Grasslands", "Nomadic Family Homestay", "High Plateau Monasteries"]
     }
   },
-  "footer": {
-    "copyright": "© 2026 Tibet in Sichuan. All rights reserved.",
-    "follow": "Follow Us"
+  "why": {
+    "label": "The difference",
+    "title": "Why travel with us",
+    "item1": {
+      "title": "Small groups, max 6",
+      "text": "No crowded buses. No flag-following. Six people means real conversations, flexible routes, and access to places large groups can't reach."
+    },
+    "item2": {
+      "title": "Local insight, not scripted tours",
+      "text": "Our guides are from the communities we visit. No rehearsed commentary — just real knowledge shared naturally along the way."
+    },
+    "item3": {
+      "title": "Access to real Tibetan communities",
+      "text": "Years of relationships open doors that tourism hasn't reached. Share tea with families, visit working monasteries, see life as it's lived."
+    },
+    "item4": {
+      "title": "Flexible and personal",
+      "text": "Every journey adapts to the group. Weather shifts? We change the route. Someone wants to stay longer at a village? We make it work."
+    }
   },
-  "lang": {
-    "zh": "中文",
-    "en": "English",
-    "th": "ไทย"
+  "gallery": {
+    "label": "The places we go",
+    "title": "Western Sichuan in three frames.",
+    "caption1": "Litang Old Town",
+    "caption2": "Minya Konka",
+    "caption3": "Tagong Grasslands",
+    "caption4": "Zheduo Pass, 4,298m"
+  },
+  "cta": {
+    "label": "Join us",
+    "title": "Limited spots. Real experiences.",
+    "text": "We keep our groups small to keep the experience real. Plan early to secure your place.",
+    "book": "Book Now",
+    "contact": "Contact Us"
+  },
+  "upsell": {
+    "text": "This experience is just the beginning — many of our travelers continue into the mountains of Western Sichuan."
+  },
+  "footer": {
+    "copyright": "© 2026 Chengdu Journeys. All rights reserved."
   }
 }

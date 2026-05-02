@@ -9,6 +9,12 @@ const images = [
   'https://images.unsplash.com/photo-1506744038136-46273834b3fb?w=600&q=80',
 ];
 
+const tiers = [
+  { color: 'bg-[#5B7B5A]', label: 'tier' as const },
+  { color: 'bg-[#B8934E]', label: 'tier' as const },
+  { color: 'bg-[#8C3B2E]', label: 'tier' as const },
+];
+
 interface Props {
   slug: string;
   locale: string;
@@ -22,21 +28,29 @@ export default function RouteCard({ slug, locale, routeKey, tr }: Props) {
   return (
     <Link
       href={`/${locale}/routes/${slug}`}
-      className="group block bg-stone-900 rounded-xl overflow-hidden border border-stone-800 hover:border-amber-600/50 transition-all hover:-translate-y-1"
+      className="group block bg-white rounded-sm overflow-hidden border border-black/5 hover:border-[#8C3B2E]/20 transition-all hover:-translate-y-1 hover:shadow-lg hover:shadow-black/3"
     >
-      <div className="h-48 overflow-hidden">
+      <div className="h-48 overflow-hidden relative">
         <div
           className="h-full w-full bg-cover bg-center group-hover:scale-105 transition-transform duration-500"
           style={{ backgroundImage: `url(${images[idx]})` }}
         />
+        <span className={`absolute top-4 left-4 text-[9px] font-semibold tracking-[2px] uppercase px-3 py-1.5 rounded-sm text-white ${tiers[idx].color}`}>
+          {tr(`${routeKey}.tier` as any)}
+        </span>
       </div>
       <div className="p-6">
-        <p className="text-amber-400 text-sm mb-2">{tr(`${routeKey}.tagline` as any)}</p>
-        <h3 className="text-xl font-bold text-white mb-3">{tr(`${routeKey}.name` as any)}</h3>
-        <p className="text-stone-400 text-sm mb-3">{tr(`${routeKey}.duration` as any)}</p>
-        <p className="text-stone-300 text-sm leading-relaxed line-clamp-3">
+        <p className="text-[10px] font-semibold tracking-[3px] uppercase text-stone-300 mb-2">
+          {tr(`${routeKey}.duration` as any)}
+        </p>
+        <p className="text-xs tracking-[2px] uppercase text-[#8C3B2E] mb-3">{tr(`${routeKey}.tagline` as any)}</p>
+        <h3 className="text-xl font-normal tracking-[-0.3px] text-[#1F1F1F] mb-3">{tr(`${routeKey}.name` as any)}</h3>
+        <p className="text-sm leading-relaxed text-stone-400 line-clamp-3 mb-4">
           {tr(`${routeKey}.description` as any)}
         </p>
+        <span className="text-[11px] font-semibold tracking-[2px] uppercase text-[#8C3B2E] inline-flex items-center gap-1 group-hover:gap-3 transition-all">
+          {locale === 'zh' ? '了解详情' : locale === 'th' ? 'ดูเพิ่มเติม' : 'Learn More'} →
+        </span>
       </div>
     </Link>
   );
