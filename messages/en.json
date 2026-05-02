@@ -1,0 +1,47 @@
+{
+  "nav": {
+    "home": "Home",
+    "routes": "Routes",
+    "about": "About",
+    "contact": "Contact"
+  },
+  "hero": {
+    "title": "Tibet in Sichuan",
+    "subtitle": "Discover the beauty of Tibetan culture in Sichuan — from the streets of Chengdu to the Qinghai-Tibet Plateau, experience the purest Tibetan charm",
+    "cta": "Explore Routes"
+  },
+  "routes": {
+    "title": "Featured Routes",
+    "subtitle": "Three carefully designed routes to immerse yourself in Tibetan culture",
+    "route1": {
+      "name": "Tibetan Area Walk Tour in Chengdu",
+      "tagline": "Experience Tibetan culture in the heart of the city",
+      "description": "Dive into Chengdu's Tibetan quarter, visit Tibetan shops along Wuhouci Hengjie, savor authentic Tibetan cuisine, and explore Tibetan Buddhist temples. This route lets you experience rich Tibetan culture right in the city center without traveling far.",
+      "duration": "Duration: 1 Day",
+      "highlights": ["Tibetan Cultural Street at Wuhouci", "Tibetan Tea House Experience", "Tibetan Buddhist Temple Visit", "Authentic Tibetan Lunch"]
+    },
+    "route2": {
+      "name": "Go West Go Tibet",
+      "tagline": "An epic journey from Sichuan to Tibet",
+      "description": "Follow the Sichuan-Tibet Highway westward through the magnificent Hengduan Mountains, visiting Kangding, Litang, Batang and other Tibetan strongholds, before reaching the holy city of Lhasa. A life-changing pilgrimage.",
+      "duration": "Duration: 10 Days",
+      "highlights": ["Kangding Love Song Town", "Litang Grasslands", "Batang Khampa Culture", "Potala Palace"]
+    },
+    "route3": {
+      "name": "Tibetan Nomad",
+      "tagline": "Live like a Tibetan on the high plateau",
+      "description": "Venture deep into the pastoral areas of western Sichuan, live with a Tibetan nomadic family, learn to milk yaks, make butter tea, and pitch a black yak-hair tent. Experience the most authentic nomadic life on grasslands at 4,000 meters above sea level.",
+      "duration": "Duration: 5 Days",
+      "highlights": ["Nomadic Family Homestay", "Yak Milking Workshop", "Black Tent Building", "Grassland Horse Riding"]
+    }
+  },
+  "footer": {
+    "copyright": "© 2026 Tibet in Sichuan. All rights reserved.",
+    "follow": "Follow Us"
+  },
+  "lang": {
+    "zh": "中文",
+    "en": "English",
+    "th": "ไทย"
+  }
+}
