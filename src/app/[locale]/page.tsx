@@ -28,7 +28,7 @@ export default async function Home({ params: { locale } }: { params: { locale: s
           HERO
           ============================== */}
       <section className="relative min-h-screen flex items-center overflow-hidden">
-        <div className="absolute inset-0 bg-cover bg-center opacity-40" style={{ backgroundImage: 'url(https://images.unsplash.com/photo-1579187626396-5a9dc3e09522?w=1920&q=80)' }} />
+        <div className="absolute inset-0 bg-cover bg-center opacity-40" style={{ backgroundImage: 'url(/images/hero-bg.jpg)' }} />
         <div className="absolute inset-0 bg-gradient-to-br from-[#E8E1D9]/90 via-[#E8E1D9]/60 to-[#1F1F1F]/60 z-10" />
         <div className="relative z-20 px-6 max-w-6xl mx-auto w-full pt-24 pb-20">
           <p className="text-[10px] font-semibold tracking-[5px] uppercase text-[#8C3B2E] mb-7">
@@ -78,10 +78,10 @@ export default async function Home({ params: { locale } }: { params: { locale: s
             </div>
             <div
               className="aspect-[4/5] rounded-sm relative overflow-hidden bg-cover bg-center"
-              style={{ backgroundImage: 'url(https://images.unsplash.com/photo-1544735716-392fe2489ffa?w=800&q=80)' }}
+              style={{ backgroundImage: 'url(/images/wuhouhengjie.jpg)' }}
             >
               <div className="absolute inset-0 bg-[#1F1F1F]/10" />
-              <span className="absolute bottom-4 left-4 text-[9px] tracking-[2px] uppercase text-white/80">Wuhou Tibetan District, Chengdu</span>
+              <span className="absolute bottom-4 left-4 text-[9px] tracking-[2px] uppercase text-white/80">Wuhou Hengjie, Chengdu</span>
             </div>
           </div>
         </div>
@@ -147,28 +147,28 @@ export default async function Home({ params: { locale } }: { params: { locale: s
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mt-12" style={{ gridTemplateRows: 'repeat(2, 240px)' }}>
             <div
               className="md:row-span-2 col-span-2 rounded-sm overflow-hidden relative bg-cover bg-center"
-              style={{ backgroundImage: 'url(https://images.unsplash.com/photo-1529688530647-93a6e1916f5f?w=800&q=80)' }}
+              style={{ backgroundImage: 'url(/images/litang.jpg)' }}
             >
               <div className="absolute inset-0 bg-[#1F1F1F]/20" />
               <span className="absolute bottom-3 left-3 text-[9px] tracking-[2px] uppercase text-white/80">{tg('caption1')}</span>
             </div>
             <div
               className="rounded-sm overflow-hidden relative bg-cover bg-center"
-              style={{ backgroundImage: 'url(https://images.unsplash.com/photo-1579187626396-5a9dc3e09522?w=600&q=80)' }}
+              style={{ backgroundImage: 'url(/images/gongga.jpg)' }}
             >
               <div className="absolute inset-0 bg-[#1F1F1F]/15" />
               <span className="absolute bottom-3 left-3 text-[9px] tracking-[2px] uppercase text-white/80">{tg('caption2')}</span>
             </div>
             <div
               className="rounded-sm overflow-hidden relative bg-cover bg-center"
-              style={{ backgroundImage: 'url(https://images.unsplash.com/photo-1506744038136-46273834b3fb?w=600&q=80)' }}
+              style={{ backgroundImage: 'url(/images/tagong.jpg)' }}
             >
               <div className="absolute inset-0 bg-[#1F1F1F]/15" />
               <span className="absolute bottom-3 left-3 text-[9px] tracking-[2px] uppercase text-white/80">{tg('caption3')}</span>
             </div>
             <div
               className="rounded-sm overflow-hidden relative bg-cover bg-center"
-              style={{ backgroundImage: 'url(https://images.unsplash.com/photo-1600269452121-4f2416e55c28?w=600&q=80)' }}
+              style={{ backgroundImage: 'url(/images/zheduo.jpg)' }}
             >
               <div className="absolute inset-0 bg-[#1F1F1F]/20" />
               <span className="absolute bottom-3 left-3 text-[9px] tracking-[2px] uppercase text-white/80">{tg('caption4')}</span>

@@ -5,15 +5,15 @@ import { notFound } from 'next/navigation';
 const routeMap: Record<string, { key: 'route1' | 'route2' | 'route3'; image: string }> = {
   'tibetan-walk-chengdu': {
     key: 'route1',
-    image: 'https://images.unsplash.com/photo-1544735716-392fe2489ffa?w=1200&q=80',
+    image: '/images/walk-tour.jpg',
   },
   'go-west-go-tibet': {
     key: 'route2',
-    image: 'https://images.unsplash.com/photo-1579187626396-5a9dc3e09522?w=1200&q=80',
+    image: '/images/highland-trip.jpg',
   },
   'tibetan-nomad': {
     key: 'route3',
-    image: 'https://images.unsplash.com/photo-1506744038136-46273834b3fb?w=1200&q=80',
+    image: '/images/nomad.jpg',
   },
 };
 

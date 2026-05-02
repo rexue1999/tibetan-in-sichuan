@@ -3,7 +3,20 @@
     "allow": [
       "Bash(npm run *)",
       "Bash(git add *)",
-      "Bash(git commit -m ' *)"
+      "Bash(git commit -m ' *)",
+      "Bash(git push *)",
+      "WebSearch",
+      "WebFetch(domain:unsplash.com)",
+      "WebFetch(domain:images.unsplash.com)",
+      "WebFetch(domain:source.unsplash.com)",
+      "WebFetch(domain:api.unsplash.com)",
+      "Bash(curl -sI \"https://images.unsplash.com/photo-1528164344705-47542687000d?w=100&q=80\")",
+      "Bash(curl -sI \"https://images.unsplash.com/photo-lGdetSz6dmo?w=100&q=80\")",
+      "Bash(curl -sI \"https://images.unsplash.com/photo-uOEN95HcGNI?w=100&q=80\")",
+      "Bash(curl -sI -w \"%{redirect_url}\" \"https://unsplash.com/photos/lGdetSz6dmo/download?force=true\")",
+      "Bash(curl -sI -w \"%{redirect_url}\" \"https://unsplash.com/photos/uOEN95HcGNI/download?force=true\")",
+      "Bash(curl -sI \"https://images.unsplash.com/photo-1692476409717-b953ca8b9efe?w=100&q=80\")",
+      "Bash(curl -sI \"https://images.unsplash.com/photo-1579187626396-5a9dc3e09522?w=100&q=80\")"
     ]
   }
 }
