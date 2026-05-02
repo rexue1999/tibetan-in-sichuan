@@ -187,17 +187,19 @@ export default async function Home({ params: { locale } }: { params: { locale: s
           <p className="text-base leading-relaxed text-white/40 mb-10">{tc('text')}</p>
           <div className="flex gap-4 justify-center flex-wrap">
             <Link
-              href={`/${locale}#contact`}
+              href={`/${locale}/booking`}
               className="inline-flex items-center gap-2 bg-[#E8E1D9] text-[#1F1F1F] px-8 py-4 text-xs font-medium tracking-[2px] uppercase hover:bg-white transition-all hover:-translate-y-0.5"
             >
               {tc('book')} →
             </Link>
-            <Link
-              href={`/${locale}#contact`}
+            <a
+              href="https://wa.me/8619045478878"
+              target="_blank"
+              rel="noopener noreferrer"
               className="inline-flex items-center gap-2 border border-white/20 text-[#E8E1D9] px-8 py-4 text-xs font-medium tracking-[2px] uppercase hover:border-[#E8E1D9] hover:bg-white/5 transition-all"
             >
               {tc('contact')}
-            </Link>
+            </a>
           </div>
         </div>
       </section>

@@ -82,6 +82,17 @@
     "book": "Book Now",
     "contact": "Contact Us"
   },
+  "booking": {
+    "title": "Book Your Journey",
+    "subtitle": "Choose your experience and reach out — we'll handle the rest.",
+    "whatsapp": "Chat on WhatsApp",
+    "email": "Send us an email",
+    "pricing": "Pricing on request",
+    "pricingNote": "All our trips are customized to your group size and preferences.",
+    "route1Desc": "A two-hour introduction to Tibetan culture hidden inside Chengdu.",
+    "route2Desc": "Explore highland roads, ancient temples, and mountain panoramas.",
+    "route3Desc": "Venture deep into the grasslands for an immersive nomad experience."
+  },
   "upsell": {
     "text": "This experience is just the beginning — many of our travelers continue into the mountains of Western Sichuan."
   },
