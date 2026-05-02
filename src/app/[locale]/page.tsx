@@ -35,6 +35,7 @@ export default async function Home({ params: { locale } }: { params: { locale: s
           </p>
           <h1 className="text-4xl md:text-7xl font-light tracking-[-1px] leading-[1.05] text-[#1F1F1F] max-w-2xl mb-7">
             {t.rich('title', {
+              br: () => <br />,
               em: (chunks) => <em className="not-italic text-[#8C3B2E]">{chunks}</em>,
             }) ?? t('title')}
           </h1>
