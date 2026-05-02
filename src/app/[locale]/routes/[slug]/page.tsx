@@ -9,7 +9,7 @@ const routeMap: Record<string, { key: 'route1' | 'route2' | 'route3'; image: str
   },
   'go-west-go-tibet': {
     key: 'route2',
-    image: 'https://images.unsplash.com/photo-1516186944990-069b20c45163?w=1200&q=80',
+    image: 'https://images.unsplash.com/photo-uOEN95HcGNI?w=1200&q=80',
   },
   'tibetan-nomad': {
     key: 'route3',

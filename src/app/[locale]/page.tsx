@@ -16,7 +16,7 @@ export default async function Home({ params: { locale } }: { params: { locale: s
           className="absolute inset-0 bg-cover bg-center opacity-40"
           style={{
             backgroundImage:
-              'url(https://images.unsplash.com/photo-1528164344705-47542687000d?w=1920&q=80)',
+              'url(https://images.unsplash.com/photo-lGdetSz6dmo?w=1920&q=80)',
           }}
         />
         <div className="relative z-10 text-center px-6 max-w-4xl mx-auto">
@@ -86,7 +86,7 @@ export default async function Home({ params: { locale } }: { params: { locale: s
         </p>
         <div className="space-y-2 text-stone-300">
           <p>info@tibet-in-sichuan.com</p>
-          <p>+86 28 8888 6666</p>
+          <p>+86 19045478878</p>
         </div>
       </section>
     </>
