@@ -16,7 +16,7 @@ export default async function Home({ params: { locale } }: { params: { locale: s
           className="absolute inset-0 bg-cover bg-center opacity-40"
           style={{
             backgroundImage:
-              'url(https://images.unsplash.com/photo-lGdetSz6dmo?w=1920&q=80)',
+              'url(https://images.unsplash.com/photo-1692476409717-b953ca8b9efe?w=1920&q=80)',
           }}
         />
         <div className="relative z-10 text-center px-6 max-w-4xl mx-auto">
