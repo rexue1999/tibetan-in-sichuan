@@ -41,6 +41,7 @@ export async function generateMetadata({ params: { locale } }: { params: { local
       images: ['/images/og-image.jpg'],
     },
     robots: { index: true, follow: true },
+    verification: { google: 'PxCoM2vTKeM9_A0VDPQSkVSZjhaTof13lLe7VPGXlEA' },
   };
 }
 
