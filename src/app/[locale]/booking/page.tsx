@@ -92,7 +92,7 @@ export default async function BookingPage({ params: { locale } }: { params: { lo
               {tb('whatsapp')} →
             </a>
             <a
-              href="mailto:info@tibet-in-sichuan.com"
+              href="mailto:info@chengdujourneys.com"
               className="inline-flex items-center justify-center gap-2 border border-[#1F1F1F] text-[#1F1F1F] px-8 py-4 text-xs font-medium tracking-[2px] uppercase hover:bg-[#1F1F1F] hover:text-white transition-all rounded-sm"
             >
               {tb('email')}
