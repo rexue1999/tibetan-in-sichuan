@@ -17,6 +17,29 @@ const routeMap: Record<string, { key: 'route1' | 'route2' | 'route3'; image: str
   },
 };
 
+export async function generateMetadata({
+  params: { locale, slug },
+}: {
+  params: { locale: string; slug: string };
+}) {
+  const route = routeMap[slug];
+  if (!route) return { title: 'Not Found' };
+
+  const tr = await getTranslations({ locale, namespace: 'routes' });
+  const name = tr(`${route.key}.name` as any);
+  const description = tr(`${route.key}.description` as any);
+
+  return {
+    title: `${name} — CHENGDU JOURNEYS`,
+    description,
+    openGraph: {
+      title: `${name} — CHENGDU JOURNEYS`,
+      description,
+      images: [{ url: route.image, width: 1200, height: 630 }],
+    },
+  };
+}
+
 export default async function RouteDetail({
   params: { locale, slug },
 }: {
@@ -72,7 +95,23 @@ export default async function RouteDetail({
           </ul>
         </div>
 
-        <div className="mt-16 text-center">
+        <div className="mt-16 flex flex-col items-center gap-6">
+          <div className="flex gap-4 flex-wrap justify-center">
+            <Link
+              href={`/${locale}/booking`}
+              className="inline-flex items-center gap-2 bg-[#1F1F1F] text-[#E8E1D9] px-8 py-4 text-xs font-medium tracking-[2px] uppercase hover:bg-[#8C3B2E] transition-all hover:-translate-y-0.5 hover:shadow-lg hover:shadow-[#8C3B2E]/20"
+            >
+              {locale === 'zh' ? '预订此行程' : locale === 'th' ? 'จองเส้นทางนี้' : 'Book This Trip'} →
+            </Link>
+            <a
+              href="https://wa.me/8619045478878"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 border border-[#1F1F1F] text-[#1F1F1F] px-8 py-4 text-xs font-medium tracking-[2px] uppercase hover:bg-[#1F1F1F] hover:text-[#E8E1D9] transition-all"
+            >
+              {locale === 'zh' ? 'WhatsApp 咨询' : locale === 'th' ? 'สอบถามทาง WhatsApp' : 'Ask on WhatsApp'}
+            </a>
+          </div>
           <Link
             href={`/${locale}`}
             className="inline-flex items-center gap-1 text-xs font-semibold tracking-[2px] uppercase text-[#8C3B2E] hover:text-[#1F1F1F] transition-colors"
@@ -84,7 +123,7 @@ export default async function RouteDetail({
 
       {/* Upsell banner */}
       <div className="bg-[#1F1F1F] py-4 px-6 text-center">
-        <p className="text-sm leading-relaxed text-[#E8E1D9]/60">
+        <p className="text-sm leading-relaxed text-white/60">
           {tu('text')}
         </p>
       </div>

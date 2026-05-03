@@ -9,6 +9,20 @@ const routes = [
   { key: 'route3', color: 'bg-[#8C3B2E]' },
 ];
 
+export async function generateMetadata({
+  params: { locale },
+}: {
+  params: { locale: string };
+}) {
+  const tb = await getTranslations({ locale, namespace: 'booking' });
+  const ts = await getTranslations({ locale, namespace: 'seo' });
+
+  return {
+    title: `${tb('title')} — CHENGDU JOURNEYS`,
+    description: tb('subtitle'),
+  };
+}
+
 export default async function BookingPage({ params: { locale } }: { params: { locale: string } }) {
   const tb = await getTranslations({ locale, namespace: 'booking' });
   const tr = await getTranslations({ locale, namespace: 'routes' });

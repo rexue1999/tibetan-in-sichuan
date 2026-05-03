@@ -1,0 +1,106 @@
+{
+  "nav": {
+    "home": "Inicio",
+    "trips": "Viajes",
+    "why": "Por qué nosotros",
+    "gallery": "Galería",
+    "contact": "Contacto"
+  },
+  "hero": {
+    "brand": "CHENGDU JOURNEYS",
+    "title": "Empieza en Chengdu. <em>Ve más allá.</em>",
+    "subtitle": "Viajes en grupos pequeños por la cultura tibetana y los paisajes salvajes del oeste de China.",
+    "cta": "Ver experiencias",
+    "learnMore": "Saber más"
+  },
+  "expect": {
+    "label": "Más allá de la postal",
+    "title": "China no es siempre lo que esperas.",
+    "text": "La mayoría de los viajeros solo ven ciudades. Nosotros te llevamos más lejos — a lugares donde las culturas cambian, los paisajes se abren y el viaje se convierte en el destino."
+  },
+  "routes": {
+    "title": "Tres formas de ir más profundo.",
+    "subtitle": "Nuestros viajes",
+    "ctaAll": "Ver todos los viajes",
+    "route1": {
+      "name": "Tour tibetano a pie por Chengdu",
+      "tagline": "Cultura tibetana oculta dentro de la ciudad",
+      "duration": "2 Horas · En la ciudad",
+      "tier": "Inicial",
+      "description": "Una introducción de dos horas a la cultura tibetana oculta dentro de la ciudad — templos, casas de té y tradiciones vivas que la mayoría de los visitantes nunca encuentran.",
+      "highlights": ["Barrio tibetano de Wuhouci", "Casa de té tradicional", "Visita al templo budista", "Degustación de snacks tibetanos"]
+    },
+    "route2": {
+      "name": "Carreteras de altura y vistas de templos",
+      "tagline": "Escapa de la ciudad hacia las tierras altas de Sichuan",
+      "duration": "3–4 Días · Tierras altas de Sichuan",
+      "tier": "Popular",
+      "description": "Escapa de la ciudad y explora carreteras de altura, templos antiguos y panorámicas de montaña en el borde oriental de la meseta tibetana.",
+      "highlights": ["Ciudad puerta de Kangding", "Praderas de Tagong", "Templo de Lhagang", "Paso Zheduo a 4.298 m"]
+    },
+    "route3": {
+      "name": "Nómada en zona tibetana",
+      "tagline": "Vive como un nómada en la meseta tibetana",
+      "duration": "5–7 Días · Meseta tibetana",
+      "tier": "Exclusivo",
+      "description": "Aventúrate en las praderas altas del oeste de Sichuan. Vive junto a una familia nómada, aprende a ordeñar yaks, prepara té de mantequilla y duerme en una tienda negra de pelo de yak — una experiencia rara e inmersiva en el techo del mundo.",
+      "highlights": ["Estancia con familia nómada", "Ordeño de yaks y té de mantequilla", "Camping en tienda negra", "Paseo a caballo en la meseta"]
+    }
+  },
+  "why": {
+    "label": "La diferencia",
+    "title": "Por qué viajar con nosotros",
+    "item1": {
+      "title": "Grupos pequeños",
+      "text": "Sin autobuses llenos. Sin seguir banderas. Los grupos pequeños significan conversaciones reales, rutas flexibles y acceso a lugares que los grupos grandes no pueden alcanzar."
+    },
+    "item2": {
+      "title": "Conocimiento local, no tours guionizados",
+      "text": "Nuestros guías son de las comunidades que visitamos. Sin comentarios ensayados — solo conocimiento real compartido de forma natural durante el camino."
+    },
+    "item3": {
+      "title": "Acceso a comunidades tibetanas reales",
+      "text": "Años de relaciones abren puertas que el turismo no ha alcanzado. Comparte té con familias, visita monasterios activos, ve la vida tal como se vive."
+    },
+    "item4": {
+      "title": "Flexible y personal",
+      "text": "Cada viaje se adapta al grupo. ¿Cambia el clima? Cambiamos la ruta. ¿Alguien quiere quedarse más tiempo en un pueblo? Lo hacemos posible."
+    }
+  },
+  "gallery": {
+    "label": "Los lugares a los que vamos",
+    "title": "Sichuan occidental en tres imágenes.",
+    "caption1": "Casco antiguo de Litang",
+    "caption2": "Minya Konka",
+    "caption3": "Praderas de Tagong",
+    "caption4": "Paso Zheduo, 4.298 m"
+  },
+  "cta": {
+    "label": "Únete a nosotros",
+    "title": "Plazas limitadas. Experiencias reales.",
+    "text": "Mantenemos los grupos pequeños para que la experiencia sea auténtica. Planifica con antelación para asegurar tu plaza.",
+    "book": "Reservar ahora",
+    "contact": "Contáctanos"
+  },
+  "booking": {
+    "title": "Reserva tu viaje",
+    "subtitle": "Elige tu experiencia y contáctanos — nosotros nos encargamos del resto.",
+    "whatsapp": "Chatear por WhatsApp",
+    "email": "Envíanos un correo",
+    "pricing": "Precio a consultar",
+    "pricingNote": "Todos nuestros viajes se personalizan según el tamaño del grupo y tus preferencias.",
+    "route1Desc": "Una introducción de dos horas a la cultura tibetana oculta en Chengdu.",
+    "route2Desc": "Explora carreteras de altura, templos antiguos y panorámicas de montaña.",
+    "route3Desc": "Aventúrate en las praderas para una experiencia nómada inmersiva."
+  },
+  "upsell": {
+    "text": "Esto es solo el comienzo — muchos de nuestros viajeros continúan hacia las montañas del oeste de Sichuan."
+  },
+  "footer": {
+    "copyright": "© 2026 Chengdu Journeys. Todos los derechos reservados."
+  },
+  "seo": {
+    "tagline": "Viajes en grupo pequeño por la cultura tibetana y el oeste de China",
+    "description": "Viajes en grupos pequeños desde Chengdu hacia la cultura tibetana, paisajes de tierras altas y la vida nómada en el oeste de Sichuan. Tours tibetanos a pie, rutas de templos y experiencias auténticas de estancia."
+  }
+}

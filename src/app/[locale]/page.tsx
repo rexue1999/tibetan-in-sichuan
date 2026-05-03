@@ -4,6 +4,20 @@ import RouteCard from './route-card';
 
 const routeSlugs = ['tibetan-walk-chengdu', 'go-west-go-tibet', 'tibetan-nomad'];
 
+export async function generateMetadata({
+  params: { locale },
+}: {
+  params: { locale: string };
+}) {
+  const t = await getTranslations({ locale, namespace: 'hero' });
+  const ts = await getTranslations({ locale, namespace: 'seo' });
+
+  return {
+    title: `${t('brand')} — ${ts('tagline')}`,
+    description: ts('description'),
+  };
+}
+
 function SectionTitle({ label, title }: { label: string; title: string }) {
   return (
     <div className="mb-12">
@@ -184,7 +198,7 @@ export default async function Home({ params: { locale } }: { params: { locale: s
         <div className="max-w-2xl mx-auto">
           <p className="text-[10px] font-semibold tracking-[4px] uppercase text-[#B85C4E] mb-5">{tc('label')}</p>
           <h2 className="text-3xl md:text-5xl font-light tracking-[-0.5px] leading-tight text-[#E8E1D9] mb-6">{tc('title')}</h2>
-          <p className="text-base leading-relaxed text-white/40 mb-10">{tc('text')}</p>
+          <p className="text-base leading-relaxed text-white/60 mb-10">{tc('text')}</p>
           <div className="flex gap-4 justify-center flex-wrap">
             <Link
               href={`/${locale}/booking`}
@@ -196,7 +210,7 @@ export default async function Home({ params: { locale } }: { params: { locale: s
               href="https://wa.me/8619045478878"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 border border-white/20 text-[#E8E1D9] px-8 py-4 text-xs font-medium tracking-[2px] uppercase hover:border-[#E8E1D9] hover:bg-white/5 transition-all"
+              className="inline-flex items-center gap-2 border border-white/30 text-[#E8E1D9] px-8 py-4 text-xs font-medium tracking-[2px] uppercase hover:border-[#E8E1D9] hover:bg-white/10 transition-all"
             >
               {tc('contact')}
             </a>
@@ -206,7 +220,7 @@ export default async function Home({ params: { locale } }: { params: { locale: s
 
       {/* Upsell banner */}
       <div className="bg-[#1F1F1F] border-t border-white/5 py-4 px-6 text-center">
-        <p className="text-sm leading-relaxed text-[#E8E1D9]/60">
+        <p className="text-sm leading-relaxed text-white/60">
           {tu('text')}
         </p>
       </div>

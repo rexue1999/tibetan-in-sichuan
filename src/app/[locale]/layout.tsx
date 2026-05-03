@@ -2,12 +2,46 @@ import { NextIntlClientProvider } from 'next-intl';
 import { getMessages, getTranslations } from 'next-intl/server';
 import Link from 'next/link';
 import Image from 'next/image';
-import { locales } from '../../i18n';
+import { locales, defaultLocale } from '../../i18n';
 import '../globals.css';
+import MobileMenu from './mobile-menu';
 
 export async function generateMetadata({ params: { locale } }: { params: { locale: string } }) {
   const t = await getTranslations({ locale, namespace: 'hero' });
-  return { title: t('brand') };
+  const ts = await getTranslations({ locale, namespace: 'seo' });
+
+  const title = `${t('brand')} — ${ts('tagline')}`;
+  const description = ts('description');
+  const siteUrl = 'https://chengdujourneys.com';
+
+  return {
+    title,
+    description,
+    metadataBase: new URL(siteUrl),
+    alternates: {
+      canonical: `/${locale}`,
+      languages: {
+        ...Object.fromEntries(locales.map((loc) => [loc, `/${loc}`])),
+        'x-default': `/${defaultLocale}`,
+      },
+    },
+    openGraph: {
+      title,
+      description,
+      url: siteUrl,
+      siteName: t('brand'),
+      locale: locale === 'zh' ? 'zh_CN' : locale === 'th' ? 'th_TH' : 'en_US',
+      type: 'website',
+      images: [{ url: '/images/og-image.jpg', width: 1200, height: 630 }],
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title,
+      description,
+      images: ['/images/og-image.jpg'],
+    },
+    robots: { index: true, follow: true },
+  };
 }
 
 function LangSwitcher({ locale }: { locale: string }) {
@@ -30,6 +64,13 @@ function LangSwitcher({ locale }: { locale: string }) {
   );
 }
 
+const navLinks = [
+  { href: '#trips', key: 'trips' },
+  { href: '#why', key: 'why' },
+  { href: '#gallery', key: 'gallery' },
+  { href: '#contact', key: 'contact' },
+] as const;
+
 export default async function LocaleLayout({
   children,
   params: { locale },
@@ -51,17 +92,65 @@ export default async function LocaleLayout({
                 <span className="text-lg font-light tracking-[4px]">CHENGDU JOURNEYS</span>
               </Link>
               <div className="hidden md:flex items-center gap-8 text-xs tracking-[2px] uppercase">
-                <Link href={`/${locale}#trips`} className="text-stone-500 hover:text-[#8C3B2E] transition-colors">{t('trips')}</Link>
-                <Link href={`/${locale}#why`} className="text-stone-500 hover:text-[#8C3B2E] transition-colors">{t('why')}</Link>
-                <Link href={`/${locale}#gallery`} className="text-stone-500 hover:text-[#8C3B2E] transition-colors">{t('gallery')}</Link>
-                <Link href={`/${locale}#contact`} className="text-stone-500 hover:text-[#8C3B2E] transition-colors">{t('contact')}</Link>
+                {navLinks.map(({ href, key }) => (
+                  <Link key={key} href={`/${locale}${href}`} className="text-stone-500 hover:text-[#8C3B2E] transition-colors">
+                    {t(key)}
+                  </Link>
+                ))}
               </div>
               <LangSwitcher locale={locale} />
+              <MobileMenu locale={locale} navLinks={navLinks.map(({ href, key }) => ({ href: `${href}`, label: t(key) }))} />
             </div>
           </nav>
           <main>{children}</main>
+          <script
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{
+              __html: JSON.stringify({
+                '@context': 'https://schema.org',
+                '@type': 'TravelAgency',
+                name: 'Chengdu Journeys',
+                url: `https://chengdujourneys.com/${locale}`,
+                logo: 'https://chengdujourneys.com/logo.svg',
+                description: messages.seo?.description || 'Small-group journeys from Chengdu into Tibetan culture and Western China',
+                address: {
+                  '@type': 'PostalAddress',
+                  addressLocality: 'Chengdu',
+                  addressRegion: 'Sichuan',
+                  addressCountry: 'CN',
+                },
+                contactPoint: {
+                  '@type': 'ContactPoint',
+                  contactType: 'customer service',
+                  telephone: '+86-19045478878',
+                  availableLanguage: ['English', 'Chinese', 'Thai'],
+                },
+                sameAs: ['https://wa.me/8619045478878'],
+                makesOffer: [
+                  {
+                    '@type': 'TouristTrip',
+                    name: 'Chengdu Tibetan Walking Tour',
+                    description: 'A two-hour introduction to Tibetan culture hidden inside the city',
+                    url: `https://chengdujourneys.com/${locale}/routes/tibetan-walk-chengdu`,
+                  },
+                  {
+                    '@type': 'TouristTrip',
+                    name: 'Highland Roads & Temple Views',
+                    description: 'Explore highland roads, ancient temples, and mountain panoramas across the Tibetan plateau',
+                    url: `https://chengdujourneys.com/${locale}/routes/go-west-go-tibet`,
+                  },
+                  {
+                    '@type': 'TouristTrip',
+                    name: 'Nomad in Tibetan Area',
+                    description: 'Venture deep into the high grasslands of western Sichuan for an immersive nomad experience',
+                    url: `https://chengdujourneys.com/${locale}/routes/tibetan-nomad`,
+                  },
+                ],
+              }),
+            }}
+          />
           <footer className="bg-[#1F1F1F] py-12 px-6">
-            <div className="max-w-7xl mx-auto text-center text-white/30 text-[10px] tracking-[2px] uppercase">
+            <div className="max-w-7xl mx-auto text-center text-white/50 text-[10px] tracking-[2px] uppercase">
               <p>© 2026 Chengdu Journeys. All rights reserved.</p>
             </div>
           </footer>
