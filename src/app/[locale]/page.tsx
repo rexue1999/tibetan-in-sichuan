@@ -206,14 +206,6 @@ export default async function Home({ params: { locale } }: { params: { locale: s
             >
               {tc('book')} →
             </Link>
-            <a
-              href="https://wa.me/8619045478878"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 border border-white/30 text-[#E8E1D9] px-8 py-4 text-xs font-medium tracking-[2px] uppercase hover:border-[#E8E1D9] hover:bg-white/10 transition-all"
-            >
-              {tc('contact')}
-            </a>
           </div>
         </div>
       </section>
