@@ -27,8 +27,17 @@
       "tagline": "Tibetan culture hidden inside the city",
       "duration": "2 Hours · In the City",
       "tier": "Starter",
+      "pricing": "$19 USD / person",
+      "meetingPoint": "Gaoshengqiao Metro Station, Exit G",
+      "meetingTime": "5:00 PM",
       "description": "A two-hour introduction to Tibetan culture hidden inside the city — temples, tea houses, and living traditions most visitors never find.",
-      "highlights": ["Wuhouci Tibetan Quarter", "Traditional Tea House", "Buddhist Temple Visit", "Tibetan Snack Tasting"]
+      "highlights": ["Wuhouci Tibetan Quarter", "Traditional Tea House", "Buddhist Temple Visit", "Tibetan Snack Tasting"],
+      "itinerary": [
+        { "title": "Meet & Greet", "desc": "Meet at Gaoshengqiao Metro Station Exit G. Get to know your guide and fellow travelers." },
+        { "title": "Tibetan Quarter Walk", "duration": "45 min", "desc": "Stroll through Chengdu's most authentic Tibetan neighborhood — temples, prayer wheels, traditional dress, and daily life woven together in the city." },
+        { "title": "Tibetan Tea & Snacks", "duration": "45 min", "desc": "Step into a traditional Tibetan tea house. Taste authentic butter tea or sweet tea alongside Tibetan snacks, while listening to stories of the plateau." },
+        { "title": "Tibetan Guozhuang Dance", "duration": "30 min", "desc": "Watch a traditional Guozhuang circle dance performance — the rhythm and warmth of highland culture. Return to the meeting point afterward." }
+      ]
     },
     "route2": {
       "name": "Highland Roads & Temple Views",

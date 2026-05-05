@@ -27,8 +27,17 @@
       "tagline": "Cultura tibetana oculta dentro de la ciudad",
       "duration": "2 Horas · En la ciudad",
       "tier": "Inicial",
+      "pricing": "$19 USD / persona",
+      "meetingPoint": "Estación de metro Gaoshengqiao, Salida G",
+      "meetingTime": "5:00 PM",
       "description": "Una introducción de dos horas a la cultura tibetana oculta dentro de la ciudad — templos, casas de té y tradiciones vivas que la mayoría de los visitantes nunca encuentran.",
-      "highlights": ["Barrio tibetano de Wuhouci", "Casa de té tradicional", "Visita al templo budista", "Degustación de snacks tibetanos"]
+      "highlights": ["Barrio tibetano de Wuhouci", "Casa de té tradicional", "Visita al templo budista", "Degustación de snacks tibetanos"],
+      "itinerary": [
+        { "title": "Encuentro", "desc": "Reúnanse en la salida G de la estación Gaoshengqiao. Conoce a tu guía y compañeros de viaje." },
+        { "title": "Paseo por el barrio tibetano", "duration": "45 min", "desc": "Recorre el barrio tibetano más auténtico de Chengdu — templos, ruedas de oración, vestimenta tradicional y vida cotidiana entrelazadas en la ciudad." },
+        { "title": "Té y snacks tibetanos", "duration": "45 min", "desc": "Entra en una casa de té tibetana tradicional. Prueba el auténtico té de mantequilla o té dulce junto con snacks tibetanos, mientras escuchas historias de la meseta." },
+        { "title": "Danza Guozhuang tibetana", "duration": "30 min", "desc": "Disfruta de una danza tradicional Guozhuang en círculo — el ritmo y la calidez de la cultura de la meseta. Regreso al punto de encuentro al finalizar." }
+      ]
     },
     "route2": {
       "name": "Carreteras de altura y vistas de templos",
