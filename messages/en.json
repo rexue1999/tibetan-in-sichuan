@@ -180,11 +180,19 @@
     "subtitle": "Choose your experience and reach out — we'll handle the rest.",
     "whatsapp": "Chat on WhatsApp",
     "email": "Send us an email",
+    "wechat": "Add us on WeChat",
+    "wechatId": "WeChat ID: chengdujourneys",
     "pricing": "Pricing on request",
-    "pricingNote": "All our trips are customized to your group size and preferences.",
-    "route1Desc": "A two-hour introduction to Tibetan culture hidden inside Chengdu.",
-    "route2Desc": "Explore highland roads, ancient temples, and mountain panoramas.",
-    "route3Desc": "Venture deep into the grasslands for an immersive nomad experience."
+    "pricingNote": "All our trips are customized to your group size and preferences."
+  },
+  "howItWorks": {
+    "title": "How it works",
+    "step1Title": "Choose your experience",
+    "step1Text": "Browse our three routes and pick the one that speaks to you — city walk, highland roads, or nomad life.",
+    "step2Title": "Reach out to us",
+    "step2Text": "Message us on WhatsApp, Email, or WeChat. Tell us your preferred dates and group size.",
+    "step3Title": "Confirm & go",
+    "step3Text": "We'll customize the details and confirm your booking. Then just show up — we handle the rest."
   },
   "upsell": {
     "text": "This experience is just the beginning — many of our travelers continue into the mountains of Western Sichuan."

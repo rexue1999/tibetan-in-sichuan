@@ -180,11 +180,19 @@
     "subtitle": "Elige tu experiencia y contáctanos — nosotros nos encargamos del resto.",
     "whatsapp": "Chatear por WhatsApp",
     "email": "Envíanos un correo",
+    "wechat": "Agréganos en WeChat",
+    "wechatId": "WeChat ID: chengdujourneys",
     "pricing": "Precio a consultar",
-    "pricingNote": "Todos nuestros viajes se personalizan según el tamaño del grupo y tus preferencias.",
-    "route1Desc": "Una introducción de dos horas a la cultura tibetana oculta en Chengdu.",
-    "route2Desc": "Explora carreteras de altura, templos antiguos y panorámicas de montaña.",
-    "route3Desc": "Aventúrate en las praderas para una experiencia nómada inmersiva."
+    "pricingNote": "Todos nuestros viajes se personalizan según el tamaño del grupo y tus preferencias."
+  },
+  "howItWorks": {
+    "title": "Cómo funciona",
+    "step1Title": "Elige tu experiencia",
+    "step1Text": "Explora nuestras tres rutas y elige la que más te hable — paseo urbano, carreteras de altura o vida nómada.",
+    "step2Title": "Contáctanos",
+    "step2Text": "Escríbenos por WhatsApp, correo electrónico o WeChat. Indícanos tus fechas preferidas y el tamaño del grupo.",
+    "step3Title": "Confirma y viaja",
+    "step3Text": "Personalizamos los detalles y confirmamos tu reserva. Luego solo preséntate — nosotros nos encargamos del resto."
   },
   "upsell": {
     "text": "Esto es solo el comienzo — muchos de nuestros viajeros continúan hacia las montañas del oeste de Sichuan."

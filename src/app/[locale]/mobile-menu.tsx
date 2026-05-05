@@ -42,7 +42,7 @@ export default function MobileMenu({ locale, navLinks }: { locale: string; navLi
               {label}
             </Link>
           ))}
-          <Link href={`/${locale}/booking`} className="mt-4 inline-flex items-center gap-2 bg-[#1F1F1F] text-[#E8E1D9] px-8 py-4 text-xs font-medium tracking-[2px] uppercase hover:bg-[#8C3B2E] transition-all">
+          <Link href={`/${locale}/booking`} className="mt-4 inline-flex items-center gap-2 bg-[#8C3B2E] text-white px-8 py-4 text-xs font-medium tracking-[2px] uppercase hover:bg-[#1F1F1F] transition-all">
             Book Now →
           </Link>
         </div>

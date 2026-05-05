@@ -69,7 +69,7 @@ const navLinks = [
   { href: '#trips', key: 'trips' },
   { href: '#why', key: 'why' },
   { href: '#gallery', key: 'gallery' },
-  { href: '#contact', key: 'contact' },
+  { href: '/booking', key: 'contact' },
 ] as const;
 
 export default async function LocaleLayout({
