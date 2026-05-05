@@ -89,7 +89,7 @@ export default async function LocaleLayout({
           <nav className="fixed top-0 w-full z-50 bg-[#F5F2ED]/90 backdrop-blur-md border-b border-black/5 transition-all">
             <div className="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
               <Link href={`/${locale}`} className="flex items-center gap-3 text-[#1F1F1F]">
-                <Image src="/logo.svg" alt="Chengdu Journeys" width={28} height={28} className="opacity-90" />
+                <Image src="/icon.svg" alt="" width={36} height={36} />
                 <span className="text-lg font-light tracking-[4px]">CHENGDU JOURNEYS</span>
               </Link>
               <div className="hidden md:flex items-center gap-8 text-xs tracking-[2px] uppercase">

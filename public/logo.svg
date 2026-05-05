@@ -18,22 +18,22 @@
 
   <!-- Mountain silhouette — layered peaks inspired by western Sichuan -->
   <!-- Back peak (left) -->
-  <polygon points="180,200 260,110 320,160 380,95 440,200" fill="#D0C8BD" opacity="0.5"/>
+  <polygon points="140,200 220,110 280,160 340,95 400,200" fill="#D0C8BD" opacity="0.5"/>
   <!-- Back peak (right) -->
-  <polygon points="400,200 470,120 510,150 570,100 620,200" fill="#D0C8BD" opacity="0.4"/>
+  <polygon points="360,200 430,120 470,150 530,100 580,200" fill="#D0C8BD" opacity="0.4"/>
 
   <!-- Main foreground mountain range -->
-  <polygon points="100,280 200,155 260,190 330,130 400,180 440,140 520,200 580,160 660,210 720,185 780,280" fill="url(#mountainGrad)"/>
+  <polygon points="60,280 160,155 220,190 290,130 360,180 400,140 480,200 540,160 620,210 680,185 740,280" fill="url(#mountainGrad)"/>
 
   <!-- Journey path — a winding line suggesting movement through the landscape -->
-  <path d="M 120,255 Q 200,240 260,200 Q 310,168 340,172 Q 380,178 420,195 Q 470,215 530,195 Q 580,178 620,200 Q 660,218 720,208"
+  <path d="M 80,255 Q 160,240 220,200 Q 270,168 300,172 Q 340,178 380,195 Q 430,215 490,195 Q 540,178 580,200 Q 620,218 680,208"
         fill="none" stroke="url(#pathGrad)" stroke-width="2.2" stroke-linecap="round"/>
 
   <!-- Small accent dot at path origin -->
-  <circle cx="120" cy="255" r="2.8" fill="#8C3B2E"/>
+  <circle cx="80" cy="255" r="2.8" fill="#8C3B2E"/>
 
   <!-- Small accent line at path end (horizon / continuation) -->
-  <line x1="720" y1="208" x2="740" y2="205" stroke="#8C3B2E" stroke-width="1.2" stroke-linecap="round"/>
+  <line x1="680" y1="208" x2="700" y2="205" stroke="#8C3B2E" stroke-width="1.2" stroke-linecap="round"/>
 
   <!-- Brand name -->
   <text x="400" y="330" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif"

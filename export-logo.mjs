@@ -23,15 +23,15 @@ const squareSvg = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 800"
   <rect width="800" height="800" fill="url(#bgGrad)" rx="0"/>
 
   <!-- Mountain range centered -->
-  <polygon points="180,340 260,250 320,300 380,235 440,340" fill="#D0C8BD" opacity="0.5"/>
-  <polygon points="400,340 470,260 510,290 570,240 620,340" fill="#D0C8BD" opacity="0.4"/>
-  <polygon points="100,420 200,295 260,330 330,270 400,320 440,280 520,340 580,300 660,350 720,325 780,420" fill="url(#mountainGrad)"/>
+  <polygon points="140,340 220,250 280,300 340,235 400,340" fill="#D0C8BD" opacity="0.5"/>
+  <polygon points="360,340 430,260 470,290 530,240 580,340" fill="#D0C8BD" opacity="0.4"/>
+  <polygon points="60,420 160,295 220,330 290,270 360,320 400,280 480,340 540,300 620,350 680,325 740,420" fill="url(#mountainGrad)"/>
 
   <!-- Journey path -->
-  <path d="M 120,395 Q 200,380 260,340 Q 310,308 340,312 Q 380,318 420,335 Q 470,355 530,335 Q 580,318 620,340 Q 660,358 720,348"
+  <path d="M 80,395 Q 160,380 220,340 Q 270,308 300,312 Q 340,318 380,335 Q 430,355 490,335 Q 540,318 580,340 Q 620,358 680,348"
         fill="none" stroke="url(#pathGrad)" stroke-width="2.2" stroke-linecap="round"/>
-  <circle cx="120" cy="395" r="2.8" fill="#8C3B2E"/>
-  <line x1="720" y1="348" x2="740" y2="345" stroke="#8C3B2E" stroke-width="1.2" stroke-linecap="round"/>
+  <circle cx="80" cy="395" r="2.8" fill="#8C3B2E"/>
+  <line x1="680" y1="348" x2="700" y2="345" stroke="#8C3B2E" stroke-width="1.2" stroke-linecap="round"/>
 
   <!-- Brand name -->
   <text x="400" y="530" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif"
