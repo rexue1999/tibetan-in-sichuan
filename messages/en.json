@@ -45,7 +45,48 @@
       "duration": "3–7 Days · Sichuan Highlands",
       "tier": "Popular",
       "description": "Escape the city and explore highland roads, ancient temples, and mountain panoramas across the Tibetan plateau's eastern edge.",
-      "highlights": ["Kangding Gateway Town", "Tagong Grasslands", "Lhagang Temple", "Zheduo Pass at 4,298m"]
+      "highlights": ["Kangding Gateway Town", "Tagong Grasslands", "Lhagang Temple", "Zheduo Pass at 4,298m"],
+      "itineraries": {
+        "3": {
+          "label": "Classic",
+          "days": [
+            { "title": "Chengdu → Kangding", "desc": "Depart Chengdu in the afternoon, cross the Erlang Mountain Tunnel via the Yakang Expressway, and arrive in Kangding — capital of Ganzi Prefecture — by evening. Stroll along the Zheduo River and soak in the Tibetan atmosphere of this legendary gateway town.", "stay": "Stay: Kangding" },
+            { "title": "S434 · Muya Monastery · Yala雪山 → Xinduqiao", "desc": "Take the stunning Provincial Road 434 north — quieter and more scenic than the main G318. Visit Muya Monastery, where golden roofs and crimson walls frame snow peaks and grasslands. Stop at the Yala Snow Mountain viewpoint to face the majesty of this sacred peak. Arrive in Xinduqiao by dusk — known as 'photographer's paradise' for its dreamlike play of light on Tibetan villages and poplar forests.", "stay": "Stay: Xinduqiao" },
+            { "title": "Zheduo Pass → Chengdu", "desc": "Cross Zheduo Pass (4,298m) — the first major pass on the Sichuan-Tibet highway — surrounded by prayer flags and snow peaks. Continue via Kangding back to Chengdu, arriving in the evening.", "stay": "" }
+          ]
+        },
+        "4": {
+          "label": "Danba",
+          "days": [
+            { "title": "Chengdu → Kangding", "desc": "Depart Chengdu in the afternoon, cross the Erlang Mountain Tunnel via the Yakang Expressway, and arrive in Kangding by evening. Stroll along the Zheduo River and soak in the Tibetan atmosphere.", "stay": "Stay: Kangding" },
+            { "title": "S434 · Muya Monastery · Yala雪山 → Xinduqiao", "desc": "Take the stunning Provincial Road 434 north. Visit Muya Monastery — golden roofs and crimson walls against snow peaks. Stop at the Yala Snow Mountain viewpoint. Arrive in Xinduqiao by dusk, where light and shadow paint the Tibetan villages and poplar groves.", "stay": "Stay: Xinduqiao" },
+            { "title": "Tagong Grasslands · Bamei → Zhonglu Tibetan Village", "desc": "Morning walk on the Tagong Grasslands, where Muya Golden Pagoda frames Yala Snow Mountain. Continue through Bamei into Danba county. Arrive at Zhonglu Tibetan Village — a thousand-year-old Gyalrong settlement of watchtowers, pear blossoms (in spring), and terraced fields. Explore ancient watchtowers and Tibetan homes in the afternoon.", "stay": "Stay: Zhonglu Village" },
+            { "title": "Zhonglu Village → Chengdu", "desc": "Wake up in the village as morning mist wraps around the watchtowers — Zhonglu's most magical hour. After a morning of free exploration, head back toward Chengdu via the Siguniang Mountain route (distant view from Maobiliang Pass), arriving in the evening.", "stay": "" }
+          ]
+        },
+        "5": {
+          "label": "In-Depth",
+          "days": [
+            { "title": "Chengdu → Kangding", "desc": "Depart Chengdu in the afternoon, cross the Erlang Mountain Tunnel, and arrive in Kangding by evening. Stroll along the Zheduo River and soak in the Tibetan atmosphere of this legendary gateway town.", "stay": "Stay: Kangding" },
+            { "title": "S434 · Muya Monastery · Yala雪山 → Xinduqiao", "desc": "Take stunning Provincial Road 434 north. Visit Muya Monastery, where golden roofs frame snow peaks. Stop at the Yala Snow Mountain viewpoint before arriving in Xinduqiao — photographer's paradise — by dusk.", "stay": "Stay: Xinduqiao" },
+            { "title": "Tagong · Bamei · Moshi Park → Danba", "desc": "Morning on the Tagong Grasslands — Muya Golden Pagoda and Yala Snow Mountain in one frame. Continue to Moshi Park near Bamei, where bizarre mylonite stone forests spread across the plateau like an alien landscape. Afternoon drive through the Yak Valley natural bonsai corridor to Danba.", "stay": "Stay: Danba" },
+            { "title": "Danba · Zhonglu Village → Siguniang Mountain", "desc": "Morning exploration of Zhonglu Tibetan Village — a thousand-year-old Gyalrong settlement of watchtowers and stone homes. Visit ancient watchtowers and meet local families. Afternoon drive to Siguniang Mountain, with a panoramic stop at Maobiliang Pass to view all four sacred peaks.", "stay": "Stay: Siguniangshan Town" },
+            { "title": "Siguniang Mountain → Chengdu", "desc": "Morning visit to Shuangqiao Valley — ride the shuttle deep into the valley, passing snow peaks, alpine meadows, and glacial lakes. Afternoon return to Chengdu via Balang Mountain and Wolong Nature Reserve, arriving in the evening.", "stay": "" }
+          ]
+        },
+        "7": {
+          "label": "Grand Panorama",
+          "days": [
+            { "title": "Chengdu → Kangding", "desc": "Depart Chengdu in the afternoon, cross the Erlang Mountain Tunnel, and arrive in Kangding by evening. Stroll along the Zheduo River and soak in the Tibetan atmosphere.", "stay": "Stay: Kangding" },
+            { "title": "S434 · Muya Monastery · Yala雪山 → Xinduqiao", "desc": "Take stunning Provincial Road 434 north. Visit Muya Monastery — golden roofs and crimson walls against snow peaks. Stop at the Yala Snow Mountain viewpoint, then arrive in Xinduqiao by dusk.", "stay": "Stay: Xinduqiao" },
+            { "title": "Tagong · Bamei · Moshi Park → Danba", "desc": "Morning on the Tagong Grasslands — Muya Golden Pagoda and Yala Snow Mountain in one frame. Continue to Moshi Park, where bizarre mylonite stone forests spread across the plateau. Afternoon through the Yak Valley to Danba.", "stay": "Stay: Danba" },
+            { "title": "Zhonglu Village — Full Day Immersion", "desc": "A full day immersed in Zhonglu Tibetan Village — watchtowers emerging from morning mist, pear blossoms weaving through stone homes. Hike to the No. 1 viewpoint for a sweeping panorama. Visit a Tibetan family for butter tea and stories of Gyalrong history. Climb the tallest ancient watchtower for sunset.", "stay": "Stay: Zhonglu Village" },
+            { "title": "Jiaju Tibetan Village → Siguniang Mountain", "desc": "Morning visit to Jiaju Tibetan Village — 'China's most beautiful village' — where stone homes cascade down the mountainside in harmony with forest and field. Afternoon drive to Siguniang Mountain for the panoramic view of all four peaks from Maobiliang Pass.", "stay": "Stay: Siguniangshan Town" },
+            { "title": "Siguniang Shuangqiao Valley — Full Day", "desc": "A full day in Shuangqiao Valley — ride the shuttle deep into the valley from Renshenguo Meadow to Redwood Forest. Snow peaks, glaciers, alpine forests, meadows, and lakes unfold mile after mile. Optional light hikes at Bonsai Beach or beneath Budala Peak.", "stay": "Stay: Siguniangshan Town" },
+            { "title": "Siguniang Mountain → Chengdu", "desc": "One last look at Siguniang's golden sunrise (weather permitting), then return to Chengdu via Balang Mountain Tunnel and Wolong Nature Reserve, arriving in the afternoon.", "stay": "" }
+          ]
+        }
+      }
     },
     "route3": {
       "name": "Nomad in Tibetan Area",

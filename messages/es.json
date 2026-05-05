@@ -45,7 +45,48 @@
       "duration": "3–7 Días · Tierras altas de Sichuan",
       "tier": "Popular",
       "description": "Escapa de la ciudad y explora carreteras de altura, templos antiguos y panorámicas de montaña en el borde oriental de la meseta tibetana.",
-      "highlights": ["Ciudad puerta de Kangding", "Praderas de Tagong", "Templo de Lhagang", "Paso Zheduo a 4.298 m"]
+      "highlights": ["Ciudad puerta de Kangding", "Praderas de Tagong", "Templo de Lhagang", "Paso Zheduo a 4.298 m"],
+      "itineraries": {
+        "3": {
+          "label": "Clásico",
+          "days": [
+            { "title": "Chengdu → Kangding", "desc": "Sal de Chengdu por la tarde, cruza el túnel de la montaña Erlang por la autopista Yakang y llega a Kangding — capital de Ganzi — al anochecer. Pasea junto al río Zheduo y sumérgete en el ambiente tibetano de esta legendaria ciudad puerta.", "stay": "Alojamiento: Kangding" },
+            { "title": "S434 · Monasterio Muya · Yala → Xinduqiao", "desc": "Toma la impresionante carretera provincial 434 hacia el norte — más tranquila y escénica que la G318. Visita el monasterio Muya, con techos dorados y muros carmesí contra picos nevados. Disfruta la vista del monte nevado Yala. Llega a Xinduqiao al atardecer, el 'paraíso de los fotógrafos'.", "stay": "Alojamiento: Xinduqiao" },
+            { "title": "Paso Zheduo → Chengdu", "desc": "Cruza el paso Zheduo (4.298 m) — la primera gran puerta de la carretera Sichuan-Tíbet — entre banderas de oración y picos nevados. Regreso a Chengdu por Kangding, llegando al anochecer.", "stay": "" }
+          ]
+        },
+        "4": {
+          "label": "Danba",
+          "days": [
+            { "title": "Chengdu → Kangding", "desc": "Sal de Chengdu por la tarde, cruza el túnel de la montaña Erlang y llega a Kangding al anochecer. Pasea junto al río Zheduo y disfruta del ambiente tibetano.", "stay": "Alojamiento: Kangding" },
+            { "title": "S434 · Monasterio Muya · Yala → Xinduqiao", "desc": "Toma la carretera provincial 434 hacia el norte. Visita el monasterio Muya y admira el monte nevado Yala. Llega a Xinduqiao al atardecer, donde la luz y la sombra pintan las aldeas tibetanas.", "stay": "Alojamiento: Xinduqiao" },
+            { "title": "Praderas Tagong · Bamei → Aldea Zhonglu", "desc": "Paseo matutino por las praderas de Tagong, con la pagoda dorada Muya enmarcando el monte Yala. Continúa por Bamei hacia Danba. Llega a la aldea tibetana de Zhonglu — un asentamiento Gyalrong milenario de torres de vigilancia, flores de peral y campos en terrazas.", "stay": "Alojamiento: Aldea Zhonglu" },
+            { "title": "Aldea Zhonglu → Chengdu", "desc": "Despierta en la aldea mientras la niebla matutina envuelve las torres — la hora más mágica de Zhonglu. Tras una mañana de exploración libre, regresa a Chengdu con una vista lejana de las montañas Siguniang desde el paso Maobiliang.", "stay": "" }
+          ]
+        },
+        "5": {
+          "label": "Profundo",
+          "days": [
+            { "title": "Chengdu → Kangding", "desc": "Sal de Chengdu por la tarde, cruza el túnel de la montaña Erlang y llega a Kangding al anochecer. Pasea junto al río Zheduo.", "stay": "Alojamiento: Kangding" },
+            { "title": "S434 · Monasterio Muya · Yala → Xinduqiao", "desc": "Toma la carretera provincial 434. Visita el monasterio Muya y el mirador del monte Yala antes de llegar a Xinduqiao al atardecer.", "stay": "Alojamiento: Xinduqiao" },
+            { "title": "Tagong · Bamei · Parque Moshi → Danba", "desc": "Mañana en las praderas de Tagong. Continúa al Parque Moshi cerca de Bamei, donde extraños bosques de piedra milonita se extienden como un paisaje alienígena. Por la tarde, atraviesa el corredor del Valle Yak hacia Danba.", "stay": "Alojamiento: Danba" },
+            { "title": "Danba · Aldea Zhonglu → Montaña Siguniang", "desc": "Exploración matutina de la aldea Zhonglu — torres milenarias y hogares de piedra de la cultura Gyalrong. Por la tarde, viaje a la montaña Siguniang con parada panorámica en el paso Maobiliang.", "stay": "Alojamiento: Pueblo Siguniangshan" },
+            { "title": "Montaña Siguniang → Chengdu", "desc": "Visita matutina al valle Shuangqiao — toma el autobús hacia el interior del valle, pasando por picos nevados, praderas alpinas y lagos glaciares. Regreso a Chengdu por la tarde vía montaña Balang y la Reserva Natural de Wolong.", "stay": "" }
+          ]
+        },
+        "7": {
+          "label": "Gran Panorama",
+          "days": [
+            { "title": "Chengdu → Kangding", "desc": "Sal de Chengdu por la tarde y llega a Kangding al anochecer. Pasea junto al río Zheduo y disfruta del ambiente tibetano.", "stay": "Alojamiento: Kangding" },
+            { "title": "S434 · Monasterio Muya · Yala → Xinduqiao", "desc": "Toma la carretera provincial 434. Visita el monasterio Muya y el mirador del monte Yala, luego llega a Xinduqiao al atardecer.", "stay": "Alojamiento: Xinduqiao" },
+            { "title": "Tagong · Bamei · Parque Moshi → Danba", "desc": "Mañana en las praderas de Tagong. Visita el Parque Moshi con sus extraños bosques de piedra. Por la tarde, atraviesa el Valle Yak hacia Danba.", "stay": "Alojamiento: Danba" },
+            { "title": "Aldea Zhonglu — Día completo de inmersión", "desc": "Un día entero en la aldea tibetana de Zhonglu — torres emergiendo de la niebla matutina, flores de peral entre casas de piedra. Sube al mirador n.º 1 para una vista panorámica. Visita a una familia tibetana para tomar té de mantequilla. Sube a la torre más alta para el atardecer.", "stay": "Alojamiento: Aldea Zhonglu" },
+            { "title": "Aldea Jiaju → Montaña Siguniang", "desc": "Visita matutina a la aldea tibetana de Jiaju — 'el pueblo más bello de China' — donde casas de piedra descienden por la ladera. Por la tarde, viaje a la montaña Siguniang para la vista panorámica de los cuatro picos desde el paso Maobiliang.", "stay": "Alojamiento: Pueblo Siguniangshan" },
+            { "title": "Valle Shuangqiao de Siguniang — Día completo", "desc": "Día completo en el valle Shuangqiao — toma el autobús desde la pradera Renshenguo hasta el bosque de secuoyas. Picos nevados, glaciares, bosques alpinos, praderas y lagos se despliegan kilómetro tras kilómetro.", "stay": "Alojamiento: Pueblo Siguniangshan" },
+            { "title": "Montaña Siguniang → Chengdu", "desc": "Una última mirada al amanecer dorado de Siguniang (si el clima lo permite), luego regreso a Chengdu vía el túnel de la montaña Balang y la Reserva Natural de Wolong.", "stay": "" }
+          ]
+        }
+      }
     },
     "route3": {
       "name": "Nómada en zona tibetana",

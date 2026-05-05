@@ -1,6 +1,7 @@
 import { getTranslations, getMessages } from 'next-intl/server';
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
+import ItinerarySection from './itinerary-section';
 
 const routeMap: Record<string, { key: 'route1' | 'route2' | 'route3'; image: string }> = {
   'tibetan-walk-chengdu': {
@@ -40,8 +41,6 @@ export async function generateMetadata({
   };
 }
 
-type ItineraryItem = { title: string; duration?: string; desc: string };
-
 export default async function RouteDetail({
   params: { locale, slug },
 }: {
@@ -58,7 +57,8 @@ export default async function RouteDetail({
   const pricing = routeData.pricing as string | undefined;
   const meetingPoint = routeData.meetingPoint as string | undefined;
   const meetingTime = routeData.meetingTime as string | undefined;
-  const itinerary = routeData.itinerary as ItineraryItem[] | undefined;
+  const itinerary = routeData.itinerary;
+  const itineraries = routeData.itineraries;
 
   const labels = {
     duration: locale === 'zh' ? '时长' : locale === 'th' ? 'ระยะเวลา' : 'Duration',
@@ -70,6 +70,9 @@ export default async function RouteDetail({
     bookTrip: locale === 'zh' ? '预订此行程' : locale === 'th' ? 'จองเส้นทางนี้' : 'Book This Trip',
     askWA: locale === 'zh' ? 'WhatsApp 咨询' : locale === 'th' ? 'สอบถามทาง WhatsApp' : 'Ask on WhatsApp',
     back: locale === 'zh' ? '返回首页' : locale === 'th' ? 'กลับหน้าแรก' : 'Back to Home',
+    day: locale === 'zh' ? '天' : locale === 'th' ? 'วัน' : 'Days',
+    stay: locale === 'zh' ? '住' : locale === 'th' ? 'พัก' : 'Stay',
+    dayLabel: locale === 'zh' ? '第' : locale === 'th' ? 'วันที่' : 'Day',
   };
 
   return (
@@ -127,38 +130,8 @@ export default async function RouteDetail({
           </div>
         )}
 
-        {/* Itinerary timeline */}
-        {itinerary && itinerary.length > 0 && (
-          <div className="mb-14">
-            <h2 className="text-xl font-medium text-[#1F1F1F] mb-8">{labels.itinerary}</h2>
-            <div className="relative">
-              {/* Vertical line */}
-              <div className="absolute left-[11px] top-3 bottom-3 w-px bg-[#8C3B2E]/20" />
-              <div className="space-y-8">
-                {itinerary.map((step, i) => (
-                  <div key={i} className="flex gap-5">
-                    {/* Timeline dot */}
-                    <div className="relative z-10 flex-shrink-0 w-6 h-6 rounded-full bg-[#8C3B2E] flex items-center justify-center">
-                      <span className="text-[10px] font-bold text-white">{i + 1}</span>
-                    </div>
-                    {/* Content */}
-                    <div className="flex-1 min-w-0">
-                      <div className="flex items-baseline gap-3 flex-wrap mb-1">
-                        <h3 className="text-base font-medium text-[#1F1F1F]">{step.title}</h3>
-                        {step.duration && (
-                          <span className="text-[11px] font-semibold tracking-[1px] uppercase text-[#8C3B2E] bg-[#8C3B2E]/5 px-2 py-0.5 rounded-sm">
-                            {step.duration}
-                          </span>
-                        )}
-                      </div>
-                      <p className="text-sm leading-relaxed text-stone-500">{step.desc}</p>
-                    </div>
-                  </div>
-                ))}
-              </div>
-            </div>
-          </div>
-        )}
+        {/* Itinerary */}
+        <ItinerarySection itinerary={itinerary} itineraries={itineraries} labels={labels} locale={locale} />
 
         {/* Highlights */}
         <div>
