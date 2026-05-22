@@ -73,7 +73,7 @@ export default async function BookingPage({ params: { locale } }: { params: { lo
       {/* Contact Methods */}
       <section className="py-20 px-6 bg-white">
         <div className="max-w-3xl mx-auto">
-          <div className="grid sm:grid-cols-3 gap-4">
+          <div className="grid sm:grid-cols-2 gap-4 max-w-md mx-auto">
             {contactMethods.map(({ key, href, external, icon, color, labelKey }) => (
               <div key={key} className="border border-stone-200 rounded-sm p-6 flex flex-col items-center text-center gap-3">
                 <div className="text-stone-600 mb-1">{icon}</div>
