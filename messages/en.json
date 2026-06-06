@@ -90,54 +90,38 @@
       }
     },
     "route3": {
-      "name": "Nomad in Tibetan Area",
-      "tagline": "Live like a nomad on the Tibetan plateau",
-      "duration": "3–7 Days · Tibetan Plateau",
+      "name": "Nomad Between Earth & Sky · 3% Nomad Family",
+      "tagline": "Become a true nomad at 3,600m on the Yellow River grasslands",
+      "duration": "4 Days · NW Sichuan Plateau (Jul 10–13, 2026)",
       "tier": "Signature",
-      "pricing": "Inquire for pricing",
-      "description": "Venture deep into the high grasslands of western Sichuan. Live alongside a nomadic family, learn to milk yaks, make butter tea, and sleep in a black yak-hair tent — a rare, immersive experience on the roof of the world.",
-      "highlights": ["Nomadic Family Homestay", "Yak Milking & Butter Tea", "Black Tent Camping", "High Plateau Horse Riding"],
+      "pricing": "USD1,999/person (10–15 person group)",
+      "deposit": "Deposit $199, deadline June 30",
+      "meetingPoint": "Downtown Chengdu (details before departure)",
+      "meetingTime": "July 10, 8:00 AM",
+      "phone": "190 4547 8878",
+      "description": "Venture deep into the Zoige-Hongyuan grasslands (N33°21′ E102°10′, altitude 3,500–3,600m) — home to the Orenda nomadic camp and the global 3% who still live as nomads. Milk yaks at dawn, churn butter tea, sleep in a black yak-hair tent, and ride across the Yellow River's first great bend. Supported by Bliss Mobil 4×4 expedition vehicles. As featured on CCTV and Discovery Channel.",
+      "highlights": [
+        "Nomadic Family Homestay · Yak Milking · Butter Tea",
+        "Bliss Mobil Expedition Vehicle Support",
+        "Black Tent Camping · Fireside Under the Stars",
+        "Plateau Horse Riding · Yellow River Bend Gallop",
+        "naro band Grassland Concert",
+        "As Featured on CCTV / Discovery Channel"
+      ],
       "itineraries": {
-        "3": {
-          "label": "First Taste",
-          "days": [
-            { "title": "Chengdu → Hongyuan Grasslands", "desc": "Depart Chengdu in the early morning, heading north along the Min River valley through Wenchuan and Li County into the northwest Sichuan plateau. As the elevation rises, the scenery outside your window transforms from city towers to alpine meadows. Arrive in the afternoon at the nomadic camp deep in the Hongyuan Grasslands. Meet your nomadic family and settle into their black tent. In the evening, gather around the stove for your first bowl of butter tea and listen to the herders' stories of the grasslands.", "stay": "Stay: Nomad Black Tent" },
-            { "title": "Full-Day Nomadic Life Immersion", "desc": "A full day of living the nomadic way. Rise early to milk yaks alongside the herders — this is how every Tibetan pastoralist begins their day. Learn to churn butter tea and knead tsampa, essential skills for life on the plateau. In the afternoon, mount a horse and ride across the vast Hongyuan Grasslands — an endless sea of grass meeting the sky, with yak herds scattered like black pearls. At dusk, help round up the yaks and bring them back to camp. Gather around the fire under the stars — in this moment, you are part of the grassland.", "stay": "Stay: Nomad Black Tent" },
-            { "title": "Hongyuan Grasslands → Chengdu", "desc": "Wake early for one last grassland sunrise — at Hongyuan, the morning sun turns the meadows gold as smoke curls from the black tent. Bid farewell to your nomadic family and begin the journey back, passing through Miyaluo and Li County before returning to Chengdu in the afternoon.", "stay": "" }
-          ]
-        },
         "4": {
-          "label": "Immersion",
+          "label": "Nomad Between Earth & Sky (Jul 10–13, 2026)",
           "days": [
-            { "title": "Chengdu → Hongyuan Grasslands", "desc": "Depart Chengdu in the early morning, heading north along the Min River valley through Wenchuan and Li County into the northwest Sichuan plateau. Arrive in the afternoon at the nomadic camp deep in the Hongyuan Grasslands. Meet your nomadic family and settle into their black tent. In the evening, gather around the stove for your first bowl of butter tea and listen to the herders' stories of the grasslands.", "stay": "Stay: Nomad Black Tent" },
-            { "title": "Yaks & Grasslands · Nomadic Daily Life", "desc": "A full day of living the nomadic way. Rise early to milk yaks, learn to churn butter tea and knead tsampa — the fundamentals of life on the plateau. In the morning, follow the herders onto the grasslands to find salt licks and tend the yak herds, discovering the sacred place yaks hold in Tibetan culture. In the afternoon, learn to make yak-hair rope and butter using traditional tools. At dusk, round up the yaks and bring them home. After nightfall, gather around the fire to hear the herders recount the Epic of King Gesar.", "stay": "Stay: Nomad Black Tent" },
-            { "title": "Horseback & Grasslands · Ride Free", "desc": "Today belongs to the horse. Tibetans are a people of the saddle. In the morning, saddle up and ride out with the herders to patrol the vast pastures — feel the wind rush past as you taste freedom on the open range. In the afternoon, hone your riding skills on the grasslands, progressing from a walk to a trot under the herders' guidance until you find your rhythm on horseback. If the season is right, the grasslands bloom with wildflowers in every colour — every snapshot a desktop wallpaper. In the evening, water the horses by the river and watch the sunset paint the entire grassland orange-red.", "stay": "Stay: Nomad Black Tent" },
-            { "title": "Hongyuan Grasslands → Chengdu", "desc": "Share one last breakfast with your nomadic family in the morning — tsampa, butter tea, fresh yak milk. Bid farewell to this land that has welcomed you as one of its own. Return to Chengdu via Zhegu Mountain and Miyaluo, arriving in the afternoon.", "stay": "" }
-          ]
-        },
-        "5": {
-          "label": "In-Depth",
-          "days": [
-            { "title": "Chengdu → Hongyuan Grasslands", "desc": "Depart Chengdu in the early morning, heading north along the Min River valley through Wenchuan and Li County into the northwest Sichuan plateau. Arrive in the afternoon at the nomadic camp deep in the Hongyuan Grasslands. Meet your nomadic family and settle into the black tent. In the evening, gather around the stove for butter tea — your grassland life begins.", "stay": "Stay: Nomad Black Tent" },
-            { "title": "Yaks & Grasslands · Nomadic Daily Life", "desc": "Rise early to milk yaks, learn to churn butter tea and knead tsampa. In the morning, follow the herders onto the grasslands to find salt licks and tend the yak herds. In the afternoon, learn to make yak-hair rope and butter using traditional tools. At dusk, round up the yaks and bring them home. After nightfall, gather around the fire to hear the herders recount the Epic of King Gesar.", "stay": "Stay: Nomad Black Tent" },
-            { "title": "Horseback & Grasslands · Ride Free", "desc": "Saddle up and ride out with the herders to patrol the vast pastures. In the afternoon, hone your riding skills on the grasslands and find your rhythm on horseback under the herders' guidance. In the evening, water the horses by the river and watch the sunset paint the grassland red.", "stay": "Stay: Nomad Black Tent" },
-            { "title": "Grassland Gathering · A Day of Fortune", "desc": "This day belongs to the surprises of the grasslands. If your visit coincides with a horse-racing festival, a wedding, or a Dharma assembly — you will take part as family: wear a Tibetan robe, drink wedding wine, watch horses thunder across the range, and dance the Guozhuang deep into the night. If no major event falls on this day, join the herders in moving camp (season permitting), or learn to make traditional Tibetan yogurt and air-dried yak meat. No two days on the grasslands are the same — and the season you arrive is the finest of all.", "stay": "Stay: Nomad Black Tent" },
-            { "title": "Hongyuan Grasslands → Chengdu", "desc": "Share one last breakfast with your nomadic family in the morning, and capture the black tent, the chimney smoke, and the smiling faces of your grassland family on camera. Bid farewell to this land that has turned you from guest into family. Return to Chengdu via Zhegu Mountain and Miyaluo, arriving in the afternoon.", "stay": "" }
-          ]
-        },
-        "7": {
-          "label": "Nomad Life",
-          "days": [
-            { "title": "Chengdu → Hongyuan Grasslands", "desc": "Depart Chengdu in the early morning, heading north along the Min River valley through Wenchuan and Li County into the northwest Sichuan plateau. Arrive in the afternoon at the nomadic camp deep in the Hongyuan Grasslands. Meet your nomadic family — from this moment on, they are your grassland family. Settle into the black tent. In the evening, gather around the stove for butter tea — your nomadic life begins.", "stay": "Stay: Nomad Black Tent" },
-            { "title": "Milking · Herding · Nomadic Daily Life", "desc": "Morning lesson one: milk a yak. Master this, and you understand the rhythm of nomadic life. In the morning, follow your family onto the grasslands to herd, and learn to recognise each yak — every one of them has a name. In the afternoon, learn to churn butter tea, knead tsampa, and make yak yogurt. At night, gather around the fire and listen to father tell the epic battles of King Gesar.", "stay": "Stay: Nomad Black Tent" },
-            { "title": "Riding · Training · Gallop on the Grassland", "desc": "A full day with horses. In the morning, saddle up and walk with the herders to patrol the pasture boundaries. In the morning, learn basic riding and rein control. In the afternoon, gallop across the open grasslands — the purest joy is the wind on horseback. In the evening, go to the river to brush the horses and let them drink, watching the sunset turn their manes gold.", "stay": "Stay: Nomad Black Tent" },
-            { "title": "Craft · Food · Nomadic Skills", "desc": "Today, learn the survival wisdom of nomadic peoples. In the morning, use traditional tools to spin yak-wool yarn and braid rope for black tents — skills passed down for a thousand years. In the afternoon, work alongside the mother of the family to make air-dried yak meat and brew traditional yak yogurt. In the evening, build a fire with yak dung (the most precious fuel on the grasslands) and learn to bake Tibetan flatbread. In every step of the process lies the wisdom of survival on the high plateau.", "stay": "Stay: Nomad Black Tent" },
-            { "title": "Moving Camp · Horse Racing · Grassland Festival", "desc": "This day belongs to the surprises of the grasslands. If it falls on a horse-racing festival — you will witness a hundred horses thundering across the range, riders flying like the wind. If a wedding — wear a Tibetan robe, drink barley wine, and dance the Guozhuang for three days and three nights. If a Dharma assembly — prayer flags billow and ritual horns sound low, a feast of faith for the entire grassland. Just an ordinary day? Then drive the yaks with the herders as they move camp to the summer pasture — a day's journey, a road of scenery.", "stay": "Stay: Nomad Black Tent" },
-            { "title": "Grassland Wander · Starry Sky · Farewell Eve", "desc": "Your last full day on the grasslands. In the early morning, ride deep into the grasslands to watch the sunrise. Find a quiet hillside and sit, looking out over this land you have begun to know. In the afternoon, help the family prepare for tomorrow's farewell — perhaps make one more pot of butter tea, perhaps ride one more time. After nightfall, lie on the grassland and gaze at the stars — in Hongyuan, with no light pollution, the Milky Way hangs directly overhead.", "stay": "Stay: Nomad Black Tent" },
-            { "title": "Hongyuan Grasslands → Chengdu", "desc": "True farewells are always hard. In the morning, share one last breakfast with your family — yak milk, tsampa, butter tea. Embrace and exchange contact details — from now on, you have a home on the grasslands. Return to Chengdu via Zhegu Mountain and Miyaluo, arriving in the afternoon.", "stay": "" }
+            { "title": "Chengdu → NW Sichuan Nomadic Camp", "desc": "Depart Chengdu in the morning, heading north along the Min River valley through Wenchuan and Li County onto the NW Sichuan plateau. As the elevation rises to 3,500m, the scenery transforms from city towers to alpine meadows dotted with yak herds. Arrive in the afternoon at the Orenda nomadic camp (N33°21′ E102°10′). Receive a traditional khata welcome, meet your nomadic family, and settle into your black tent. In the evening, gather around the stove for your first bowl of butter tea and listen to the herders' stories of the grasslands and the Yellow River.", "stay": "Stay: Nomad Black Tent" },
+            { "title": "Yaks · Grasslands · A Nomad's Day", "desc": "A full day immersed in nomadic life. Rise early to milk yaks alongside the herders — the daily rhythm of every Tibetan pastoralist. Learn to churn butter tea and knead tsampa, and discover the meaning of '3% Nomad Family' — only 3% of the world's population still lives the nomadic way. In the morning, follow the herders onto the grasslands to find salt licks and tend the yaks. In the afternoon, ride horseback across the vast grasslands of the Yellow River bend — an endless sea of grass meeting the sky. At dusk, help round up the yaks. After nightfall, naro band performs under the stars, and the herders recount the Epic of King Gesar around the fire.", "stay": "Stay: Nomad Black Tent" },
+            { "title": "Grassland Gathering · Nomadic Crafts", "desc": "The liveliest day on the grasslands. If your visit coincides with a horse-racing festival, wedding, or Dharma assembly, you will take part as family: wear a Tibetan robe, drink barley wine, and dance the Guozhuang. In the morning, follow the Yellow River bend to its upper-reach coordinates (N33°21′ E102°10′) — where the world's last 3% nomadic culture meets the cradle of Yellow River civilization. In the afternoon, learn traditional nomadic crafts — spinning yak-wool yarn, braiding black-tent rope, making air-dried yak meat and traditional yogurt. In the evening, a Bliss Mobil expedition vehicle takes you deep into the grasslands for panoramic sunset views of the Yellow River bend.", "stay": "Stay: Nomad Black Tent" },
+            { "title": "Grassland Sunrise → Chengdu", "desc": "Wake early for one last grassland sunrise — at Zoige-Hongyuan, the morning sun turns the meadows gold as smoke curls from the black tents. Share a final breakfast with your nomadic family — tsampa, butter tea, fresh yak milk. Embrace and exchange contacts — from now on, you have a home on the grasslands. Return to Chengdu via Zhegu Mountain and Miyaluo, arriving in the afternoon.", "stay": "" }
           ]
         }
-      }
+      },
+      "mediaNote": "As featured on CCTV · Discovery Channel partner experience",
+      "pastEvents": "Past events: Mar 2025 (300 guests) / May 2025 (100 guests) / Jul 2025 (47 guests)",
+      "customNote": "Customizable itinerary and duration — contact us for details"
     }
   },
   "why": {
