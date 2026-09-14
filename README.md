@@ -6,8 +6,7 @@ Small-group journeys into Tibetan culture and the wild landscapes of Western Chi
 
 - **Framework:** Next.js 14 (App Router)
 - **Styling:** Tailwind CSS
-- **i18n:** next-intl (EN, ZH, TH)
-- **Database:** SQLite (better-sqlite3)
+- **i18n:** next-intl (EN, ZH, TH, ES)
 
 ## Getting Started
 
@@ -39,8 +38,6 @@ src/
 │   │       └── page.tsx        # Route detail page
 │   ├── globals.css             # Tailwind + base styles
 │   └── layout.tsx              # Root layout
-├── lib/
-│   └── db.ts                   # SQLite queries + schema
 ├── i18n.ts                     # next-intl config
 └── middleware.ts               # Locale detection
 messages/
