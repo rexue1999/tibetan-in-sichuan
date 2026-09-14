@@ -92,12 +92,12 @@
     "route3": {
       "name": "Nómada Entre Cielo y Tierra · 3% Familia Nómada",
       "tagline": "Conviértete en un auténtico nómada a 3.600 m en las praderas del Río Amarillo",
-      "duration": "4 Días · Meseta NW de Sichuan (10–13 Jul 2026)",
+      "duration": "4 Días · Meseta NW de Sichuan (fechas flexibles)",
       "tier": "Exclusivo",
       "pricing": "USD1,999/persona (grupo de 10–15 personas)",
-      "deposit": "Depósito $199, fecha límite 30 de junio",
+      "deposit": "Depósito $199 (consultar fechas)",
       "meetingPoint": "Centro de Chengdu (detalles antes de la salida)",
-      "meetingTime": "10 de julio, 8:00 AM",
+      "meetingTime": "Se confirma antes de la salida",
       "phone": "190 4547 8878",
       "description": "Aventúrate en las praderas de Zoige-Hongyuan (N33°21′ E102°10′, altitud 3.500–3.600 m) — hogar del campamento nómada Orenda y del 3% mundial que aún vive como nómada. Ordeña yaks al amanecer, bate té de mantequilla, duerme en una tienda negra de pelo de yak y cabalga por la primera gran curva del Río Amarillo. Con vehículos de expedición Bliss Mobil 4×4. Como se ha visto en CCTV y Discovery Channel.",
       "highlights": [
@@ -110,7 +110,7 @@
       ],
       "itineraries": {
         "4": {
-          "label": "Nómada Entre Cielo y Tierra (10–13 Jul 2026)",
+          "label": "Nómada Entre Cielo y Tierra (itinerario de 4 días)",
           "days": [
             { "title": "Chengdu → Campamento nómada en NW Sichuan", "desc": "Sal de Chengdu por la mañana, rumbo norte por el valle del río Min, pasando por Wenchuan y el condado de Li hacia la meseta del NW de Sichuan. A medida que la altitud asciende a 3.500 m, el paisaje se transforma de torres urbanas a praderas alpinas con rebaños de yaks. Por la tarde, llega al campamento nómada Orenda (N33°21′ E102°10′). Recibe una bienvenida tradicional con khata, conoce a tu familia nómada e instálate en la tienda negra. Al atardecer, reúnete junto al fuego para tu primer tazón de té de mantequilla y escucha las historias de los pastores.", "stay": "Alojamiento: Tienda negra nómada" },
             { "title": "Yaks · Praderas · Un día nómada", "desc": "Un día completo de inmersión en la vida nómada. Madruga para ordeñar yaks junto a los pastores — el ritmo diario de cada pastor tibetano. Aprende a batir té de mantequilla y amasar tsampa, y descubre el significado de '3% Familia Nómada' — solo el 3% de la población mundial aún vive de forma nómada. Por la mañana, sigue a los pastores a las praderas para buscar sal y cuidar los yaks. Por la tarde, monta a caballo por las vastas praderas de la curva del Río Amarillo. Al anochecer, ayuda a recoger los yaks. Tras el anochecer, naro band actúa bajo las estrellas, y los pastores relatan la Epopeya del Rey Gesar.", "stay": "Alojamiento: Tienda negra nómada" },

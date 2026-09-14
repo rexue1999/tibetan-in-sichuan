@@ -92,12 +92,12 @@
     "route3": {
       "name": "Nomad Between Earth & Sky · 3% Nomad Family",
       "tagline": "Become a true nomad at 3,600m on the Yellow River grasslands",
-      "duration": "4 Days · NW Sichuan Plateau (Jul 10–13, 2026)",
+      "duration": "4 Days · NW Sichuan Plateau (flexible dates)",
       "tier": "Signature",
       "pricing": "USD1,999/person (10–15 person group)",
-      "deposit": "Deposit $199, deadline June 30",
+      "deposit": "Deposit $199 (inquire for dates)",
       "meetingPoint": "Downtown Chengdu (details before departure)",
-      "meetingTime": "July 10, 8:00 AM",
+      "meetingTime": "Confirmed before departure",
       "phone": "190 4547 8878",
       "description": "Venture deep into the Zoige-Hongyuan grasslands (N33°21′ E102°10′, altitude 3,500–3,600m) — home to the Orenda nomadic camp and the global 3% who still live as nomads. Milk yaks at dawn, churn butter tea, sleep in a black yak-hair tent, and ride across the Yellow River's first great bend. Supported by Bliss Mobil 4×4 expedition vehicles. As featured on CCTV and Discovery Channel.",
       "highlights": [
@@ -110,7 +110,7 @@
       ],
       "itineraries": {
         "4": {
-          "label": "Nomad Between Earth & Sky (Jul 10–13, 2026)",
+          "label": "Nomad Between Earth & Sky (4-day sample itinerary)",
           "days": [
             { "title": "Chengdu → NW Sichuan Nomadic Camp", "desc": "Depart Chengdu in the morning, heading north along the Min River valley through Wenchuan and Li County onto the NW Sichuan plateau. As the elevation rises to 3,500m, the scenery transforms from city towers to alpine meadows dotted with yak herds. Arrive in the afternoon at the Orenda nomadic camp (N33°21′ E102°10′). Receive a traditional khata welcome, meet your nomadic family, and settle into your black tent. In the evening, gather around the stove for your first bowl of butter tea and listen to the herders' stories of the grasslands and the Yellow River.", "stay": "Stay: Nomad Black Tent" },
             { "title": "Yaks · Grasslands · A Nomad's Day", "desc": "A full day immersed in nomadic life. Rise early to milk yaks alongside the herders — the daily rhythm of every Tibetan pastoralist. Learn to churn butter tea and knead tsampa, and discover the meaning of '3% Nomad Family' — only 3% of the world's population still lives the nomadic way. In the morning, follow the herders onto the grasslands to find salt licks and tend the yaks. In the afternoon, ride horseback across the vast grasslands of the Yellow River bend — an endless sea of grass meeting the sky. At dusk, help round up the yaks. After nightfall, naro band performs under the stars, and the herders recount the Epic of King Gesar around the fire.", "stay": "Stay: Nomad Black Tent" },
