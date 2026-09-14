@@ -2,6 +2,22 @@ import { getTranslations, getMessages } from 'next-intl/server';
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
 import ItinerarySection from './itinerary-section';
+import { locales, defaultLocale } from '../../../../i18n';
+
+type RouteLabels = {
+  duration: string;
+  meeting: string;
+  time: string;
+  price: string;
+  itinerary: string;
+  highlights: string;
+  bookTrip: string;
+  askWA: string;
+  back: string;
+  day: string;
+  stay: string;
+  dayLabel: string;
+};
 
 const routeMap: Record<string, { key: 'route1' | 'route2' | 'route3'; image: string }> = {
   'tibetan-walk-chengdu': {
@@ -30,12 +46,23 @@ export async function generateMetadata({
   const name = tr(`${route.key}.name` as any);
   const description = tr(`${route.key}.description` as any);
 
+  const path = `/${locale}/routes/${slug}`;
+
   return {
     title: `${name} — CHENGDU JOURNEYS`,
     description,
+    alternates: {
+      canonical: path,
+      languages: {
+        ...Object.fromEntries(locales.map((loc) => [loc, `/${loc}/routes/${slug}`])),
+        'x-default': `/${defaultLocale}/routes/${slug}`,
+      },
+    },
     openGraph: {
       title: `${name} — CHENGDU JOURNEYS`,
       description,
+      url: path,
+      type: 'website',
       images: [{ url: route.image, width: 1200, height: 630 }],
     },
   };
@@ -60,20 +87,29 @@ export default async function RouteDetail({
   const itinerary = routeData.itinerary;
   const itineraries = routeData.itineraries;
 
-  const labels = {
-    duration: locale === 'zh' ? '时长' : locale === 'th' ? 'ระยะเวลา' : 'Duration',
-    meeting: locale === 'zh' ? '集合地点' : locale === 'th' ? 'จุดนัดพบ' : 'Meeting Point',
-    time: locale === 'zh' ? '集合时间' : locale === 'th' ? 'เวลานัดพบ' : 'Meeting Time',
-    price: locale === 'zh' ? '价格' : locale === 'th' ? 'ราคา' : 'Price',
-    itinerary: locale === 'zh' ? '行程安排' : locale === 'th' ? 'กำหนดการ' : 'Itinerary',
-    highlights: locale === 'zh' ? '行程亮点' : locale === 'th' ? 'ไฮไลท์' : 'Highlights',
-    bookTrip: locale === 'zh' ? '预订此行程' : locale === 'th' ? 'จองเส้นทางนี้' : 'Book This Trip',
-    askWA: locale === 'zh' ? 'WhatsApp 咨询' : locale === 'th' ? 'สอบถามทาง WhatsApp' : 'Ask on WhatsApp',
-    back: locale === 'zh' ? '返回首页' : locale === 'th' ? 'กลับหน้าแรก' : 'Back to Home',
-    day: locale === 'zh' ? '天' : locale === 'th' ? 'วัน' : 'Days',
-    stay: locale === 'zh' ? '住' : locale === 'th' ? 'พัก' : 'Stay',
-    dayLabel: locale === 'zh' ? '第' : locale === 'th' ? 'วันที่' : 'Day',
+  const labelMap: Record<string, RouteLabels> = {
+    en: {
+      duration: 'Duration', meeting: 'Meeting Point', time: 'Meeting Time', price: 'Price',
+      itinerary: 'Itinerary', highlights: 'Highlights', bookTrip: 'Book This Trip',
+      askWA: 'Ask on WhatsApp', back: 'Back to Home', day: 'Days', stay: 'Stay', dayLabel: 'Day',
+    },
+    es: {
+      duration: 'Duración', meeting: 'Punto de encuentro', time: 'Hora de encuentro', price: 'Precio',
+      itinerary: 'Itinerario', highlights: 'Destacados', bookTrip: 'Reservar este viaje',
+      askWA: 'Consultar por WhatsApp', back: 'Volver al inicio', day: 'Días', stay: 'Alojamiento', dayLabel: 'Día',
+    },
+    th: {
+      duration: 'ระยะเวลา', meeting: 'จุดนัดพบ', time: 'เวลานัดพบ', price: 'ราคา',
+      itinerary: 'กำหนดการ', highlights: 'ไฮไลท์', bookTrip: 'จองเส้นทางนี้',
+      askWA: 'สอบถามทาง WhatsApp', back: 'กลับหน้าแรก', day: 'วัน', stay: 'พัก', dayLabel: 'วันที่',
+    },
+    zh: {
+      duration: '时长', meeting: '集合地点', time: '集合时间', price: '价格',
+      itinerary: '行程安排', highlights: '行程亮点', bookTrip: '预订此行程',
+      askWA: 'WhatsApp 咨询', back: '返回首页', day: '天', stay: '住', dayLabel: '第',
+    },
   };
+  const labels: RouteLabels = labelMap[locale] ?? labelMap.en;
 
   return (
     <div className="min-h-screen pt-16">

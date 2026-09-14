@@ -1,5 +1,6 @@
 import { getTranslations } from 'next-intl/server';
 import Link from 'next/link';
+import { locales, defaultLocale } from '../../../i18n';
 
 const WHATSAPP_URL = 'https://wa.me/8619045478878';
 
@@ -43,11 +44,22 @@ export async function generateMetadata({
   params: { locale: string };
 }) {
   const tb = await getTranslations({ locale, namespace: 'booking' });
-  const ts = await getTranslations({ locale, namespace: 'seo' });
 
   return {
     title: `${tb('title')} — CHENGDU JOURNEYS`,
     description: tb('subtitle'),
+    alternates: {
+      canonical: `/${locale}/booking`,
+      languages: {
+        ...Object.fromEntries(locales.map((loc) => [loc, `/${loc}/booking`])),
+        'x-default': `/${defaultLocale}/booking`,
+      },
+    },
+    openGraph: {
+      title: `${tb('title')} — CHENGDU JOURNEYS`,
+      description: tb('subtitle'),
+      url: `/${locale}/booking`,
+    },
   };
 }
 

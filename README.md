@@ -15,15 +15,16 @@ npm install
 npm run dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) — defaults to Chinese locale.
+Open [http://localhost:3000](http://localhost:3000) — redirects to your browser language (falls back to English).
 
 ### Supported Locales
 
 | Path | Language |
 |------|----------|
-| `/zh` | 中文 |
 | `/en` | English |
+| `/es` | Español |
 | `/th` | ไทย |
+| `/zh` | 中文 |
 
 ## Project Structure
 
@@ -31,19 +32,24 @@ Open [http://localhost:3000](http://localhost:3000) — defaults to Chinese loca
 src/
 ├── app/
 │   ├── [locale]/
-│   │   ├── layout.tsx          # Nav, footer, metadata
+│   │   ├── layout.tsx          # Nav, footer, metadata, JSON-LD
 │   │   ├── page.tsx            # Home page (6 sections)
+│   │   ├── booking/page.tsx    # Contact / booking page
+│   │   ├── mobile-menu.tsx     # Mobile nav
 │   │   ├── route-card.tsx      # Product tier card
 │   │   └── routes/[slug]/
 │   │       └── page.tsx        # Route detail page
 │   ├── globals.css             # Tailwind + base styles
+│   ├── robots.ts               # robots.txt
+│   ├── sitemap.ts              # sitemap.xml
 │   └── layout.tsx              # Root layout
 ├── i18n.ts                     # next-intl config
 └── middleware.ts               # Locale detection
 messages/
 ├── en.json                     # English translations
-├── zh.json                     # Chinese translations
-└── th.json                     # Thai translations
+├── es.json                     # Spanish translations
+├── th.json                     # Thai translations
+└── zh.json                     # Chinese translations
 ```
 
 ## Brand Colors

@@ -6,6 +6,20 @@ import { locales, defaultLocale } from '../../i18n';
 import '../globals.css';
 import MobileMenu from './mobile-menu';
 
+const ogLocales: Record<string, string> = {
+  en: 'en_US',
+  es: 'es_ES',
+  th: 'th_TH',
+  zh: 'zh_CN',
+};
+
+const htmlLang: Record<string, string> = {
+  en: 'en',
+  es: 'es',
+  th: 'th',
+  zh: 'zh-CN',
+};
+
 export async function generateMetadata({ params: { locale } }: { params: { locale: string } }) {
   const t = await getTranslations({ locale, namespace: 'hero' });
   const ts = await getTranslations({ locale, namespace: 'seo' });
@@ -28,9 +42,10 @@ export async function generateMetadata({ params: { locale } }: { params: { local
     openGraph: {
       title,
       description,
-      url: siteUrl,
+      url: `${siteUrl}/${locale}`,
       siteName: t('brand'),
-      locale: locale === 'zh' ? 'zh_CN' : locale === 'th' ? 'th_TH' : 'en_US',
+      locale: ogLocales[locale] ?? 'en_US',
+      alternateLocale: locales.filter((loc) => loc !== locale).map((loc) => ogLocales[loc]),
       type: 'website',
       images: [{ url: '/images/og-image.png', width: 1200, height: 630 }],
     },
@@ -83,7 +98,7 @@ export default async function LocaleLayout({
   const t = await getTranslations({ locale, namespace: 'nav' });
 
   return (
-    <html lang={locale}>
+    <html lang={htmlLang[locale] ?? locale}>
       <body className="bg-[#F5F2ED] text-[#1F1F1F] min-h-screen">
         <NextIntlClientProvider messages={messages}>
           <nav className="fixed top-0 w-full z-50 bg-[#F5F2ED]/90 backdrop-blur-md border-b border-black/5 transition-all">
@@ -124,7 +139,7 @@ export default async function LocaleLayout({
                   '@type': 'ContactPoint',
                   contactType: 'customer service',
                   telephone: '+86-19045478878',
-                  availableLanguage: ['English', 'Chinese', 'Thai'],
+                  availableLanguage: ['English', 'Chinese', 'Thai', 'Spanish'],
                 },
                 sameAs: ['https://wa.me/8619045478878'],
                 makesOffer: [

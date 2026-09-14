@@ -49,7 +49,7 @@ export default function RouteCard({ slug, locale, routeKey, tr }: Props) {
           {tr(`${routeKey}.description` as any)}
         </p>
         <span className="text-[11px] font-semibold tracking-[2px] uppercase text-[#8C3B2E] inline-flex items-center gap-1 group-hover:gap-3 transition-all">
-          {locale === 'zh' ? '了解详情' : locale === 'th' ? 'ดูเพิ่มเติม' : 'Learn More'} →
+          {locale === 'zh' ? '了解详情' : locale === 'th' ? 'ดูเพิ่มเติม' : locale === 'es' ? 'Ver más' : 'Learn More'} →
         </span>
       </div>
     </Link>
