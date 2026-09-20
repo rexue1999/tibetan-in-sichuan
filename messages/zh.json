@@ -146,11 +146,20 @@
   },
   "gallery": {
     "label": "我们到达的地方",
-    "title": "川西，三帧画面。",
-    "caption1": "理塘老城",
+    "title": "川西，一帧一画。",
+    "caption1": "理塘 · 海拔4,014米",
     "caption2": "贡嘎雪山",
     "caption3": "塔公草原",
-    "caption4": "折多山垭口 4298米"
+    "caption4": "色达河谷",
+    "caption5": "游牧草原",
+    "caption6": "高山湖泊",
+    "caption7": "亚丁保护区",
+    "caption8": "丹巴藏寨",
+    "caption9": "木雅大寺 · 塔公"
+  },
+  "videos": {
+    "label": "影像",
+    "title": "会动的高原。"
   },
   "cta": {
     "label": "加入我们",

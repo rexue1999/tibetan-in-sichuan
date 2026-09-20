@@ -146,11 +146,20 @@
   },
   "gallery": {
     "label": "Los lugares a los que vamos",
-    "title": "Sichuan occidental en tres imágenes.",
-    "caption1": "Casco antiguo de Litang",
+    "title": "Sichuan occidental, fotograma a fotograma.",
+    "caption1": "Litang · 4.014 m",
     "caption2": "Minya Konka",
     "caption3": "Praderas de Tagong",
-    "caption4": "Paso Zheduo, 4.298 m"
+    "caption4": "Valle de Serda",
+    "caption5": "Praderas nómadas",
+    "caption6": "Lagos de alta montaña",
+    "caption7": "Reserva de Yading",
+    "caption8": "Aldeas de Danba",
+    "caption9": "Monasterio de Muya, Tagong"
+  },
+  "videos": {
+    "label": "En movimiento",
+    "title": "La meseta, en movimiento."
   },
   "cta": {
     "label": "Únete a nosotros",

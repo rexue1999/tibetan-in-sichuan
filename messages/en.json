@@ -146,11 +146,20 @@
   },
   "gallery": {
     "label": "The places we go",
-    "title": "Western Sichuan in three frames.",
-    "caption1": "Litang Old Town",
+    "title": "Western Sichuan, frame by frame.",
+    "caption1": "Litang · 4,014m",
     "caption2": "Minya Konka",
     "caption3": "Tagong Grasslands",
-    "caption4": "Zheduo Pass, 4,298m"
+    "caption4": "Serda Valley",
+    "caption5": "Nomad Grasslands",
+    "caption6": "Alpine Lakes",
+    "caption7": "Yading Reserve",
+    "caption8": "Danba Villages",
+    "caption9": "Muya Monastery, Tagong"
+  },
+  "videos": {
+    "label": "In motion",
+    "title": "The plateau, moving."
   },
   "cta": {
     "label": "Join us",

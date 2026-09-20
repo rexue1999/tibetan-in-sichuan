@@ -33,6 +33,7 @@ export default async function Home({ params: { locale } }: { params: { locale: s
   const te = await getTranslations({ locale, namespace: 'expect' });
   const tw = await getTranslations({ locale, namespace: 'why' });
   const tg = await getTranslations({ locale, namespace: 'gallery' });
+  const tv = await getTranslations({ locale, namespace: 'videos' });
   const tc = await getTranslations({ locale, namespace: 'cta' });
   const tu = await getTranslations({ locale, namespace: 'upsell' });
 
@@ -158,7 +159,7 @@ export default async function Home({ params: { locale } }: { params: { locale: s
       <section id="gallery" className="py-24 md:py-32 px-6 bg-[#F5F2ED]">
         <div className="max-w-7xl mx-auto">
           <SectionTitle label={tg('label')} title={tg('title')} />
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mt-12" style={{ gridTemplateRows: 'repeat(2, 240px)' }}>
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mt-12" style={{ gridTemplateRows: 'repeat(3, 240px)' }}>
             <div
               className="md:row-span-2 col-span-2 rounded-sm overflow-hidden relative bg-cover bg-center"
               style={{ backgroundImage: 'url(/images/litang.jpg)' }}
@@ -182,11 +183,70 @@ export default async function Home({ params: { locale } }: { params: { locale: s
             </div>
             <div
               className="rounded-sm overflow-hidden relative bg-cover bg-center"
-              style={{ backgroundImage: 'url(/images/zheduo.jpg)' }}
+              style={{ backgroundImage: 'url(/images/serda.jpg)' }}
             >
               <div className="absolute inset-0 bg-[#1F1F1F]/20" />
               <span className="absolute bottom-3 left-3 text-[9px] tracking-[2px] uppercase text-white/80">{tg('caption4')}</span>
             </div>
+            <div
+              className="rounded-sm overflow-hidden relative bg-cover bg-center"
+              style={{ backgroundImage: 'url(/images/grassland.jpg)' }}
+            >
+              <div className="absolute inset-0 bg-[#1F1F1F]/15" />
+              <span className="absolute bottom-3 left-3 text-[9px] tracking-[2px] uppercase text-white/80">{tg('caption5')}</span>
+            </div>
+            <div
+              className="rounded-sm overflow-hidden relative bg-cover bg-center"
+              style={{ backgroundImage: 'url(/images/lakes.jpg)' }}
+            >
+              <div className="absolute inset-0 bg-[#1F1F1F]/15" />
+              <span className="absolute bottom-3 left-3 text-[9px] tracking-[2px] uppercase text-white/80">{tg('caption6')}</span>
+            </div>
+            <div
+              className="rounded-sm overflow-hidden relative bg-cover bg-center"
+              style={{ backgroundImage: 'url(/images/yading.jpg)' }}
+            >
+              <div className="absolute inset-0 bg-[#1F1F1F]/15" />
+              <span className="absolute bottom-3 left-3 text-[9px] tracking-[2px] uppercase text-white/80">{tg('caption7')}</span>
+            </div>
+            <div
+              className="rounded-sm overflow-hidden relative bg-cover bg-center"
+              style={{ backgroundImage: 'url(/images/danba.jpg)' }}
+            >
+              <div className="absolute inset-0 bg-[#1F1F1F]/15" />
+              <span className="absolute bottom-3 left-3 text-[9px] tracking-[2px] uppercase text-white/80">{tg('caption8')}</span>
+            </div>
+            <div
+              className="rounded-sm overflow-hidden relative bg-cover bg-center"
+              style={{ backgroundImage: 'url(/images/muya.jpg)' }}
+            >
+              <div className="absolute inset-0 bg-[#1F1F1F]/15" />
+              <span className="absolute bottom-3 left-3 text-[9px] tracking-[2px] uppercase text-white/80">{tg('caption9')}</span>
+            </div>
+          </div>
+
+          {/* Video strip */}
+          <div className="mt-16">
+            <SectionTitle label={tv('label')} title={tv('title')} />
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mt-4">
+            <video
+              className="w-full h-[240px] object-cover rounded-sm"
+              style={{ objectPosition: 'center 65%' }}
+              src="/videos/horses.mp4"
+              autoPlay muted loop playsInline preload="metadata"
+            />
+            <video
+              className="w-full h-[240px] object-cover rounded-sm"
+              style={{ objectPosition: 'center 60%' }}
+              src="/videos/marmot.mp4"
+              autoPlay muted loop playsInline preload="metadata"
+            />
+            <video
+              className="w-full h-[240px] object-cover rounded-sm"
+              src="/videos/peaks.mp4"
+              autoPlay muted loop playsInline preload="metadata"
+            />
           </div>
         </div>
       </section>
