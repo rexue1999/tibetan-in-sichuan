@@ -3,6 +3,7 @@ import Link from 'next/link';
 import { notFound } from 'next/navigation';
 import ItinerarySection from './itinerary-section';
 import { locales, defaultLocale } from '../../../../i18n';
+import { SITE_URL, buildLocalizedAlternates } from '../../../../lib/seo';
 
 type RouteLabels = {
   duration: string;
@@ -19,18 +20,37 @@ type RouteLabels = {
   dayLabel: string;
 };
 
-const routeMap: Record<string, { key: 'route1' | 'route2' | 'route3'; image: string }> = {
+const routeMap: Record<string, { key: 'route1' | 'route2' | 'route3'; image: string; keywords: string[] }> = {
   'tibetan-walk-chengdu': {
     key: 'route1',
-    image: '/images/walk-tour.jpg',
+    image: '/images/walk-tour.jpg?v=2',
+    keywords: [
+      'Chengdu Tibetan walking tour',
+      'Tibetan culture Chengdu',
+      'Wuhouci Tibetan quarter',
+      'Chengdu cultural tour',
+    ],
   },
   'go-west-go-tibet': {
     key: 'route2',
-    image: '/images/highland-trip.jpg',
+    image: '/images/highland-trip.jpg?v=2',
+    keywords: [
+      'Chengdu to Tibet tour',
+      'Kangding Tagong tour',
+      'Western Sichuan highland tour',
+      'Xinduqiao photographer paradise',
+      'Zheduo Pass 4298m',
+    ],
   },
   'tibetan-nomad': {
     key: 'route3',
-    image: '/images/nomad.jpg',
+    image: '/images/nomad.jpg?v=2',
+    keywords: [
+      'Tibetan nomad homestay',
+      'Zoige grasslands tour',
+      'Hongyuan nomad experience',
+      'Sichuan nomad family stay',
+    ],
   },
 };
 
@@ -44,26 +64,35 @@ export async function generateMetadata({
 
   const tr = await getTranslations({ locale, namespace: 'routes' });
   const name = tr(`${route.key}.name` as any);
+  const tagline = tr(`${route.key}.tagline` as any);
+  const duration = tr(`${route.key}.duration` as any);
   const description = tr(`${route.key}.description` as any);
 
-  const path = `/${locale}/routes/${slug}`;
+  const title = `${name} | ${tagline} - Chengdu Journeys`;
+  const path = `/routes/${slug}`;
 
   return {
-    title: `${name} — CHENGDU JOURNEYS`,
+    title,
     description,
-    alternates: {
-      canonical: path,
-      languages: {
-        ...Object.fromEntries(locales.map((loc) => [loc, `/${loc}/routes/${slug}`])),
-        'x-default': `/${defaultLocale}/routes/${slug}`,
-      },
-    },
+    keywords: route.keywords,
+    alternates: buildLocalizedAlternates(locale, path),
     openGraph: {
-      title: `${name} — CHENGDU JOURNEYS`,
+      title,
       description,
-      url: path,
-      type: 'website',
-      images: [{ url: route.image, width: 1200, height: 630 }],
+      url: `${SITE_URL}/${locale}${path}`,
+      siteName: 'Chengdu Journeys',
+      locale: locale === 'zh' ? 'zh_CN' : locale === 'es' ? 'es_ES' : locale === 'th' ? 'th_TH' : 'en_US',
+      type: 'article',
+      images: [{ url: route.image, width: 1200, height: 630, alt: name }],
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title,
+      description,
+      images: [route.image],
+    },
+    other: {
+      'tour:duration': duration,
     },
   };
 }
@@ -111,8 +140,43 @@ export default async function RouteDetail({
   };
   const labels: RouteLabels = labelMap[locale] ?? labelMap.en;
 
+  const homeLabel =
+    locale === 'zh' ? '首页' : locale === 'th' ? 'หน้าแรก' : locale === 'es' ? 'Inicio' : 'Home';
+  const tripsLabel =
+    locale === 'zh' ? '行程' : locale === 'th' ? 'เส้นทาง' : locale === 'es' ? 'Viajes' : 'Trips';
+  const routeName = tr(`${route.key}.name` as any);
+
+  const breadcrumbJsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      {
+        '@type': 'ListItem',
+        position: 1,
+        name: homeLabel,
+        item: `${SITE_URL}/${locale}`,
+      },
+      {
+        '@type': 'ListItem',
+        position: 2,
+        name: tripsLabel,
+        item: `${SITE_URL}/${locale}#trips`,
+      },
+      {
+        '@type': 'ListItem',
+        position: 3,
+        name: routeName,
+        item: `${SITE_URL}/${locale}/routes/${slug}`,
+      },
+    ],
+  };
+
   return (
     <div className="min-h-screen pt-16">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }}
+      />
       {/* Hero image */}
       <div className="relative h-[50vh] overflow-hidden">
         <div

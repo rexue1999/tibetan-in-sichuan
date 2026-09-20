@@ -193,6 +193,28 @@
   "footer": {
     "copyright": "© 2026 Chengdu Journeys. Todos los derechos reservados."
   },
+  "seoPages": {
+    "homeTitle": "Tours de Chengdu al Tibet y Sichuan Occidental en Grupo Pequeno",
+    "homeDesc": "Tours en grupo pequeno desde Chengdu hacia el Tibet y el oeste de Sichuan: paseos culturales tibetanos en la ciudad, rutas de altura por Kangding y Tagong, estancias con familias nomadas, monasterios de Kham y la carretera Sichuan-Tibet. Guias locales, grupos de 2 a 8 personas.",
+    "bookingTitle": "Reservar un tour por Chengdu o Sichuan Occidental - Contactanos",
+    "bookingDesc": "Reserva un tour en grupo pequeno por Chengdu, el Tibet o el oeste de Sichuan. Escribenos por WhatsApp, correo o WeChat con tus fechas y numero de viajeros y preparamos un itinerario a medida en 24 horas."
+  },
+  "faq": {
+    "label": "Informacion util",
+    "title": "Preguntas frecuentes",
+    "q1": "Necesito un permiso para viajar de Chengdu a zonas tibetanas?",
+    "a1": "Para la mayor parte del oeste de Sichuan - Kangding, Tagong, Xinduqiao, Litang, Daocheng Yading y Danba - no se necesita ningun permiso especial; basta con un visado chino valido o la entrada sin visado. Solo se requiere permiso para entrar en la Region Autonoma del Tibet (Lhasa, Shigatse, Nyingchi), y se tramita a traves de una agencia tibetana autorizada. Te indicaremos con claridad que caso aplica a tu ruta.",
+    "q2": "Cual es la mejor epoca para un tour por el oeste de Sichuan?",
+    "a2": "De mayo a octubre es la temporada principal, con cielos mas despejados y temperaturas mas suaves. De finales de marzo a abril florecen los albaricoques y melocotoneros en los valles; de junio a agosto las praderas estan mas verdes; de septiembre a octubre las vistas de las montanas son mas nitidas y los alerces se doran. En invierno se pueden hacer rutas mas bajas como Kangding y Danba, con muchos menos visitantes.",
+    "q3": "Como se maneja el mal de altura en una ruta Sichuan-Tibet?",
+    "a3": "Disenamos el itinerario con ascenso gradual - empezando en Chengdu (500 m), luego Kangding (2.560 m) y despues los puertos mas altos - para que el cuerpo se aclimate en varios dias. Llevamos oxigeno en el vehiculo, mantenemos un ritmo flexible y evitamos subidas bruscas por encima de los 4.000 m. La mayoria de los viajeros se adapta en uno o dos dias.",
+    "q4": "Que tamano tienen los grupos? Puedo reservar un viaje privado?",
+    "a4": "Nuestras salidas programadas son de 2 a 8 viajeros, lo que nos permite alojarnos en pequenas casas de familia y monasterios tranquilos inaccesibles para autocares grandes. Si prefieres tus propias fechas y ritmo, organizamos salidas privadas para viajeros individuales, parejas, familias y grupos de amigos todo el ano.",
+    "q5": "Cuanto cuesta un tour por el oeste de Sichuan y que incluye?",
+    "a5": "El precio depende de la duracion, el tamano del grupo, el vehiculo y la categoria del hotel, asi que cotizamos por grupo y no por asiento. Una cotizacion estandar incluye vehiculo privado con conductor, guia local de habla hispana o inglesa, alojamiento, entradas a monasterios y zonas escenicas, y coordinacion del seguro de viaje.",
+    "q6": "Pueden atender a quienes no hablan ingles o necesidades dieteticas?",
+    "a6": "Si. Nuestros guias hablan ingles, mandarin y tibetano, y tambien organizamos viajes en espanol y tailandes bajo peticion. Podemos arreglar comidas vegetarianas, veganas, halal y sin gluten en la ruta - indicalo al reservar para avisar a cada alojamiento con antelacion."
+  },
   "seo": {
     "tagline": "Viajes en grupo pequeño por la cultura tibetana y el oeste de China",
     "description": "Viajes en grupos pequeños desde Chengdu hacia la cultura tibetana, paisajes de tierras altas y la vida nómada en el oeste de Sichuan. Tours tibetanos a pie, rutas de templos y experiencias auténticas de estancia."

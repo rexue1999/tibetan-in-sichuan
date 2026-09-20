@@ -1,6 +1,7 @@
 import { getTranslations } from 'next-intl/server';
 import Link from 'next/link';
 import { locales, defaultLocale } from '../../../i18n';
+import { SITE_URL, buildLocalizedAlternates } from '../../../lib/seo';
 
 const WHATSAPP_URL = 'https://wa.me/8619045478878';
 
@@ -44,21 +45,29 @@ export async function generateMetadata({
   params: { locale: string };
 }) {
   const tb = await getTranslations({ locale, namespace: 'booking' });
+  const tp = await getTranslations({ locale, namespace: 'seoPages' });
+
+  const title = tp('bookingTitle');
+  const description = tp('bookingDesc');
 
   return {
-    title: `${tb('title')} — CHENGDU JOURNEYS`,
-    description: tb('subtitle'),
-    alternates: {
-      canonical: `/${locale}/booking`,
-      languages: {
-        ...Object.fromEntries(locales.map((loc) => [loc, `/${loc}/booking`])),
-        'x-default': `/${defaultLocale}/booking`,
-      },
-    },
+    title,
+    description,
+    alternates: buildLocalizedAlternates(locale, '/booking'),
     openGraph: {
-      title: `${tb('title')} — CHENGDU JOURNEYS`,
-      description: tb('subtitle'),
-      url: `/${locale}/booking`,
+      title,
+      description,
+      url: `${SITE_URL}/${locale}/booking`,
+      siteName: 'Chengdu Journeys',
+      locale: locale === 'zh' ? 'zh_CN' : locale === 'es' ? 'es_ES' : locale === 'th' ? 'th_TH' : 'en_US',
+      type: 'website',
+      images: [{ url: '/images/og-image.png', width: 1200, height: 630 }],
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title,
+      description,
+      images: ['/images/og-image.png'],
     },
   };
 }

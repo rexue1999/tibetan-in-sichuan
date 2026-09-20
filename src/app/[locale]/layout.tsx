@@ -3,6 +3,7 @@ import { getMessages, getTranslations } from 'next-intl/server';
 import Link from 'next/link';
 import Image from 'next/image';
 import { locales, defaultLocale } from '../../i18n';
+import { SITE_URL, buildLocalizedAlternates } from '../../lib/seo';
 import '../globals.css';
 import MobileMenu from './mobile-menu';
 
@@ -23,26 +24,20 @@ const htmlLang: Record<string, string> = {
 export async function generateMetadata({ params: { locale } }: { params: { locale: string } }) {
   const t = await getTranslations({ locale, namespace: 'hero' });
   const ts = await getTranslations({ locale, namespace: 'seo' });
+  const tp = await getTranslations({ locale, namespace: 'seoPages' });
 
-  const title = `${t('brand')} — ${ts('tagline')}`;
-  const description = ts('description');
-  const siteUrl = 'https://chengdujourneys.com';
+  const title = tp('homeTitle');
+  const description = tp('homeDesc');
 
   return {
     title,
     description,
-    metadataBase: new URL(siteUrl),
-    alternates: {
-      canonical: `/${locale}`,
-      languages: {
-        ...Object.fromEntries(locales.map((loc) => [loc, `/${loc}`])),
-        'x-default': `/${defaultLocale}`,
-      },
-    },
+    metadataBase: new URL(SITE_URL),
+    alternates: buildLocalizedAlternates(locale, ''),
     openGraph: {
       title,
       description,
-      url: `${siteUrl}/${locale}`,
+      url: `${SITE_URL}/${locale}`,
       siteName: t('brand'),
       locale: ogLocales[locale] ?? 'en_US',
       alternateLocale: locales.filter((loc) => loc !== locale).map((loc) => ogLocales[loc]),
@@ -96,6 +91,137 @@ export default async function LocaleLayout({
 }) {
   const messages = await getMessages();
   const t = await getTranslations({ locale, namespace: 'nav' });
+  const ts = await getTranslations({ locale, namespace: 'seoPages' });
+
+  const jsonLd = {
+    '@context': 'https://schema.org',
+    '@graph': [
+      {
+        '@type': 'Organization',
+        '@id': `${SITE_URL}/#organization`,
+        name: 'Chengdu Journeys',
+        alternateName: '成都旅程',
+        url: SITE_URL,
+        logo: {
+          '@type': 'ImageObject',
+          url: `${SITE_URL}/logo.svg`,
+          caption: 'Chengdu Journeys',
+        },
+        description:
+          messages.seo?.description ||
+          'Small-group journeys from Chengdu into Tibetan culture and Western China',
+        address: {
+          '@type': 'PostalAddress',
+          addressLocality: 'Chengdu',
+          addressRegion: 'Sichuan',
+          addressCountry: 'CN',
+        },
+        contactPoint: {
+          '@type': 'ContactPoint',
+          contactType: 'customer service',
+          telephone: '+86-19045478878',
+          email: 'info@chengdujourneys.com',
+          availableLanguage: ['English', 'Chinese', 'Thai', 'Spanish', 'Tibetan'],
+        },
+        sameAs: ['https://wa.me/8619045478878'],
+      },
+      {
+        '@type': 'TravelAgency',
+        '@id': `${SITE_URL}/${locale}/#agency`,
+        name: 'Chengdu Journeys',
+        url: `${SITE_URL}/${locale}`,
+        image: `${SITE_URL}/images/og-image.png`,
+        priceRange: '$$',
+        parentOrganization: { '@id': `${SITE_URL}/#organization` },
+        address: {
+          '@type': 'PostalAddress',
+          addressLocality: 'Chengdu',
+          addressRegion: 'Sichuan',
+          addressCountry: 'CN',
+        },
+        areaServed: [
+          { '@type': 'Place', name: 'Chengdu' },
+          { '@type': 'Place', name: 'Western Sichuan' },
+          { '@type': 'Place', name: 'Ganzi Tibetan Autonomous Prefecture' },
+          { '@type': 'Place', name: 'Aba Tibetan and Qiang Autonomous Prefecture' },
+          { '@type': 'Place', name: 'Tibet' },
+        ],
+        knowsLanguage: ['en', 'zh', 'th', 'es'],
+        makesOffer: [
+          {
+            '@type': 'Offer',
+            itemOffered: {
+              '@type': 'TouristTrip',
+              name: 'Chengdu Tibetan Walking Tour',
+              description:
+                'A two-hour introduction to Tibetan culture hidden inside the city - temples, tea houses, and living traditions.',
+              url: `${SITE_URL}/${locale}/routes/tibetan-walk-chengdu`,
+              touristType: ['Cultural travellers', 'Solo travellers', 'Couples'],
+              itinerary: {
+                '@type': 'ItemList',
+                numberOfItems: 4,
+                itemListElement: [
+                  { '@type': 'ListItem', position: 1, name: 'Meet & Greet' },
+                  { '@type': 'ListItem', position: 2, name: 'Tibetan Quarter Walk' },
+                  { '@type': 'ListItem', position: 3, name: 'Tibetan Tea & Snacks' },
+                  { '@type': 'ListItem', position: 4, name: 'Tibetan Guozhuang Dance' },
+                ],
+              },
+            },
+            price: '19',
+            priceCurrency: 'USD',
+            availability: 'https://schema.org/InStock',
+          },
+          {
+            '@type': 'Offer',
+            itemOffered: {
+              '@type': 'TouristTrip',
+              name: 'Highland Roads & Temple Views',
+              description:
+                'Explore highland roads, ancient temples, and mountain panoramas across the Tibetan plateau eastern edge, from Kangding to Tagong and Xinduqiao.',
+              url: `${SITE_URL}/${locale}/routes/go-west-go-tibet`,
+              touristType: ['Adventure travellers', 'Photographers', 'Small groups'],
+            },
+            availability: 'https://schema.org/InStock',
+          },
+          {
+            '@type': 'Offer',
+            itemOffered: {
+              '@type': 'TouristTrip',
+              name: 'Nomad Between Earth & Sky',
+              description:
+                'A four-day nomadic homestay on the Zoige-Hongyuan grasslands: yak milking, butter tea, black tent camping and plateau horse riding.',
+              url: `${SITE_URL}/${locale}/routes/tibetan-nomad`,
+              touristType: ['Culture seekers', 'Families', 'Small groups'],
+            },
+            availability: 'https://schema.org/InStock',
+          },
+        ],
+      },
+      {
+        '@type': 'WebSite',
+        '@id': `${SITE_URL}/#website`,
+        url: SITE_URL,
+        name: 'Chengdu Journeys',
+        description: ts('homeDesc'),
+        publisher: { '@id': `${SITE_URL}/#organization` },
+        inLanguage: ['en', 'es', 'th', 'zh-CN'],
+      },
+    ],
+  };
+
+  const faqJsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: [1, 2, 3, 4, 5, 6].map((i) => ({
+      '@type': 'Question',
+      name: (messages as any).faq?.[`q${i}`],
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: (messages as any).faq?.[`a${i}`],
+      },
+    })),
+  };
 
   return (
     <html lang={htmlLang[locale] ?? locale}>
@@ -121,49 +247,11 @@ export default async function LocaleLayout({
           <main>{children}</main>
           <script
             type="application/ld+json"
-            dangerouslySetInnerHTML={{
-              __html: JSON.stringify({
-                '@context': 'https://schema.org',
-                '@type': 'TravelAgency',
-                name: 'Chengdu Journeys',
-                url: `https://chengdujourneys.com/${locale}`,
-                logo: 'https://chengdujourneys.com/logo.svg',
-                description: messages.seo?.description || 'Small-group journeys from Chengdu into Tibetan culture and Western China',
-                address: {
-                  '@type': 'PostalAddress',
-                  addressLocality: 'Chengdu',
-                  addressRegion: 'Sichuan',
-                  addressCountry: 'CN',
-                },
-                contactPoint: {
-                  '@type': 'ContactPoint',
-                  contactType: 'customer service',
-                  telephone: '+86-19045478878',
-                  availableLanguage: ['English', 'Chinese', 'Thai', 'Spanish'],
-                },
-                sameAs: ['https://wa.me/8619045478878'],
-                makesOffer: [
-                  {
-                    '@type': 'TouristTrip',
-                    name: 'Chengdu Tibetan Walking Tour',
-                    description: 'A two-hour introduction to Tibetan culture hidden inside the city',
-                    url: `https://chengdujourneys.com/${locale}/routes/tibetan-walk-chengdu`,
-                  },
-                  {
-                    '@type': 'TouristTrip',
-                    name: 'Highland Roads & Temple Views',
-                    description: 'Explore highland roads, ancient temples, and mountain panoramas across the Tibetan plateau',
-                    url: `https://chengdujourneys.com/${locale}/routes/go-west-go-tibet`,
-                  },
-                  {
-                    '@type': 'TouristTrip',
-                    name: 'Nomad in Tibetan Area',
-                    description: 'Venture deep into the high grasslands of western Sichuan for an immersive nomad experience',
-                    url: `https://chengdujourneys.com/${locale}/routes/tibetan-nomad`,
-                  },
-                ],
-              }),
-            }}
+            dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+          />
+          <script
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
           />
           <footer className="bg-[#1F1F1F] py-12 px-6">
             <div className="max-w-7xl mx-auto text-center text-white/50 text-[10px] tracking-[2px] uppercase">

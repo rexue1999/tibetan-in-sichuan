@@ -36,6 +36,7 @@ export default async function Home({ params: { locale } }: { params: { locale: s
   const tv = await getTranslations({ locale, namespace: 'videos' });
   const tc = await getTranslations({ locale, namespace: 'cta' });
   const tu = await getTranslations({ locale, namespace: 'upsell' });
+  const tf = await getTranslations({ locale, namespace: 'faq' });
 
   return (
     <>
@@ -43,7 +44,7 @@ export default async function Home({ params: { locale } }: { params: { locale: s
           HERO
           ============================== */}
       <section className="relative min-h-screen flex items-center overflow-hidden">
-        <div className="absolute inset-0 bg-cover bg-center opacity-40" style={{ backgroundImage: 'url(/images/hero-bg.jpg)' }} />
+        <div className="absolute inset-0 bg-cover bg-center opacity-40" style={{ backgroundImage: 'url(/images/hero-bg.jpg?v=2)' }} />
         <div className="absolute inset-0 bg-gradient-to-br from-[#E8E1D9]/90 via-[#E8E1D9]/60 to-[#1F1F1F]/60 z-10" />
         <div className="relative z-20 px-6 max-w-6xl mx-auto w-full pt-24 pb-20">
           <p className="text-[10px] font-semibold tracking-[5px] uppercase text-[#8C3B2E] mb-7">
@@ -162,21 +163,21 @@ export default async function Home({ params: { locale } }: { params: { locale: s
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mt-12" style={{ gridTemplateRows: 'repeat(3, 240px)' }}>
             <div
               className="md:row-span-2 col-span-2 rounded-sm overflow-hidden relative bg-cover bg-center"
-              style={{ backgroundImage: 'url(/images/litang.jpg)' }}
+              style={{ backgroundImage: 'url(/images/litang.jpg?v=2)' }}
             >
               <div className="absolute inset-0 bg-[#1F1F1F]/20" />
               <span className="absolute bottom-3 left-3 text-[9px] tracking-[2px] uppercase text-white/80">{tg('caption1')}</span>
             </div>
             <div
               className="rounded-sm overflow-hidden relative bg-cover bg-center"
-              style={{ backgroundImage: 'url(/images/gongga.jpg)' }}
+              style={{ backgroundImage: 'url(/images/gongga.jpg?v=2)' }}
             >
               <div className="absolute inset-0 bg-[#1F1F1F]/15" />
               <span className="absolute bottom-3 left-3 text-[9px] tracking-[2px] uppercase text-white/80">{tg('caption2')}</span>
             </div>
             <div
               className="rounded-sm overflow-hidden relative bg-cover bg-center"
-              style={{ backgroundImage: 'url(/images/tagong.jpg)' }}
+              style={{ backgroundImage: 'url(/images/tagong.jpg?v=2)' }}
             >
               <div className="absolute inset-0 bg-[#1F1F1F]/15" />
               <span className="absolute bottom-3 left-3 text-[9px] tracking-[2px] uppercase text-white/80">{tg('caption3')}</span>
@@ -248,6 +249,32 @@ export default async function Home({ params: { locale } }: { params: { locale: s
               autoPlay muted loop playsInline preload="metadata"
             />
           </div>
+        </div>
+      </section>
+
+      {/* ==============================
+          FAQ
+          ============================== */}
+      <section id="faq" className="py-24 md:py-32 px-6 bg-white">
+        <div className="max-w-3xl mx-auto">
+          <SectionTitle label={tf('label')} title={tf('title')} />
+          <dl className="mt-12 divide-y divide-black/5 border-t border-black/5">
+            {([1, 2, 3, 4, 5, 6] as const).map((i) => (
+              <details key={i} className="group py-6">
+                <summary className="flex items-start justify-between gap-6 cursor-pointer list-none">
+                  <dt className="text-base md:text-lg font-normal text-[#1F1F1F] leading-snug">
+                    {tf(`q${i}` as any)}
+                  </dt>
+                  <span className="text-[#8C3B2E] text-xl leading-none transition-transform group-open:rotate-45 shrink-0 pt-1">
+                    +
+                  </span>
+                </summary>
+                <dd className="mt-4 text-sm md:text-base leading-relaxed text-stone-500 pr-10">
+                  {tf(`a${i}` as any)}
+                </dd>
+              </details>
+            ))}
+          </dl>
         </div>
       </section>
 

@@ -4,9 +4,9 @@ import type { useTranslations } from 'next-intl';
 type Translations = ReturnType<typeof useTranslations<'routes'>>;
 
 const images = [
-  '/images/walk-tour.jpg',
-  '/images/highland-trip.jpg',
-  '/images/nomad.jpg',
+  '/images/walk-tour.jpg?v=2',
+  '/images/highland-trip.jpg?v=2',
+  '/images/nomad.jpg?v=2',
 ];
 
 const tiers = [
