@@ -3,7 +3,10 @@ import { locales, defaultLocale } from '../i18n';
 const SITE_URL = 'https://chengdujourneys.com';
 
 export default function robots() {
-  const disallowedPaths = ['/api/', '/_next/', '/admin/'];
+  // IMPORTANT: never disallow /_next/ (or any static asset dir).
+  // Googlebot must fetch CSS/JS to render pages; blocking them makes
+  // rendered pages look unstyled/broken and can get them devalued in search.
+  const disallowedPaths = ['/api/', '/admin/'];
 
   return {
     rules: [
