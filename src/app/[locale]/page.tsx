@@ -1,6 +1,7 @@
 import { getTranslations } from 'next-intl/server';
 import Link from 'next/link';
 import RouteCard from './route-card';
+import { buildLocalizedAlternates } from '../../lib/seo';
 
 const routeSlugs = ['tibetan-walk-chengdu', 'go-west-go-tibet', 'tibetan-nomad'];
 
@@ -10,11 +11,22 @@ export async function generateMetadata({
   params: { locale: string };
 }) {
   const t = await getTranslations({ locale, namespace: 'hero' });
-  const ts = await getTranslations({ locale, namespace: 'seo' });
+  const tp = await getTranslations({ locale, namespace: 'seoPages' });
+
+  const title = tp('homeTitle');
+  const description = tp('homeDesc');
 
   return {
-    title: `${t('brand')} — ${ts('tagline')}`,
-    description: ts('description'),
+    title,
+    description,
+    alternates: buildLocalizedAlternates(locale, ''),
+    openGraph: {
+      title,
+      description,
+      url: `/${locale}`,
+      siteName: t('brand'),
+      type: 'website',
+    },
   };
 }
 
