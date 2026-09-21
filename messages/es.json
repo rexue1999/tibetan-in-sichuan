@@ -366,8 +366,8 @@
           "a": "Las fechas indicadas son un ejemplo. Realizamos este viaje con fechas flexibles para grupos privados, y funciona mejor de junio a septiembre, cuando la familia está en el campamento de verano y los pastos están verdes."
         }
       ],
-      "priceNote": "Basado en un grupo privado de 4 personas. Los grupos más grandes pagan menos por persona — pídenos presupuesto",
-      "groupSize": "4–15 personas (salida privada)",
+      "priceNote": "El campamento tiene un coste fijo, por lo que el precio por persona baja a medida que crece el grupo: 2 personas US$2,980, 3 personas US$2,480, 4 personas US$1,999, 5–6 personas US$1,750. Cuatro días, con todas las comidas y actividades del campamento incluidas.",
+      "groupSize": "2–6 personas (salida privada)",
       "hotelStandard": "Tres noches en una tienda tradicional de lana de yak en el campamento nómada; una noche en un hotel de Chengdu al inicio y al final",
       "cancellation": [
         "30 días o más antes de la salida: reembolso completo, salvo el depósito del campamento ya abonado",
@@ -427,8 +427,8 @@
     "email": "Envíanos un correo",
     "wechat": "Agréganos en WeChat",
     "wechatId": "WeChat ID: chengdujourneys",
-    "pricing": "Precio a consultar",
-    "pricingNote": "Todos nuestros viajes se personalizan según el tamaño del grupo y tus preferencias."
+    "pricing": "Precios publicados, sin extras ocultos",
+    "pricingNote": "Cada ruta muestra ahora su precio por persona: el paseo urbano desde US$39, la ruta por el oeste de Sichuan desde US$690 y el campamento nómada desde US$1,750. Lo que cambia el importe final es el tamaño del grupo y la categoría del hotel: indícanos esos dos datos y te confirmamos el total exacto."
   },
   "howItWorks": {
     "title": "Cómo funciona",
@@ -463,7 +463,7 @@
     "q4": "Que tamano tienen los grupos? Puedo reservar un viaje privado?",
     "a4": "Nuestras salidas programadas son de 2 a 8 viajeros, lo que nos permite alojarnos en pequenas casas de familia y monasterios tranquilos inaccesibles para autocares grandes. Si prefieres tus propias fechas y ritmo, organizamos salidas privadas para viajeros individuales, parejas, familias y grupos de amigos todo el ano.",
     "q5": "Cuanto cuesta un tour por el oeste de Sichuan y que incluye?",
-    "a5": "El precio depende de la duracion, el tamano del grupo, el vehiculo y la categoria del hotel, asi que cotizamos por grupo y no por asiento. Una cotizacion estandar incluye vehiculo privado con conductor, guia local de habla hispana o inglesa, alojamiento, entradas a monasterios y zonas escenicas, y coordinacion del seguro de viaje.",
+    "a5": "Cada ruta indica un precio por persona: el paseo tibetano por la ciudad desde US$39, la ruta por las tierras altas del oeste de Sichuan desde US$690 (3 días) hasta US$1,390 (7 días), y el campamento nómada desde US$1,999 para un grupo de cuatro, hasta US$1,750 por persona con cinco o seis personas. Un presupuesto estándar incluye el vehículo privado con conductor, un guía local que habla inglés, alojamiento, entradas a monasterios y zonas escénicas, y la coordinación del seguro de viaje. Los vuelos internacionales y las compras personales no están incluidos.",
     "q6": "Pueden atender a quienes no hablan ingles o necesidades dieteticas?",
     "a6": "Si. Nuestros guias hablan ingles, mandarin y tibetano, y tambien organizamos viajes en espanol y tailandes bajo peticion. Podemos arreglar comidas vegetarianas, veganas, halal y sin gluten en la ruta - indicalo al reservar para avisar a cada alojamiento con antelacion."
   },

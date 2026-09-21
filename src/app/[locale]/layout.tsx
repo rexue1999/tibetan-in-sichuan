@@ -186,6 +186,15 @@ export default async function LocaleLayout({
             price: '690',
             priceCurrency: 'USD',
             availability: 'https://schema.org/InStock',
+            // 3 days from US$690 up to 7 days at US$1,390 per person;
+            // longer itineraries cost less per day.
+            priceSpecification: {
+              '@type': 'PriceSpecification',
+              priceCurrency: 'USD',
+              minPrice: '690',
+              maxPrice: '1390',
+              valueAddedTaxIncluded: false,
+            },
           },
           {
             '@type': 'Offer',
@@ -200,6 +209,17 @@ export default async function LocaleLayout({
             price: '1999',
             priceCurrency: 'USD',
             availability: 'https://schema.org/InStock',
+            // The camp is a fixed-cost stay, so the per-person rate falls as
+            // the group grows. Entry price shown on the page matches `price`;
+            // the full ladder is declared here so the markup does not
+            // contradict the tiers listed on the route page.
+            priceSpecification: {
+              '@type': 'PriceSpecification',
+              priceCurrency: 'USD',
+              minPrice: '1750',
+              maxPrice: '2980',
+              valueAddedTaxIncluded: false,
+            },
           },
         ],
       },

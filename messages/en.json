@@ -366,8 +366,8 @@
           "a": "The listed dates are a sample. We run this journey on flexible dates for private groups, and it works best from June to September when the family is in their summer camp and the grasslands are green."
         }
       ],
-      "priceNote": "Based on a private group of 4. Larger groups pay less per person — ask us for a quote",
-      "groupSize": "4–15 guests (private departure)",
+      "priceNote": "The camp is a fixed-cost stay, so the per-person price falls as your group grows — 2 guests US$2,980, 3 guests US$2,480, 4 guests US$1,999, 5–6 guests US$1,750. Four days, all meals and camp activities included.",
+      "groupSize": "2–6 guests (private departure)",
       "hotelStandard": "Three nights in a traditional black yak-hair tent at the nomadic camp; one night in a Chengdu hotel at either end",
       "cancellation": [
         "30 days or more before departure: full refund, less any camp deposit already paid",
@@ -427,8 +427,8 @@
     "email": "Send us an email",
     "wechat": "Add us on WeChat",
     "wechatId": "WeChat ID: chengdujourneys",
-    "pricing": "Pricing on request",
-    "pricingNote": "All our trips are customized to your group size and preferences."
+    "pricing": "Published prices, no hidden extras",
+    "pricingNote": "Every route now lists its price per person: the city walk from US$39, the Western Sichuan loop from US$690, and the nomad camp from US$1,750. What changes the final figure is group size and hotel level — tell us those two things and we will confirm your exact total."
   },
   "howItWorks": {
     "title": "How it works",
@@ -463,7 +463,7 @@
     "q4": "How small are the groups, and can I book a private trip?",
     "a4": "Our scheduled departures run with 2 to 8 travellers, which keeps us light enough for small guesthouses and quiet monasteries that large coaches cannot reach. If you prefer your own dates and pace we run private departures for solo travellers, couples, families and friend groups all year round.",
     "q5": "What does a Western Sichuan tour typically cost, and what is included?",
-    "a5": "Pricing depends on route length, group size, vehicle and hotel level, so we quote per group rather than per seat. A standard quote covers the private vehicle and driver, an English-speaking local guide, accommodation, entrance fees to monasteries and scenic areas, and travel insurance coordination. International flights and personal shopping are not included.",
+    "a5": "Every route lists a price per person: the Tibetan walking tour from US$39, the Western Sichuan highland loop from US$690 (3 days) up to US$1,390 (7 days), and the nomad camp from US$1,999 for a group of four, down to US$1,750 per person at five or six guests. A standard quote covers the private vehicle and driver, an English-speaking local guide, accommodation, entrance fees to monasteries and scenic areas, and travel insurance coordination. International flights and personal shopping are not included.",
     "q6": "Can you accommodate non-English speakers or specific dietary needs?",
     "a6": "Yes. Our guides speak English, Mandarin and Tibetan, and we also run trips in Spanish and Thai on request. Vegetarian, vegan, halal and gluten-free meals can be arranged along the route - just tell us at the time of booking so we can brief each guesthouse in advance."
   },
