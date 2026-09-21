@@ -48,6 +48,23 @@ export default function RouteCard({ slug, locale, routeKey, tr }: Props) {
         <p className="text-sm leading-relaxed text-stone-400 line-clamp-3 mb-4">
           {tr(`${routeKey}.description` as any)}
         </p>
+
+        {/* Price sits directly above the CTA so it reads as part of the
+            decision, not fine print. Insurance is included in every price. */}
+        <div className="flex items-baseline justify-between gap-3 pt-4 mb-4 border-t border-black/5">
+          <div>
+            <p className="text-base font-medium text-[#1F1F1F] leading-none">
+              {tr(`${routeKey}.pricing` as any)}
+            </p>
+            <p className="text-[10px] tracking-[1px] uppercase text-stone-400 mt-1.5">
+              {tr(`${routeKey}.groupSize` as any)}
+            </p>
+          </div>
+          <span className="text-[9px] font-semibold tracking-[1.5px] uppercase text-[#0F6E56] shrink-0 text-right leading-tight">
+            {tr('insuranceBadge')}
+          </span>
+        </div>
+
         <span className="text-[11px] font-semibold tracking-[2px] uppercase text-[#8C3B2E] inline-flex items-center gap-1 group-hover:gap-3 transition-all">
           {locale === 'zh' ? '了解详情' : locale === 'th' ? 'ดูเพิ่มเติม' : locale === 'es' ? 'Ver más' : 'Learn More'} →
         </span>

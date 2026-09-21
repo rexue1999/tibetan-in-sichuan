@@ -22,6 +22,7 @@
     "text": "La mayoría de los viajeros solo ven ciudades. Nosotros te llevamos más lejos — a lugares donde las culturas cambian, los paisajes se abren y el viaje se convierte en el destino."
   },
   "routes": {
+    "insuranceBadge": "Seguro incluido",
     "title": "Tres formas de ir más profundo.",
     "subtitle": "Nuestros viajes",
     "ctaAll": "Ver todos los viajes",
@@ -66,7 +67,8 @@
         "Todas las entradas a templos y lugares de interés",
         "Té con mantequilla tibetano y aperitivos",
         "Espectáculo de danza Guozhuang",
-        "Recogida en metro, salida G de Gaoshengqiao"
+        "Recogida en metro, salida G de Gaoshengqiao",
+        "Seguro nacional de accidentes de viaje"
       ],
       "excludes": [
         "Traslado desde y hacia el hotel",
@@ -96,7 +98,7 @@
           "a": "Nos encontramos en la salida G de la estación de metro Gaoshengqiao, en la línea 3. Tu guía llevará un cartel de Chengdu Journeys. Enviaremos la ubicación exacta por WhatsApp el día anterior."
         }
       ],
-      "priceNote": "Precio fijo — grupos privados de hasta 8 personas, sin mínimo de reserva",
+      "priceNote": "Precio fijo — grupos privados de hasta 8 personas, sin mínimo de reserva. El seguro de accidentes de viaje está incluido.",
       "groupSize": "1–8 personas",
       "hotelStandard": "No aplica — es un paseo a pie, sin pernocta",
       "cancellation": [
@@ -241,11 +243,11 @@
         "Todas las entradas a monasterios y zonas escénicas",
         "Alojamiento según el itinerario elegido",
         "Suministro de oxígeno y botiquín básico en el vehículo",
-        "Agua embotellada durante todo el viaje"
+        "Agua embotellada durante todo el viaje",
+        "Seguro nacional de accidentes de viaje, con rescate en altura"
       ],
       "excludes": [
         "Comidas no indicadas en el itinerario (unos 60–120 CNY al día)",
-        "Seguro de viaje personal — obligatorio en rutas de altura",
         "Equitación, paseos en barco y otras actividades opcionales",
         "Propinas (opcionales)"
       ],
@@ -271,7 +273,7 @@
           "a": "De finales de mayo a principios de octubre para carreteras fiables y pastos verdes. Desde mediados de octubre llega el color de otoño con noches más frías. El invierno es posible, aunque algunos puertos altos pueden cerrar tras la nieve."
         }
       ],
-      "priceNote": "Basado en 2 viajeros compartiendo. Los itinerarios más largos cuestan menos por día — 3 días US$690, 4 días US$850, 5 días US$1,050, 7 días US$1,390",
+      "priceNote": "Basado en 2 viajeros compartiendo. Los itinerarios más largos cuestan menos por día — 3 días US$690, 4 días US$850, 5 días US$1,050, 7 días US$1,390. El seguro de accidentes de viaje está incluido.",
       "groupSize": "2–8 personas (salida privada)",
       "hotelStandard": "Hoteles boutique de categoría local y casas de huéspedes tibetanas, habitación doble. Categorías superiores bajo petición",
       "cancellation": [
@@ -336,11 +338,11 @@
         "Ordeño de yaks, preparación de té con mantequilla y tsampa con la familia",
         "Equitación en el altiplano junto al río Amarillo",
         "Guía tibetano local y anfitriones del campamento",
-        "Suministro de oxígeno y botiquín básico"
+        "Suministro de oxígeno y botiquín básico",
+        "Seguro nacional de accidentes de viaje, con rescate en altura"
       ],
       "excludes": [
         "Transporte de ida y vuelta a Chengdu (asesoramos sobre vuelos y trenes)",
-        "Seguro de viaje personal — obligatorio en esta ruta",
         "Bebidas alcohólicas y compras personales",
         "Propinas para el personal del campamento y conductores (opcionales)"
       ],
@@ -366,7 +368,7 @@
           "a": "Las fechas indicadas son un ejemplo. Realizamos este viaje con fechas flexibles para grupos privados, y funciona mejor de junio a septiembre, cuando la familia está en el campamento de verano y los pastos están verdes."
         }
       ],
-      "priceNote": "El campamento tiene un coste fijo, por lo que el precio por persona baja a medida que crece el grupo: 2 personas US$2,980, 3 personas US$2,480, 4 personas US$1,999, 5–6 personas US$1,750. Cuatro días, con todas las comidas y actividades del campamento incluidas.",
+      "priceNote": "El campamento tiene un coste fijo, por lo que el precio por persona baja a medida que crece el grupo: 2 personas US$2,980, 3 personas US$2,480, 4 personas US$1,999, 5–6 personas US$1,750. Cuatro días, con todas las comidas y actividades del campamento incluidas.. El seguro de accidentes de viaje está incluido.",
       "groupSize": "2–6 personas (salida privada)",
       "hotelStandard": "Tres noches en una tienda tradicional de lana de yak en el campamento nómada; una noche en un hotel de Chengdu al inicio y al final",
       "cancellation": [
@@ -428,7 +430,7 @@
     "wechat": "Agréganos en WeChat",
     "wechatId": "WeChat ID: chengdujourneys",
     "pricing": "Precios publicados, sin extras ocultos",
-    "pricingNote": "Cada ruta muestra ahora su precio por persona: el paseo urbano desde US$39, la ruta por el oeste de Sichuan desde US$690 y el campamento nómada desde US$1,750. Lo que cambia el importe final es el tamaño del grupo y la categoría del hotel: indícanos esos dos datos y te confirmamos el total exacto."
+    "pricingNote": "Cada ruta muestra ahora su precio por persona, y todos los precios incluyen seguro nacional de accidentes de viaje: el paseo urbano desde US$39, la ruta por el oeste de Sichuan desde US$690 y el campamento nómada desde US$1,750. Lo que cambia el importe final es el tamaño del grupo y la categoría del hotel: indícanos esos dos datos y te confirmamos el total exacto."
   },
   "howItWorks": {
     "title": "Cómo funciona",
@@ -463,7 +465,7 @@
     "q4": "Que tamano tienen los grupos? Puedo reservar un viaje privado?",
     "a4": "Nuestras salidas programadas son de 2 a 8 viajeros, lo que nos permite alojarnos en pequenas casas de familia y monasterios tranquilos inaccesibles para autocares grandes. Si prefieres tus propias fechas y ritmo, organizamos salidas privadas para viajeros individuales, parejas, familias y grupos de amigos todo el ano.",
     "q5": "Cuanto cuesta un tour por el oeste de Sichuan y que incluye?",
-    "a5": "Cada ruta indica un precio por persona: el paseo tibetano por la ciudad desde US$39, la ruta por las tierras altas del oeste de Sichuan desde US$690 (3 días) hasta US$1,390 (7 días), y el campamento nómada desde US$1,999 para un grupo de cuatro, hasta US$1,750 por persona con cinco o seis personas. Un presupuesto estándar incluye el vehículo privado con conductor, un guía local que habla inglés, alojamiento, entradas a monasterios y zonas escénicas, y la coordinación del seguro de viaje. Los vuelos internacionales y las compras personales no están incluidos.",
+    "a5": "Cada ruta indica un precio por persona, y el seguro de accidentes de viaje está incluido en el precio: el paseo tibetano por la ciudad desde US$39, la ruta por las tierras altas del oeste de Sichuan desde US$690 (3 días) hasta US$1,390 (7 días), y el campamento nómada desde US$1,999 para un grupo de cuatro, hasta US$1,750 por persona con cinco o seis personas. Un presupuesto estándar incluye el vehículo privado con conductor, un guía local que habla inglés, alojamiento, entradas a monasterios y zonas escénicas, y seguro nacional de accidentes de viaje con rescate en altura. Los vuelos internacionales y las compras personales no están incluidos.",
     "q6": "Pueden atender a quienes no hablan ingles o necesidades dieteticas?",
     "a6": "Si. Nuestros guias hablan ingles, mandarin y tibetano, y tambien organizamos viajes en espanol y tailandes bajo peticion. Podemos arreglar comidas vegetarianas, veganas, halal y sin gluten en la ruta - indicalo al reservar para avisar a cada alojamiento con antelacion."
   },

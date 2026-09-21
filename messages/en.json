@@ -22,6 +22,7 @@
     "text": "Most travelers see cities. We take you further — into places where cultures shift, landscapes open, and the journey becomes the destination."
   },
   "routes": {
+    "insuranceBadge": "Insurance included",
     "title": "Three ways to go deeper.",
     "subtitle": "Our journeys",
     "ctaAll": "Explore All Trips",
@@ -66,7 +67,8 @@
         "All temple and site entrance fees",
         "Tibetan butter tea and snacks",
         "Guozhuang dance performance",
-        "Metro pickup at Gaoshengqiao Exit G"
+        "Metro pickup at Gaoshengqiao Exit G",
+        "Domestic travel-accident insurance"
       ],
       "excludes": [
         "Hotel pickup and drop-off",
@@ -96,7 +98,7 @@
           "a": "We meet at Gaoshengqiao Metro Station Exit G, which is on Line 3. Your guide will be holding a Chengdu Journeys sign. We will send the exact location on WhatsApp the day before."
         }
       ],
-      "priceNote": "Flat rate — private groups of up to 8 welcome, no minimum booking",
+      "priceNote": "Flat rate — private groups of up to 8 welcome, no minimum booking. Travel-accident insurance is included.",
       "groupSize": "1–8 guests",
       "hotelStandard": "N/A — a walking tour, no overnight stay",
       "cancellation": [
@@ -241,11 +243,11 @@
         "All monastery and scenic area entrance fees",
         "Overnight accommodation as per your chosen itinerary",
         "Oxygen supply and a basic first-aid kit in the vehicle",
-        "Bottled water throughout the journey"
+        "Bottled water throughout the journey",
+        "Domestic travel-accident insurance, including highland rescue"
       ],
       "excludes": [
         "Meals not listed in the itinerary (budget roughly 60–120 CNY per day)",
-        "Personal travel insurance — required for all highland routes",
         "Horse riding, boat trips and other optional activities",
         "Gratuities (optional)"
       ],
@@ -271,7 +273,7 @@
           "a": "Late May to early October for reliable roads and green grasslands. Mid-October onwards brings the autumn colour but colder nights. Winter travel is possible, though some high passes may close after snow."
         }
       ],
-      "priceNote": "Based on 2 travellers sharing. Longer itineraries cost less per day — 3 days US$690, 4 days US$850, 5 days US$1,050, 7 days US$1,390",
+      "priceNote": "Based on 2 travellers sharing. Longer itineraries cost less per day — 3 days US$690, 4 days US$850, 5 days US$1,050, 7 days US$1,390. Travel-accident insurance is included.",
       "groupSize": "2–8 guests (private departure)",
       "hotelStandard": "Locally rated boutique hotels and Tibetan guesthouses, twin share. Higher categories available on request",
       "cancellation": [
@@ -336,11 +338,11 @@
         "Yak milking, butter-tea making and tsampa sessions with the family",
         "Plateau horse riding on the Yellow River grasslands",
         "Local Tibetan guide and camp hosts",
-        "Oxygen supply and a basic first-aid kit"
+        "Oxygen supply and a basic first-aid kit",
+        "Domestic travel-accident insurance, including highland rescue"
       ],
       "excludes": [
         "Travel to and from Chengdu (we can advise on flights and trains)",
-        "Personal travel insurance — required for this route",
         "Alcoholic drinks and personal shopping",
         "Gratuities for camp staff and drivers (optional)"
       ],
@@ -366,7 +368,7 @@
           "a": "The listed dates are a sample. We run this journey on flexible dates for private groups, and it works best from June to September when the family is in their summer camp and the grasslands are green."
         }
       ],
-      "priceNote": "The camp is a fixed-cost stay, so the per-person price falls as your group grows — 2 guests US$2,980, 3 guests US$2,480, 4 guests US$1,999, 5–6 guests US$1,750. Four days, all meals and camp activities included.",
+      "priceNote": "The camp is a fixed-cost stay, so the per-person price falls as your group grows — 2 guests US$2,980, 3 guests US$2,480, 4 guests US$1,999, 5–6 guests US$1,750. Four days, all meals and camp activities included.. Travel-accident insurance is included.",
       "groupSize": "2–6 guests (private departure)",
       "hotelStandard": "Three nights in a traditional black yak-hair tent at the nomadic camp; one night in a Chengdu hotel at either end",
       "cancellation": [
@@ -428,7 +430,7 @@
     "wechat": "Add us on WeChat",
     "wechatId": "WeChat ID: chengdujourneys",
     "pricing": "Published prices, no hidden extras",
-    "pricingNote": "Every route now lists its price per person: the city walk from US$39, the Western Sichuan loop from US$690, and the nomad camp from US$1,750. What changes the final figure is group size and hotel level — tell us those two things and we will confirm your exact total."
+    "pricingNote": "Every route now lists its price per person, and every price includes domestic travel-accident insurance: the city walk from US$39, the Western Sichuan loop from US$690, and the nomad camp from US$1,750. What changes the final figure is group size and hotel level — tell us those two things and we will confirm your exact total."
   },
   "howItWorks": {
     "title": "How it works",
@@ -463,7 +465,7 @@
     "q4": "How small are the groups, and can I book a private trip?",
     "a4": "Our scheduled departures run with 2 to 8 travellers, which keeps us light enough for small guesthouses and quiet monasteries that large coaches cannot reach. If you prefer your own dates and pace we run private departures for solo travellers, couples, families and friend groups all year round.",
     "q5": "What does a Western Sichuan tour typically cost, and what is included?",
-    "a5": "Every route lists a price per person: the Tibetan walking tour from US$39, the Western Sichuan highland loop from US$690 (3 days) up to US$1,390 (7 days), and the nomad camp from US$1,999 for a group of four, down to US$1,750 per person at five or six guests. A standard quote covers the private vehicle and driver, an English-speaking local guide, accommodation, entrance fees to monasteries and scenic areas, and travel insurance coordination. International flights and personal shopping are not included.",
+    "a5": "Every route lists a price per person, and travel-accident insurance is included in the price: the Tibetan walking tour from US$39, the Western Sichuan highland loop from US$690 (3 days) up to US$1,390 (7 days), and the nomad camp from US$1,999 for a group of four, down to US$1,750 per person at five or six guests. A standard quote covers the private vehicle and driver, an English-speaking local guide, accommodation, entrance fees to monasteries and scenic areas, and domestic travel-accident insurance including highland rescue. International flights and personal shopping are not included.",
     "q6": "Can you accommodate non-English speakers or specific dietary needs?",
     "a6": "Yes. Our guides speak English, Mandarin and Tibetan, and we also run trips in Spanish and Thai on request. Vegetarian, vegan, halal and gluten-free meals can be arranged along the route - just tell us at the time of booking so we can brief each guesthouse in advance."
   },
