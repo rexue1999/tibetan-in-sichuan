@@ -4,7 +4,10 @@
     "trips": "Viajes",
     "why": "Por qué nosotros",
     "gallery": "Galería",
-    "contact": "Contacto"
+    "contact": "Contacto",
+    "guides": "Guías",
+    "about": "Nosotros",
+    "reviews": "Opiniones"
   },
   "hero": {
     "brand": "CHENGDU JOURNEYS",
@@ -218,5 +221,561 @@
   "seo": {
     "tagline": "Viajes en grupo pequeño por la cultura tibetana y el oeste de China",
     "description": "Viajes en grupos pequeños desde Chengdu hacia la cultura tibetana, paisajes de tierras altas y la vida nómada en el oeste de Sichuan. Tours tibetanos a pie, rutas de templos y experiencias auténticas de estancia."
+  },
+  "guideIndex": {
+    "label": "Notas de viaje",
+    "title": "Guías de viaje para Chengdu y el altiplano tibetano",
+    "subtitle": "Notas prácticas desde el camino: altitud, estaciones, etiqueta y equipaje, escritas para quienes viajan por primera vez al oeste de Sichuan.",
+    "readMore": "Leer la guía",
+    "minutes": "min de lectura",
+    "updated": "Actualizado",
+    "back": "Todas las guías",
+    "toc": "En esta guía",
+    "relatedTitle": "Seguir leyendo",
+    "ctaTitle": "¿Tienes una pregunta que no respondemos aquí?",
+    "ctaText": "Escríbenos por WhatsApp y te responderá una persona real, normalmente en pocas horas.",
+    "ctaButton": "Preguntar por WhatsApp",
+    "published": "Publicado"
+  },
+  "guides": {
+    "altitude-sickness": {
+      "title": "Mal de altura en el oeste de Sichuan: cómo prepararse y qué hacer",
+      "excerpt": "Casi todos sienten algo por encima de los 3.000 m. Aquí explicamos cómo llegar bien, reconocer las señales de alarma y qué ayuda de verdad, según lo que vemos en la ruta.",
+      "metaTitle": "Mal de Altura en Sichuan: Síntomas, Prevención y Qué Hacer",
+      "metaDesc": "Cómo prevenir y manejar el mal de altura en el oeste de Sichuan y el altiplano tibetano. Alturas reales de Chengdu, Kangding, Tagong y Litang, y cuándo descender.",
+      "sections": [
+        {
+          "heading": "La versión corta",
+          "body": [
+            "Casi todo el que viaja al altiplano de Sichuan pasa en algún momento por encima de los 3.000 metros. La mayoría siente síntomas leves durante un día y luego está bien. Unos pocos se ponen realmente mal, y el único remedio fiable es perder altura.",
+            "El hábito más útil es ganar altura despacio. Chengdu está a unos 500 m. Kangding ya está a 2.560 m. Es un salto de dos kilómetros en un solo día de coche, y es donde mucha gente lo nota por primera vez."
+          ]
+        },
+        {
+          "heading": "Las alturas que vas a encontrar de verdad",
+          "body": [
+            "Conocer las cifras te ayuda a planificar días de descanso con criterio en lugar de a ojo."
+          ],
+          "table": {
+            "headers": [
+              "Lugar",
+              "Altitud",
+              "Notas"
+            ],
+            "rows": [
+              [
+                "Chengdu",
+                "≈ 500 m",
+                "Punto de partida, sin necesidad de aclimatación"
+              ],
+              [
+                "Kangding",
+                "2.560 m",
+                "Primera noche habitual; posibles síntomas leves"
+              ],
+              [
+                "Tagong",
+                "3.700 m",
+                "Aquí la mayoría nota el aire fino"
+              ],
+              [
+                "Xinduqiao",
+                "3.460 m",
+                "Similar a Tagong, se usa a menudo para dormir"
+              ],
+              [
+                "Litang",
+                "4.014 m",
+                "Una de las ciudades más altas del mundo; tómatelo con calma"
+              ],
+              [
+                "Puerto de Zheduo",
+                "4.298 m",
+                "Solo de paso, no te quedes ni duermas aquí"
+              ]
+            ]
+          }
+        },
+        {
+          "heading": "Qué ayuda de verdad",
+          "body": [
+            "Sube gradualmente. Si el itinerario lo permite, pasa la primera noche en Kangding en lugar de subir directo a 3.700 m. Nuestro viaje nómada de cuatro días está diseñado así a propósito.",
+            "Bebe más agua de la que te parezca necesario. El aire seco del altiplano y la respiración más rápida deshidratan deprisa, y la deshidratación empeora notablemente los síntomas.",
+            "Evita el alcohol las dos primeras noches. Interrumpe el sueño, que es justo lo que tu cuerpo necesita para adaptarse.",
+            "Come con normalidad, aunque no tengas apetito. Los carbohidratos se digieren mejor en altura que las comidas grasas.",
+            "No aguantes un dolor de cabeza. Un dolor leve es normal el primer día. Si empeora pese al agua y el descanso, es tu señal para dejar de subir."
+          ]
+        },
+        {
+          "heading": "Síntomas que hay que tomar en serio",
+          "body": [
+            "El mal de altura leve se parece a una resaca: dolor de cabeza, cansancio, poco apetito, sueño irregular, náuseas ocasionales. Normalmente se estabiliza en uno o dos días mientras el cuerpo se adapta.",
+            "Busca atención médica y desciende si aparece cualquiera de estos signos. Apuntan a líquido en los pulmones o inflamación cerebral, y ambos son urgencias."
+          ],
+          "list": [
+            "Falta de aire en reposo, o tos que no cede",
+            "Confusión, habla arrastrada o inestabilidad al caminar",
+            "Vómitos que impiden retener agua",
+            "Dolor de cabeza que sigue empeorando tras un día entero de descanso",
+            "Labios o puntas de los dedos azulados"
+          ]
+        },
+        {
+          "heading": "Medicación y oxígeno",
+          "body": [
+            "La acetazolamida se receta habitualmente como prevención y conviene comentarla con tu médico antes de viajar, sobre todo si ya has reaccionado mal a la altura. No sustituye a subir despacio.",
+            "Los analgésicos simples funcionan bien para el dolor de cabeza típico de la altura. Muchos vehículos llevan una bombona pequeña de oxígeno, y los hoteles a mayor altitud suelen tener una; unos minutos alivian temporalmente, pero no aclimatan.",
+            "Si tienes una afección cardiaca o pulmonar, o estás embarazada, habla con un médico antes de reservar un itinerario de altura. Podemos ajustar el ritmo o mantenerlo por debajo de los 3.000 m."
+          ]
+        },
+        {
+          "heading": "Si viajas con niños",
+          "body": [
+            "Los niños suelen adaptarse igual o mejor que los adultos, pero puede que no sepan explicar qué les pasa. Vigila irritabilidad inusual, somnolencia o un niño que de pronto rechaza comer. Mantén el ritmo flexible y trata los puertos altos como lugares de paso, no de juego."
+          ]
+        }
+      ],
+      "faq": [
+        {
+          "q": "¿Necesito medicación para la altura antes de llegar a Chengdu?",
+          "a": "No. Chengdu está a unos 500 m y allí no hace falta nada. Si tu itinerario supera los 3.000 m, empieza cualquier medicación preventiva el día antes de ganar altura significativa, siguiendo el consejo de tu médico."
+        },
+        {
+          "q": "¿Puedo ir a Tagong o Litang si nunca he estado por encima de 2.000 m?",
+          "a": "Sí, y muchos de nuestros huéspedes lo hacen. La clave es el ritmo: duerme bajo las primeras una o dos noches, mantén ligero el primer día en altura y bebe agua. Avísanos y añadiremos descanso extra."
+        },
+        {
+          "q": "¿Vale la pena llevar oxígeno en botella?",
+          "a": "Ayuda para un alivio puntual y para tranquilidad, pero no acelera la aclimatación. Úsalo si te encuentras mal y luego descansa o desciende, en lugar de confiar en él para seguir subiendo."
+        }
+      ]
+    },
+    "best-time-to-visit": {
+      "title": "La mejor época para visitar el oeste de Sichuan, mes a mes",
+      "excerpt": "Flores de primavera, pastos de verano, color de otoño y la luz dura del invierno: cómo se ve cada estación sobre el terreno y cuál encaja con el viaje que buscas.",
+      "metaTitle": "Mejor Época para Visitar el Oeste de Sichuan: Guía por Meses",
+      "metaDesc": "Cuándo viajar al oeste de Sichuan y al altiplano tibetano. Clima por estaciones, estado de las carreteras, color de los pastos y festivales en Kangding, Tagong y Zoige.",
+      "sections": [
+        {
+          "heading": "La versión corta",
+          "body": [
+            "Para la mayoría de viajeros, el punto óptimo va de finales de mayo a principios de octubre. Los pastos están verdes, los puertos abren con fiabilidad y los días son lo bastante cálidos para sentarse fuera.",
+            "De mediados de octubre a mediados de noviembre es la estación del fotógrafo: alerces y álamos dorados, aire limpio y mucha menos gente. De noche hace frío.",
+            "El invierno y el principio de la primavera son tranquilos, baratos y hermosos de una forma austera, pero algunos puertos altos cierran y muchas casas de huéspedes echan el cierre."
+          ]
+        },
+        {
+          "heading": "Primavera — de marzo a mayo",
+          "body": [
+            "Marzo sigue siendo invierno en altura. Los puertos pueden cerrarse sin aviso y los pastos están marrones. En abril los valles bajos se templan y aparece la flor del albaricoquero y del melocotonero en Danba y el valle del Dadu.",
+            "Mayo es cuando la temporada abre de verdad. La hierba empieza a verdecer, los días son suaves y las carreteras son fiables. Si quieres flores sin las multitudes del verano, apunta a la segunda mitad de mayo."
+          ]
+        },
+        {
+          "heading": "Verano — de junio a agosto",
+          "body": [
+            "Es la temporada alta de los pastos. Tagong y los humedales de Zoige están de un verde vivo, los yaks pastan en número y las familias nómadas viven en sus campamentos de verano, que es lo que hace que nuestra estancia nómada funcione mejor en estos meses.",
+            "También es la temporada de lluvias. Espera chubascos de tarde más que lluvia de todo el día, y desprendimientos ocasionales en las carreteras de montaña. Las mañanas suelen estar despejadas, así que adelantamos la conducción escénica.",
+            "El verano es temporada alta de vacaciones nacionales, sobre todo en las vacaciones escolares de julio y agosto. Reserva alojamiento con antelación y cuenta con miradores concurridos al mediodía."
+          ]
+        },
+        {
+          "heading": "Otoño — de septiembre a noviembre",
+          "body": [
+            "Septiembre y principios de octubre combinan pastos verdes con tiempo estable, y son posiblemente los mejores meses en conjunto. El cielo está más limpio que en verano y la lluvia ha amainado.",
+            "Desde mediados de octubre llega el cambio de color. Los alerces se vuelven dorados en los valles altos y la luz se hace más limpia y dura. Las noches bajan de cero en altura.",
+            "La primera semana de octubre es fiesta nacional y el periodo de viaje más concurrido del año en China. Salvo que quieras el ambiente festivo, viaja antes o después."
+          ]
+        },
+        {
+          "heading": "Invierno — de diciembre a febrero",
+          "body": [
+            "El invierno es seco, frío y extremadamente claro. Los picos nevados contra un azul profundo lo convierten en favorito de los fotógrafos de paisaje, y los precios están en su punto más bajo.",
+            "Las contrapartidas son reales: algunos puertos altos cierran tras las nevadas, muchas casas familiares cierran y las temperaturas diurnas a 3.700 m pueden quedarse bajo cero. Nuestra estancia nómada solo funciona en los meses cálidos por este motivo.",
+            "Si viajas en invierno, deja margen. Un puerto cerrado puede añadir horas a un trayecto, y la flexibilidad importa más que un horario fijo."
+          ]
+        },
+        {
+          "heading": "Festivales con los que merece la pena coincidir",
+          "body": [
+            "El Año Nuevo tibetano (Losar) cae en febrero o marzo según el calendario lunar y es la fiesta más importante de la región. Muchos negocios cierran mientras las familias celebran en casa, pero el ambiente en pueblos como Kangding es extraordinario.",
+            "Las carreras de caballos en los pastos suelen celebrarse en verano, a menudo en julio o agosto según la localidad. Las fechas varían por condado y se confirman tarde, así que pregúntanos si quieres planear alrededor de una.",
+            "Los festivales monásticos con danzas cham enmascaradas ocurren en distintos momentos del año. Son ceremonias religiosas más que espectáculos, y los visitantes pueden mirar con respeto."
+          ]
+        }
+      ],
+      "faq": [
+        {
+          "q": "¿Cuál es el mejor mes para un primer viaje?",
+          "a": "Septiembre. Los pastos siguen verdes, la lluvia de verano ha pasado, el cielo está despejado y las carreteras son fiables. Además hay menos gente que en julio y agosto."
+        },
+        {
+          "q": "¿Cuánto frío hace de noche en verano?",
+          "a": "A 3.700 m, espera dígitos bajos en grados centígrados incluso en julio, y cerca de cero en noches despejadas. Lleva una capa térmica y una capa exterior cortavientos sea cual sea la estación."
+        },
+        {
+          "q": "¿La temporada de lluvias es un problema para viajar?",
+          "a": "Rara vez. La lluvia suele llegar en ratos cortos por la tarde, no durante todo el día. El riesgo real son los desprendimientos en carreteras de montaña tras lluvias fuertes, que a veces obligan a cambiar de ruta; vigilamos las condiciones y nos adaptamos."
+        }
+      ]
+    },
+    "tibetan-culture-etiquette": {
+      "title": "Etiqueta en la cultura tibetana: guía práctica para visitantes",
+      "excerpt": "Monasterios, banderas de oración, bufandas de ofrenda y fotografía de personas: los pequeños detalles que marcan una diferencia real en cómo te reciben.",
+      "metaTitle": "Etiqueta en la Cultura Tibetana: Normas en Monasterios",
+      "metaDesc": "Cómo comportarse con respeto en monasterios y comunidades tibetanas. Vestimenta, fotografía, banderas de oración, katas y costumbres explicadas para quien visita por primera vez.",
+      "sections": [
+        {
+          "heading": "El principio detrás de las normas",
+          "body": [
+            "Casi toda la etiqueta en zonas tibetanas vuelve a una idea: son comunidades vivas y lugares religiosos en funcionamiento, no atracciones construidas para visitantes. Si te comportas como un invitado en casa de alguien y en su lugar de culto, acertarás en la gran mayoría de los casos.",
+            "Nadie espera que lo sepas todo. Lo que la gente nota es si lo intentas."
+          ]
+        },
+        {
+          "heading": "En monasterios y templos",
+          "body": [
+            "Camina en sentido horario alrededor de monasterios, stupas y circuitos de ruedas de oración. Es la dirección de circunvalación, y hacerlo al revés es el error más común entre visitantes.",
+            "Quítate el sombrero dentro de las salas del templo. No apuntes con los pies hacia estatuas o monjes, y evita sentarte con las piernas estiradas hacia un altar.",
+            "No toques estatuas, tangkas ni objetos rituales, y no los pises ni los saltes. Si quieres mirar más de cerca, pide permiso: casi siempre lo conceden con gusto.",
+            "La fotografía dentro de las salas suele estar prohibida y a veces se permite pagando. Busca carteles y, en caso de duda, pregunta antes de levantar la cámara. Que un monje diga no no es antipatía; algunas salas guardan objetos consagrados."
+          ]
+        },
+        {
+          "heading": "Banderas de oración",
+          "body": [
+            "Las banderas de oración llevan impresos sutras y mantras, y se entiende que el viento transporta las bendiciones que contienen. Son material religioso, no decoración.",
+            "No te subas a los montones de banderas para hacer fotos, ni te lleves banderas como recuerdo. Si están colocando banderas y te invitan a ayudar, participa: es un gesto genuino de integración."
+          ]
+        },
+        {
+          "heading": "La kata, la bufanda de ofrenda",
+          "body": [
+            "Una kata es una bufanda de seda o algodón que se entrega como señal de respeto y bienvenida. Es probable que recibas alguna. Acéptala con las dos manos y, si te la ofrecen alrededor del cuello, inclínate ligeramente hacia delante.",
+            "Si quieres entregar tú una kata, sostenla con las dos manos a la altura del pecho. Al ofrecérsela a un monje o a una persona mayor, es costumbre inclinarse al presentarla."
+          ]
+        },
+        {
+          "heading": "Fotografiar a las personas",
+          "body": [
+            "Pregunta siempre primero, incluso cuando la respuesta parezca obvia. Un gesto hacia la cámara y una mirada interrogativa funcionan perfectamente en cualquier idioma.",
+            "Cuenta con que algunas personas dirán que no, y acéptalo sin insistir. Los nómadas y las personas mayores de zonas rurales suelen negarse más que los jóvenes en las ciudades.",
+            "Si fotografías a alguien y te pide ver el resultado, mostrarle la pantalla es una pequeña amabilidad que casi siempre lleva a un encuentro más cálido. Enviar una copia después, si puedes, es aún mejor.",
+            "Sé prudente al fotografiar a peregrinos en prosternación u oración. Están en plena devoción y una cámara en ese momento puede sentirse como una intromisión."
+          ]
+        },
+        {
+          "heading": "Comida, té y hospitalidad",
+          "body": [
+            "Si te ofrecen té con mantequilla o tsampa, acepta al menos un sorbo o una cata. Rechazar la hospitalidad de plano se interpreta como rechazo, no como preferencia alimentaria.",
+            "El té con mantequilla es salado, no dulce, y sorprende a muchos visitantes. Beberlo despacio es perfectamente aceptable.",
+            "Al comer con una familia, espera a que te indiquen dónde sentarte y deja que tu anfitrión empiece primero. Si te dan el asiento de honor, acéptalo con una inclinación en lugar de protestar largamente.",
+            "No toques la cabeza de nadie. En la costumbre tibetana y budista en general, la cabeza se considera la parte más sagrada del cuerpo."
+          ]
+        },
+        {
+          "heading": "Algunos puntos prácticos",
+          "body": [
+            "Viste con modestia en lugares religiosos: cubre hombros y rodillas y evita pantalones muy cortos o camisetas de tirantes. Una bufanda ligera en la mochila lo resuelve al instante.",
+            "No des dinero directamente a los niños que lo pidan. Fomenta que falten a la escuela. Si quieres dar algo, dáselo a un progenitor o contribuye a una escuela o clínica local.",
+            "Algunos monasterios y regiones tienen restricciones de fotografía, drones y zonas concretas. Las normas cambian, y te informaremos de las condiciones actuales para los lugares concretos de tu itinerario."
+          ]
+        }
+      ],
+      "faq": [
+        {
+          "q": "¿Hay que ser budista para visitar un monasterio?",
+          "a": "En absoluto. Los visitantes de cualquier fe o sin fe son bienvenidos en la mayoría de monasterios. Lo que importa es un comportamiento respetuoso: voces bajas, vestimenta modesta y preguntar antes de fotografiar."
+        },
+        {
+          "q": "¿Es apropiado dar donativos en los monasterios?",
+          "a": "Sí, y los billetes pequeños son totalmente normales. Suele haber una caja cerca de la sala principal. Los donativos sostienen el monasterio y a los monjes que viven allí."
+        },
+        {
+          "q": "¿Puedo hacer fotos de las banderas de oración?",
+          "a": "Sí. La sensibilidad tiene que ver con el trato, no con la fotografía. No te subas a los montones, no te envuelvas con ellas ni te las lleves como recuerdo."
+        }
+      ]
+    },
+    "what-to-pack": {
+      "title": "Qué llevar en un viaje al oeste de Sichuan",
+      "excerpt": "Una lista breve y honesta, hecha con lo que los huéspedes olvidan de verdad: capas, protección solar y los pequeños objetos que hacen cómodas las noches en altura.",
+      "metaTitle": "Lista de Equipaje para Sichuan Occidental y Tíbet",
+      "metaDesc": "Lista práctica de equipaje para el oeste de Sichuan y el altiplano tibetano. Consejos de capas, protección solar, esenciales de altura y qué puedes dejar en casa.",
+      "sections": [
+        {
+          "heading": "La única regla que importa",
+          "body": [
+            "Empaqueta por capas, no en cantidad. Un solo día en el altiplano puede pasar de tiempo de camiseta al sol a casi helar de noche, y el mismo viaje cubre un valle húmedo de Chengdu y un puerto de 4.298 m.",
+            "Tres capas —una base, una intermedia que aísle y una exterior cortavientos o impermeable— cubrirán casi cualquier condición entre mayo y octubre."
+          ]
+        },
+        {
+          "heading": "Ropa",
+          "body": [
+            "Capas base: dos o tres camisetas o mangas largas de secado rápido. El algodón se queda húmedo y frío, así que mejor merino o sintético.",
+            "Capa intermedia: un forro polar o una chaqueta ligera de plumas. Es la capa con la que vivirás por las mañanas y las noches.",
+            "Capa exterior: una chaqueta cortavientos y resistente al agua. El viento en un puerto de 4.000 m es lo que los visitantes subestiman más.",
+            "Pantalones: uno cómodo para días de viaje y otro más cálido o con forro para días de altura. Evita los vaqueros en trayectos largos.",
+            "Gorro de abrigo y guantes. Incluso en pleno verano, una noche despejada a 3.700 m puede bajar cerca de cero.",
+            "Calzado cómodo con algo de agarre, más sandalias o zapatos fáciles para casas de huéspedes y trayectos largos."
+          ]
+        },
+        {
+          "heading": "Sol y clima",
+          "body": [
+            "El sol del altiplano es intenso, y la exposición UV a 3.700 m es bastante mayor que al nivel del mar. Las quemaduras llegan rápido, incluso en días nublados.",
+            "Lleva protector solar de factor alto y reaplícalo durante el día, gafas de sol con protección UV real y un sombrero de ala ancha o gorra con visera. El bálsamo labial con SPF vale su peso: el aire seco agrieta los labios en un par de días."
+          ]
+        },
+        {
+          "heading": "Salud y altitud",
+          "body": [
+            "Cualquier medicación personal, en su envase original, en el equipaje de mano y no facturado. Las farmacias en pueblos de altura son limitadas.",
+            "Analgésicos simples para los dolores de cabeza de altura, más sobres de rehidratación. Un botiquín pequeño con tiritas y antiséptico básico cubre casi todo lo menor.",
+            "Si tu médico te ha recetado acetazolamida, llévala y empieza a tomarla según lo indicado, no a la llegada.",
+            "Una botella de agua rellenable. Mantenerse hidratado reduce de verdad los síntomas, y beberás más si no tienes que buscar botellas."
+          ]
+        },
+        {
+          "heading": "Equipo práctico",
+          "body": [
+            "Una batería portátil. Los trayectos largos y las noches frías agotan el móvil, y los enchufes en casas rurales son escasos.",
+            "Un adaptador universal. China usa enchufes tipo A, C e I a 220 V.",
+            "Una linterna frontal o pequeña para casas de huéspedes y salidas tempranas.",
+            "Pañuelos y gel desinfectante. Muchos baños rurales no tienen papel ni agua corriente.",
+            "Una mochila ligera de día para la cámara, el agua y una capa en los días de caminata."
+          ]
+        },
+        {
+          "heading": "Lo que puedes dejar en casa",
+          "body": [
+            "Botas pesadas. Salvo que planees trekking serio, zapatillas de trail o deportivas robustas bastan para lo que se camina en nuestros itinerarios.",
+            "Una maleta grande y rígida. Los vehículos son cómodos pero el maletero es finito, y un bulto blando o una maleta mediana viaja mucho mejor por carreteras de altura.",
+            "Equipo fotográfico excesivo. La tentación de llevarlo todo es fuerte, pero un objetivo versátil más una batería de repuesto se usará mucho más que una bolsa pesada.",
+            "Ropa formal. Nada en nuestros itinerarios la requiere."
+          ]
+        }
+      ],
+      "faq": [
+        {
+          "q": "¿Puedo comprar ropa de abrigo en Chengdu?",
+          "a": "Sí. Chengdu tiene bastantes tiendas de outdoor y un Decathlon grande, y los precios de lo básico son razonables. Si vas justo de espacio, comprar capas al llegar es una opción práctica."
+        },
+        {
+          "q": "¿De verdad necesito plumífero en verano?",
+          "a": "Una capa ligera de plumas o forro polar, sí. Las temperaturas diurnas son agradables, pero mañanas, noches y cualquier momento por encima de 4.000 m pueden ser realmente fríos incluso en julio."
+        },
+        {
+          "q": "¿Hay dónde lavar ropa?",
+          "a": "Los hoteles de Kangding y pueblos mayores ofrecen lavandería, aunque puede tardar un día. Lavar a mano ropa de secado rápido en la pila de una casa de huéspedes es más sencillo en viajes cortos."
+        }
+      ]
+    },
+    "chengdu-to-tibet-transport": {
+      "title": "De Chengdu al altiplano tibetano: cómo llegar",
+      "excerpt": "Carretera, avión o tren: cómo se comparan las opciones principales, cuánto se tarda de verdad y cuál encaja con el viaje que tienes en mente.",
+      "metaTitle": "Chengdu a Tíbet y Sichuan Occidental: Opciones de Transporte",
+      "metaDesc": "Cómo viajar de Chengdu al altiplano tibetano. Rutas por carretera de la G318, vuelos a Kangding y Daocheng, autobuses y qué implica cada opción.",
+      "sections": [
+        {
+          "heading": "Primero, una aclaración que importa",
+          "body": [
+            "Dos destinos distintos se llaman a menudo \"Tíbet\", y sus logísticas son muy diferentes.",
+            "El altiplano tibetano se extiende mucho más allá de la Región Autónoma del Tíbet. El oeste de Sichuan —Kangding, Tagong, Litang, Danba, Zoige— es étnica y culturalmente tibetano, está en el altiplano y se alcanza desde Chengdu por carretera sin permisos especiales.",
+            "La Región Autónoma del Tíbet, con Lhasa en su centro, es un área administrativa distinta. Requiere un permiso tramitado por una agencia autorizada y no se permite viajar por libre. Si Lhasa es tu objetivo, cuenta con un tour guiado y varias semanas de papeleo.",
+            "La mayoría de quienes buscan montañas, monasterios y cultura nómada descubren que el oeste de Sichuan lo ofrece sin permisos ni el shock de altura de volar directo a 3.650 m."
+          ]
+        },
+        {
+          "heading": "Por carretera desde Chengdu",
+          "body": [
+            "La ruta clásica sale de Chengdu hacia el oeste por la G318, la carretera Sichuan–Tíbet, subiendo por Ya'an y cruzando la sierra de Erlang Shan hasta Kangding.",
+            "El tiempo de conducción de Chengdu a Kangding es de unas cinco a siete horas según el tráfico al salir de la ciudad y las condiciones del puerto. Desde Kangding la carretera sigue a Xinduqiao, Tagong y finalmente Litang.",
+            "Es la opción que recomendamos a la mayoría. La subida gradual da tiempo al cuerpo a adaptarse, el paisaje se construye progresivamente y puedes parar donde quieras en lugar de verlo pasar desde una ventanilla.",
+            "Las distancias parecen cortas en el mapa y no lo son. Las carreteras de montaña promedian quizá 40–50 km/h, y un desprendimiento o unas obras pueden añadir horas. Deja margen si conduces tú."
+          ]
+        },
+        {
+          "heading": "En avión",
+          "body": [
+            "Kangding tiene un aeropuerto a unos 4.280 m, y Daocheng Yading otro a unos 4.410 m. Ambos están entre los aeropuertos comerciales más altos del mundo.",
+            "Volar te lleva en una hora, pero te deja a altitud muy alta sin aclimatación alguna. Una proporción significativa de quienes vuelan directo a cualquiera de los dos se siente mal al llegar, a veces como para pasar el primer día en la cama.",
+            "Si vuelas, trata el primer día como día de descanso. No programes un puerto alto ni un trayecto largo. Bebe agua, come ligero y duerme pronto."
+          ]
+        },
+        {
+          "heading": "Autobús y minivan compartida",
+          "body": [
+            "Hay autobuses regulares desde las estaciones de Chadianzi y Xinnanmen en Chengdu hasta Kangding, y servicios que continúan a Tagong y Litang. Son baratos y fiables.",
+            "Las minivans compartidas cubren los lugares más pequeños y salen cuando se llenan, no con horario. Son la forma local estándar de moverse entre pueblos de altura.",
+            "La limitación es el horario fijo y la nula flexibilidad para parar a ver el paisaje, que en esta carretera es buena parte del sentido del viaje."
+          ]
+        },
+        {
+          "heading": "Cómo lo resolvemos nosotros",
+          "body": [
+            "En nuestros viajes conducimos, con vehículo y conductor que conocen la ruta. Eso significa parar cuando la luz es buena, ajustar cuando llega el mal tiempo y marcar el ritmo de ascenso a propósito en lugar de por horario.",
+            "A quienes llegan de fuera les sugerimos normalmente una noche en Chengdu primero. Cuesta un día, resetea el reloj biológico y hace que empieces la subida descansado en lugar de con jet lag."
+          ]
+        }
+      ],
+      "faq": [
+        {
+          "q": "¿Necesito permiso para visitar el oeste de Sichuan?",
+          "a": "No. Kangding, Tagong, Xinduqiao, Danba y los pastos de Zoige están abiertos a visitantes extranjeros sin permiso especial. La Región Autónoma del Tíbet es otro asunto y sí lo requiere."
+        },
+        {
+          "q": "¿Cuánto se tarda de Chengdu a Kangding?",
+          "a": "Normalmente de cinco a siete horas, según lo rápido que salgas del tráfico de Chengdu y las condiciones del puerto de montaña. Con mal tiempo o tras un desprendimiento puede tardar bastante más."
+        },
+        {
+          "q": "¿Debería volar a Kangding para ahorrar tiempo?",
+          "a": "Solo si tu agenda es muy ajustada. El aeropuerto está a unos 4.280 m, y llegar allí desde el nivel del mar en una hora provoca síntomas de altura a muchos viajeros. Ir por carretera en dos días es mucho más suave."
+        }
+      ]
+    },
+    "first-time-tibet-travel": {
+      "title": "Tu primer viaje al altiplano tibetano: qué saber antes de reservar",
+      "excerpt": "Permisos, altitud, momento y expectativas: las decisiones que definen un primer viaje a territorio tibetano, explicadas sin discurso de venta.",
+      "metaTitle": "Primer Viaje al Tíbet: Guía de Planificación para Principiantes",
+      "metaDesc": "Planificar un primer viaje al altiplano tibetano. Permisos explicados, oeste de Sichuan frente a la Región Autónoma, preparación de altura, mejores estaciones y expectativas realistas.",
+      "sections": [
+        {
+          "heading": "Empieza por una decisión",
+          "body": [
+            "Antes que nada, decide a qué llamas Tíbet. La respuesta cambia tus permisos, tu presupuesto, tu itinerario y cuánta libertad tienes.",
+            "El oeste de Sichuan es culturalmente tibetano, está en el altiplano y está abierto al viaje independiente. La Región Autónoma alrededor de Lhasa requiere permiso, guía autorizado e itinerario fijo. Ninguno es mejor; son simplemente viajes distintos.",
+            "Si te atraen monasterios, pastos, familias nómadas y carreteras de alta montaña, el oeste de Sichuan lo ofrece todo con mucha menos burocracia. Si Lhasa y el Palacio de Potala son el objetivo, planifica la ruta del permiso."
+          ]
+        },
+        {
+          "heading": "Permisos, en breve",
+          "body": [
+            "Para la Región Autónoma del Tíbet, los viajeros extranjeros necesitan un Permiso de Viaje al Tíbet tramitado por una agencia autorizada. No puedes solicitarlo directamente ni viajar por libre una vez allí: un guía te acompaña en todo momento.",
+            "El trámite lleva tiempo y no está garantizado. Ciertas nacionalidades y ciertos periodos, sobre todo en torno a aniversarios sensibles, afrontan un escrutinio adicional. Solicítalo con mucha antelación y mantén planes flexibles.",
+            "Para el oeste de Sichuan nada de esto aplica. Lleva el pasaporte y ten en cuenta que algunos monasterios o zonas pueden restringir la fotografía ocasionalmente."
+          ]
+        },
+        {
+          "heading": "La altitud es lo que hay que respetar",
+          "body": [
+            "Es la parte que los primerizos subestiman más, y la que arruina viajes cuando se ignora.",
+            "Lhasa está a 3.650 m. Tagong a 3.700 m. Litang a 4.014 m. Llegar a cualquiera de ellas desde el nivel del mar es un shock físico real, y sus efectos no entienden de lo en forma que estés.",
+            "La solución es simple y poco glamurosa: gana altura gradualmente, bebe más agua de lo que parece razonable, evita el alcohol las primeras noches y no programes nada ambicioso tu primer día en altura.",
+            "Consulta nuestra guía dedicada a la altitud para el panorama completo."
+          ]
+        },
+        {
+          "heading": "Cuándo ir",
+          "body": [
+            "De finales de mayo a principios de octubre es la ventana fiable, con septiembre destacando por cielo despejado, pastos verdes y multitudes manejables.",
+            "El invierno es posible y puede ser espectacular, pero los puertos cierran, las casas de huéspedes cierran y la flexibilidad pasa de ser opcional a esencial.",
+            "Evita la primera semana de octubre salvo que quieras activamente el periodo de viaje más concurrido de China. Los precios de alojamiento se disparan y los sitios populares se llenan."
+          ]
+        },
+        {
+          "heading": "Cómo se sentirá de verdad",
+          "body": [
+            "Cuenta con trayectos largos. Las distancias en el altiplano se miden en horas más que en kilómetros, y una ruta que parece corta en el mapa puede llevar medio día.",
+            "Cuenta con infraestructura básica en zonas rurales. Las casas en zonas nómadas son cómodas pero sencillas, el agua caliente puede ser limitada y la señal móvil va y viene.",
+            "Cuenta con que lo inesperado se resuelva con calma. El tiempo cierra puertos, los festivales cambian de fecha y las carreteras necesitan obras. Quienes más disfrutan del altiplano son los que tratan el plan como una dirección y no como un contrato.",
+            "Y cuenta con momentos que lo justifican todo: luz de amanecer sobre un pico nevado, té con mantequilla en una tienda nómada, un patio de monasterio al alba sin nadie más."
+          ]
+        },
+        {
+          "heading": "Un primer itinerario realista",
+          "body": [
+            "Si tienes una semana y quieres hacerlo bien: dos noches en Chengdu para ajustarte y ver la ciudad, luego al oeste cruzando el puerto con primera noche en Kangding, después a Tagong y Xinduqiao para el paisaje de altura, y de vuelta.",
+            "Eso te da cultura tibetana real, altura real y tiempo para respirar, sin el ritmo brutal de intentar llegar a Lhasa por tierra en la misma semana."
+          ]
+        }
+      ],
+      "faq": [
+        {
+          "q": "¿Es el oeste de Sichuan un buen sustituto de Lhasa?",
+          "a": "Es una experiencia distinta más que un sustituto. El oeste de Sichuan te da cultura tibetana, monasterios, pastos y vida nómada con mucha más libertad y sin permisos. Lhasa ofrece el Palacio de Potala y los grandes centros monásticos, a cambio de un itinerario guiado y fijo."
+        },
+        {
+          "q": "¿Qué forma física necesito?",
+          "a": "Con moverse con soltura basta para nuestros itinerarios. No hay trekking técnico. El reto es la altitud más que el esfuerzo, y el ritmo importa mucho más que la forma física."
+        },
+        {
+          "q": "¿Con cuánta antelación debería planificar?",
+          "a": "Para el oeste de Sichuan, unas semanas suelen bastar, más si quieres alojamiento concreto en pleno verano. Para la Región Autónoma del Tíbet, deja al menos dos o tres meses para permisos y papeleo."
+        }
+      ]
+    }
+  },
+  "about": {
+    "label": "Quiénes somos",
+    "title": "Viajes pequeños, hechos por gente que vive aquí",
+    "subtitle": "Chengdu Journeys organiza viajes en grupos reducidos desde Chengdu al altiplano tibetano del oeste de Sichuan. Somos un equipo pequeño, mantenemos los grupos pequeños y recorremos las rutas que diseñamos.",
+    "factsTitle": "De un vistazo",
+    "facts": {
+      "founded": "En activo desde",
+      "groupSize": "Grupo típico",
+      "routes": "Rutas",
+      "languages": "Idiomas",
+      "base": "Base en"
+    },
+    "storyTitle": "Cómo empezó esto",
+    "story": [
+      "Marcador de posición — sustituye esta sección por tu propia historia. Qué te llevó a este trabajo, cómo se armó el primer viaje y qué querías hacer distinto de los tours que habías visto.",
+      "Unas frases escritas con sencillez harán más que un texto de marketing pulido. El lector intenta averiguar si puede confiarte una semana de sus vacaciones, y la versión honesta de cómo empezaste es lo más persuasivo de esta página.",
+      "Si hay un momento concreto que lo desencadenó —un lugar, una persona, un viaje que salió mal y te enseñó algo—, ese es el detalle que merece quedarse."
+    ],
+    "valuesTitle": "Nuestro compromiso",
+    "values": {
+      "v1": {
+        "title": "Grupos pequeños, siempre",
+        "text": "Limitamos los grupos para que el ritmo siga siendo humano, el vehículo sea cómodo y los guías tengan tiempo para todos."
+      },
+      "v2": {
+        "title": "Guías de las comunidades que visitamos",
+        "text": "Quienes te muestran estos lugares viven en ellos. Eso significa conocimiento real, relaciones reales y dinero que se queda en la zona."
+      },
+      "v3": {
+        "title": "Rutas y precios honestos",
+        "text": "Lo que está incluido se dice con claridad, y lo que no, también. Si una ruta no es para ti, lo diremos en lugar de venderla."
+      },
+      "v4": {
+        "title": "Flexibilidad cuando cambia el tiempo",
+        "text": "En el altiplano los puertos cierran y los planes cambian. Dejamos margen en los itinerarios y nos adaptamos en lugar de forzar un horario."
+      }
+    },
+    "teamTitle": "Las personas con las que viajarás",
+    "teamNote": "Los perfiles de abajo son provisionales: nombres, fotografías e historias reales se completarán en breve.",
+    "speaks": "Habla",
+    "langNames": {
+      "en": "Inglés",
+      "zh": "Chino",
+      "th": "Tailandés",
+      "es": "Español"
+    },
+    "ctaTitle": "¿Preguntas antes de reservar?",
+    "ctaText": "Escríbenos y responderemos con honestidad, incluso cuando una ruta no encaje.",
+    "ctaButton": "Contactar"
+  },
+  "reviews": {
+    "label": "En sus palabras",
+    "title": "Lo que dicen nuestros viajeros",
+    "subtitle": "Comentarios de huéspedes que han viajado con nosotros, compartidos con su permiso.",
+    "empty": "Las reseñas aparecerán aquí a medida que nos lleguen. Mientras tanto, escríbenos y te pondremos en contacto con huéspedes anteriores.",
+    "emptyCta": "Pedir referencias",
+    "verified": "Viajero verificado",
+    "routeLabel": "Ruta",
+    "readMore": "Ver todas las reseñas",
+    "homeTitle": "Lo que dicen los viajeros",
+    "homeEmpty": "Estamos recopilando reseñas de huéspedes recientes: pregúntanos y compartiremos referencias directamente.",
+    "general": "Comentario general"
+  },
+  "seoPagesExtra": {
+    "guidesIndexTitle": "Guías de Viaje de Sichuan y Tíbet - Altitud y Estaciones",
+    "guidesIndexDesc": "Guías prácticas de viaje para Chengdu, el oeste de Sichuan y el altiplano tibetano. Mal de altura, mejores estaciones, equipaje, etiqueta cultural y transporte.",
+    "aboutTitle": "Sobre Chengdu Journeys - Tours en Grupo Reducido",
+    "aboutDesc": "Conoce al equipo de Chengdu Journeys. Viajes en grupos reducidos desde Chengdu al oeste tibetano de Sichuan, guiados por personas de las comunidades que visitamos.",
+    "reviewsTitle": "Opiniones de Viajeros - Chengdu Journeys Sichuan y Tíbet",
+    "reviewsDesc": "Lee lo que dicen los viajeros sobre nuestros viajes en grupo reducido desde Chengdu al altiplano tibetano del oeste de Sichuan."
   }
 }

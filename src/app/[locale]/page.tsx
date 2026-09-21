@@ -2,8 +2,16 @@ import { getTranslations } from 'next-intl/server';
 import Link from 'next/link';
 import RouteCard from './route-card';
 import { buildLocalizedAlternates } from '../../lib/seo';
+import { guides } from '../../content/guides';
+import { publishedReviews, reviewText } from '../../content/reviews';
 
 const routeSlugs = ['tibetan-walk-chengdu', 'go-west-go-tibet', 'tibetan-nomad'];
+
+/** Most recent three reviews, newest first. Empty until reviews are added. */
+const homeReviews = publishedReviews.slice(0, 3);
+
+/** Three guides to surface on the homepage. */
+const homeGuides = guides.slice(0, 3);
 
 export async function generateMetadata({
   params: { locale },
@@ -49,6 +57,9 @@ export default async function Home({ params: { locale } }: { params: { locale: s
   const tc = await getTranslations({ locale, namespace: 'cta' });
   const tu = await getTranslations({ locale, namespace: 'upsell' });
   const tf = await getTranslations({ locale, namespace: 'faq' });
+  const trv = await getTranslations({ locale, namespace: 'reviews' });
+  const tgi = await getTranslations({ locale, namespace: 'guideIndex' });
+  const tgd = await getTranslations({ locale, namespace: 'guides' });
 
   return (
     <>
@@ -260,6 +271,90 @@ export default async function Home({ params: { locale } }: { params: { locale: s
               src="/videos/peaks.mp4"
               autoPlay muted loop playsInline preload="metadata"
             />
+          </div>
+        </div>
+      </section>
+
+      {/* ==============================
+          REVIEWS STRIP
+          Renders only once at least one real review is published.
+          ============================== */}
+      {homeReviews.length > 0 && (
+        <section id="reviews" className="py-24 md:py-32 px-6 bg-[#F5F2ED]">
+          <div className="max-w-5xl mx-auto">
+            <SectionTitle label={trv('label')} title={trv('homeTitle')} />
+            <div className="mt-12 grid md:grid-cols-3 gap-6">
+              {homeReviews.map((r) => (
+                <blockquote key={r.id} className="bg-white rounded-sm p-7 flex flex-col">
+                  {typeof r.rating === 'number' && (
+                    <div className="flex gap-0.5 mb-4" aria-label={`${r.rating} / 5`}>
+                      {[1, 2, 3, 4, 5].map((n) => (
+                        <svg key={n} width="13" height="13" viewBox="0 0 24 24" aria-hidden="true">
+                          <path
+                            d="M12 2.5l2.9 6.1 6.6.9-4.8 4.6 1.2 6.6L12 17.6 6.1 20.7l1.2-6.6L2.5 9.5l6.6-.9L12 2.5z"
+                            fill={n <= r.rating! ? '#BA7517' : 'none'}
+                            stroke={n <= r.rating! ? '#BA7517' : '#D3D1C7'}
+                            strokeWidth="1.3"
+                          />
+                        </svg>
+                      ))}
+                    </div>
+                  )}
+                  <p className="text-sm leading-[1.9] text-stone-600 mb-6 flex-1">
+                    {reviewText(r, locale)}
+                  </p>
+                  <footer className="text-[10px] tracking-[2px] uppercase text-stone-400">
+                    {r.name} · {r.country}
+                  </footer>
+                </blockquote>
+              ))}
+            </div>
+            <div className="text-center mt-10">
+              <Link
+                href={`/${locale}/reviews`}
+                className="text-xs tracking-[2px] uppercase text-stone-400 hover:text-[#8C3B2E] transition-colors"
+              >
+                {trv('readMore')} →
+              </Link>
+            </div>
+          </div>
+        </section>
+      )}
+
+      {/* ==============================
+          GUIDES TEASER
+          Drives internal links to the guide hub, which is where most
+          long-tail search traffic lands.
+          ============================== */}
+      <section id="guides" className="py-24 md:py-32 px-6 bg-white">
+        <div className="max-w-5xl mx-auto">
+          <SectionTitle label={tgi('label')} title={tgi('title')} />
+          <div className="grid md:grid-cols-3 gap-8">
+            {homeGuides.map((g) => (
+              <Link key={g.slug} href={`/${locale}/guides/${g.slug}`} className="group block">
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img
+                  src={g.image}
+                  alt={tgd(`${g.slug}.title` as any)}
+                  className="w-full h-[180px] object-cover rounded-sm mb-4 group-hover:opacity-90 transition-opacity"
+                  loading="lazy"
+                />
+                <h3 className="text-base font-normal leading-snug mb-2 group-hover:text-[#8C3B2E] transition-colors">
+                  {tgd(`${g.slug}.title` as any)}
+                </h3>
+                <p className="text-xs leading-relaxed text-stone-500">
+                  {tgd(`${g.slug}.excerpt` as any)}
+                </p>
+              </Link>
+            ))}
+          </div>
+          <div className="text-center mt-10">
+            <Link
+              href={`/${locale}/guides`}
+              className="text-xs tracking-[2px] uppercase text-stone-400 hover:text-[#8C3B2E] transition-colors"
+            >
+              {tgi('back')} →
+            </Link>
           </div>
         </div>
       </section>

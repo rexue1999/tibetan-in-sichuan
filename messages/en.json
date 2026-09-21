@@ -4,7 +4,10 @@
     "trips": "Trips",
     "why": "Why Us",
     "gallery": "Gallery",
-    "contact": "Contact"
+    "contact": "Contact",
+    "guides": "Guides",
+    "about": "About",
+    "reviews": "Reviews"
   },
   "hero": {
     "brand": "CHENGDU JOURNEYS",
@@ -218,5 +221,561 @@
   "seo": {
     "tagline": "Small-group journeys into Tibetan culture and Western China",
     "description": "Small-group journeys from Chengdu deep into Tibetan culture, highland landscapes, and nomadic life across Western Sichuan. Tibetan walking tours, temple routes, and authentic homestay experiences."
+  },
+  "guideIndex": {
+    "label": "Field notes",
+    "title": "Travel guides for Chengdu & the Tibetan highlands",
+    "subtitle": "Practical notes from the road — altitude, seasons, etiquette and packing, written for travellers heading into Western Sichuan for the first time.",
+    "readMore": "Read the guide",
+    "minutes": "min read",
+    "updated": "Updated",
+    "back": "All guides",
+    "toc": "In this guide",
+    "relatedTitle": "Keep reading",
+    "ctaTitle": "Have a question we have not answered?",
+    "ctaText": "Message us on WhatsApp and a real person will reply — usually within a few hours.",
+    "ctaButton": "Ask us on WhatsApp",
+    "published": "Published"
+  },
+  "guides": {
+    "altitude-sickness": {
+      "title": "Altitude sickness in Western Sichuan: how to prepare and what to do",
+      "excerpt": "Most travellers feel something above 3,000 m. Here is how to arrive well, recognise the warning signs, and what actually helps — based on what we see on the road.",
+      "metaTitle": "Altitude Sickness in Sichuan: Symptoms, Prevention & What to Do",
+      "metaDesc": "How to prevent and manage altitude sickness in Western Sichuan and the Tibetan plateau. Real elevation figures for Chengdu, Kangding, Tagong and Litang, plus when to descend.",
+      "sections": [
+        {
+          "heading": "The short version",
+          "body": [
+            "Almost everyone who travels into the Sichuan highlands goes above 3,000 metres at some point. Most people feel mild symptoms for a day and are fine. A small number get properly ill, and the only reliable cure is to lose elevation.",
+            "The single most useful habit is to gain height slowly. Chengdu sits at roughly 500 m. Kangding is already 2,560 m. That is a jump of two kilometres in a single day's drive, and it is the point where many people first feel it."
+          ]
+        },
+        {
+          "heading": "The elevations you will actually meet",
+          "body": [
+            "Knowing the numbers helps you plan rest days sensibly rather than guessing."
+          ],
+          "table": {
+            "headers": [
+              "Place",
+              "Elevation",
+              "Notes"
+            ],
+            "rows": [
+              [
+                "Chengdu",
+                "≈ 500 m",
+                "Starting point, no acclimatisation needed"
+              ],
+              [
+                "Kangding",
+                "2,560 m",
+                "Common first overnight; mild symptoms possible"
+              ],
+              [
+                "Tagong",
+                "3,700 m",
+                "Most people notice the thin air here"
+              ],
+              [
+                "Xinduqiao",
+                "3,460 m",
+                "Similar to Tagong, often used as a sleep stop"
+              ],
+              [
+                "Litang",
+                "4,014 m",
+                "One of the highest towns in the world; take it easy"
+              ],
+              [
+                "Zheduo Pass",
+                "4,298 m",
+                "Drive-through only, do not linger or sleep here"
+              ]
+            ]
+          }
+        },
+        {
+          "heading": "What actually helps",
+          "body": [
+            "Ascend gradually. If your itinerary allows, spend the first night at Kangding rather than pushing straight to 3,700 m. Our four-day nomad journey is built this way on purpose.",
+            "Drink more water than feels necessary. Dry plateau air plus faster breathing dehydrates you quickly, and dehydration makes altitude symptoms noticeably worse.",
+            "Skip alcohol for the first two nights. It disrupts sleep, which is exactly what your body needs to adjust.",
+            "Eat normally, even without appetite. Carbohydrates are easier to digest at altitude than heavy fatty meals.",
+            "Do not push through a headache. A mild headache is common on day one. A headache that keeps worsening despite water and rest is your signal to stop climbing."
+          ]
+        },
+        {
+          "heading": "Symptoms worth taking seriously",
+          "body": [
+            "Mild altitude sickness feels like a hangover: headache, tiredness, poor appetite, disturbed sleep, occasional nausea. It usually settles within a day or two as your body adapts.",
+            "Seek medical help and descend if you see any of the following. These point toward fluid on the lungs or swelling in the brain, both of which are emergencies."
+          ],
+          "list": [
+            "Breathlessness at rest, or a cough that will not settle",
+            "Confusion, slurred speech, or unsteadiness on your feet",
+            "Vomiting that stops you keeping water down",
+            "A headache that keeps worsening after a full day of rest",
+            "Bluish lips or fingertips"
+          ]
+        },
+        {
+          "heading": "Medication and oxygen",
+          "body": [
+            "Acetazolamide is commonly prescribed for prevention and is worth discussing with your own doctor before you travel, particularly if you have previously reacted badly to altitude. It is not a substitute for ascending slowly.",
+            "Simple painkillers handle ordinary altitude headaches well. Many vehicles carry a small oxygen canister, and hotels at higher elevations often have one; a few minutes of oxygen can relieve symptoms temporarily, but it does not acclimatise you.",
+            "If you have a heart or lung condition, or are pregnant, speak to a doctor before booking a highland itinerary. We are happy to adjust pacing or keep an itinerary below 3,000 m entirely."
+          ]
+        },
+        {
+          "heading": "If you are travelling with children",
+          "body": [
+            "Children generally adapt at least as well as adults, but they may not articulate what is wrong. Watch for unusual irritability, drowsiness, or a child who suddenly refuses to eat. Keep the schedule loose, and treat any high pass as somewhere to pass through rather than play."
+          ]
+        }
+      ],
+      "faq": [
+        {
+          "q": "Do I need altitude medication before arriving in Chengdu?",
+          "a": "No. Chengdu is around 500 m and you will not need anything there. If your itinerary goes above 3,000 m, start any preventive medication the day before you gain significant height, following your doctor's advice."
+        },
+        {
+          "q": "Can I travel to Tagong or Litang if I have never been above 2,000 m?",
+          "a": "Yes, and many of our guests do exactly that. The key is pacing: sleep low for the first night or two, keep the first high-altitude day light, and stay hydrated. Tell us in advance and we will build in extra rest."
+        },
+        {
+          "q": "Is bottled oxygen worth bringing?",
+          "a": "It helps for short-term relief and reassurance, but it does not speed up acclimatisation. Use it if you feel unwell, then rest and descend rather than relying on it to keep climbing."
+        }
+      ]
+    },
+    "best-time-to-visit": {
+      "title": "The best time to visit Western Sichuan, month by month",
+      "excerpt": "Spring flowers, summer grasslands, autumn colour and hard winter light — what each season actually looks like on the ground, and which one suits the trip you want.",
+      "metaTitle": "Best Time to Visit Western Sichuan: A Month-by-Month Guide",
+      "metaDesc": "When to travel in Western Sichuan and the Tibetan highlands. Season-by-season weather, road conditions, grassland colour and festival timing for Kangding, Tagong and Zoige.",
+      "sections": [
+        {
+          "heading": "The short version",
+          "body": [
+            "For most travellers, late May to early October is the sweet spot. The grasslands are green, the passes are reliably open, and the days are warm enough to sit outside.",
+            "Mid-October to mid-November is the photographer's season: golden larch and poplar, sharp clear air, and far fewer people. It gets cold at night.",
+            "Winter and early spring are quiet, cheap and beautiful in a stark way, but some high passes close and many guesthouses shut."
+          ]
+        },
+        {
+          "heading": "Spring — March to May",
+          "body": [
+            "March is still winter at altitude. Passes can close without warning and the grasslands are brown. By April the low valleys are warming up and apricot and peach blossom appears around Danba and the Dadu River valley.",
+            "May is when the season genuinely opens. Grass begins to green, days are mild, and the roads are dependable. If you want flowers without the summer crowds, aim for the second half of May."
+          ]
+        },
+        {
+          "heading": "Summer — June to August",
+          "body": [
+            "This is peak grassland season. Tagong and the Zoige marshes are vivid green, yaks are out in numbers, and nomad families are living in their summer camps — which is what makes our nomad homestay work best in these months.",
+            "It is also the rainy season. Expect afternoon showers rather than all-day rain, and occasional landslides on the mountain roads. Mornings are usually clear, so we front-load the scenic driving.",
+            "Summer is peak domestic holiday time, especially during the July and August school breaks. Book accommodation well ahead and expect popular viewpoints to be busy at midday."
+          ]
+        },
+        {
+          "heading": "Autumn — September to November",
+          "body": [
+            "September and early October combine green grasslands with stable weather, and are arguably the best all-round months. Skies are clearer than in summer and the rain has eased.",
+            "Mid-October onwards brings the colour change. Larch turns gold across the high valleys and the light becomes cleaner and harder. Nights drop below freezing at altitude.",
+            "The first week of October is a national holiday and the busiest travel period of the year in China. Unless you specifically want the festival atmosphere, travel either side of it."
+          ]
+        },
+        {
+          "heading": "Winter — December to February",
+          "body": [
+            "Winter is dry, cold and extremely clear. Snow-covered peaks against deep blue sky make it a favourite for landscape photographers, and prices are at their lowest.",
+            "The trade-offs are real: some high passes close after snowfall, many family-run guesthouses shut, and daytime temperatures at 3,700 m can stay below freezing. Our nomad homestay runs only in the warmer months for this reason.",
+            "If you do travel in winter, build in slack. A closed pass can add hours to a drive, and flexibility matters more than a fixed schedule."
+          ]
+        },
+        {
+          "heading": "Festivals worth planning around",
+          "body": [
+            "Tibetan New Year (Losar) falls in February or March depending on the lunar calendar and is the most important festival in the region. Many businesses close as families celebrate at home, but the atmosphere in towns like Kangding is extraordinary.",
+            "Horse racing festivals on the grasslands usually take place in summer, often around July or August depending on the locality. Dates vary by county and are confirmed late, so ask us if you are planning around one.",
+            "Monastery festivals with masked cham dances happen at various points in the year. These are religious ceremonies rather than performances, and visitors are welcome to watch respectfully."
+          ]
+        }
+      ],
+      "faq": [
+        {
+          "q": "What is the single best month for a first trip?",
+          "a": "September. The grasslands are still green, the summer rain has passed, skies are clear and the roads are dependable. It is also less crowded than July and August."
+        },
+        {
+          "q": "How cold does it get at night in summer?",
+          "a": "At 3,700 m, expect single digits Celsius even in July, and close to freezing on clear nights. Bring a warm mid-layer and a windproof outer shell regardless of the season."
+        },
+        {
+          "q": "Is the rainy season a problem for travelling?",
+          "a": "Rarely. Rain usually arrives in short afternoon bursts rather than lasting all day. The genuine risk is landslides on mountain roads after heavy falls, which occasionally force a route change — we monitor conditions and adjust."
+        }
+      ]
+    },
+    "tibetan-culture-etiquette": {
+      "title": "Tibetan culture etiquette: a practical guide for visitors",
+      "excerpt": "Monasteries, prayer flags, offering scarves and photographing people — the small things that make a real difference to how you are received.",
+      "metaTitle": "Tibetan Culture Etiquette: Monastery Rules & Customs for Visitors",
+      "metaDesc": "How to behave respectfully in Tibetan monasteries and communities. Dress, photography, prayer flags, kata scarves, and simple customs explained for first-time visitors.",
+      "sections": [
+        {
+          "heading": "The principle behind the rules",
+          "body": [
+            "Almost every piece of etiquette in Tibetan areas comes back to one idea: these are living communities and working religious sites, not attractions built for visitors. If you behave as a guest in someone's home and in someone's place of worship, you will get it right the vast majority of the time.",
+            "Nobody expects you to know everything. What people notice is whether you are trying."
+          ]
+        },
+        {
+          "heading": "In monasteries and temples",
+          "body": [
+            "Walk clockwise around monasteries, stupas and prayer wheel circuits. This is the direction of circumambulation and going the other way is the most common mistake visitors make.",
+            "Remove hats inside temple halls. Do not point your feet at statues or towards monks, and avoid sitting with your feet stretched out toward an altar.",
+            "Do not touch statues, thangkas or ritual objects, and do not step over them. If you want a closer look, ask — permission is usually given gladly.",
+            "Photography inside temple halls is often prohibited and sometimes permitted for a fee. Look for signage, and when in doubt, ask before raising a camera. A monk saying no is not being unfriendly; some rooms hold consecrated objects."
+          ]
+        },
+        {
+          "heading": "Prayer flags",
+          "body": [
+            "Prayer flags are printed with sutras and mantras, and the wind is understood to carry the blessings they hold. They are religious material, not decoration.",
+            "Do not climb on prayer flag piles for photographs, and do not take flags home as souvenirs. If flags are being raised and you are invited to help, join in — it is a genuine gesture of participation."
+          ]
+        },
+        {
+          "heading": "Kata, the offering scarf",
+          "body": [
+            "A kata is a silk or cotton scarf given as a mark of respect and welcome. You may well receive one. Accept it with both hands, and if you are offered it around your neck, bow slightly forward.",
+            "If you wish to give a kata yourself, hold it with both hands at chest height. When offering one to a monk or an elder, it is customary to bow as you present it."
+          ]
+        },
+        {
+          "heading": "Photographing people",
+          "body": [
+            "Always ask first, even when the answer seems obvious. A gesture toward your camera and a questioning look works perfectly well across any language barrier.",
+            "Expect some people to decline, and accept it without pushing. Nomads and older people in rural areas are more likely to say no than younger people in towns.",
+            "If you photograph someone and they ask to see the result, showing them the screen is a small kindness that almost always leads to a warmer encounter. Sending a copy later, if you can, is better still.",
+            "Be cautious about photographing pilgrims during prostration or prayer. They are engaged in devotion, and a camera in that moment can feel like an intrusion."
+          ]
+        },
+        {
+          "heading": "Food, tea and hospitality",
+          "body": [
+            "If you are offered butter tea or tsampa, accept at least a sip or a taste. Refusing hospitality outright is read as rejection rather than a dietary preference.",
+            "Butter tea is salty rather than sweet and takes many visitors by surprise. Drinking it slowly is entirely acceptable.",
+            "When eating with a family, wait to be told where to sit, and let your host begin first. If you are given the seat of honour, accept it with a nod rather than protesting at length.",
+            "Do not touch anyone's head. In Tibetan and broader Buddhist custom the head is considered the most sacred part of the body."
+          ]
+        },
+        {
+          "heading": "A few practical points",
+          "body": [
+            "Dress modestly at religious sites: cover shoulders and knees, and avoid very short shorts or vest tops. A light scarf in your bag solves this instantly.",
+            "Do not hand money directly to children who ask. It encourages absence from school. If you want to give something, give it to a parent, or contribute to a local school or clinic instead.",
+            "Some monasteries and regions have restrictions on photography, drones and certain areas. Regulations do change, and we will brief you on current conditions for the specific places on your itinerary."
+          ]
+        }
+      ],
+      "faq": [
+        {
+          "q": "Do I need to be Buddhist to visit a monastery?",
+          "a": "Not at all. Visitors of any faith or none are welcome at most monasteries. What matters is respectful behaviour: quiet voices, modest dress, and asking before photographing."
+        },
+        {
+          "q": "Is it appropriate to give donations at monasteries?",
+          "a": "Yes, and small notes are perfectly normal. There is usually a box near the main hall. Donations support the monastery and the monks who live there."
+        },
+        {
+          "q": "Can I take photos of prayer flags?",
+          "a": "Yes. The sensitivity is about treatment rather than photography. Do not climb on flag piles, drape yourself in them, or take them away as souvenirs."
+        }
+      ]
+    },
+    "what-to-pack": {
+      "title": "What to pack for a Western Sichuan journey",
+      "excerpt": "A short, honest packing list built from what guests actually forget — layers, sun protection, and the small items that make high-altitude nights comfortable.",
+      "metaTitle": "Western Sichuan & Tibet Packing List: What to Bring",
+      "metaDesc": "A practical packing list for Western Sichuan and the Tibetan plateau. Layering advice, sun protection, altitude essentials, and what you can safely leave at home.",
+      "sections": [
+        {
+          "heading": "The one rule that matters",
+          "body": [
+            "Pack in layers, not in bulk. A single day in the highlands can swing from t-shirt weather in the sun to near freezing after dark, and the same trip can cover a humid Chengdu valley and a 4,298 m pass.",
+            "Three layers — a base, an insulating mid-layer, and a windproof or waterproof outer shell — will cover nearly every condition you will meet between May and October."
+          ]
+        },
+        {
+          "heading": "Clothing",
+          "body": [
+            "Base layers: two or three quick-drying t-shirts or long-sleeve tops. Cotton stays wet and cold, so favour merino or synthetics.",
+            "Mid-layer: a fleece or light down jacket. This is the layer you will live in during mornings and evenings.",
+            "Outer shell: a windproof, water-resistant jacket. The wind on a 4,000 m pass is the part visitors underestimate most.",
+            "Trousers: one comfortable pair for travel days and one warmer or lined pair for highland days. Avoid jeans for long drives.",
+            "A warm hat and gloves. Even in midsummer, a clear night at 3,700 m can drop close to freezing.",
+            "Comfortable walking shoes with some grip, plus sandals or easy slip-ons for guesthouses and long drives."
+          ]
+        },
+        {
+          "heading": "Sun and weather",
+          "body": [
+            "The plateau sun is intense, and UV exposure at 3,700 m is substantially higher than at sea level. Sunburn happens fast, even on overcast days.",
+            "Bring high-factor sunscreen and reapply through the day, sunglasses with genuine UV protection, and a wide-brimmed hat or a cap with a brim. Lip balm with SPF is worth its weight — dry air cracks lips within a day or two."
+          ]
+        },
+        {
+          "heading": "Health and altitude",
+          "body": [
+            "Any personal medication you take, in original packaging, in your carry-on rather than checked luggage. Pharmacies in highland towns are limited.",
+            "Simple painkillers for altitude headaches, plus rehydration sachets. A small first-aid kit with plasters and a basic antiseptic covers most minor issues.",
+            "If your doctor has prescribed acetazolamide, bring it and start it as advised rather than on arrival.",
+            "A water bottle you can refill. Staying hydrated genuinely reduces altitude symptoms, and you will drink more when you are not hunting for bottles."
+          ]
+        },
+        {
+          "heading": "Practical kit",
+          "body": [
+            "A power bank. Long drives and cold nights drain phone batteries, and charging points in rural guesthouses are limited.",
+            "A universal adaptor. China uses type A, C and I sockets at 220 V.",
+            "A head torch or small torch for guesthouses and early starts.",
+            "Tissues and hand sanitiser. Many rural toilets have no paper and no running water.",
+            "A light daypack for camera gear, water and a layer on walking days."
+          ]
+        },
+        {
+          "heading": "What you can leave behind",
+          "body": [
+            "Heavy boots. Unless you are planning serious trekking, trail shoes or sturdy trainers are enough for the walking on our itineraries.",
+            "A large suitcase. Vehicles are comfortable but boot space is finite, and a soft bag or mid-size case travels far better on highland roads.",
+            "Excessive camera equipment. The temptation to bring everything is strong, but a single versatile lens plus a spare battery will get used far more than a heavy bag.",
+            "Formal clothing. Nothing on our itineraries calls for it."
+          ]
+        }
+      ],
+      "faq": [
+        {
+          "q": "Can I buy cold-weather gear in Chengdu?",
+          "a": "Yes. Chengdu has plenty of outdoor shops and a large Decathlon, and prices for basics are reasonable. If you are short on luggage space, buying layers on arrival is a practical option."
+        },
+        {
+          "q": "Do I really need a down jacket in summer?",
+          "a": "A light down or fleece layer, yes. Daytime temperatures are pleasant, but mornings, evenings and any time above 4,000 m can be genuinely cold even in July."
+        },
+        {
+          "q": "Is there somewhere to do laundry?",
+          "a": "Hotels in Kangding and larger towns offer laundry, though turnaround can be a day. Hand-washing quick-dry clothing in a guesthouse basin is the simpler approach on shorter trips."
+        }
+      ]
+    },
+    "chengdu-to-tibet-transport": {
+      "title": "Getting from Chengdu into the Tibetan highlands",
+      "excerpt": "Driving, flying or the train — how the main options compare, how long each really takes, and which one suits the journey you have in mind.",
+      "metaTitle": "Chengdu to Tibet & Western Sichuan: Transport Options Compared",
+      "metaDesc": "How to travel from Chengdu into the Tibetan highlands. Overland routes on the G318, flights to Kangding and Daocheng, bus services, and what each option involves.",
+      "sections": [
+        {
+          "heading": "First, a clarification that matters",
+          "body": [
+            "Two different destinations are often called \"Tibet\", and they involve very different logistics.",
+            "The Tibetan Plateau extends far beyond the Tibet Autonomous Region. Western Sichuan — Kangding, Tagong, Litang, Danba, Zoige — is ethnically and culturally Tibetan, sits on the plateau, and is reachable from Chengdu by road with no special permit.",
+            "The Tibet Autonomous Region, with Lhasa at its centre, is a separate administrative area. It requires a permit arranged through a licensed agency, and independent travel is not permitted. If Lhasa is your goal, plan for a guided tour and allow several weeks for the paperwork.",
+            "Most travellers who want mountains, monasteries and nomad culture find that Western Sichuan delivers it without the permits or the altitude shock of flying straight to 3,650 m."
+          ]
+        },
+        {
+          "heading": "Overland from Chengdu",
+          "body": [
+            "The classic route runs west from Chengdu on the G318, the Sichuan–Tibet highway, climbing through Ya'an and over the Erlang Shan range to Kangding.",
+            "Driving time from Chengdu to Kangding is roughly five to seven hours depending on traffic leaving the city and conditions on the pass. From Kangding onwards the road continues to Xinduqiao, Tagong and eventually Litang.",
+            "This is the option we recommend for most guests. The gradual ascent gives your body time to adapt, the scenery builds progressively, and you can stop where you like rather than watching it pass from a plane window.",
+            "Distances look short on a map and are not. Mountain roads average perhaps 40–50 km/h, and a landslide or roadworks can add hours. Build slack into any self-drive plan."
+          ]
+        },
+        {
+          "heading": "Flying",
+          "body": [
+            "Kangding has an airport at roughly 4,280 m, and Daocheng Yading has one at around 4,410 m. Both are among the highest commercial airports in the world.",
+            "Flying gets you there in about an hour, but it drops you at very high altitude with no acclimatisation at all. A significant proportion of travellers who fly directly to either airport feel unwell on arrival, sometimes badly enough to spend the first day in bed.",
+            "If you do fly, treat the first day as a rest day. Do not schedule a high pass or a long drive. Drink water, eat lightly, and sleep early."
+          ]
+        },
+        {
+          "heading": "Bus and shared minivan",
+          "body": [
+            "Regular buses run from Chengdu's Chadianzi and Xinnanmen stations to Kangding, and onward services reach Tagong and Litang. They are cheap and reliable.",
+            "Shared minivans fill the gap for smaller places and leave when full rather than on a schedule. They are the standard local way to move between highland towns.",
+            "The limitation is fixed timetables and no flexibility to stop for the views — which, on this road, is much of the point."
+          ]
+        },
+        {
+          "heading": "How we handle it",
+          "body": [
+            "On our own journeys we drive, with a vehicle and driver who know the route. It means we can stop when the light is good, adjust when weather moves in, and pace the altitude gain deliberately rather than by timetable.",
+            "For guests arriving from overseas we usually suggest a night in Chengdu first. It costs one day, it resets your body clock, and it means you start the climb rested rather than jet-lagged."
+          ]
+        }
+      ],
+      "faq": [
+        {
+          "q": "Do I need a permit to visit Western Sichuan?",
+          "a": "No. Kangding, Tagong, Xinduqiao, Danba and the Zoige grasslands are open to foreign visitors without a special permit. The Tibet Autonomous Region is a different matter and does require one."
+        },
+        {
+          "q": "How long does the drive from Chengdu to Kangding take?",
+          "a": "Typically five to seven hours, depending on how quickly you clear Chengdu traffic and conditions on the mountain pass. In bad weather or after a landslide it can take considerably longer."
+        },
+        {
+          "q": "Should I fly to Kangding to save time?",
+          "a": "Only if your schedule is very tight. The airport sits at about 4,280 m, and arriving there from sea level in an hour causes altitude symptoms for many travellers. Driving in over two days is far gentler."
+        }
+      ]
+    },
+    "first-time-tibet-travel": {
+      "title": "Your first trip to the Tibetan plateau: what to know before you book",
+      "excerpt": "Permits, altitude, timing and expectations — the decisions that shape a first journey into Tibetan country, explained without the sales pitch.",
+      "metaTitle": "First Time Travelling to Tibet: A Beginner's Planning Guide",
+      "metaDesc": "Planning a first trip to the Tibetan plateau. Permits explained, Western Sichuan versus the Tibet Autonomous Region, altitude preparation, best seasons and realistic expectations.",
+      "sections": [
+        {
+          "heading": "Start with one decision",
+          "body": [
+            "Before anything else, decide where you mean by Tibet. The answer changes your permits, your budget, your itinerary and how much freedom you have.",
+            "Western Sichuan is culturally Tibetan, sits on the plateau, and is open to independent travel. The Tibet Autonomous Region around Lhasa requires a permit, a licensed guide and a fixed itinerary. Neither is better; they are simply different trips.",
+            "If you are drawn to monasteries, grasslands, nomad families and high mountain roads, Western Sichuan offers all of it with far less bureaucracy. If Lhasa and the Potala Palace are the point, plan for the permit route."
+          ]
+        },
+        {
+          "heading": "Permits, briefly",
+          "body": [
+            "For the Tibet Autonomous Region, foreign travellers need a Tibet Travel Permit arranged through a licensed agency. You cannot apply directly, and you cannot travel independently once there — a guide accompanies you throughout.",
+            "Processing takes time and is not guaranteed. Certain nationalities and certain periods, particularly around sensitive anniversaries, face additional scrutiny. Apply well ahead and keep your plans flexible.",
+            "For Western Sichuan, none of this applies. Bring your passport, and be aware that some individual monasteries or areas may occasionally restrict photography."
+          ]
+        },
+        {
+          "heading": "Altitude is the thing to respect",
+          "body": [
+            "This is the part first-time visitors most often underestimate, and it is the part that ruins trips when ignored.",
+            "Lhasa sits at 3,650 m. Tagong is 3,700 m. Litang is 4,014 m. Arriving at any of these from sea level is a genuine physical shock, and the effects do not care how fit you are.",
+            "The fix is simple and unglamorous: gain height gradually, drink more water than feels reasonable, skip alcohol for the first nights, and do not schedule anything ambitious on your first high-altitude day.",
+            "See our dedicated altitude guide for the full picture."
+          ]
+        },
+        {
+          "heading": "When to go",
+          "body": [
+            "Late May to early October is the reliable window, with September standing out for clear skies, green grasslands and manageable crowds.",
+            "Winter travel is possible and can be spectacular, but passes close, guesthouses shut, and flexibility becomes essential rather than optional.",
+            "Avoid the first week of October unless you actively want China's busiest travel period. Accommodation prices spike and popular sites are crowded."
+          ]
+        },
+        {
+          "heading": "What it will actually feel like",
+          "body": [
+            "Expect long drives. Distances on the plateau are measured in hours rather than kilometres, and a route that looks short on a map can take most of a day.",
+            "Expect basic infrastructure in rural areas. Guesthouses in nomad areas are comfortable but simple, hot water may be limited, and mobile signal comes and goes.",
+            "Expect the unexpected to be handled calmly. Weather closes passes, festivals shift dates, and roads need repairs. The travellers who enjoy the plateau most are the ones who treat the plan as a direction rather than a contract.",
+            "And expect moments that justify all of it: sunrise light on a snow peak, butter tea in a nomad tent, a monastery courtyard at dawn with nobody else there."
+          ]
+        },
+        {
+          "heading": "A realistic first itinerary",
+          "body": [
+            "If you have a week and want to do this well: two nights in Chengdu to adjust and see the city, then west over the pass with a first night at Kangding, then on to Tagong and Xinduqiao for the highland scenery, then back down.",
+            "That gives you genuine Tibetan culture, real altitude, and time to breathe, without the punishing pace of trying to reach Lhasa overland in the same week."
+          ]
+        }
+      ],
+      "faq": [
+        {
+          "q": "Is Western Sichuan a good substitute for Lhasa?",
+          "a": "It is a different experience rather than a substitute. Western Sichuan gives you Tibetan culture, monasteries, grasslands and nomad life with far more freedom and no permit requirements. Lhasa offers the Potala Palace and the major monastic centres, at the cost of a guided, fixed itinerary."
+        },
+        {
+          "q": "How fit do I need to be?",
+          "a": "Reasonably mobile is enough for our itineraries. There is no technical trekking. The challenge is altitude rather than exertion, and pacing matters far more than fitness."
+        },
+        {
+          "q": "How far ahead should I plan?",
+          "a": "For Western Sichuan, a few weeks is usually plenty, more if you want specific accommodation in peak summer. For the Tibet Autonomous Region, allow at least two to three months for permits and paperwork."
+        }
+      ]
+    }
+  },
+  "about": {
+    "label": "Who we are",
+    "title": "Small journeys, made by people who live here",
+    "subtitle": "Chengdu Journeys runs small-group trips from Chengdu into the Tibetan highlands of Western Sichuan. We are a small team, we keep groups small, and we travel the routes we built.",
+    "factsTitle": "At a glance",
+    "facts": {
+      "founded": "Running since",
+      "groupSize": "Typical group",
+      "routes": "Routes",
+      "languages": "Languages",
+      "base": "Based in"
+    },
+    "storyTitle": "How this started",
+    "story": [
+      "Placeholder — replace this section with your own story. What brought you to this work, how the first journey came together, and what you wanted to do differently from the tours you had seen.",
+      "A few sentences written plainly will do more than polished marketing copy. Readers are trying to work out whether they trust you with a week of their holiday, and the honest version of how you started is the most persuasive thing on this page.",
+      "If there is a specific moment that set it off — a place, a person, a trip that went wrong and taught you something — that is the detail worth keeping."
+    ],
+    "valuesTitle": "What we commit to",
+    "values": {
+      "v1": {
+        "title": "Small groups, always",
+        "text": "We cap groups so that the pace stays human, the vehicle stays comfortable, and our guides have time for everyone."
+      },
+      "v2": {
+        "title": "Guides from the communities we visit",
+        "text": "The people who show you these places live in them. That means real knowledge, real relationships, and money that stays local."
+      },
+      "v3": {
+        "title": "Honest routes and honest prices",
+        "text": "What is included is stated clearly, and what is not, is too. If a route is not right for you, we will say so rather than sell it."
+      },
+      "v4": {
+        "title": "Flexibility when the weather turns",
+        "text": "Passes close and plans change on the plateau. We build slack into itineraries and adapt rather than forcing a schedule."
+      }
+    },
+    "teamTitle": "The people you will travel with",
+    "teamNote": "Profiles below are placeholders — real names, photographs and histories will be filled in shortly.",
+    "speaks": "Speaks",
+    "langNames": {
+      "en": "English",
+      "zh": "Chinese",
+      "th": "Thai",
+      "es": "Spanish"
+    },
+    "ctaTitle": "Questions before you book?",
+    "ctaText": "Write to us and we will answer honestly, including when a route is not a good fit.",
+    "ctaButton": "Contact us"
+  },
+  "reviews": {
+    "label": "In their words",
+    "title": "What our travellers say",
+    "subtitle": "Feedback from guests who have travelled with us, shared with their permission.",
+    "empty": "Reviews will appear here as our travellers send them. In the meantime, write to us directly and we will happily put you in touch with past guests.",
+    "emptyCta": "Ask for a reference",
+    "verified": "Verified traveller",
+    "routeLabel": "Travelled",
+    "readMore": "Read all reviews",
+    "homeTitle": "What travellers say",
+    "homeEmpty": "We are gathering reviews from recent guests — ask us and we will share references directly.",
+    "general": "General feedback"
+  },
+  "seoPagesExtra": {
+    "guidesIndexTitle": "Sichuan & Tibet Travel Guides - Altitude, Seasons, Etiquette",
+    "guidesIndexDesc": "Practical travel guides for Chengdu, Western Sichuan and the Tibetan plateau. Altitude sickness, best seasons, packing lists, cultural etiquette and transport options.",
+    "aboutTitle": "About Chengdu Journeys - Small-Group Sichuan & Tibet Tours",
+    "aboutDesc": "Meet the small team behind Chengdu Journeys. Small-group journeys from Chengdu into Tibetan Western Sichuan, led by guides from the communities we visit.",
+    "reviewsTitle": "Traveller Reviews - Chengdu Journeys Sichuan & Tibet Tours",
+    "reviewsDesc": "Read what travellers say about our small-group journeys from Chengdu into the Tibetan highlands of Western Sichuan. Verified guest feedback."
   }
 }

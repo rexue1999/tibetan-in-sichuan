@@ -76,9 +76,10 @@ function LangSwitcher({ locale }: { locale: string }) {
 }
 
 const navLinks = [
-  { href: '#trips', key: 'trips' },
-  { href: '#why', key: 'why' },
-  { href: '#gallery', key: 'gallery' },
+  { href: '/#trips', key: 'trips' },
+  { href: '/guides', key: 'guides' },
+  { href: '/about', key: 'about' },
+  { href: '/reviews', key: 'reviews' },
   { href: '/booking', key: 'contact' },
 ] as const;
 
