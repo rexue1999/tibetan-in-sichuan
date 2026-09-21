@@ -320,7 +320,7 @@
       "tagline": "Conviértete en un auténtico nómada a 3.600 m en las praderas del Río Amarillo",
       "duration": "4 Días · Meseta NW de Sichuan (fechas flexibles)",
       "tier": "Exclusivo",
-      "pricing": "Desde US$1,999 / persona",
+      "pricing": "Desde US$999 / persona",
       "deposit": "Depósito $199 (consultar fechas)",
       "meetingPoint": "Centro de Chengdu (detalles antes de la salida)",
       "meetingTime": "Se confirma antes de la salida",
@@ -401,7 +401,7 @@
           "a": "Las fechas indicadas son un ejemplo. Realizamos este viaje con fechas flexibles para grupos privados, y funciona mejor de junio a septiembre, cuando la familia está en el campamento de verano y los pastos están verdes."
         }
       ],
-      "priceNote": "El campamento tiene un coste fijo, por lo que el precio por persona baja a medida que crece el grupo: 2 personas US$2,980, 3 personas US$2,480, 4 personas US$1,999, 5–6 personas US$1,750. Cuatro días, con todas las comidas y actividades del campamento incluidas. El seguro de accidentes de viaje está incluido.",
+      "priceNote": "El campamento tiene un coste fijo, por lo que el precio por persona baja a medida que crece el grupo: 2 personas US$1,490, 3 personas US$1,240, 4 personas US$999, 5–6 personas US$875. Cuatro días, con todas las comidas y actividades del campamento incluidas. El seguro de accidentes de viaje está incluido.",
       "groupSize": "2–6 personas (salida privada)",
       "hotelStandard": "Tres noches en una tienda tradicional de lana de yak en el campamento nómada; una noche en un hotel de Chengdu al inicio y al final",
       "cancellation": [
@@ -412,21 +412,21 @@
       "priceTiers": [
         {
           "label": "2 personas",
-          "price": "US$2,980 / persona",
+          "price": "US$1,490 / persona",
           "note": "Grupo más pequeño, mayor coste por persona del campamento"
         },
         {
           "label": "3 personas",
-          "price": "US$2,480 / persona"
+          "price": "US$1,240 / persona"
         },
         {
           "label": "4 personas",
-          "price": "US$1,999 / persona",
+          "price": "US$999 / persona",
           "note": "El tamaño de grupo más habitual"
         },
         {
           "label": "5–6 personas",
-          "price": "US$1,750 / persona",
+          "price": "US$875 / persona",
           "note": "La mejor relación por persona"
         }
       ]
@@ -486,7 +486,7 @@
     "wechat": "Agréganos en WeChat",
     "wechatId": "WeChat ID: chengdujourneys",
     "pricing": "Precios publicados, sin extras ocultos",
-    "pricingNote": "Cada ruta muestra ahora su precio por persona, y todos los precios incluyen seguro nacional de accidentes de viaje: el paseo urbano desde US$39, la ruta por el oeste de Sichuan desde US$690 y el campamento nómada desde US$1,750. Lo que cambia el importe final es el tamaño del grupo y la categoría del hotel: indícanos esos dos datos y te confirmamos el total exacto."
+    "pricingNote": "Cada ruta muestra ahora su precio por persona, y todos los precios incluyen seguro nacional de accidentes de viaje: el paseo urbano desde US$39, la ruta por el oeste de Sichuan desde US$690 y el campamento nómada desde US$875. Lo que cambia el importe final es el tamaño del grupo y la categoría del hotel: indícanos esos dos datos y te confirmamos el total exacto."
   },
   "howItWorks": {
     "title": "Cómo funciona",
@@ -521,7 +521,7 @@
     "q4": "Que tamano tienen los grupos? Puedo reservar un viaje privado?",
     "a4": "Nuestras salidas programadas son de 2 a 8 viajeros, lo que nos permite alojarnos en pequenas casas de familia y monasterios tranquilos inaccesibles para autocares grandes. Si prefieres tus propias fechas y ritmo, organizamos salidas privadas para viajeros individuales, parejas, familias y grupos de amigos todo el ano.",
     "q5": "Cuanto cuesta un tour por el oeste de Sichuan y que incluye?",
-    "a5": "Cada ruta indica un precio por persona, y el seguro de accidentes de viaje está incluido en el precio: el paseo tibetano por la ciudad desde US$39, la ruta por las tierras altas del oeste de Sichuan desde US$690 (3 días) hasta US$1,390 (7 días), y el campamento nómada desde US$1,999 para un grupo de cuatro, hasta US$1,750 por persona con cinco o seis personas. Un presupuesto estándar incluye el vehículo privado con conductor, un guía local que habla inglés, alojamiento, entradas a monasterios y zonas escénicas, y seguro nacional de accidentes de viaje con rescate en altura. Los vuelos internacionales y las compras personales no están incluidos.",
+    "a5": "Cada ruta indica un precio por persona, y el seguro de accidentes de viaje está incluido en el precio: el paseo tibetano por la ciudad desde US$39, la ruta por las tierras altas del oeste de Sichuan desde US$690 (3 días) hasta US$1,390 (7 días), y el campamento nómada desde US$999 para un grupo de cuatro, hasta US$875 por persona con cinco o seis personas. Un presupuesto estándar incluye el vehículo privado con conductor, un guía local que habla inglés, alojamiento, entradas a monasterios y zonas escénicas, y seguro nacional de accidentes de viaje con rescate en altura. Los vuelos internacionales y las compras personales no están incluidos.",
     "q6": "Pueden atender a quienes no hablan ingles o necesidades dieteticas?",
     "a6": "Si. Nuestros guias hablan ingles, mandarin y tibetano, y tambien organizamos viajes en espanol y tailandes bajo peticion. Podemos arreglar comidas vegetarianas, veganas, halal y sin gluten en la ruta - indicalo al reservar para avisar a cada alojamiento con antelacion."
   },

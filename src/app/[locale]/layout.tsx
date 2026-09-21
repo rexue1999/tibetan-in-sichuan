@@ -206,7 +206,7 @@ export default async function LocaleLayout({
               url: `${SITE_URL}/${locale}/routes/tibetan-nomad`,
               touristType: ['Culture seekers', 'Families', 'Small groups'],
             },
-            price: '1999',
+            price: '999',
             priceCurrency: 'USD',
             availability: 'https://schema.org/InStock',
             // The camp is a fixed-cost stay, so the per-person rate falls as
@@ -216,8 +216,8 @@ export default async function LocaleLayout({
             priceSpecification: {
               '@type': 'PriceSpecification',
               priceCurrency: 'USD',
-              minPrice: '1750',
-              maxPrice: '2980',
+              minPrice: '875',
+              maxPrice: '1490',
               valueAddedTaxIncluded: false,
             },
           },
