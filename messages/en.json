@@ -105,6 +105,13 @@
         "24 hours or more before departure: full refund",
         "Under 24 hours: reschedule free of charge, or 50% refund",
         "No-show: no refund"
+      ],
+      "priceTiers": [
+        {
+          "label": "Any group size",
+          "price": "US$39 / person",
+          "note": "Flat rate, private groups welcome"
+        }
       ]
     },
     "route2": {
@@ -280,6 +287,32 @@
         "6 days or more before departure: full refund",
         "2–6 days before departure: 50% refund",
         "Under 2 days: no refund"
+      ],
+      "priceTiers": [
+        {
+          "days": "3",
+          "label": "3 days · Classic",
+          "price": "US$690",
+          "note": "Kangding, Xinduqiao, Zheduo Pass"
+        },
+        {
+          "days": "4",
+          "label": "4 days · Danba",
+          "price": "US$850",
+          "note": "Adds Tagong grasslands and Zhonglu village"
+        },
+        {
+          "days": "5",
+          "label": "5 days · In-Depth",
+          "price": "US$1,050",
+          "note": "Adds Moshi Park and Siguniang Mountain"
+        },
+        {
+          "days": "7",
+          "label": "7 days · Grand Panorama",
+          "price": "US$1,390",
+          "note": "Full loop with two nights in Shuangqiao Valley"
+        }
       ]
     },
     "route3": {
@@ -368,15 +401,38 @@
           "a": "The listed dates are a sample. We run this journey on flexible dates for private groups, and it works best from June to September when the family is in their summer camp and the grasslands are green."
         }
       ],
-      "priceNote": "The camp is a fixed-cost stay, so the per-person price falls as your group grows — 2 guests US$2,980, 3 guests US$2,480, 4 guests US$1,999, 5–6 guests US$1,750. Four days, all meals and camp activities included.. Travel-accident insurance is included.",
+      "priceNote": "The camp is a fixed-cost stay, so the per-person price falls as your group grows — 2 guests US$2,980, 3 guests US$2,480, 4 guests US$1,999, 5–6 guests US$1,750. Four days, all meals and camp activities included. Travel-accident insurance is included.",
       "groupSize": "2–6 guests (private departure)",
       "hotelStandard": "Three nights in a traditional black yak-hair tent at the nomadic camp; one night in a Chengdu hotel at either end",
       "cancellation": [
         "30 days or more before departure: full refund, less any camp deposit already paid",
         "Under 30 days: the camp deposit is non-refundable",
         "Dates are flexible — ask us to move your booking at no extra charge"
+      ],
+      "priceTiers": [
+        {
+          "label": "2 guests",
+          "price": "US$2,980 / person",
+          "note": "Smallest group, highest per-person share of camp costs"
+        },
+        {
+          "label": "3 guests",
+          "price": "US$2,480 / person"
+        },
+        {
+          "label": "4 guests",
+          "price": "US$1,999 / person",
+          "note": "Most popular group size"
+        },
+        {
+          "label": "5–6 guests",
+          "price": "US$1,750 / person",
+          "note": "Best value per person"
+        }
       ]
-    }
+    },
+    "tierHead": "Per person",
+    "tierLabel": "Option"
   },
   "why": {
     "label": "The difference",

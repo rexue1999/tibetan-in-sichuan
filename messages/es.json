@@ -105,6 +105,13 @@
         "24 horas o más antes de la salida: reembolso completo",
         "Menos de 24 horas: cambio de fecha gratuito o 50% de reembolso",
         "No presentarse: sin reembolso"
+      ],
+      "priceTiers": [
+        {
+          "label": "Cualquier tamaño de grupo",
+          "price": "US$39 / persona",
+          "note": "Tarifa fija, grupos privados bienvenidos"
+        }
       ]
     },
     "route2": {
@@ -280,6 +287,32 @@
         "6 días o más antes de la salida: reembolso completo",
         "2–6 días antes de la salida: 50% de reembolso",
         "Menos de 2 días: sin reembolso"
+      ],
+      "priceTiers": [
+        {
+          "days": "3",
+          "label": "3 días · Clásico",
+          "price": "US$690",
+          "note": "Kangding, Xinduqiao, paso de Zheduo"
+        },
+        {
+          "days": "4",
+          "label": "4 días · Danba",
+          "price": "US$850",
+          "note": "Añade las praderas de Tagong y el pueblo de Zhonglu"
+        },
+        {
+          "days": "5",
+          "label": "5 días · A fondo",
+          "price": "US$1,050",
+          "note": "Añade el parque de Moshi y la montaña Siguniang"
+        },
+        {
+          "days": "7",
+          "label": "7 días · Gran Panorama",
+          "price": "US$1,390",
+          "note": "Circuito completo con dos noches en el valle de Shuangqiao"
+        }
       ]
     },
     "route3": {
@@ -368,15 +401,38 @@
           "a": "Las fechas indicadas son un ejemplo. Realizamos este viaje con fechas flexibles para grupos privados, y funciona mejor de junio a septiembre, cuando la familia está en el campamento de verano y los pastos están verdes."
         }
       ],
-      "priceNote": "El campamento tiene un coste fijo, por lo que el precio por persona baja a medida que crece el grupo: 2 personas US$2,980, 3 personas US$2,480, 4 personas US$1,999, 5–6 personas US$1,750. Cuatro días, con todas las comidas y actividades del campamento incluidas.. El seguro de accidentes de viaje está incluido.",
+      "priceNote": "El campamento tiene un coste fijo, por lo que el precio por persona baja a medida que crece el grupo: 2 personas US$2,980, 3 personas US$2,480, 4 personas US$1,999, 5–6 personas US$1,750. Cuatro días, con todas las comidas y actividades del campamento incluidas. El seguro de accidentes de viaje está incluido.",
       "groupSize": "2–6 personas (salida privada)",
       "hotelStandard": "Tres noches en una tienda tradicional de lana de yak en el campamento nómada; una noche en un hotel de Chengdu al inicio y al final",
       "cancellation": [
         "30 días o más antes de la salida: reembolso completo, salvo el depósito del campamento ya abonado",
         "Menos de 30 días: el depósito del campamento no es reembolsable",
         "Las fechas son flexibles — pídenos cambiar tu reserva sin coste adicional"
+      ],
+      "priceTiers": [
+        {
+          "label": "2 personas",
+          "price": "US$2,980 / persona",
+          "note": "Grupo más pequeño, mayor coste por persona del campamento"
+        },
+        {
+          "label": "3 personas",
+          "price": "US$2,480 / persona"
+        },
+        {
+          "label": "4 personas",
+          "price": "US$1,999 / persona",
+          "note": "El tamaño de grupo más habitual"
+        },
+        {
+          "label": "5–6 personas",
+          "price": "US$1,750 / persona",
+          "note": "La mejor relación por persona"
+        }
       ]
-    }
+    },
+    "tierHead": "Precio por persona",
+    "tierLabel": "Opción"
   },
   "why": {
     "label": "La diferencia",

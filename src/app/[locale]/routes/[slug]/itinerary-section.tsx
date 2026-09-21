@@ -15,14 +15,19 @@ interface Labels {
   dayLabel: string;
 }
 
+/** Price for one option, keyed by the same day-count as the itinerary map. */
+type PriceMap = Record<string, string>;
+
 export default function ItinerarySection({
   itinerary,
   itineraries,
+  prices,
   labels,
   locale,
 }: {
   itinerary?: ItineraryDay[];
   itineraries?: ItinerariesMap;
+  prices?: PriceMap;
   labels: Labels;
   locale: string;
 }) {
@@ -39,26 +44,39 @@ export default function ItinerarySection({
       <div className="mb-14">
         <div className="flex items-baseline justify-between mb-8 flex-wrap gap-4">
           <h2 className="text-xl font-medium text-[#1F1F1F]">{labels.itinerary}</h2>
-          {/* Variant tabs */}
-          <div className="flex gap-1 bg-[#F5F2ED] rounded-sm p-1">
-            {keys.map((key) => (
-              <button
-                key={key}
-                onClick={() => setSelected(key)}
-                className={`px-4 py-1.5 text-xs font-semibold tracking-[1px] rounded-sm transition-all ${
-                  selected === key
-                    ? 'bg-[#8C3B2E] text-white shadow-sm'
-                    : 'text-stone-400 hover:text-[#1F1F1F]'
-                }`}
-              >
-                {key}{labels.day}
-                {itineraries[key].label && (
-                  <span className={`ml-1.5 font-normal ${selected === key ? 'text-white/70' : 'text-stone-300'}`}>
-                    · {itineraries[key].label}
-                  </span>
-                )}
-              </button>
-            ))}
+          {/* Variant tabs. The price sits inside the tab so choosing a
+              duration and seeing its cost happen in one glance. */}
+          <div className="flex gap-1 bg-[#F5F2ED] rounded-sm p-1 flex-wrap">
+            {keys.map((key) => {
+              const price = prices?.[key];
+              return (
+                <button
+                  key={key}
+                  onClick={() => setSelected(key)}
+                  className={`px-4 py-1.5 text-xs font-semibold tracking-[1px] rounded-sm transition-all ${
+                    selected === key
+                      ? 'bg-[#8C3B2E] text-white shadow-sm'
+                      : 'text-stone-400 hover:text-[#1F1F1F]'
+                  }`}
+                >
+                  {key}{labels.day}
+                  {itineraries[key].label && (
+                    <span className={`ml-1.5 font-normal ${selected === key ? 'text-white/70' : 'text-stone-300'}`}>
+                      · {itineraries[key].label}
+                    </span>
+                  )}
+                  {price && (
+                    <span
+                      className={`ml-2 tabular-nums ${
+                        selected === key ? 'text-white/90 font-medium' : 'text-[#8C3B2E]'
+                      }`}
+                    >
+                      {price}
+                    </span>
+                  )}
+                </button>
+              );
+            })}
           </div>
         </div>
 

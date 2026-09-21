@@ -136,6 +136,19 @@ export default async function RouteDetail({
   const cancellation = (tr.raw(`${route.key}.cancellation`) as unknown as string[]) ?? [];
   const priceNote = tr(`${route.key}.priceNote` as any);
 
+  // Per-product pricing. Routes that sell several durations (or several
+  // group-size bands) list a labelled price per option, so a guest can
+  // compare without reading a paragraph.
+  type PriceTier = { label: string; price: string; note?: string; days?: string };
+  const priceTiers = (tr.raw(`${route.key}.priceTiers`) as unknown as PriceTier[]) ?? [];
+  const tierHead = tr('tierHead' as any);
+
+  // Map day-count -> price so the itinerary tabs can show their own price.
+  const pricesByDay: Record<string, string> = {};
+  for (const tier of priceTiers) {
+    if (tier.days) pricesByDay[tier.days] = tier.price;
+  }
+
   const labelMap: Record<string, RouteLabels> = {
     en: {
       duration: 'Duration', meeting: 'Meeting Point', time: 'Meeting Time', price: 'Price',
@@ -275,12 +288,46 @@ export default async function RouteDetail({
             )}
             {pricing && (
               <div className={`bg-[#1F1F1F] rounded-sm p-5 ${meetingPoint ? '' : 'md:col-span-3'}`}>
-                <p className="text-[10px] font-semibold tracking-[2px] uppercase text-white/50 mb-2">{labels.price}</p>
-                <p className="text-xl font-light text-white">{pricing}</p>
-                {priceNote && (
-                  <p className="text-[11px] leading-relaxed text-white/50 mt-3 pt-3 border-t border-white/10">
-                    {priceNote}
-                  </p>
+                <p className="text-[10px] font-semibold tracking-[2px] uppercase text-white/50 mb-2">
+                  {priceTiers.length > 1 ? tierHead : labels.price}
+                </p>
+
+                {priceTiers.length > 1 ? (
+                  <>
+                    {/* One row per sellable product, so the price you get is
+                        the price beside the option you pick. */}
+                    <ul className="divide-y divide-white/10">
+                      {priceTiers.map((tier, i) => (
+                        <li key={i} className="flex items-baseline justify-between gap-4 py-3 first:pt-0">
+                          <span className="text-sm text-white/85 leading-snug">
+                            {tier.label}
+                            {tier.note && (
+                              <span className="block text-[11px] text-white/40 mt-0.5 leading-snug">
+                                {tier.note}
+                              </span>
+                            )}
+                          </span>
+                          <span className="text-base font-light text-white whitespace-nowrap shrink-0 tabular-nums">
+                            {tier.price}
+                          </span>
+                        </li>
+                      ))}
+                    </ul>
+                    {priceNote && (
+                      <p className="text-[11px] leading-relaxed text-white/50 mt-3 pt-3 border-t border-white/10">
+                        {priceNote}
+                      </p>
+                    )}
+                  </>
+                ) : (
+                  <>
+                    <p className="text-xl font-light text-white">{pricing}</p>
+                    {priceNote && (
+                      <p className="text-[11px] leading-relaxed text-white/50 mt-3 pt-3 border-t border-white/10">
+                        {priceNote}
+                      </p>
+                    )}
+                  </>
                 )}
               </div>
             )}
@@ -322,7 +369,13 @@ export default async function RouteDetail({
         )}
 
         {/* Itinerary */}
-        <ItinerarySection itinerary={itinerary} itineraries={itineraries} labels={labels} locale={locale} />
+        <ItinerarySection
+          itinerary={itinerary}
+          itineraries={itineraries}
+          prices={pricesByDay}
+          labels={labels}
+          locale={locale}
+        />
 
         {/* Highlights */}
         {highlightList.length > 0 && (
