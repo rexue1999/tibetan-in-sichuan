@@ -30,7 +30,7 @@
       "tagline": "Tibetan culture hidden inside the city",
       "duration": "2 Hours · In the City",
       "tier": "Starter",
-      "pricing": "$19 USD / person",
+      "pricing": "US$39 / person",
       "meetingPoint": "Gaoshengqiao Metro Station, Exit G",
       "meetingTime": "5:00 PM",
       "description": "A two-hour introduction to Tibetan culture hidden inside the city — temples, tea houses, and living traditions most visitors never find.",
@@ -95,6 +95,14 @@
           "q": "How do I get to the meeting point?",
           "a": "We meet at Gaoshengqiao Metro Station Exit G, which is on Line 3. Your guide will be holding a Chengdu Journeys sign. We will send the exact location on WhatsApp the day before."
         }
+      ],
+      "priceNote": "Flat rate — private groups of up to 8 welcome, no minimum booking",
+      "groupSize": "1–8 guests",
+      "hotelStandard": "N/A — a walking tour, no overnight stay",
+      "cancellation": [
+        "24 hours or more before departure: full refund",
+        "Under 24 hours: reschedule free of charge, or 50% refund",
+        "No-show: no refund"
       ]
     },
     "route2": {
@@ -102,7 +110,7 @@
       "tagline": "Escape the city into Sichuan's highlands",
       "duration": "3–7 Days · Sichuan Highlands",
       "tier": "Popular",
-      "pricing": "Inquire for pricing",
+      "pricing": "From US$690 / person",
       "description": "Escape the city and explore highland roads, ancient temples, and mountain panoramas across the Tibetan plateau's eastern edge.",
       "highlights": [
         "Kangding Gateway Town",
@@ -262,6 +270,14 @@
           "q": "When is the best time to travel?",
           "a": "Late May to early October for reliable roads and green grasslands. Mid-October onwards brings the autumn colour but colder nights. Winter travel is possible, though some high passes may close after snow."
         }
+      ],
+      "priceNote": "Based on 2 travellers sharing. Longer itineraries cost less per day — 3 days US$690, 4 days US$850, 5 days US$1,050, 7 days US$1,390",
+      "groupSize": "2–8 guests (private departure)",
+      "hotelStandard": "Locally rated boutique hotels and Tibetan guesthouses, twin share. Higher categories available on request",
+      "cancellation": [
+        "6 days or more before departure: full refund",
+        "2–6 days before departure: 50% refund",
+        "Under 2 days: no refund"
       ]
     },
     "route3": {
@@ -269,7 +285,7 @@
       "tagline": "Become a true nomad at 3,600m on the Yellow River grasslands",
       "duration": "4 Days · NW Sichuan Plateau (flexible dates)",
       "tier": "Signature",
-      "pricing": "USD1,999/person (10–15 person group)",
+      "pricing": "From US$1,999 / person",
       "deposit": "Deposit $199 (inquire for dates)",
       "meetingPoint": "Downtown Chengdu (details before departure)",
       "meetingTime": "Confirmed before departure",
@@ -349,6 +365,14 @@
           "q": "Is the departure date fixed?",
           "a": "The listed dates are a sample. We run this journey on flexible dates for private groups, and it works best from June to September when the family is in their summer camp and the grasslands are green."
         }
+      ],
+      "priceNote": "Based on a private group of 4. Larger groups pay less per person — ask us for a quote",
+      "groupSize": "4–15 guests (private departure)",
+      "hotelStandard": "Three nights in a traditional black yak-hair tent at the nomadic camp; one night in a Chengdu hotel at either end",
+      "cancellation": [
+        "30 days or more before departure: full refund, less any camp deposit already paid",
+        "Under 30 days: the camp deposit is non-refundable",
+        "Dates are flexible — ask us to move your booking at no extra charge"
       ]
     }
   },
@@ -930,7 +954,162 @@
           "a": "For Western Sichuan, a few weeks is usually plenty, more if you want specific accommodation in peak summer. For the Tibet Autonomous Region, allow at least two to three months for permits and paperwork."
         }
       ]
-    }
+    },
+    "tibet-permit-explained": {
+          "title": "Do you need a Tibet permit for Western Sichuan?",
+          "excerpt": "The single most common question we get from foreign travellers — and the answer surprises almost everyone. If your trip stays in Sichuan, you do not need a Tibet permit. Here is exactly where the line falls.",
+          "metaTitle": "Tibet Permit for Western Sichuan? What You Need",
+          "metaDesc": "Do you need a Tibet permit for Kangding, Tagong or Danba? No — Western Sichuan needs only a China visa. Here is where the permit line actually falls.",
+          "sections": [
+            {
+              "heading": "The short answer",
+              "body": [
+                "If your itinerary stays inside Sichuan Province — Chengdu, Kangding, Xinduqiao, Tagong, Danba, Siguniang Mountain, the Zoige and Hongyuan grasslands — you do not need a Tibet Travel Permit.",
+                "You need a valid Chinese visa (or visa-free entry, depending on your nationality), your passport, and nothing else in the way of special paperwork. All three of our routes are entirely within Sichuan."
+              ]
+            },
+            {
+              "heading": "Why this confuses almost everyone",
+              "body": [
+                "The confusion is understandable, and it is not the traveller’s fault. Two entirely different places both get called \"Tibet\" in English.",
+                "The first is the Tibet Autonomous Region, usually shortened to TAR — the area administered from Lhasa, covering roughly the western half of the Tibetan plateau. This is the Tibet of Everest Base Camp, Lhasa and Shigatse. Entry here requires a Tibet Travel Permit, and foreign travellers must also join an organised tour with a licensed guide for the whole duration.",
+                "The second is the Tibetan cultural world outside the TAR. The Tibetan plateau spills far beyond the TAR’s borders into Sichuan, Qinghai, Gansu and Yunnan. These areas are historically and culturally Tibetan, and the people living there are Tibetan — but they are administratively part of those other provinces, and they are not the TAR.",
+                "Western Sichuan is entirely in the second category. When a tour is called \"Tibetan Sichuan\", \"Kham\" or \"Eastern Tibet\", it almost always means this second kind."
+              ]
+            },
+            {
+              "heading": "Where the line actually falls",
+              "body": [
+                "The practical rule is administrative, not cultural. A place inside the Tibet Autonomous Region needs a permit. A place outside it does not.",
+                "Everything in the table below is in Sichuan and needs no permit:"
+              ],
+              "table": {
+                "headers": [
+                  "Place",
+                  "Province",
+                  "Tibet permit needed?"
+                ],
+                "rows": [
+                  [
+                    "Chengdu",
+                    "Sichuan",
+                    "No"
+                  ],
+                  [
+                    "Kangding",
+                    "Sichuan",
+                    "No"
+                  ],
+                  [
+                    "Xinduqiao",
+                    "Sichuan",
+                    "No"
+                  ],
+                  [
+                    "Tagong",
+                    "Sichuan",
+                    "No"
+                  ],
+                  [
+                    "Danba",
+                    "Sichuan",
+                    "No"
+                  ],
+                  [
+                    "Siguniang Mountain",
+                    "Sichuan",
+                    "No"
+                  ],
+                  [
+                    "Hongyuan / Zoige grasslands",
+                    "Sichuan",
+                    "No"
+                  ],
+                  [
+                    "Litang",
+                    "Sichuan",
+                    "No"
+                  ],
+                  [
+                    "Daocheng Yading",
+                    "Sichuan",
+                    "No"
+                  ],
+                  [
+                    "Seda (Larung Gar)",
+                    "Sichuan",
+                    "No"
+                  ],
+                  [
+                    "Lhasa",
+                    "Tibet Autonomous Region",
+                    "Yes"
+                  ],
+                  [
+                    "Shigatse / Everest Base Camp",
+                    "Tibet Autonomous Region",
+                    "Yes"
+                  ],
+                  [
+                    "Nyingchi",
+                    "Tibet Autonomous Region",
+                    "Yes"
+                  ]
+                ]
+              }
+            },
+            {
+              "heading": "What you do need for Western Sichuan",
+              "body": [
+                "A valid passport with at least six months’ validity remaining, and a current Chinese visa — or entry under a visa-free arrangement if your nationality qualifies.",
+                "Carry your passport with you on the road. Scenic areas, some hotels and a number of checkpoints in Ganzi and Aba prefectures will ask to see it. Keep a photo of your passport and visa on your phone as a backup.",
+                "That is the entire list. There is no additional permit to apply for, no agency paperwork, and no minimum group size for Western Sichuan."
+              ]
+            },
+            {
+              "heading": "What changes if you extend into the TAR",
+              "body": [
+                "If you later decide to continue west from Sichuan into the Tibet Autonomous Region — for example Chengdu overland to Lhasa on the G318 — the rules change completely at the border, and they are considerably stricter.",
+                "You will need a Tibet Travel Permit, which can only be arranged through a licensed Tibetan travel agency, not applied for directly. You must travel with an organised tour and a licensed guide for the whole time you are inside the TAR. Independent travel is not permitted for foreign visitors.",
+                "Processing takes time and the permit is issued for specific dates against a fixed itinerary. It cannot be obtained at short notice, and you cannot simply turn up at the boundary and buy one.",
+                "This is worth knowing early, because it is easy to assume a long overland trip needs a permit from day one. It does not — only the TAR portion does."
+              ]
+            },
+            {
+              "heading": "One honest caveat",
+              "body": [
+                "Permit policy is administrative and it does change. Areas that have been open can close temporarily for conservation, weather, road works or local restrictions, and notice is sometimes short.",
+                "For any of our Sichuan routes this is a non-issue, because the permit question simply does not arise. But if your wider plans include the TAR, always confirm the current position with a licensed agency shortly before you travel rather than relying on a guide written months earlier."
+              ]
+            }
+          ],
+          "faq": [
+            {
+              "q": "Do I need a Tibet permit to visit Kangding, Tagong or Danba?",
+              "a": "No. All three are in Sichuan Province, not the Tibet Autonomous Region. A valid Chinese visa and your passport are all you need. There is no additional permit and no minimum group size."
+            },
+            {
+              "q": "Is \"Tibetan Sichuan\" the same as Tibet?",
+              "a": "No. Western Sichuan is culturally Tibetan and home to many Tibetan communities, but it is administratively part of Sichuan Province. The Tibet Autonomous Region is a separate administrative area administered from Lhasa, and that is where a Tibet Travel Permit applies."
+            },
+            {
+              "q": "Can I travel independently in Western Sichuan?",
+              "a": "Yes. Unlike the Tibet Autonomous Region, Western Sichuan places no requirement on foreign visitors to join an organised tour. You can travel independently, hire a driver, or join a small group — it is entirely your choice."
+            },
+            {
+              "q": "What if I want to continue from Sichuan into the Tibet Autonomous Region?",
+              "a": "Then you will need a Tibet Travel Permit, arranged in advance through a licensed Tibetan travel agency, and you must travel with an organised tour and licensed guide throughout the TAR. Independent travel is not permitted there for foreign visitors."
+            },
+            {
+              "q": "How far in advance should I arrange a permit if I do need one?",
+              "a": "Allow several weeks at minimum, and more in peak season. Permits are issued against specific dates and a fixed itinerary, so late applications and last-minute changes are difficult. For our Sichuan-only routes, none of this applies."
+            },
+            {
+              "q": "Do I need to carry my passport in Western Sichuan?",
+              "a": "Yes, carry it. Scenic areas, some hotels and various checkpoints in Ganzi and Aba prefectures may ask to see it. Keep a phone photo of your passport and visa as a backup."
+            }
+          ]
+        }
   },
   "about": {
     "label": "Who we are",

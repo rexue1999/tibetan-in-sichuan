@@ -18,7 +18,8 @@ export type GuideSlug =
   | 'tibetan-culture-etiquette'
   | 'what-to-pack'
   | 'chengdu-to-tibet-transport'
-  | 'first-time-tibet-travel';
+  | 'first-time-tibet-travel'
+  | 'tibet-permit-explained';
 
 export type GuideMeta = {
   slug: GuideSlug;
@@ -116,6 +117,20 @@ export const guides: GuideMeta[] = [
       'Western Sichuan vs Tibet',
       'planning first Tibet trip',
       'Tibetan plateau beginner guide',
+    ],
+  },
+  {
+    slug: 'tibet-permit-explained',
+    image: '/images/muya.jpg?v=2',
+    published: '2026-09-21',
+    updated: '2026-09-21',
+    minutes: 7,
+    keywords: [
+      'Tibet travel permit',
+      'do I need a Tibet permit for Sichuan',
+      'Western Sichuan no permit needed',
+      'Tibet Entry Permit vs China visa',
+      'Kangding Tagong permit',
     ],
   },
 ];

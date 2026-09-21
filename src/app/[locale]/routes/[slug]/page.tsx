@@ -22,6 +22,9 @@ type RouteLabels = {
   includedTitle: string;
   excludedTitle: string;
   faq: string;
+  groupSize: string;
+  hotel: string;
+  cancellation: string;
 };
 
 const routeMap: Record<string, { key: 'route1' | 'route2' | 'route3'; image: string; keywords: string[] }> = {
@@ -127,6 +130,12 @@ export default async function RouteDetail({
   const excludes = (tr.raw(`${route.key}.excludes`) as unknown as string[]) ?? [];
   const faq = (tr.raw(`${route.key}.faq`) as unknown as { q: string; a: string }[]) ?? [];
 
+  // Booking-facts: group size, accommodation standard and refund policy.
+  const groupSize = tr(`${route.key}.groupSize` as any);
+  const hotelStandard = tr(`${route.key}.hotelStandard` as any);
+  const cancellation = (tr.raw(`${route.key}.cancellation`) as unknown as string[]) ?? [];
+  const priceNote = tr(`${route.key}.priceNote` as any);
+
   const labelMap: Record<string, RouteLabels> = {
     en: {
       duration: 'Duration', meeting: 'Meeting Point', time: 'Meeting Time', price: 'Price',
@@ -134,6 +143,7 @@ export default async function RouteDetail({
       askWA: 'Ask on WhatsApp', back: 'Back to Home', day: 'Days', stay: 'Stay', dayLabel: 'Day',
       included: "What's included", includedTitle: 'Included', excludedTitle: 'Not included',
       faq: 'Common questions',
+      groupSize: 'Group size', hotel: 'Accommodation', cancellation: 'Cancellation policy',
     },
     es: {
       duration: 'Duración', meeting: 'Punto de encuentro', time: 'Hora de encuentro', price: 'Precio',
@@ -141,6 +151,7 @@ export default async function RouteDetail({
       askWA: 'Consultar por WhatsApp', back: 'Volver al inicio', day: 'Días', stay: 'Alojamiento', dayLabel: 'Día',
       included: 'Qué incluye', includedTitle: 'Incluido', excludedTitle: 'No incluido',
       faq: 'Preguntas frecuentes',
+      groupSize: 'Tamaño del grupo', hotel: 'Alojamiento', cancellation: 'Política de cancelación',
     },
     th: {
       duration: 'ระยะเวลา', meeting: 'จุดนัดพบ', time: 'เวลานัดพบ', price: 'ราคา',
@@ -148,6 +159,7 @@ export default async function RouteDetail({
       askWA: 'สอบถามทาง WhatsApp', back: 'กลับหน้าแรก', day: 'วัน', stay: 'พัก', dayLabel: 'วันที่',
       included: 'ราคารวมอะไรบ้าง', includedTitle: 'รวมอยู่ด้วย', excludedTitle: 'ไม่รวม',
       faq: 'คำถามที่พบบ่อย',
+      groupSize: 'ขนาดกลุ่ม', hotel: 'ที่พัก', cancellation: 'นโยบายการยกเลิก',
     },
     zh: {
       duration: '时长', meeting: '集合地点', time: '集合时间', price: '价格',
@@ -155,6 +167,7 @@ export default async function RouteDetail({
       askWA: 'WhatsApp 咨询', back: '返回首页', day: '天', stay: '住', dayLabel: '第',
       included: '费用说明', includedTitle: '费用包含', excludedTitle: '费用不含',
       faq: '常见问题',
+      groupSize: '成团人数', hotel: '住宿标准', cancellation: '取消政策',
     },
   };
   const labels: RouteLabels = labelMap[locale] ?? labelMap.en;
@@ -261,9 +274,48 @@ export default async function RouteDetail({
               </>
             )}
             {pricing && (
-              <div className="bg-[#1F1F1F] rounded-sm p-5">
+              <div className={`bg-[#1F1F1F] rounded-sm p-5 ${meetingPoint ? '' : 'md:col-span-3'}`}>
                 <p className="text-[10px] font-semibold tracking-[2px] uppercase text-white/50 mb-2">{labels.price}</p>
                 <p className="text-xl font-light text-white">{pricing}</p>
+                {priceNote && (
+                  <p className="text-[11px] leading-relaxed text-white/50 mt-3 pt-3 border-t border-white/10">
+                    {priceNote}
+                  </p>
+                )}
+              </div>
+            )}
+          </div>
+        )}
+
+        {/* Booking facts: group size, accommodation, cancellation */}
+        {(groupSize || hotelStandard || cancellation.length > 0) && (
+          <div className="grid md:grid-cols-3 gap-4 mb-14">
+            {groupSize && (
+              <div className="bg-[#F5F2ED] rounded-sm p-5 border border-black/5">
+                <p className="text-[10px] font-semibold tracking-[2px] uppercase text-[#8C3B2E] mb-2">
+                  {labels.groupSize}
+                </p>
+                <p className="text-sm text-[#1F1F1F] leading-relaxed">{groupSize}</p>
+              </div>
+            )}
+            {hotelStandard && (
+              <div className="bg-[#F5F2ED] rounded-sm p-5 border border-black/5">
+                <p className="text-[10px] font-semibold tracking-[2px] uppercase text-[#8C3B2E] mb-2">
+                  {labels.hotel}
+                </p>
+                <p className="text-sm text-[#1F1F1F] leading-relaxed">{hotelStandard}</p>
+              </div>
+            )}
+            {cancellation.length > 0 && (
+              <div className="bg-[#F5F2ED] rounded-sm p-5 border border-black/5">
+                <p className="text-[10px] font-semibold tracking-[2px] uppercase text-[#8C3B2E] mb-2">
+                  {labels.cancellation}
+                </p>
+                <ul className="space-y-1.5">
+                  {cancellation.map((line, i) => (
+                    <li key={i} className="text-sm text-[#1F1F1F] leading-relaxed">{line}</li>
+                  ))}
+                </ul>
               </div>
             )}
           </div>
