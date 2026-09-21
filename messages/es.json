@@ -34,12 +34,67 @@
       "meetingPoint": "Estación de metro Gaoshengqiao, Salida G",
       "meetingTime": "5:00 PM",
       "description": "Una introducción de dos horas a la cultura tibetana oculta dentro de la ciudad — templos, casas de té y tradiciones vivas que la mayoría de los visitantes nunca encuentran.",
-      "highlights": ["Barrio tibetano de Wuhouci", "Casa de té tradicional", "Visita al templo budista", "Degustación de snacks tibetanos"],
+      "highlights": [
+        "Barrio tibetano de Wuhouci",
+        "Casa de té tradicional",
+        "Visita al templo budista",
+        "Degustación de snacks tibetanos"
+      ],
       "itinerary": [
-        { "title": "Encuentro", "desc": "Reúnanse en la salida G de la estación Gaoshengqiao. Conoce a tu guía y compañeros de viaje." },
-        { "title": "Paseo por el barrio tibetano", "duration": "45 min", "desc": "Recorre el barrio tibetano más auténtico de Chengdu — templos, ruedas de oración, vestimenta tradicional y vida cotidiana entrelazadas en la ciudad." },
-        { "title": "Té y snacks tibetanos", "duration": "45 min", "desc": "Entra en una casa de té tibetana tradicional. Prueba el auténtico té de mantequilla o té dulce junto con snacks tibetanos, mientras escuchas historias de la meseta." },
-        { "title": "Danza Guozhuang tibetana", "duration": "30 min", "desc": "Disfruta de una danza tradicional Guozhuang en círculo — el ritmo y la calidez de la cultura de la meseta. Regreso al punto de encuentro al finalizar." }
+        {
+          "title": "Encuentro",
+          "desc": "Reúnanse en la salida G de la estación Gaoshengqiao. Conoce a tu guía y compañeros de viaje."
+        },
+        {
+          "title": "Paseo por el barrio tibetano",
+          "duration": "45 min",
+          "desc": "Recorre el barrio tibetano más auténtico de Chengdu — templos, ruedas de oración, vestimenta tradicional y vida cotidiana entrelazadas en la ciudad."
+        },
+        {
+          "title": "Té y snacks tibetanos",
+          "duration": "45 min",
+          "desc": "Entra en una casa de té tibetana tradicional. Prueba el auténtico té de mantequilla o té dulce junto con snacks tibetanos, mientras escuchas historias de la meseta."
+        },
+        {
+          "title": "Danza Guozhuang tibetana",
+          "duration": "30 min",
+          "desc": "Disfruta de una danza tradicional Guozhuang en círculo — el ritmo y la calidez de la cultura de la meseta. Regreso al punto de encuentro al finalizar."
+        }
+      ],
+      "includes": [
+        "Guía local de habla inglesa durante todo el recorrido",
+        "Todas las entradas a templos y lugares de interés",
+        "Té con mantequilla tibetano y aperitivos",
+        "Espectáculo de danza Guozhuang",
+        "Recogida en metro, salida G de Gaoshengqiao"
+      ],
+      "excludes": [
+        "Traslado desde y hacia el hotel",
+        "Comidas distintas del té y los aperitivos incluidos",
+        "Compras personales y recuerdos",
+        "Propinas (opcionales)"
+      ],
+      "faq": [
+        {
+          "q": "¿Necesito un guía que hable mi idioma?",
+          "a": "Nuestro paseo urbano se hace en inglés por defecto. Se pueden organizar guías en español y tailandés bajo petición: indícanos tus fechas e idioma al consultar."
+        },
+        {
+          "q": "¿Es apto para niños o viajeros mayores?",
+          "a": "Sí. Es un paseo suave de dos horas por calles llanas con muchas paradas para té y descanso. No hay escaleras pronunciadas, aunque los patios del templo tienen algunos tramos irregulares."
+        },
+        {
+          "q": "¿Qué pasa si llueve?",
+          "a": "El paseo se realiza con lluvia ligera y ajustamos la ruta para resguardarnos donde sea posible. En caso de mal tiempo serio, reprogramamos o devolvemos el importe completo."
+        },
+        {
+          "q": "¿Puedo unirme si tengo restricciones alimentarias?",
+          "a": "Por supuesto. Avísanos con antelación y prepararemos aperitivos alternativos. El té con mantequilla también se puede cambiar por té dulce."
+        },
+        {
+          "q": "¿Cómo llego al punto de encuentro?",
+          "a": "Nos encontramos en la salida G de la estación de metro Gaoshengqiao, en la línea 3. Tu guía llevará un cartel de Chengdu Journeys. Enviaremos la ubicación exacta por WhatsApp el día anterior."
+        }
       ]
     },
     "route2": {
@@ -49,48 +104,165 @@
       "tier": "Popular",
       "pricing": "Consultar precio",
       "description": "Escapa de la ciudad y explora carreteras de altura, templos antiguos y panorámicas de montaña en el borde oriental de la meseta tibetana.",
-      "highlights": ["Ciudad puerta de Kangding", "Praderas de Tagong", "Templo de Lhagang", "Paso Zheduo a 4.298 m"],
+      "highlights": [
+        "Ciudad puerta de Kangding",
+        "Praderas de Tagong",
+        "Templo de Lhagang",
+        "Paso Zheduo a 4.298 m"
+      ],
       "itineraries": {
         "3": {
           "label": "Clásico",
           "days": [
-            { "title": "Chengdu → Kangding", "desc": "Sal de Chengdu por la tarde, cruza el túnel de la montaña Erlang por la autopista Yakang y llega a Kangding — capital de Ganzi — al anochecer. Pasea junto al río Zheduo y sumérgete en el ambiente tibetano de esta legendaria ciudad puerta.", "stay": "Alojamiento: Kangding" },
-            { "title": "S434 · Monasterio Muya · Yala → Xinduqiao", "desc": "Toma la impresionante carretera provincial 434 hacia el norte — más tranquila y escénica que la G318. Visita el monasterio Muya, con techos dorados y muros carmesí contra picos nevados. Disfruta la vista del monte nevado Yala. Llega a Xinduqiao al atardecer, el 'paraíso de los fotógrafos'.", "stay": "Alojamiento: Xinduqiao" },
-            { "title": "Paso Zheduo → Chengdu", "desc": "Cruza el paso Zheduo (4.298 m) — la primera gran puerta de la carretera Sichuan-Tíbet — entre banderas de oración y picos nevados. Regreso a Chengdu por Kangding, llegando al anochecer.", "stay": "" }
+            {
+              "title": "Chengdu → Kangding",
+              "desc": "Sal de Chengdu por la tarde, cruza el túnel de la montaña Erlang por la autopista Yakang y llega a Kangding — capital de Ganzi — al anochecer. Pasea junto al río Zheduo y sumérgete en el ambiente tibetano de esta legendaria ciudad puerta.",
+              "stay": "Alojamiento: Kangding"
+            },
+            {
+              "title": "S434 · Monasterio Muya · Yala → Xinduqiao",
+              "desc": "Toma la impresionante carretera provincial 434 hacia el norte — más tranquila y escénica que la G318. Visita el monasterio Muya, con techos dorados y muros carmesí contra picos nevados. Disfruta la vista del monte nevado Yala. Llega a Xinduqiao al atardecer, el 'paraíso de los fotógrafos'.",
+              "stay": "Alojamiento: Xinduqiao"
+            },
+            {
+              "title": "Paso Zheduo → Chengdu",
+              "desc": "Cruza el paso Zheduo (4.298 m) — la primera gran puerta de la carretera Sichuan-Tíbet — entre banderas de oración y picos nevados. Regreso a Chengdu por Kangding, llegando al anochecer.",
+              "stay": ""
+            }
           ]
         },
         "4": {
           "label": "Danba",
           "days": [
-            { "title": "Chengdu → Kangding", "desc": "Sal de Chengdu por la tarde, cruza el túnel de la montaña Erlang y llega a Kangding al anochecer. Pasea junto al río Zheduo y disfruta del ambiente tibetano.", "stay": "Alojamiento: Kangding" },
-            { "title": "S434 · Monasterio Muya · Yala → Xinduqiao", "desc": "Toma la carretera provincial 434 hacia el norte. Visita el monasterio Muya y admira el monte nevado Yala. Llega a Xinduqiao al atardecer, donde la luz y la sombra pintan las aldeas tibetanas.", "stay": "Alojamiento: Xinduqiao" },
-            { "title": "Praderas Tagong · Bamei → Aldea Zhonglu", "desc": "Paseo matutino por las praderas de Tagong, con la pagoda dorada Muya enmarcando el monte Yala. Continúa por Bamei hacia Danba. Llega a la aldea tibetana de Zhonglu — un asentamiento Gyalrong milenario de torres de vigilancia, flores de peral y campos en terrazas.", "stay": "Alojamiento: Aldea Zhonglu" },
-            { "title": "Aldea Zhonglu → Chengdu", "desc": "Despierta en la aldea mientras la niebla matutina envuelve las torres — la hora más mágica de Zhonglu. Tras una mañana de exploración libre, regresa a Chengdu con una vista lejana de las montañas Siguniang desde el paso Maobiliang.", "stay": "" }
+            {
+              "title": "Chengdu → Kangding",
+              "desc": "Sal de Chengdu por la tarde, cruza el túnel de la montaña Erlang y llega a Kangding al anochecer. Pasea junto al río Zheduo y disfruta del ambiente tibetano.",
+              "stay": "Alojamiento: Kangding"
+            },
+            {
+              "title": "S434 · Monasterio Muya · Yala → Xinduqiao",
+              "desc": "Toma la carretera provincial 434 hacia el norte. Visita el monasterio Muya y admira el monte nevado Yala. Llega a Xinduqiao al atardecer, donde la luz y la sombra pintan las aldeas tibetanas.",
+              "stay": "Alojamiento: Xinduqiao"
+            },
+            {
+              "title": "Praderas Tagong · Bamei → Aldea Zhonglu",
+              "desc": "Paseo matutino por las praderas de Tagong, con la pagoda dorada Muya enmarcando el monte Yala. Continúa por Bamei hacia Danba. Llega a la aldea tibetana de Zhonglu — un asentamiento Gyalrong milenario de torres de vigilancia, flores de peral y campos en terrazas.",
+              "stay": "Alojamiento: Aldea Zhonglu"
+            },
+            {
+              "title": "Aldea Zhonglu → Chengdu",
+              "desc": "Despierta en la aldea mientras la niebla matutina envuelve las torres — la hora más mágica de Zhonglu. Tras una mañana de exploración libre, regresa a Chengdu con una vista lejana de las montañas Siguniang desde el paso Maobiliang.",
+              "stay": ""
+            }
           ]
         },
         "5": {
           "label": "Profundo",
           "days": [
-            { "title": "Chengdu → Kangding", "desc": "Sal de Chengdu por la tarde, cruza el túnel de la montaña Erlang y llega a Kangding al anochecer. Pasea junto al río Zheduo.", "stay": "Alojamiento: Kangding" },
-            { "title": "S434 · Monasterio Muya · Yala → Xinduqiao", "desc": "Toma la carretera provincial 434. Visita el monasterio Muya y el mirador del monte Yala antes de llegar a Xinduqiao al atardecer.", "stay": "Alojamiento: Xinduqiao" },
-            { "title": "Tagong · Bamei · Parque Moshi → Danba", "desc": "Mañana en las praderas de Tagong. Continúa al Parque Moshi cerca de Bamei, donde extraños bosques de piedra milonita se extienden como un paisaje alienígena. Por la tarde, atraviesa el corredor del Valle Yak hacia Danba.", "stay": "Alojamiento: Danba" },
-            { "title": "Danba · Aldea Zhonglu → Montaña Siguniang", "desc": "Exploración matutina de la aldea Zhonglu — torres milenarias y hogares de piedra de la cultura Gyalrong. Por la tarde, viaje a la montaña Siguniang con parada panorámica en el paso Maobiliang.", "stay": "Alojamiento: Pueblo Siguniangshan" },
-            { "title": "Montaña Siguniang → Chengdu", "desc": "Visita matutina al valle Shuangqiao — toma el autobús hacia el interior del valle, pasando por picos nevados, praderas alpinas y lagos glaciares. Regreso a Chengdu por la tarde vía montaña Balang y la Reserva Natural de Wolong.", "stay": "" }
+            {
+              "title": "Chengdu → Kangding",
+              "desc": "Sal de Chengdu por la tarde, cruza el túnel de la montaña Erlang y llega a Kangding al anochecer. Pasea junto al río Zheduo.",
+              "stay": "Alojamiento: Kangding"
+            },
+            {
+              "title": "S434 · Monasterio Muya · Yala → Xinduqiao",
+              "desc": "Toma la carretera provincial 434. Visita el monasterio Muya y el mirador del monte Yala antes de llegar a Xinduqiao al atardecer.",
+              "stay": "Alojamiento: Xinduqiao"
+            },
+            {
+              "title": "Tagong · Bamei · Parque Moshi → Danba",
+              "desc": "Mañana en las praderas de Tagong. Continúa al Parque Moshi cerca de Bamei, donde extraños bosques de piedra milonita se extienden como un paisaje alienígena. Por la tarde, atraviesa el corredor del Valle Yak hacia Danba.",
+              "stay": "Alojamiento: Danba"
+            },
+            {
+              "title": "Danba · Aldea Zhonglu → Montaña Siguniang",
+              "desc": "Exploración matutina de la aldea Zhonglu — torres milenarias y hogares de piedra de la cultura Gyalrong. Por la tarde, viaje a la montaña Siguniang con parada panorámica en el paso Maobiliang.",
+              "stay": "Alojamiento: Pueblo Siguniangshan"
+            },
+            {
+              "title": "Montaña Siguniang → Chengdu",
+              "desc": "Visita matutina al valle Shuangqiao — toma el autobús hacia el interior del valle, pasando por picos nevados, praderas alpinas y lagos glaciares. Regreso a Chengdu por la tarde vía montaña Balang y la Reserva Natural de Wolong.",
+              "stay": ""
+            }
           ]
         },
         "7": {
           "label": "Gran Panorama",
           "days": [
-            { "title": "Chengdu → Kangding", "desc": "Sal de Chengdu por la tarde y llega a Kangding al anochecer. Pasea junto al río Zheduo y disfruta del ambiente tibetano.", "stay": "Alojamiento: Kangding" },
-            { "title": "S434 · Monasterio Muya · Yala → Xinduqiao", "desc": "Toma la carretera provincial 434. Visita el monasterio Muya y el mirador del monte Yala, luego llega a Xinduqiao al atardecer.", "stay": "Alojamiento: Xinduqiao" },
-            { "title": "Tagong · Bamei · Parque Moshi → Danba", "desc": "Mañana en las praderas de Tagong. Visita el Parque Moshi con sus extraños bosques de piedra. Por la tarde, atraviesa el Valle Yak hacia Danba.", "stay": "Alojamiento: Danba" },
-            { "title": "Aldea Zhonglu — Día completo de inmersión", "desc": "Un día entero en la aldea tibetana de Zhonglu — torres emergiendo de la niebla matutina, flores de peral entre casas de piedra. Sube al mirador n.º 1 para una vista panorámica. Visita a una familia tibetana para tomar té de mantequilla. Sube a la torre más alta para el atardecer.", "stay": "Alojamiento: Aldea Zhonglu" },
-            { "title": "Aldea Jiaju → Montaña Siguniang", "desc": "Visita matutina a la aldea tibetana de Jiaju — 'el pueblo más bello de China' — donde casas de piedra descienden por la ladera. Por la tarde, viaje a la montaña Siguniang para la vista panorámica de los cuatro picos desde el paso Maobiliang.", "stay": "Alojamiento: Pueblo Siguniangshan" },
-            { "title": "Valle Shuangqiao de Siguniang — Día completo", "desc": "Día completo en el valle Shuangqiao — toma el autobús desde la pradera Renshenguo hasta el bosque de secuoyas. Picos nevados, glaciares, bosques alpinos, praderas y lagos se despliegan kilómetro tras kilómetro.", "stay": "Alojamiento: Pueblo Siguniangshan" },
-            { "title": "Montaña Siguniang → Chengdu", "desc": "Una última mirada al amanecer dorado de Siguniang (si el clima lo permite), luego regreso a Chengdu vía el túnel de la montaña Balang y la Reserva Natural de Wolong.", "stay": "" }
+            {
+              "title": "Chengdu → Kangding",
+              "desc": "Sal de Chengdu por la tarde y llega a Kangding al anochecer. Pasea junto al río Zheduo y disfruta del ambiente tibetano.",
+              "stay": "Alojamiento: Kangding"
+            },
+            {
+              "title": "S434 · Monasterio Muya · Yala → Xinduqiao",
+              "desc": "Toma la carretera provincial 434. Visita el monasterio Muya y el mirador del monte Yala, luego llega a Xinduqiao al atardecer.",
+              "stay": "Alojamiento: Xinduqiao"
+            },
+            {
+              "title": "Tagong · Bamei · Parque Moshi → Danba",
+              "desc": "Mañana en las praderas de Tagong. Visita el Parque Moshi con sus extraños bosques de piedra. Por la tarde, atraviesa el Valle Yak hacia Danba.",
+              "stay": "Alojamiento: Danba"
+            },
+            {
+              "title": "Aldea Zhonglu — Día completo de inmersión",
+              "desc": "Un día entero en la aldea tibetana de Zhonglu — torres emergiendo de la niebla matutina, flores de peral entre casas de piedra. Sube al mirador n.º 1 para una vista panorámica. Visita a una familia tibetana para tomar té de mantequilla. Sube a la torre más alta para el atardecer.",
+              "stay": "Alojamiento: Aldea Zhonglu"
+            },
+            {
+              "title": "Aldea Jiaju → Montaña Siguniang",
+              "desc": "Visita matutina a la aldea tibetana de Jiaju — 'el pueblo más bello de China' — donde casas de piedra descienden por la ladera. Por la tarde, viaje a la montaña Siguniang para la vista panorámica de los cuatro picos desde el paso Maobiliang.",
+              "stay": "Alojamiento: Pueblo Siguniangshan"
+            },
+            {
+              "title": "Valle Shuangqiao de Siguniang — Día completo",
+              "desc": "Día completo en el valle Shuangqiao — toma el autobús desde la pradera Renshenguo hasta el bosque de secuoyas. Picos nevados, glaciares, bosques alpinos, praderas y lagos se despliegan kilómetro tras kilómetro.",
+              "stay": "Alojamiento: Pueblo Siguniangshan"
+            },
+            {
+              "title": "Montaña Siguniang → Chengdu",
+              "desc": "Una última mirada al amanecer dorado de Siguniang (si el clima lo permite), luego regreso a Chengdu vía el túnel de la montaña Balang y la Reserva Natural de Wolong.",
+              "stay": ""
+            }
           ]
         }
-      }
+      },
+      "includes": [
+        "Vehículo privado y conductor experimentado en altura",
+        "Guía de habla inglesa durante todo el recorrido",
+        "Todas las entradas a monasterios y zonas escénicas",
+        "Alojamiento según el itinerario elegido",
+        "Suministro de oxígeno y botiquín básico en el vehículo",
+        "Agua embotellada durante todo el viaje"
+      ],
+      "excludes": [
+        "Comidas no indicadas en el itinerario (unos 60–120 CNY al día)",
+        "Seguro de viaje personal — obligatorio en rutas de altura",
+        "Equitación, paseos en barco y otras actividades opcionales",
+        "Propinas (opcionales)"
+      ],
+      "faq": [
+        {
+          "q": "¿Qué duración de itinerario debería elegir?",
+          "a": "Tres días cubre Kangding, Xinduqiao y el puerto de Zheduo, ideal si vas justo de tiempo. Cuatro o cinco días añaden Tagong y Danba, que es lo que elige la mayoría. Siete días incluyen Siguniang y un día completo en Zhonglu sin prisas."
+        },
+        {
+          "q": "¿A qué altura llegamos? ¿Es un problema?",
+          "a": "El punto más alto es el puerto de Zheduo, a 4.298 m, que cruzamos en vehículo sin dormir allí. Las noches se pasan entre 2.560 m y 3.700 m. Subimos gradualmente y el vehículo lleva oxígeno."
+        },
+        {
+          "q": "¿Cómo están las carreteras?",
+          "a": "Las vías principales están asfaltadas y en buen estado. La carretera provincial 434 y algunos tramos de pueblo son más estrechos y con más curvas, pero se transitan bien en vehículo privado. Tras lluvias fuertes puede haber cortes breves por desprendimientos; vigilamos y desviamos si hace falta."
+        },
+        {
+          "q": "¿Se puede personalizar la ruta?",
+          "a": "Sí, todas nuestras rutas de altura se hacen a medida. Dinos tus fechas, cuántos días tienes y qué quieres ver, y montamos un itinerario alrededor."
+        },
+        {
+          "q": "¿Cuál es la mejor época para viajar?",
+          "a": "De finales de mayo a principios de octubre para carreteras fiables y pastos verdes. Desde mediados de octubre llega el color de otoño con noches más frías. El invierno es posible, aunque algunos puertos altos pueden cerrar tras la nieve."
+        }
+      ]
     },
     "route3": {
       "name": "Nómada Entre Cielo y Tierra · 3% Familia Nómada",
@@ -115,16 +287,69 @@
         "4": {
           "label": "Nómada Entre Cielo y Tierra (itinerario de 4 días)",
           "days": [
-            { "title": "Chengdu → Campamento nómada en NW Sichuan", "desc": "Sal de Chengdu por la mañana, rumbo norte por el valle del río Min, pasando por Wenchuan y el condado de Li hacia la meseta del NW de Sichuan. A medida que la altitud asciende a 3.500 m, el paisaje se transforma de torres urbanas a praderas alpinas con rebaños de yaks. Por la tarde, llega al campamento nómada Orenda (N33°21′ E102°10′). Recibe una bienvenida tradicional con khata, conoce a tu familia nómada e instálate en la tienda negra. Al atardecer, reúnete junto al fuego para tu primer tazón de té de mantequilla y escucha las historias de los pastores.", "stay": "Alojamiento: Tienda negra nómada" },
-            { "title": "Yaks · Praderas · Un día nómada", "desc": "Un día completo de inmersión en la vida nómada. Madruga para ordeñar yaks junto a los pastores — el ritmo diario de cada pastor tibetano. Aprende a batir té de mantequilla y amasar tsampa, y descubre el significado de '3% Familia Nómada' — solo el 3% de la población mundial aún vive de forma nómada. Por la mañana, sigue a los pastores a las praderas para buscar sal y cuidar los yaks. Por la tarde, monta a caballo por las vastas praderas de la curva del Río Amarillo. Al anochecer, ayuda a recoger los yaks. Tras el anochecer, naro band actúa bajo las estrellas, y los pastores relatan la Epopeya del Rey Gesar.", "stay": "Alojamiento: Tienda negra nómada" },
-            { "title": "Fiesta en la pradera · Artesanías nómadas", "desc": "El día más animado en las praderas. Si tu visita coincide con un festival de carreras de caballos, una boda o una asamblea del Dharma, participarás como familia: vístete con una túnica tibetana, bebe vino de cebada y baila el Guozhuang. Por la mañana, recorre la curva del Río Amarillo hasta sus coordenadas en la cuenca alta (N33°21′ E102°10′) — donde la cultura nómada del último 3% mundial se encuentra con la cuna de la civilización del Río Amarillo. Por la tarde, aprende artesanías nómadas tradicionales. Al atardecer, un vehículo Bliss Mobil te lleva al interior de la pradera para vistas panorámicas del Río Amarillo.", "stay": "Alojamiento: Tienda negra nómada" },
-            { "title": "Amanecer en la pradera → Chengdu", "desc": "Despierta temprano para un último amanecer en la pradera — en Zoige-Hongyuan, el sol matutino tiñe los prados de dorado. Comparte un último desayuno con tu familia nómada — tsampa, té de mantequilla, leche fresca de yak. Abrázalos e intercambiad contactos — a partir de ahora, tienes un hogar en las praderas. Regresa a Chengdu vía la montaña Zhegu y Miyaluo, llegando por la tarde.", "stay": "" }
+            {
+              "title": "Chengdu → Campamento nómada en NW Sichuan",
+              "desc": "Sal de Chengdu por la mañana, rumbo norte por el valle del río Min, pasando por Wenchuan y el condado de Li hacia la meseta del NW de Sichuan. A medida que la altitud asciende a 3.500 m, el paisaje se transforma de torres urbanas a praderas alpinas con rebaños de yaks. Por la tarde, llega al campamento nómada Orenda (N33°21′ E102°10′). Recibe una bienvenida tradicional con khata, conoce a tu familia nómada e instálate en la tienda negra. Al atardecer, reúnete junto al fuego para tu primer tazón de té de mantequilla y escucha las historias de los pastores.",
+              "stay": "Alojamiento: Tienda negra nómada"
+            },
+            {
+              "title": "Yaks · Praderas · Un día nómada",
+              "desc": "Un día completo de inmersión en la vida nómada. Madruga para ordeñar yaks junto a los pastores — el ritmo diario de cada pastor tibetano. Aprende a batir té de mantequilla y amasar tsampa, y descubre el significado de '3% Familia Nómada' — solo el 3% de la población mundial aún vive de forma nómada. Por la mañana, sigue a los pastores a las praderas para buscar sal y cuidar los yaks. Por la tarde, monta a caballo por las vastas praderas de la curva del Río Amarillo. Al anochecer, ayuda a recoger los yaks. Tras el anochecer, naro band actúa bajo las estrellas, y los pastores relatan la Epopeya del Rey Gesar.",
+              "stay": "Alojamiento: Tienda negra nómada"
+            },
+            {
+              "title": "Fiesta en la pradera · Artesanías nómadas",
+              "desc": "El día más animado en las praderas. Si tu visita coincide con un festival de carreras de caballos, una boda o una asamblea del Dharma, participarás como familia: vístete con una túnica tibetana, bebe vino de cebada y baila el Guozhuang. Por la mañana, recorre la curva del Río Amarillo hasta sus coordenadas en la cuenca alta (N33°21′ E102°10′) — donde la cultura nómada del último 3% mundial se encuentra con la cuna de la civilización del Río Amarillo. Por la tarde, aprende artesanías nómadas tradicionales. Al atardecer, un vehículo Bliss Mobil te lleva al interior de la pradera para vistas panorámicas del Río Amarillo.",
+              "stay": "Alojamiento: Tienda negra nómada"
+            },
+            {
+              "title": "Amanecer en la pradera → Chengdu",
+              "desc": "Despierta temprano para un último amanecer en la pradera — en Zoige-Hongyuan, el sol matutino tiñe los prados de dorado. Comparte un último desayuno con tu familia nómada — tsampa, té de mantequilla, leche fresca de yak. Abrázalos e intercambiad contactos — a partir de ahora, tienes un hogar en las praderas. Regresa a Chengdu vía la montaña Zhegu y Miyaluo, llegando por la tarde.",
+              "stay": ""
+            }
           ]
         }
       },
       "mediaNote": "Como aparece en CCTV · Experiencia colaboradora de Discovery Channel",
       "pastEvents": "Eventos anteriores: Mar 2025 (300) / May 2025 (100) / Jul 2025 (47)",
-      "customNote": "Itinerario y duración personalizables — contáctenos para más detalles"
+      "customNote": "Itinerario y duración personalizables — contáctenos para más detalles",
+      "includes": [
+        "Vehículo de expedición Bliss Mobil 4×4 durante todo el viaje",
+        "Todas las comidas en el campamento nómada: desayuno, comida y cena",
+        "Alojamiento en tienda de lana de yak durante tres noches",
+        "Ordeño de yaks, preparación de té con mantequilla y tsampa con la familia",
+        "Equitación en el altiplano junto al río Amarillo",
+        "Guía tibetano local y anfitriones del campamento",
+        "Suministro de oxígeno y botiquín básico"
+      ],
+      "excludes": [
+        "Transporte de ida y vuelta a Chengdu (asesoramos sobre vuelos y trenes)",
+        "Seguro de viaje personal — obligatorio en esta ruta",
+        "Bebidas alcohólicas y compras personales",
+        "Propinas para el personal del campamento y conductores (opcionales)"
+      ],
+      "faq": [
+        {
+          "q": "¿Qué forma física necesito para este viaje?",
+          "a": "Con moverse con soltura basta. No hay trekking: los vehículos de expedición cubren el terreno. El verdadero reto es la altitud, así que mantenemos un ritmo pausado y con descansos."
+        },
+        {
+          "q": "¿Cómo se duerme?",
+          "a": "Tres noches en una tienda tradicional de lana de yak en el campamento nómada, a unos 3.600 m. Se proporciona ropa de cama y las tiendas son cálidas, pero las instalaciones son sencillas: zonas de aseo compartidas y sin baño privado."
+        },
+        {
+          "q": "¿Hay electricidad, cobertura y agua caliente?",
+          "a": "El campamento tiene energía solar limitada para cargar dispositivos pequeños. La señal móvil es intermitente y no hay datos fiables. El agua caliente se facilita a petición, no de un grifo. Cuenta con desconectar: la mayoría de los huéspedes descubre que es precisamente el punto."
+        },
+        {
+          "q": "¿Y si me siento mal a 3.600 m?",
+          "a": "Llevamos oxígeno y botiquín, y nuestro equipo sabe reconocer el mal de altura. Si los síntomas son serios, descendemos hacia Hongyuan o Chengdu de inmediato. Avisa a tu guía en cuanto te sientas mal, sin esperar."
+        },
+        {
+          "q": "¿La fecha de salida es fija?",
+          "a": "Las fechas indicadas son un ejemplo. Realizamos este viaje con fechas flexibles para grupos privados, y funciona mejor de junio a septiembre, cuando la familia está en el campamento de verano y los pastos están verdes."
+        }
+      ]
     }
   },
   "why": {

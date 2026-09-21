@@ -18,6 +18,10 @@ type RouteLabels = {
   day: string;
   stay: string;
   dayLabel: string;
+  included: string;
+  includedTitle: string;
+  excludedTitle: string;
+  faq: string;
 };
 
 const routeMap: Record<string, { key: 'route1' | 'route2' | 'route3'; image: string; keywords: string[] }> = {
@@ -116,26 +120,41 @@ export default async function RouteDetail({
   const itinerary = routeData.itinerary;
   const itineraries = routeData.itineraries;
 
+  // Highlights, includes/excludes and FAQ live in messages so they stay
+  // translatable. `raw` is used because these are arrays, not flat strings.
+  const highlightList = (tr.raw(`${route.key}.highlights`) as unknown as string[]) ?? [];
+  const includes = (tr.raw(`${route.key}.includes`) as unknown as string[]) ?? [];
+  const excludes = (tr.raw(`${route.key}.excludes`) as unknown as string[]) ?? [];
+  const faq = (tr.raw(`${route.key}.faq`) as unknown as { q: string; a: string }[]) ?? [];
+
   const labelMap: Record<string, RouteLabels> = {
     en: {
       duration: 'Duration', meeting: 'Meeting Point', time: 'Meeting Time', price: 'Price',
       itinerary: 'Itinerary', highlights: 'Highlights', bookTrip: 'Book This Trip',
       askWA: 'Ask on WhatsApp', back: 'Back to Home', day: 'Days', stay: 'Stay', dayLabel: 'Day',
+      included: "What's included", includedTitle: 'Included', excludedTitle: 'Not included',
+      faq: 'Common questions',
     },
     es: {
       duration: 'Duración', meeting: 'Punto de encuentro', time: 'Hora de encuentro', price: 'Precio',
       itinerary: 'Itinerario', highlights: 'Destacados', bookTrip: 'Reservar este viaje',
       askWA: 'Consultar por WhatsApp', back: 'Volver al inicio', day: 'Días', stay: 'Alojamiento', dayLabel: 'Día',
+      included: 'Qué incluye', includedTitle: 'Incluido', excludedTitle: 'No incluido',
+      faq: 'Preguntas frecuentes',
     },
     th: {
       duration: 'ระยะเวลา', meeting: 'จุดนัดพบ', time: 'เวลานัดพบ', price: 'ราคา',
       itinerary: 'กำหนดการ', highlights: 'ไฮไลท์', bookTrip: 'จองเส้นทางนี้',
       askWA: 'สอบถามทาง WhatsApp', back: 'กลับหน้าแรก', day: 'วัน', stay: 'พัก', dayLabel: 'วันที่',
+      included: 'ราคารวมอะไรบ้าง', includedTitle: 'รวมอยู่ด้วย', excludedTitle: 'ไม่รวม',
+      faq: 'คำถามที่พบบ่อย',
     },
     zh: {
       duration: '时长', meeting: '集合地点', time: '集合时间', price: '价格',
       itinerary: '行程安排', highlights: '行程亮点', bookTrip: '预订此行程',
       askWA: 'WhatsApp 咨询', back: '返回首页', day: '天', stay: '住', dayLabel: '第',
+      included: '费用说明', includedTitle: '费用包含', excludedTitle: '费用不含',
+      faq: '常见问题',
     },
   };
   const labels: RouteLabels = labelMap[locale] ?? labelMap.en;
@@ -171,12 +190,32 @@ export default async function RouteDetail({
     ],
   };
 
+  // Per-route FAQ schema. This is what lets Google surface route-specific
+  // Q&A in results, distinct from the site-wide homepage FAQ.
+  const routeFaqJsonLd = faq.length
+    ? {
+        '@context': 'https://schema.org',
+        '@type': 'FAQPage',
+        mainEntity: faq.map((item) => ({
+          '@type': 'Question',
+          name: item.q,
+          acceptedAnswer: { '@type': 'Answer', text: item.a },
+        })),
+      }
+    : null;
+
   return (
     <div className="min-h-screen pt-16">
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }}
       />
+      {routeFaqJsonLd && (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(routeFaqJsonLd) }}
+        />
+      )}
       {/* Hero image */}
       <div className="relative h-[50vh] overflow-hidden">
         <div
@@ -234,17 +273,78 @@ export default async function RouteDetail({
         <ItinerarySection itinerary={itinerary} itineraries={itineraries} labels={labels} locale={locale} />
 
         {/* Highlights */}
-        <div>
-          <h2 className="text-xl font-medium text-[#1F1F1F] mb-6">{labels.highlights}</h2>
-          <ul className="grid md:grid-cols-2 gap-4">
-            {([0, 1, 2, 3] as const).map((i) => (
-              <li key={i} className="flex items-center gap-3 text-stone-600 bg-[#F5F2ED] rounded-sm p-4 border border-black/5">
-                <span className="text-[#8C3B2E] text-sm">✦</span>
-                {tr(`${route.key}.highlights.${i}` as any)}
-              </li>
-            ))}
-          </ul>
-        </div>
+        {highlightList.length > 0 && (
+          <div>
+            <h2 className="text-xl font-medium text-[#1F1F1F] mb-6">{labels.highlights}</h2>
+            <ul className="grid md:grid-cols-2 gap-4">
+              {highlightList.map((h, i) => (
+                <li key={i} className="flex items-center gap-3 text-stone-600 bg-[#F5F2ED] rounded-sm p-4 border border-black/5">
+                  <span className="text-[#8C3B2E] text-sm">✦</span>
+                  {h}
+                </li>
+              ))}
+            </ul>
+          </div>
+        )}
+
+        {/* What's included / not included */}
+        {(includes.length > 0 || excludes.length > 0) && (
+          <div className="mt-16">
+            <h2 className="text-xl font-medium text-[#1F1F1F] mb-6">{labels.included}</h2>
+            <div className="grid md:grid-cols-2 gap-4">
+              {includes.length > 0 && (
+                <div className="bg-[#F5F2ED] rounded-sm p-6 border border-black/5">
+                  <h3 className="text-[10px] font-semibold tracking-[2px] uppercase text-[#0F6E56] mb-4">
+                    {labels.includedTitle}
+                  </h3>
+                  <ul className="space-y-2.5">
+                    {includes.map((item, i) => (
+                      <li key={i} className="flex gap-3 text-sm text-stone-600 leading-relaxed">
+                        <span className="text-[#0F6E56] shrink-0 mt-[7px] block w-1 h-1 rounded-full bg-current" />
+                        <span>{item}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              )}
+              {excludes.length > 0 && (
+                <div className="bg-[#F5F2ED] rounded-sm p-6 border border-black/5">
+                  <h3 className="text-[10px] font-semibold tracking-[2px] uppercase text-stone-400 mb-4">
+                    {labels.excludedTitle}
+                  </h3>
+                  <ul className="space-y-2.5">
+                    {excludes.map((item, i) => (
+                      <li key={i} className="flex gap-3 text-sm text-stone-500 leading-relaxed">
+                        <span className="text-stone-400 shrink-0 mt-[7px] block w-1 h-1 rounded-full bg-current" />
+                        <span>{item}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              )}
+            </div>
+          </div>
+        )}
+
+        {/* Route FAQ */}
+        {faq.length > 0 && (
+          <div className="mt-16">
+            <h2 className="text-xl font-medium text-[#1F1F1F] mb-6">{labels.faq}</h2>
+            <div className="divide-y divide-black/5 border-t border-black/5">
+              {faq.map((item, i) => (
+                <details key={i} className="group py-5">
+                  <summary className="flex items-start justify-between gap-6 cursor-pointer list-none">
+                    <h3 className="text-sm font-medium leading-relaxed text-[#1F1F1F]">{item.q}</h3>
+                    <span className="text-[#8C3B2E] text-lg leading-none transition-transform group-open:rotate-45 shrink-0">
+                      +
+                    </span>
+                  </summary>
+                  <p className="text-sm leading-[1.9] text-stone-500 mt-3 pr-10">{item.a}</p>
+                </details>
+              ))}
+            </div>
+          </div>
+        )}
 
         {/* CTA */}
         <div className="mt-16 flex flex-col items-center gap-6">

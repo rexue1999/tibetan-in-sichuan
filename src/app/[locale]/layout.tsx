@@ -211,18 +211,11 @@ export default async function LocaleLayout({
     ],
   };
 
-  const faqJsonLd = {
-    '@context': 'https://schema.org',
-    '@type': 'FAQPage',
-    mainEntity: [1, 2, 3, 4, 5, 6].map((i) => ({
-      '@type': 'Question',
-      name: (messages as any).faq?.[`q${i}`],
-      acceptedAnswer: {
-        '@type': 'Answer',
-        text: (messages as any).faq?.[`a${i}`],
-      },
-    })),
-  };
+  // NOTE: the site-wide FAQPage schema is intentionally NOT emitted here.
+  // The 6 questions in the `faq` namespace are only rendered on the homepage,
+  // and Google requires FAQ markup to match content visible on the page.
+  // Emitting it layout-wide also collided with the per-route FAQPage blocks.
+  // It now lives in src/app/[locale]/page.tsx, next to the visible FAQ.
 
   return (
     <html lang={htmlLang[locale] ?? locale}>
@@ -249,10 +242,6 @@ export default async function LocaleLayout({
           <script
             type="application/ld+json"
             dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
-          />
-          <script
-            type="application/ld+json"
-            dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
           />
           <footer className="bg-[#1F1F1F] py-12 px-6">
             <div className="max-w-7xl mx-auto text-center text-white/50 text-[10px] tracking-[2px] uppercase">

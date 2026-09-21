@@ -61,8 +61,28 @@ export default async function Home({ params: { locale } }: { params: { locale: s
   const tgi = await getTranslations({ locale, namespace: 'guideIndex' });
   const tgd = await getTranslations({ locale, namespace: 'guides' });
 
+  // Site-wide FAQPage schema. Kept here (not in layout.tsx) because these six
+  // questions are only rendered on this page — FAQ markup must describe
+  // content the user can actually see.
+  const faqJsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: ([1, 2, 3, 4, 5, 6] as const).map((i) => ({
+      '@type': 'Question',
+      name: tf(`q${i}` as any),
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: tf(`a${i}` as any),
+      },
+    })),
+  };
+
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
+      />
       {/* ==============================
           HERO
           ============================== */}

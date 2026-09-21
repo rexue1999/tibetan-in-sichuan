@@ -34,12 +34,67 @@
       "meetingPoint": "Gaoshengqiao Metro Station, Exit G",
       "meetingTime": "5:00 PM",
       "description": "A two-hour introduction to Tibetan culture hidden inside the city — temples, tea houses, and living traditions most visitors never find.",
-      "highlights": ["Wuhouci Tibetan Quarter", "Traditional Tea House", "Buddhist Temple Visit", "Tibetan Snack Tasting"],
+      "highlights": [
+        "Wuhouci Tibetan Quarter",
+        "Traditional Tea House",
+        "Buddhist Temple Visit",
+        "Tibetan Snack Tasting"
+      ],
       "itinerary": [
-        { "title": "Meet & Greet", "desc": "Meet at Gaoshengqiao Metro Station Exit G. Get to know your guide and fellow travelers." },
-        { "title": "Tibetan Quarter Walk", "duration": "45 min", "desc": "Stroll through Chengdu's most authentic Tibetan neighborhood — temples, prayer wheels, traditional dress, and daily life woven together in the city." },
-        { "title": "Tibetan Tea & Snacks", "duration": "45 min", "desc": "Step into a traditional Tibetan tea house. Taste authentic butter tea or sweet tea alongside Tibetan snacks, while listening to stories of the plateau." },
-        { "title": "Tibetan Guozhuang Dance", "duration": "30 min", "desc": "Watch a traditional Guozhuang circle dance performance — the rhythm and warmth of highland culture. Return to the meeting point afterward." }
+        {
+          "title": "Meet & Greet",
+          "desc": "Meet at Gaoshengqiao Metro Station Exit G. Get to know your guide and fellow travelers."
+        },
+        {
+          "title": "Tibetan Quarter Walk",
+          "duration": "45 min",
+          "desc": "Stroll through Chengdu's most authentic Tibetan neighborhood — temples, prayer wheels, traditional dress, and daily life woven together in the city."
+        },
+        {
+          "title": "Tibetan Tea & Snacks",
+          "duration": "45 min",
+          "desc": "Step into a traditional Tibetan tea house. Taste authentic butter tea or sweet tea alongside Tibetan snacks, while listening to stories of the plateau."
+        },
+        {
+          "title": "Tibetan Guozhuang Dance",
+          "duration": "30 min",
+          "desc": "Watch a traditional Guozhuang circle dance performance — the rhythm and warmth of highland culture. Return to the meeting point afterward."
+        }
+      ],
+      "includes": [
+        "English-speaking local guide throughout",
+        "All temple and site entrance fees",
+        "Tibetan butter tea and snacks",
+        "Guozhuang dance performance",
+        "Metro pickup at Gaoshengqiao Exit G"
+      ],
+      "excludes": [
+        "Hotel pickup and drop-off",
+        "Meals other than the included tea and snacks",
+        "Personal shopping and souvenirs",
+        "Gratuities (optional)"
+      ],
+      "faq": [
+        {
+          "q": "Do I need a guide who speaks my language?",
+          "a": "Our city walk runs in English by default. Spanish and Thai guides can be arranged on request — just tell us your dates and language when you enquire."
+        },
+        {
+          "q": "Is this walk suitable for children or older travellers?",
+          "a": "Yes. It is a gentle two-hour walk on flat city streets with plenty of stops for tea and rest. There are no steep steps, though the temple courtyards have some uneven paving."
+        },
+        {
+          "q": "What happens if it rains?",
+          "a": "The walk runs in light rain and we adjust the route to stay under cover where possible. In the event of serious weather we will reschedule or refund in full."
+        },
+        {
+          "q": "Can I join if I have dietary restrictions?",
+          "a": "Absolutely. Tell us in advance and we will arrange alternative snacks — the butter tea can also be swapped for sweet tea, which contains no dairy in the way butter tea does."
+        },
+        {
+          "q": "How do I get to the meeting point?",
+          "a": "We meet at Gaoshengqiao Metro Station Exit G, which is on Line 3. Your guide will be holding a Chengdu Journeys sign. We will send the exact location on WhatsApp the day before."
+        }
       ]
     },
     "route2": {
@@ -49,48 +104,165 @@
       "tier": "Popular",
       "pricing": "Inquire for pricing",
       "description": "Escape the city and explore highland roads, ancient temples, and mountain panoramas across the Tibetan plateau's eastern edge.",
-      "highlights": ["Kangding Gateway Town", "Tagong Grasslands", "Lhagang Temple", "Zheduo Pass at 4,298m"],
+      "highlights": [
+        "Kangding Gateway Town",
+        "Tagong Grasslands",
+        "Lhagang Temple",
+        "Zheduo Pass at 4,298m"
+      ],
       "itineraries": {
         "3": {
           "label": "Classic",
           "days": [
-            { "title": "Chengdu → Kangding", "desc": "Depart Chengdu in the afternoon, cross the Erlang Mountain Tunnel via the Yakang Expressway, and arrive in Kangding — capital of Ganzi Prefecture — by evening. Stroll along the Zheduo River and soak in the Tibetan atmosphere of this legendary gateway town.", "stay": "Stay: Kangding" },
-            { "title": "S434 · Muya Monastery · Yala Snow Mountain → Xinduqiao", "desc": "Take the stunning Provincial Road 434 north — quieter and more scenic than the main G318. Visit Muya Monastery, where golden roofs and crimson walls frame snow peaks and grasslands. Stop at the Yala Snow Mountain viewpoint to face the majesty of this sacred peak. Arrive in Xinduqiao by dusk — known as 'photographer's paradise' for its dreamlike play of light on Tibetan villages and poplar forests.", "stay": "Stay: Xinduqiao" },
-            { "title": "Zheduo Pass → Chengdu", "desc": "Cross Zheduo Pass (4,298m) — the first major pass on the Sichuan-Tibet highway — surrounded by prayer flags and snow peaks. Continue via Kangding back to Chengdu, arriving in the evening.", "stay": "" }
+            {
+              "title": "Chengdu → Kangding",
+              "desc": "Depart Chengdu in the afternoon, cross the Erlang Mountain Tunnel via the Yakang Expressway, and arrive in Kangding — capital of Ganzi Prefecture — by evening. Stroll along the Zheduo River and soak in the Tibetan atmosphere of this legendary gateway town.",
+              "stay": "Stay: Kangding"
+            },
+            {
+              "title": "S434 · Muya Monastery · Yala Snow Mountain → Xinduqiao",
+              "desc": "Take the stunning Provincial Road 434 north — quieter and more scenic than the main G318. Visit Muya Monastery, where golden roofs and crimson walls frame snow peaks and grasslands. Stop at the Yala Snow Mountain viewpoint to face the majesty of this sacred peak. Arrive in Xinduqiao by dusk — known as 'photographer's paradise' for its dreamlike play of light on Tibetan villages and poplar forests.",
+              "stay": "Stay: Xinduqiao"
+            },
+            {
+              "title": "Zheduo Pass → Chengdu",
+              "desc": "Cross Zheduo Pass (4,298m) — the first major pass on the Sichuan-Tibet highway — surrounded by prayer flags and snow peaks. Continue via Kangding back to Chengdu, arriving in the evening.",
+              "stay": ""
+            }
           ]
         },
         "4": {
           "label": "Danba",
           "days": [
-            { "title": "Chengdu → Kangding", "desc": "Depart Chengdu in the afternoon, cross the Erlang Mountain Tunnel via the Yakang Expressway, and arrive in Kangding by evening. Stroll along the Zheduo River and soak in the Tibetan atmosphere.", "stay": "Stay: Kangding" },
-            { "title": "S434 · Muya Monastery · Yala Snow Mountain → Xinduqiao", "desc": "Take the stunning Provincial Road 434 north. Visit Muya Monastery — golden roofs and crimson walls against snow peaks. Stop at the Yala Snow Mountain viewpoint. Arrive in Xinduqiao by dusk, where light and shadow paint the Tibetan villages and poplar groves.", "stay": "Stay: Xinduqiao" },
-            { "title": "Tagong Grasslands · Bamei → Zhonglu Tibetan Village", "desc": "Morning walk on the Tagong Grasslands, where Muya Golden Pagoda frames Yala Snow Mountain. Continue through Bamei into Danba county. Arrive at Zhonglu Tibetan Village — a thousand-year-old Gyalrong settlement of watchtowers, pear blossoms (in spring), and terraced fields. Explore ancient watchtowers and Tibetan homes in the afternoon.", "stay": "Stay: Zhonglu Village" },
-            { "title": "Zhonglu Village → Chengdu", "desc": "Wake up in the village as morning mist wraps around the watchtowers — Zhonglu's most magical hour. After a morning of free exploration, head back toward Chengdu via the Siguniang Mountain route (distant view from Maobiliang Pass), arriving in the evening.", "stay": "" }
+            {
+              "title": "Chengdu → Kangding",
+              "desc": "Depart Chengdu in the afternoon, cross the Erlang Mountain Tunnel via the Yakang Expressway, and arrive in Kangding by evening. Stroll along the Zheduo River and soak in the Tibetan atmosphere.",
+              "stay": "Stay: Kangding"
+            },
+            {
+              "title": "S434 · Muya Monastery · Yala Snow Mountain → Xinduqiao",
+              "desc": "Take the stunning Provincial Road 434 north. Visit Muya Monastery — golden roofs and crimson walls against snow peaks. Stop at the Yala Snow Mountain viewpoint. Arrive in Xinduqiao by dusk, where light and shadow paint the Tibetan villages and poplar groves.",
+              "stay": "Stay: Xinduqiao"
+            },
+            {
+              "title": "Tagong Grasslands · Bamei → Zhonglu Tibetan Village",
+              "desc": "Morning walk on the Tagong Grasslands, where Muya Golden Pagoda frames Yala Snow Mountain. Continue through Bamei into Danba county. Arrive at Zhonglu Tibetan Village — a thousand-year-old Gyalrong settlement of watchtowers, pear blossoms (in spring), and terraced fields. Explore ancient watchtowers and Tibetan homes in the afternoon.",
+              "stay": "Stay: Zhonglu Village"
+            },
+            {
+              "title": "Zhonglu Village → Chengdu",
+              "desc": "Wake up in the village as morning mist wraps around the watchtowers — Zhonglu's most magical hour. After a morning of free exploration, head back toward Chengdu via the Siguniang Mountain route (distant view from Maobiliang Pass), arriving in the evening.",
+              "stay": ""
+            }
           ]
         },
         "5": {
           "label": "In-Depth",
           "days": [
-            { "title": "Chengdu → Kangding", "desc": "Depart Chengdu in the afternoon, cross the Erlang Mountain Tunnel, and arrive in Kangding by evening. Stroll along the Zheduo River and soak in the Tibetan atmosphere of this legendary gateway town.", "stay": "Stay: Kangding" },
-            { "title": "S434 · Muya Monastery · Yala Snow Mountain → Xinduqiao", "desc": "Take stunning Provincial Road 434 north. Visit Muya Monastery, where golden roofs frame snow peaks. Stop at the Yala Snow Mountain viewpoint before arriving in Xinduqiao — photographer's paradise — by dusk.", "stay": "Stay: Xinduqiao" },
-            { "title": "Tagong · Bamei · Moshi Park → Danba", "desc": "Morning on the Tagong Grasslands — Muya Golden Pagoda and Yala Snow Mountain in one frame. Continue to Moshi Park near Bamei, where bizarre mylonite stone forests spread across the plateau like an alien landscape. Afternoon drive through the Yak Valley natural bonsai corridor to Danba.", "stay": "Stay: Danba" },
-            { "title": "Danba · Zhonglu Village → Siguniang Mountain", "desc": "Morning exploration of Zhonglu Tibetan Village — a thousand-year-old Gyalrong settlement of watchtowers and stone homes. Visit ancient watchtowers and meet local families. Afternoon drive to Siguniang Mountain, with a panoramic stop at Maobiliang Pass to view all four sacred peaks.", "stay": "Stay: Siguniangshan Town" },
-            { "title": "Siguniang Mountain → Chengdu", "desc": "Morning visit to Shuangqiao Valley — ride the shuttle deep into the valley, passing snow peaks, alpine meadows, and glacial lakes. Afternoon return to Chengdu via Balang Mountain and Wolong Nature Reserve, arriving in the evening.", "stay": "" }
+            {
+              "title": "Chengdu → Kangding",
+              "desc": "Depart Chengdu in the afternoon, cross the Erlang Mountain Tunnel, and arrive in Kangding by evening. Stroll along the Zheduo River and soak in the Tibetan atmosphere of this legendary gateway town.",
+              "stay": "Stay: Kangding"
+            },
+            {
+              "title": "S434 · Muya Monastery · Yala Snow Mountain → Xinduqiao",
+              "desc": "Take stunning Provincial Road 434 north. Visit Muya Monastery, where golden roofs frame snow peaks. Stop at the Yala Snow Mountain viewpoint before arriving in Xinduqiao — photographer's paradise — by dusk.",
+              "stay": "Stay: Xinduqiao"
+            },
+            {
+              "title": "Tagong · Bamei · Moshi Park → Danba",
+              "desc": "Morning on the Tagong Grasslands — Muya Golden Pagoda and Yala Snow Mountain in one frame. Continue to Moshi Park near Bamei, where bizarre mylonite stone forests spread across the plateau like an alien landscape. Afternoon drive through the Yak Valley natural bonsai corridor to Danba.",
+              "stay": "Stay: Danba"
+            },
+            {
+              "title": "Danba · Zhonglu Village → Siguniang Mountain",
+              "desc": "Morning exploration of Zhonglu Tibetan Village — a thousand-year-old Gyalrong settlement of watchtowers and stone homes. Visit ancient watchtowers and meet local families. Afternoon drive to Siguniang Mountain, with a panoramic stop at Maobiliang Pass to view all four sacred peaks.",
+              "stay": "Stay: Siguniangshan Town"
+            },
+            {
+              "title": "Siguniang Mountain → Chengdu",
+              "desc": "Morning visit to Shuangqiao Valley — ride the shuttle deep into the valley, passing snow peaks, alpine meadows, and glacial lakes. Afternoon return to Chengdu via Balang Mountain and Wolong Nature Reserve, arriving in the evening.",
+              "stay": ""
+            }
           ]
         },
         "7": {
           "label": "Grand Panorama",
           "days": [
-            { "title": "Chengdu → Kangding", "desc": "Depart Chengdu in the afternoon, cross the Erlang Mountain Tunnel, and arrive in Kangding by evening. Stroll along the Zheduo River and soak in the Tibetan atmosphere.", "stay": "Stay: Kangding" },
-            { "title": "S434 · Muya Monastery · Yala Snow Mountain → Xinduqiao", "desc": "Take stunning Provincial Road 434 north. Visit Muya Monastery — golden roofs and crimson walls against snow peaks. Stop at the Yala Snow Mountain viewpoint, then arrive in Xinduqiao by dusk.", "stay": "Stay: Xinduqiao" },
-            { "title": "Tagong · Bamei · Moshi Park → Danba", "desc": "Morning on the Tagong Grasslands — Muya Golden Pagoda and Yala Snow Mountain in one frame. Continue to Moshi Park, where bizarre mylonite stone forests spread across the plateau. Afternoon through the Yak Valley to Danba.", "stay": "Stay: Danba" },
-            { "title": "Zhonglu Village — Full Day Immersion", "desc": "A full day immersed in Zhonglu Tibetan Village — watchtowers emerging from morning mist, pear blossoms weaving through stone homes. Hike to the No. 1 viewpoint for a sweeping panorama. Visit a Tibetan family for butter tea and stories of Gyalrong history. Climb the tallest ancient watchtower for sunset.", "stay": "Stay: Zhonglu Village" },
-            { "title": "Jiaju Tibetan Village → Siguniang Mountain", "desc": "Morning visit to Jiaju Tibetan Village — 'China's most beautiful village' — where stone homes cascade down the mountainside in harmony with forest and field. Afternoon drive to Siguniang Mountain for the panoramic view of all four peaks from Maobiliang Pass.", "stay": "Stay: Siguniangshan Town" },
-            { "title": "Siguniang Shuangqiao Valley — Full Day", "desc": "A full day in Shuangqiao Valley — ride the shuttle deep into the valley from Renshenguo Meadow to Redwood Forest. Snow peaks, glaciers, alpine forests, meadows, and lakes unfold mile after mile. Optional light hikes at Bonsai Beach or beneath Budala Peak.", "stay": "Stay: Siguniangshan Town" },
-            { "title": "Siguniang Mountain → Chengdu", "desc": "One last look at Siguniang's golden sunrise (weather permitting), then return to Chengdu via Balang Mountain Tunnel and Wolong Nature Reserve, arriving in the afternoon.", "stay": "" }
+            {
+              "title": "Chengdu → Kangding",
+              "desc": "Depart Chengdu in the afternoon, cross the Erlang Mountain Tunnel, and arrive in Kangding by evening. Stroll along the Zheduo River and soak in the Tibetan atmosphere.",
+              "stay": "Stay: Kangding"
+            },
+            {
+              "title": "S434 · Muya Monastery · Yala Snow Mountain → Xinduqiao",
+              "desc": "Take stunning Provincial Road 434 north. Visit Muya Monastery — golden roofs and crimson walls against snow peaks. Stop at the Yala Snow Mountain viewpoint, then arrive in Xinduqiao by dusk.",
+              "stay": "Stay: Xinduqiao"
+            },
+            {
+              "title": "Tagong · Bamei · Moshi Park → Danba",
+              "desc": "Morning on the Tagong Grasslands — Muya Golden Pagoda and Yala Snow Mountain in one frame. Continue to Moshi Park, where bizarre mylonite stone forests spread across the plateau. Afternoon through the Yak Valley to Danba.",
+              "stay": "Stay: Danba"
+            },
+            {
+              "title": "Zhonglu Village — Full Day Immersion",
+              "desc": "A full day immersed in Zhonglu Tibetan Village — watchtowers emerging from morning mist, pear blossoms weaving through stone homes. Hike to the No. 1 viewpoint for a sweeping panorama. Visit a Tibetan family for butter tea and stories of Gyalrong history. Climb the tallest ancient watchtower for sunset.",
+              "stay": "Stay: Zhonglu Village"
+            },
+            {
+              "title": "Jiaju Tibetan Village → Siguniang Mountain",
+              "desc": "Morning visit to Jiaju Tibetan Village — 'China's most beautiful village' — where stone homes cascade down the mountainside in harmony with forest and field. Afternoon drive to Siguniang Mountain for the panoramic view of all four peaks from Maobiliang Pass.",
+              "stay": "Stay: Siguniangshan Town"
+            },
+            {
+              "title": "Siguniang Shuangqiao Valley — Full Day",
+              "desc": "A full day in Shuangqiao Valley — ride the shuttle deep into the valley from Renshenguo Meadow to Redwood Forest. Snow peaks, glaciers, alpine forests, meadows, and lakes unfold mile after mile. Optional light hikes at Bonsai Beach or beneath Budala Peak.",
+              "stay": "Stay: Siguniangshan Town"
+            },
+            {
+              "title": "Siguniang Mountain → Chengdu",
+              "desc": "One last look at Siguniang's golden sunrise (weather permitting), then return to Chengdu via Balang Mountain Tunnel and Wolong Nature Reserve, arriving in the afternoon.",
+              "stay": ""
+            }
           ]
         }
-      }
+      },
+      "includes": [
+        "Private vehicle and experienced highland driver",
+        "English-speaking guide throughout",
+        "All monastery and scenic area entrance fees",
+        "Overnight accommodation as per your chosen itinerary",
+        "Oxygen supply and a basic first-aid kit in the vehicle",
+        "Bottled water throughout the journey"
+      ],
+      "excludes": [
+        "Meals not listed in the itinerary (budget roughly 60–120 CNY per day)",
+        "Personal travel insurance — required for all highland routes",
+        "Horse riding, boat trips and other optional activities",
+        "Gratuities (optional)"
+      ],
+      "faq": [
+        {
+          "q": "Which itinerary length should I choose?",
+          "a": "Three days covers Kangding, Xinduqiao and Zheduo Pass — good if your time is short. Four to five days adds Tagong and Danba, which is what most guests choose. Seven days includes Siguniang Mountain and gives you a full day in Zhonglu village without rushing."
+        },
+        {
+          "q": "How high do we go, and is altitude a problem?",
+          "a": "The highest point is Zheduo Pass at 4,298 m, which we cross by vehicle rather than sleeping at. Overnight stops sit between 2,560 m and 3,700 m. We climb gradually, and your vehicle carries oxygen."
+        },
+        {
+          "q": "What is the road like?",
+          "a": "Main roads are paved and generally in good condition. Provincial Road 434 and some village sections are narrower with more bends but are perfectly manageable in a private vehicle. Landslides after heavy rain can close sections briefly; we monitor conditions and reroute if needed."
+        },
+        {
+          "q": "Can this route be customised?",
+          "a": "Yes — all our highland routes are built to order. Tell us your dates, how many days you have and what you most want to see, and we will put together an itinerary around it."
+        },
+        {
+          "q": "When is the best time to travel?",
+          "a": "Late May to early October for reliable roads and green grasslands. Mid-October onwards brings the autumn colour but colder nights. Winter travel is possible, though some high passes may close after snow."
+        }
+      ]
     },
     "route3": {
       "name": "Nomad Between Earth & Sky · 3% Nomad Family",
@@ -115,16 +287,69 @@
         "4": {
           "label": "Nomad Between Earth & Sky (4-day sample itinerary)",
           "days": [
-            { "title": "Chengdu → NW Sichuan Nomadic Camp", "desc": "Depart Chengdu in the morning, heading north along the Min River valley through Wenchuan and Li County onto the NW Sichuan plateau. As the elevation rises to 3,500m, the scenery transforms from city towers to alpine meadows dotted with yak herds. Arrive in the afternoon at the Orenda nomadic camp (N33°21′ E102°10′). Receive a traditional khata welcome, meet your nomadic family, and settle into your black tent. In the evening, gather around the stove for your first bowl of butter tea and listen to the herders' stories of the grasslands and the Yellow River.", "stay": "Stay: Nomad Black Tent" },
-            { "title": "Yaks · Grasslands · A Nomad's Day", "desc": "A full day immersed in nomadic life. Rise early to milk yaks alongside the herders — the daily rhythm of every Tibetan pastoralist. Learn to churn butter tea and knead tsampa, and discover the meaning of '3% Nomad Family' — only 3% of the world's population still lives the nomadic way. In the morning, follow the herders onto the grasslands to find salt licks and tend the yaks. In the afternoon, ride horseback across the vast grasslands of the Yellow River bend — an endless sea of grass meeting the sky. At dusk, help round up the yaks. After nightfall, naro band performs under the stars, and the herders recount the Epic of King Gesar around the fire.", "stay": "Stay: Nomad Black Tent" },
-            { "title": "Grassland Gathering · Nomadic Crafts", "desc": "The liveliest day on the grasslands. If your visit coincides with a horse-racing festival, wedding, or Dharma assembly, you will take part as family: wear a Tibetan robe, drink barley wine, and dance the Guozhuang. In the morning, follow the Yellow River bend to its upper-reach coordinates (N33°21′ E102°10′) — where the world's last 3% nomadic culture meets the cradle of Yellow River civilization. In the afternoon, learn traditional nomadic crafts — spinning yak-wool yarn, braiding black-tent rope, making air-dried yak meat and traditional yogurt. In the evening, a Bliss Mobil expedition vehicle takes you deep into the grasslands for panoramic sunset views of the Yellow River bend.", "stay": "Stay: Nomad Black Tent" },
-            { "title": "Grassland Sunrise → Chengdu", "desc": "Wake early for one last grassland sunrise — at Zoige-Hongyuan, the morning sun turns the meadows gold as smoke curls from the black tents. Share a final breakfast with your nomadic family — tsampa, butter tea, fresh yak milk. Embrace and exchange contacts — from now on, you have a home on the grasslands. Return to Chengdu via Zhegu Mountain and Miyaluo, arriving in the afternoon.", "stay": "" }
+            {
+              "title": "Chengdu → NW Sichuan Nomadic Camp",
+              "desc": "Depart Chengdu in the morning, heading north along the Min River valley through Wenchuan and Li County onto the NW Sichuan plateau. As the elevation rises to 3,500m, the scenery transforms from city towers to alpine meadows dotted with yak herds. Arrive in the afternoon at the Orenda nomadic camp (N33°21′ E102°10′). Receive a traditional khata welcome, meet your nomadic family, and settle into your black tent. In the evening, gather around the stove for your first bowl of butter tea and listen to the herders' stories of the grasslands and the Yellow River.",
+              "stay": "Stay: Nomad Black Tent"
+            },
+            {
+              "title": "Yaks · Grasslands · A Nomad's Day",
+              "desc": "A full day immersed in nomadic life. Rise early to milk yaks alongside the herders — the daily rhythm of every Tibetan pastoralist. Learn to churn butter tea and knead tsampa, and discover the meaning of '3% Nomad Family' — only 3% of the world's population still lives the nomadic way. In the morning, follow the herders onto the grasslands to find salt licks and tend the yaks. In the afternoon, ride horseback across the vast grasslands of the Yellow River bend — an endless sea of grass meeting the sky. At dusk, help round up the yaks. After nightfall, naro band performs under the stars, and the herders recount the Epic of King Gesar around the fire.",
+              "stay": "Stay: Nomad Black Tent"
+            },
+            {
+              "title": "Grassland Gathering · Nomadic Crafts",
+              "desc": "The liveliest day on the grasslands. If your visit coincides with a horse-racing festival, wedding, or Dharma assembly, you will take part as family: wear a Tibetan robe, drink barley wine, and dance the Guozhuang. In the morning, follow the Yellow River bend to its upper-reach coordinates (N33°21′ E102°10′) — where the world's last 3% nomadic culture meets the cradle of Yellow River civilization. In the afternoon, learn traditional nomadic crafts — spinning yak-wool yarn, braiding black-tent rope, making air-dried yak meat and traditional yogurt. In the evening, a Bliss Mobil expedition vehicle takes you deep into the grasslands for panoramic sunset views of the Yellow River bend.",
+              "stay": "Stay: Nomad Black Tent"
+            },
+            {
+              "title": "Grassland Sunrise → Chengdu",
+              "desc": "Wake early for one last grassland sunrise — at Zoige-Hongyuan, the morning sun turns the meadows gold as smoke curls from the black tents. Share a final breakfast with your nomadic family — tsampa, butter tea, fresh yak milk. Embrace and exchange contacts — from now on, you have a home on the grasslands. Return to Chengdu via Zhegu Mountain and Miyaluo, arriving in the afternoon.",
+              "stay": ""
+            }
           ]
         }
       },
       "mediaNote": "As featured on CCTV · Discovery Channel partner experience",
       "pastEvents": "Past events: Mar 2025 (300 guests) / May 2025 (100 guests) / Jul 2025 (47 guests)",
-      "customNote": "Customizable itinerary and duration — contact us for details"
+      "customNote": "Customizable itinerary and duration — contact us for details",
+      "includes": [
+        "Bliss Mobil 4×4 expedition vehicle support throughout",
+        "All meals at the nomadic camp — breakfast, lunch and dinner",
+        "Black yak-hair tent accommodation for three nights",
+        "Yak milking, butter-tea making and tsampa sessions with the family",
+        "Plateau horse riding on the Yellow River grasslands",
+        "Local Tibetan guide and camp hosts",
+        "Oxygen supply and a basic first-aid kit"
+      ],
+      "excludes": [
+        "Travel to and from Chengdu (we can advise on flights and trains)",
+        "Personal travel insurance — required for this route",
+        "Alcoholic drinks and personal shopping",
+        "Gratuities for camp staff and drivers (optional)"
+      ],
+      "faq": [
+        {
+          "q": "How fit do I need to be for this trip?",
+          "a": "Reasonably mobile is enough. There is no trekking — the expedition vehicles cover the ground. The real challenge is altitude, so we keep the schedule unhurried and build in rest."
+        },
+        {
+          "q": "What are the sleeping arrangements?",
+          "a": "Three nights in a traditional black yak-hair tent at the nomadic camp, at roughly 3,600 m. Bedding is provided and the tents are warm, but facilities are simple: shared washing areas and no en-suite bathrooms."
+        },
+        {
+          "q": "Is there electricity, phone signal and hot water?",
+          "a": "The camp has limited solar power for charging small devices. Mobile signal is patchy and there is no reliable data. Hot water is provided on request rather than from a running tap. Expect to disconnect — most guests find that is the point."
+        },
+        {
+          "q": "What if I feel unwell at 3,600 m?",
+          "a": "We carry oxygen and a first-aid kit, and our team is experienced at recognising altitude sickness. If symptoms are serious we descend toward Hongyuan or Chengdu immediately. Tell your guide the moment you feel unwell rather than waiting."
+        },
+        {
+          "q": "Is the departure date fixed?",
+          "a": "The listed dates are a sample. We run this journey on flexible dates for private groups, and it works best from June to September when the family is in their summer camp and the grasslands are green."
+        }
+      ]
     }
   },
   "why": {
