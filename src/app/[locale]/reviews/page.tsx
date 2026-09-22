@@ -3,12 +3,6 @@ import Link from 'next/link';
 import { publishedReviews, hasRatings, averageRating, reviewText } from '../../../content/reviews';
 import { SITE_URL, buildLocalizedAlternates } from '../../../lib/seo';
 
-const ROUTE_LABELS: Record<string, string> = {
-  'tibetan-walk-chengdu': 'Chengdu Tibetan Walking Tour',
-  'go-west-go-tibet': 'Highland Roads & Temple Views',
-  'tibetan-nomad': 'Nomad Between Earth & Sky',
-};
-
 export async function generateMetadata({
   params: { locale },
 }: {
@@ -63,6 +57,25 @@ function Stars({ rating }: { rating: number }) {
 
 export default async function ReviewsPage({ params: { locale } }: { params: { locale: string } }) {
   const t = await getTranslations({ locale, namespace: 'reviews' });
+  // Route names come from the `routes` namespace so they read in the visitor's
+  // own language. A hardcoded English map here showed English route titles on
+  // the es/th/zh pages.
+  // NOTE: the namespace keys routes by `route1/route2/route3`, not by slug.
+  const tr = await getTranslations({ locale, namespace: 'routes' });
+  const ROUTE_KEY: Record<string, string> = {
+    'tibetan-walk-chengdu': 'route1',
+    'go-west-go-tibet': 'route2',
+    'tibetan-nomad': 'route3',
+  };
+  const routeLabel = (slug: string) => {
+    const key = ROUTE_KEY[slug];
+    if (!key) return slug;
+    try {
+      return tr(`${key}.name` as any);
+    } catch {
+      return slug;
+    }
+  };
   const avg = averageRating();
 
   const breadcrumbJsonLd = {
@@ -195,7 +208,7 @@ export default async function ReviewsPage({ params: { locale } }: { params: { lo
                     )}
                     {r.route && (
                       <span>
-                        {t('routeLabel')}: {ROUTE_LABELS[r.route] ?? r.route}
+                        {t('routeLabel')}: {routeLabel(r.route)}
                       </span>
                     )}
                   </div>

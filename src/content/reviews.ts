@@ -54,8 +54,39 @@ export type Review = {
 };
 
 export const reviews: Review[] = [
-  // ── Add real reviews here. Insert new ones at the TOP so the newest
-  //    shows first on the homepage. ─────────────────────────────────────
+  // Newest first.
+  {
+    id: 'martina-vilardo-2026-08',
+    name: 'Martina Vilardo',
+    country: 'Italy',
+    route: 'go-west-go-tibet',
+    date: 'August 2026',
+    dateISO: '2026-08-19',
+    text: {
+      en: 'Also, a very super giant thank you to Aron and his car! We truly think that if now we can appreciate more the Chinese, Sichuan and Tibetan culture, it is thanks to you. Thank you for your patience, for your positive energy, your kindness always, and for all your advice! We will miss you. I still need to convince Davide, but someday I will move here and I will be a Sichuan troublemaker!',
+      es: '¡Y un agradecimiento enorme, gigante, a Aron y a su coche! Creemos de verdad que si hoy podemos apreciar mejor la cultura china, la de Sichuan y la tibetana, es gracias a ti. ¡Gracias por tu paciencia, por tu energía positiva, por tu amabilidad de siempre y por todos tus consejos! Te vamos a extrañar. Todavía tengo que convencer a Davide, pero algún día me mudo aquí ¡y seré una alborotadora de Sichuan!',
+      th: 'และขอขอบคุณ Aron กับรถของเขาอย่างสุดหัวใจ! เราคิดจริง ๆ ว่าถ้าวันนี้เราเข้าใจวัฒนธรรมจีน เสฉวน และทิเบตได้ดีขึ้น ก็ต้องขอบคุณคุณ ขอบคุณสำหรับความอดทน พลังบวก ความใจดีที่มีให้เสมอ และคำแนะนำทุกอย่าง! เราจะคิดถึงคุณ ยังต้องเกลี้ยกล่อม Davide อยู่ แต่สักวันหนึ่งฉันจะย้ายมาอยู่ที่นี่ และจะเป็นตัวป่วนแห่งเสฉวนให้ได้เลย!',
+      zh: '还要特别特别感谢 Aron 和他的车！我们真心觉得，如今我们能更懂得中国、四川和西藏的文化，全靠你。谢谢你的耐心、你的正能量、你一贯的善意，还有你所有的建议！我们会想你的。我还得说服 Davide，但总有一天我会搬来这里，当一个"四川捣蛋鬼"！',
+    },
+    verified: true,
+    published: true,
+  },
+  {
+    id: 'valerie-2026-08',
+    name: 'Valerie',
+    country: 'United States',
+    route: 'go-west-go-tibet',
+    date: 'August 2026',
+    dateISO: '2026-08-17',
+    text: {
+      en: 'Thank you all for making our honeymoon so special! And thank you so much for taking us all around, it was such a pleasure!',
+      es: '¡Gracias a todos por hacer nuestra luna de miel tan especial! ¡Y muchísimas gracias por llevarnos a todos lados, fue un verdadero placer!',
+      th: 'ขอบคุณทุกคนที่ทำให้ฮันนีมูนของเราพิเศษขนาดนี้! และขอบคุณมาก ๆ ที่พาเราไปทั่วทุกที่ มันเป็นความสุขจริง ๆ!',
+      zh: '谢谢你们让我们的蜜月如此特别！也非常感谢你带我们到处走，真的太愉快了！',
+    },
+    verified: true,
+    published: true,
+  },
 ];
 
 /**
