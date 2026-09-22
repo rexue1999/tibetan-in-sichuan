@@ -35,7 +35,12 @@ export type TeamMember = {
   bio: string;
   /**
    * Path to a portrait in /public/images/, or null to render initials.
-   * Example: '/images/guide-yinn.jpg?v=2'
+   *
+   * IMPORTANT: everything under /images/ is served `immutable` for a year (see
+   * the headers in next.config.mjs), so a browser that has seen a file will not
+   * re-check it. When you replace an existing photo, bump the `?v=` suffix —
+   * otherwise you keep seeing the old picture while everyone else sees the new
+   * one. Example: '/images/guide-yinn.jpg?v=2'
    */
   photo: string | null;
   /** Languages spoken, keyed to `about.langNames` for display. */
@@ -50,7 +55,7 @@ export const teamMembers: TeamMember[] = [
     i18nKey: 'aaron',
     role: 'Founder & Lead Guide',
     bio: 'Has lived and worked in both Europe and the United States, and stayed in western Sichuan because of the Tibetan highlands. Professional, and genuinely in love with the place. A career without a single bad review — every trip built around the guests.',
-    photo: '/images/founder-aaron.jpg',
+    photo: '/images/founder-aaron.jpg?v=2',
     languages: ['en', 'zh'],
   },
   {
@@ -60,7 +65,7 @@ export const teamMembers: TeamMember[] = [
     i18nKey: 'yinn',
     role: 'Local Guide · Tibetan Highlands',
     bio: 'Born in Wuhan and educated in Spain. Rides whenever she can and keeps returning to the Tibetan highlands. Leads monastery visits and the nomad camp.',
-    photo: '/images/guide-yinn.jpg',
+    photo: '/images/guide-yinn.jpg?v=1',
     languages: ['zh', 'en', 'fr'],
   },
 ];
