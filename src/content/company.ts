@@ -44,16 +44,6 @@ export type TeamMember = {
 
 export const teamMembers: TeamMember[] = [
   {
-    id: 'yinn',
-    name: 'Yinn（小颖）',
-    // Role and bio live in messages/*.json under about.team.yinn.
-    i18nKey: 'yinn',
-    role: 'Local Guide · Tibetan Highlands',
-    bio: 'Born in Wuhan and educated in France. Rides whenever she can and keeps returning to the Tibetan highlands. Leads monastery visits and the nomad camp.',
-    photo: '/images/guide-yinn.jpg',
-    languages: ['zh', 'en', 'fr'],
-  },
-  {
     id: 'aaron',
     name: 'Aaron',
     // Role and bio live in messages/*.json under about.team.aaron.
@@ -62,6 +52,16 @@ export const teamMembers: TeamMember[] = [
     bio: 'Has lived and worked in both Europe and the United States, and stayed in western Sichuan because of the Tibetan highlands. Professional, and genuinely in love with the place. A career without a single bad review — every trip built around the guests.',
     photo: '/images/founder-aaron.jpg',
     languages: ['en', 'zh'],
+  },
+  {
+    id: 'yinn',
+    name: 'Yinn（小颖）',
+    // Role and bio live in messages/*.json under about.team.yinn.
+    i18nKey: 'yinn',
+    role: 'Local Guide · Tibetan Highlands',
+    bio: 'Born in Wuhan and educated in Spain. Rides whenever she can and keeps returning to the Tibetan highlands. Leads monastery visits and the nomad camp.',
+    photo: '/images/guide-yinn.jpg',
+    languages: ['zh', 'en', 'fr'],
   },
 ];
 
