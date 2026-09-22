@@ -7,7 +7,7 @@ import { SITE_URL, buildLocalizedAlternates } from '../../lib/seo';
 import '../globals.css';
 import MobileMenu from './mobile-menu';
 import { SocialLinks } from '../../components/SocialLinks';
-import { activeSocialLinks } from '../../content/company';
+import { activeSocialLinks, CONTACT } from '../../content/company';
 
 const ogLocales: Record<string, string> = {
   en: 'en_US',
@@ -123,15 +123,15 @@ export default async function LocaleLayout({
         contactPoint: {
           '@type': 'ContactPoint',
           contactType: 'customer service',
-          telephone: '+86-19045478878',
-          email: 'info@chengdujourneys.com',
+          telephone: CONTACT.phone,
+          email: CONTACT.email,
           availableLanguage: ['English', 'Chinese', 'Thai', 'Spanish', 'Tibetan'],
         },
         // Profiles that Google can verify as belonging to this organisation.
         // Only the configured ones are listed, so a null URL never ships an
         // empty string or a placeholder into the structured data.
         sameAs: [
-          'https://wa.me/8619045478878',
+          CONTACT.whatsapp,
           ...activeSocialLinks().map(({ url }) => url),
         ],
       },

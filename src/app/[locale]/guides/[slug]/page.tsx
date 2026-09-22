@@ -2,6 +2,7 @@ import { getTranslations } from 'next-intl/server';
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
 import { guides, getGuide } from '../../../../content/guides';
+import { CONTACT } from '../../../../content/company';
 import { SITE_URL, buildLocalizedAlternates } from '../../../../lib/seo';
 
 type GuideSection = {
@@ -286,7 +287,7 @@ export default async function GuideArticlePage({
             <h2 className="text-lg font-medium tracking-[-0.3px] mb-3">{t('ctaTitle')}</h2>
             <p className="text-sm text-stone-500 leading-relaxed mb-6">{t('ctaText')}</p>
             <a
-              href="https://wa.me/8619045478878"
+              href={CONTACT.whatsapp}
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center justify-center px-8 py-3 text-xs font-medium tracking-[2px] uppercase rounded-sm border border-[#25D366] text-[#25D366] hover:bg-[#25D366] hover:text-white transition-all"

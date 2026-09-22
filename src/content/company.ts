@@ -84,7 +84,7 @@ export type CompanyFact = {
  * TODO: replace the values below with your real figures.
  */
 export const companyFacts: CompanyFact[] = [
-  { key: 'founded', value: '2023' },
+  { key: 'founded', value: '2025' },
   { key: 'groupSize', value: '2–8' },
   { key: 'routes', value: '3' },
   { key: 'languages', value: '4' },
@@ -104,12 +104,68 @@ export const companyValues = [
   { key: 'v4' },
 ] as const;
 
-/** Contact details, reused by the About and booking pages. */
+/**
+ * Contact details, reused by the About and booking pages.
+ *
+ * The phone number is declared once, in E.164 (no punctuation), and every other
+ * form is derived from it. Hardcoding "190 4547 8878" and "+86-19045478878"
+ * separately is how a displayed number drifts out of sync with the one that
+ * actually dials.
+ */
+const PHONE_E164 = '+8613625698844';
+
+/** Digits only, for wa.me links. */
+const PHONE_DIGITS = PHONE_E164.replace(/\D/g, '');
+
+/**
+ * Grouped for reading: +86 136 2569 8844.
+ *
+ * Chinese mobile numbers are spoken as 3-4-4 after the country code (136 2569
+ * 8844), not in uniform blocks — naive 4-digit chunking gives "1362 5698 844",
+ * which no Chinese reader parses correctly.
+ */
+const formatPhone = (e164: string) => {
+  const d = e164.replace(/\D/g, '');
+  const cc = d.slice(0, 2);
+  const local = d.slice(2);
+  const grouped =
+    local.length === 11
+      ? `${local.slice(0, 3)} ${local.slice(3, 7)} ${local.slice(7)}`
+      : local;
+  return `+${cc} ${grouped}`;
+};
+
+/** Keeps the leading '+', which `tel:` needs to dial from another country. */
+const PHONE_TEL = `tel:${PHONE_E164}`;
+
 export const CONTACT = {
-  whatsapp: 'https://wa.me/8619045478878',
+  phone: PHONE_E164,
+  phoneDisplay: formatPhone(PHONE_E164),
+  phoneDigits: PHONE_DIGITS,
+  /** Ready for an href — includes the '+'. */
+  phoneTel: PHONE_TEL,
+  whatsapp: `https://wa.me/${PHONE_DIGITS}`,
   email: 'info@chengdujourneys.com',
-  phone: '+86-19045478878',
 } as const;
+
+/**
+ * The ways a visitor can reach us, in the order they should appear. One source
+ * of truth for the booking page's contact cards and for any structured data
+ * that needs to list them.
+ */
+export type ContactChannel = 'whatsapp' | 'phone' | 'email';
+
+export const contactChannels: {
+  key: ContactChannel;
+  href: string;
+  external: boolean;
+  /** i18n key under `booking.*` for the card's label. */
+  labelKey: ContactChannel;
+}[] = [
+  { key: 'whatsapp', href: CONTACT.whatsapp, external: true, labelKey: 'whatsapp' },
+  { key: 'phone', href: CONTACT.phoneTel, external: false, labelKey: 'phone' },
+  { key: 'email', href: `mailto:${CONTACT.email}`, external: false, labelKey: 'email' },
+];
 
 /**
  * Social profiles, rendered in the site footer and on the booking page, and

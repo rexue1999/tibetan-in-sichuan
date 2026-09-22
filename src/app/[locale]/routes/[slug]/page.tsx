@@ -4,6 +4,7 @@ import { notFound } from 'next/navigation';
 import ItinerarySection from './itinerary-section';
 import { locales, defaultLocale } from '../../../../i18n';
 import { SITE_URL, buildLocalizedAlternates } from '../../../../lib/seo';
+import { CONTACT } from '../../../../content/company';
 
 type RouteLabels = {
   duration: string;
@@ -461,7 +462,7 @@ export default async function RouteDetail({
               {labels.bookTrip} →
             </Link>
             <a
-              href="https://wa.me/8619045478878"
+              href={CONTACT.whatsapp}
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 border border-[#1F1F1F] text-[#1F1F1F] px-8 py-4 text-xs font-medium tracking-[2px] uppercase hover:bg-[#1F1F1F] hover:text-[#E8E1D9] transition-all"
