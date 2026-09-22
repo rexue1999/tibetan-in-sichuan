@@ -104,13 +104,12 @@ export const CONTACT = {
  *  Set a url to null for any platform you have not set up yet — the icon is
  *  then left out entirely, which is better than a link that goes nowhere.
  *
- *  Accepted shapes (all work):
- *    'https://www.instagram.com/yourhandle/'
- *    'https://www.facebook.com/yourpage'
- *    'https://www.tiktok.com/@yourhandle'
- *
- *  Do NOT paste a bare handle here — the loader below builds the URL from
- *  either form, but a full URL is clearer for whoever edits this next.
+ *  A full URL is preferred, because it is unambiguous. A bare handle also
+ *  works if that is quicker — the loader below turns it into the right
+ *  profile URL for the platform (with or without a leading '@'):
+ *    'https://www.instagram.com/yourhandle/'   or  '@yourhandle'
+ *    'https://www.facebook.com/yourpage'       or  'yourpage'
+ *    'https://www.tiktok.com/@yourhandle'      or  '@yourhandle'
  */
 export type SocialPlatform = 'instagram' | 'facebook' | 'tiktok';
 
