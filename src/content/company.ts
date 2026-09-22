@@ -99,9 +99,9 @@ export const CONTACT = {
  * declared to Google in the Organization `sameAs` list.
  *
  * ─────────────────────────────────────────────────────────────────────────
- *  FILL-IN: replace each TODO url with the real profile address.
+ *  To change or remove a profile
  * ─────────────────────────────────────────────────────────────────────────
- *  Set a url to null for any platform you have not set up yet — the icon is
+ *  Set a url to null for any platform you no longer want shown — the icon is
  *  then left out entirely, which is better than a link that goes nowhere.
  *
  *  A full URL is preferred, because it is unambiguous. A bare handle also
@@ -114,12 +114,9 @@ export const CONTACT = {
 export type SocialPlatform = 'instagram' | 'facebook' | 'tiktok';
 
 export const SOCIAL: { platform: SocialPlatform; url: string | null }[] = [
-  // TODO: replace with the real Instagram profile URL.
-  { platform: 'instagram', url: null },
-  // TODO: replace with the real Facebook page URL.
-  { platform: 'facebook', url: null },
-  // TODO: replace with the real TikTok profile URL.
-  { platform: 'tiktok', url: null },
+  { platform: 'instagram', url: 'https://www.instagram.com/chengdujourneys/' },
+  { platform: 'facebook', url: 'https://www.facebook.com/chengdujourneys' },
+  { platform: 'tiktok', url: 'https://www.tiktok.com/@chengdujourneys' },
 ];
 
 /**
