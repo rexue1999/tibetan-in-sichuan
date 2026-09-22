@@ -54,12 +54,13 @@ export const teamMembers: TeamMember[] = [
     languages: ['zh', 'en', 'fr'],
   },
   {
-    // TODO: replace with the founder's real name, or delete this entry.
-    id: 'founder',
-    name: 'Our founder',
+    id: 'aaron',
+    name: 'Aaron',
+    // Role and bio live in messages/*.json under about.team.aaron.
+    i18nKey: 'aaron',
     role: 'Founder & Lead Guide',
-    bio: 'Placeholder — replace with a short, personal introduction: where you grew up, how you came to run journeys here, and what you care about when guiding.',
-    photo: null,
+    bio: 'Has lived and worked in both Europe and the United States, and stayed in western Sichuan because of the Tibetan highlands. Professional, and genuinely in love with the place. A career without a single bad review — every trip built around the guests.',
+    photo: '/images/founder-aaron.jpg',
     languages: ['en', 'zh'],
   },
 ];
