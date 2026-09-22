@@ -98,7 +98,13 @@ export default async function BookingPage({ params: { locale } }: { params: { lo
       {/* Contact Methods */}
       <section className="py-20 px-6 bg-white">
         <div className="max-w-3xl mx-auto">
-          <div className="grid sm:grid-cols-3 gap-4 max-w-2xl mx-auto">
+          {/*
+            Three columns only from `md`, not `sm`. At 640–767px each column is
+            ~137px wide but `info@chengdujourneys.com` needs ~240px, so the
+            button used to spill past the card border. Two columns fit the
+            longest string comfortably; three only do once there is real room.
+          */}
+          <div className="grid md:grid-cols-3 gap-4 max-w-2xl mx-auto">
             {contactChannels.map(({ key, href, external, labelKey }) => {
               const { icon, color } = channelStyle[key];
               // The heading names the action ("Chat on WhatsApp", "Call us"),
@@ -107,17 +113,28 @@ export default async function BookingPage({ params: { locale } }: { params: { lo
               const buttonText =
                 key === 'email' ? tb('emailHandle' as any) : CONTACT.phoneDisplay;
               return (
-                <div key={key} className="border border-stone-200 rounded-sm p-6 flex flex-col items-center text-center gap-3">
+                <div key={key} className="border border-stone-200 rounded-sm p-5 sm:p-6 flex flex-col items-center text-center gap-3">
                   <div className="text-stone-600 mb-1">{icon}</div>
                   <span className="text-xs font-medium tracking-[2px] uppercase text-stone-500">
                     {tb(labelKey as any)}
                   </span>
+                  {/*
+                    The address must fit on ONE line: `info@chengdujourneys.com`
+                    is the longest string on the page, and breaking it mid-word
+                    ("...chengdujo / urneys.com") makes the most important CTA
+                    unreadable. It fits if the tracking is relaxed and the
+                    horizontal padding is trimmed for that button only.
+                    min-w-0 + max-w-full are the overflow guard; they let the
+                    flex item shrink instead of escaping the card border.
+                  */}
                   <a
                     href={href}
                     {...(external ? { target: '_blank', rel: 'noopener noreferrer' } : {})}
-                    className={`inline-flex items-center justify-center gap-2 px-5 py-2.5 text-xs font-medium tracking-[1.5px] rounded-sm transition-all mt-auto whitespace-nowrap ${color} ${
-                      key === 'email' ? 'normal-case' : 'uppercase'
-                    }`}
+                    className={`inline-flex items-center justify-center min-w-0 max-w-full py-2.5 text-center leading-snug rounded-sm transition-all mt-auto font-medium ${
+                      key === 'email'
+                        ? 'normal-case tracking-[0.2px] px-2.5 text-[11px] whitespace-nowrap'
+                        : 'uppercase gap-2 px-3 sm:px-5 text-xs tracking-[0.5px] sm:tracking-[1.5px] whitespace-nowrap'
+                    } ${color}`}
                   >
                     {buttonText}
                   </a>
