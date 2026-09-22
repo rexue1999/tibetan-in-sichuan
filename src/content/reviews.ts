@@ -47,6 +47,12 @@ export type Review = {
    * missing locale automatically falls back to `en`.
    */
   text: Partial<Record<'en' | 'es' | 'th' | 'zh', string>> & { en: string };
+  /**
+   * Optional screenshot(s) of the original message, shown beside the text so
+   * the review reads as a real chat rather than site copy. Paths are relative
+   * to /public. Keep these cropped to the guest's own words.
+   */
+  images?: { src: string; width: number; height: number; alt: string }[];
   /** true once you have the original message on file. */
   verified: boolean;
   /** Flip to true to make it visible. */
@@ -70,6 +76,14 @@ export const reviews: Review[] = [
     },
     verified: true,
     published: true,
+    images: [
+      {
+        src: '/images/reviews/martina-review.jpg',
+        width: 760,
+        height: 823,
+        alt: 'WhatsApp message from Martina Vilardo thanking the driver and guide after the highland loop',
+      },
+    ],
   },
   {
     id: 'valerie-2026-08',
@@ -86,6 +100,14 @@ export const reviews: Review[] = [
     },
     verified: true,
     published: true,
+    images: [
+      {
+        src: '/images/reviews/valerie-review.jpg',
+        width: 760,
+        height: 645,
+        alt: 'WhatsApp message from Valerie thanking the guide on her honeymoon trip',
+      },
+    ],
   },
 ];
 
@@ -104,6 +126,17 @@ export const reviews: Review[] = [
  *     en: 'Paste the real review text here.',
  *     zh: '中文翻译（可留空，留空则显示英文原文）。',
  *   },
+ *   // Optional. Save a crop to /public/images/reviews/ showing only the
+ *   // guest's own words — no phone numbers, avatars or your own replies
+ *   // unless you have their permission and want them shown.
+ *   images: [
+ *     {
+ *       src: '/images/reviews/jane-d-2026-05.jpg',
+ *       width: 760,
+ *       height: 600,
+ *       alt: 'WhatsApp message from Jane D. after the nomad camp',
+ *     },
+ *   ],
  *   verified: true,
  *   published: true,
  * },

@@ -1,5 +1,6 @@
 import { getTranslations } from 'next-intl/server';
 import Link from 'next/link';
+import Image from 'next/image';
 import { publishedReviews, hasRatings, averageRating, reviewText } from '../../../content/reviews';
 import { SITE_URL, buildLocalizedAlternates } from '../../../lib/seo';
 
@@ -189,6 +190,33 @@ export default async function ReviewsPage({ params: { locale } }: { params: { lo
                   <p className="text-sm leading-[1.9] text-stone-600 mb-5 whitespace-pre-line">
                     {reviewText(r, locale)}
                   </p>
+
+                  {/* Screenshot of the guest's own message. Sits inline right
+                      after the quote so the two read as one unit — the words
+                      and the proof that they were actually sent. */}
+                  {r.images && r.images.length > 0 && (
+                    <div className="mb-5 flex flex-wrap gap-4">
+                      {r.images.map((img) => (
+                        <a
+                          key={img.src}
+                          href={img.src}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="block w-[220px] sm:w-[260px] rounded-sm overflow-hidden ring-1 ring-black/5 hover:ring-black/15 transition-shadow"
+                          title={t('viewScreenshot')}
+                        >
+                          <Image
+                            src={img.src}
+                            alt={img.alt}
+                            width={img.width}
+                            height={img.height}
+                            sizes="(max-width: 640px) 220px, 260px"
+                            className="w-full h-auto"
+                          />
+                        </a>
+                      ))}
+                    </div>
+                  )}
 
                   <div className="flex flex-wrap items-center gap-3 text-[10px] tracking-[2px] uppercase text-stone-400">
                     {r.verified && (
