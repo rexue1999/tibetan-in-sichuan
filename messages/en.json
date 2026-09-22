@@ -1208,13 +1208,21 @@
       }
     },
     "teamTitle": "The people you will travel with",
-    "teamNote": "Profiles below are placeholders — real names, photographs and histories will be filled in shortly.",
+    "teamNote": "The people who actually travel with you — not a network of freelancers we have never met.",
     "speaks": "Speaks",
+    "team": {
+      "yinn": {
+        "role": "Local Guide · Tibetan Highlands",
+        "bio": "Born in Wuhan and educated in France. She rides whenever she can and keeps coming back to the Tibetan highlands. Guests know her for monastery visits and the nomad camp."
+      }
+    },
+
     "langNames": {
       "en": "English",
       "zh": "Chinese",
       "th": "Thai",
-      "es": "Spanish"
+      "es": "Spanish",
+      "fr": "French"
     },
     "ctaTitle": "Questions before you book?",
     "ctaText": "Write to us and we will answer honestly, including when a route is not a good fit.",

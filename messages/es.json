@@ -1208,13 +1208,21 @@
       }
     },
     "teamTitle": "Las personas con las que viajarás",
-    "teamNote": "Los perfiles de abajo son provisionales: nombres, fotografías e historias reales se completarán en breve.",
+    "teamNote": "Las personas que de verdad viajan contigo, no una red de colaboradores que nunca hemos conocido.",
     "speaks": "Habla",
+    "team": {
+      "yinn": {
+        "role": "Guía local · Tierras altas del Tíbet",
+        "bio": "Nacida en Wuhan y formada en Francia. Monta a caballo siempre que puede y vuelve una y otra vez a las tierras altas del Tíbet. Los viajeros la conocen por las visitas a los monasterios y el campamento nómada."
+      }
+    },
+
     "langNames": {
       "en": "Inglés",
       "zh": "Chino",
       "th": "Tailandés",
-      "es": "Español"
+      "es": "Español",
+      "fr": "Francés"
     },
     "ctaTitle": "¿Preguntas antes de reservar?",
     "ctaText": "Escríbenos y responderemos con honestidad, incluso cuando una ruta no encaje.",

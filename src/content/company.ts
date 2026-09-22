@@ -17,39 +17,50 @@
 
 export type TeamMember = {
   id: string;
-  /** Real name, or a first name if they prefer privacy. */
+  /**
+   * Name as shown to visitors. Proper nouns are not translated, so this is
+   * shared across locales. Include the Chinese name for readers who know it.
+   */
   name: string;
-  /** Role shown under the name, e.g. 'Founder & Lead Guide'. */
+  /**
+   * Optional i18n key suffix. When set, `role` and `bio` are read from
+   * `messages/*.json` under `about.team.<i18nKey>.role` / `.bio` so the
+   * profile is written in the reader's language. When omitted, the literal
+   * `role` / `bio` below are used instead.
+   */
+  i18nKey?: string;
+  /** Role shown under the name. Used when `i18nKey` is not set. */
   role: string;
-  /** One or two sentences. Keep it human and specific. */
+  /** One or two sentences. Used when `i18nKey` is not set. */
   bio: string;
   /**
    * Path to a portrait in /public/images/, or null to render initials.
-   * Example: '/images/team-sonam.jpg?v=2'
+   * Example: '/images/guide-yinn.jpg?v=2'
    */
   photo: string | null;
-  /** Languages spoken, in lowercase BCP-47-ish codes for display. */
+  /** Languages spoken, keyed to `about.langNames` for display. */
   languages: string[];
 };
 
 export const teamMembers: TeamMember[] = [
   {
-    // TODO: replace with the founder's real name.
+    id: 'yinn',
+    name: 'Yinn（小颖）',
+    // Role and bio live in messages/*.json under about.team.yinn.
+    i18nKey: 'yinn',
+    role: 'Local Guide · Tibetan Highlands',
+    bio: 'Born in Wuhan and educated in France. Rides whenever she can and keeps returning to the Tibetan highlands. Leads monastery visits and the nomad camp.',
+    photo: '/images/guide-yinn.jpg',
+    languages: ['zh', 'en', 'fr'],
+  },
+  {
+    // TODO: replace with the founder's real name, or delete this entry.
     id: 'founder',
     name: 'Our founder',
     role: 'Founder & Lead Guide',
     bio: 'Placeholder — replace with a short, personal introduction: where you grew up, how you came to run journeys here, and what you care about when guiding.',
     photo: null,
     languages: ['en', 'zh'],
-  },
-  {
-    // TODO: replace with a real guide, or delete this entry.
-    id: 'guide-local',
-    name: 'Our local guide',
-    role: 'Local Guide · Tibetan Highlands',
-    bio: 'Placeholder — replace with a real guide profile. Guests respond strongly to knowing who will actually walk beside them.',
-    photo: null,
-    languages: ['zh'],
   },
 ];
 

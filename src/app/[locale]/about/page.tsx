@@ -51,6 +51,22 @@ export default async function AboutPage({ params: { locale } }: { params: { loca
   const story = t.raw('story') as unknown as string[];
   const values = t.raw('values') as unknown as Record<string, { title: string; text: string }>;
   const langNames = t.raw('langNames') as unknown as Record<string, string>;
+  // Per-locale team profiles. A member with an `i18nKey` reads its role and
+  // bio from here so the copy is written in the reader's language; without
+  // one, the literal strings on the member are used.
+  const teamText = t.raw('team') as unknown as
+    | Record<string, { role?: string; bio?: string }>
+    | undefined;
+  const memberText = (m: (typeof teamMembers)[number]) => {
+    if (!m.i18nKey) return { role: m.role, bio: m.bio };
+    const entry = teamText?.[m.i18nKey];
+    if (!entry || !entry.role || !entry.bio) {
+      // Missing translation should never blank the card — fall back to the
+      // canonical English text on the member itself.
+      return { role: m.role, bio: m.bio };
+    }
+    return { role: entry.role, bio: entry.bio };
+  };
 
   const breadcrumbJsonLd = {
     '@context': 'https://schema.org',
@@ -156,32 +172,35 @@ export default async function AboutPage({ params: { locale } }: { params: { loca
           <p className="text-xs text-stone-400 text-center mb-12 max-w-lg mx-auto">{t('teamNote')}</p>
 
           <div className="grid sm:grid-cols-2 gap-10">
-            {teamMembers.map((member) => (
-              <div key={member.id} className="text-center">
-                {member.photo ? (
-                  // eslint-disable-next-line @next/next/no-img-element
-                  <img
-                    src={member.photo}
-                    alt={member.name}
-                    className="w-32 h-32 rounded-full object-cover mx-auto mb-5"
-                  />
-                ) : (
-                  <div className="w-32 h-32 rounded-full bg-[#F5F2ED] border border-stone-200 flex items-center justify-center mx-auto mb-5">
-                    <span className="text-2xl font-light text-stone-400">
-                      {initials(member.name)}
-                    </span>
+            {teamMembers.map((member) => {
+              const { role, bio } = memberText(member);
+              return (
+                <div key={member.id} className="text-center">
+                  {member.photo ? (
+                    // eslint-disable-next-line @next/next/no-img-element
+                    <img
+                      src={member.photo}
+                      alt={member.name}
+                      className="w-32 h-32 rounded-full object-cover mx-auto mb-5"
+                    />
+                  ) : (
+                    <div className="w-32 h-32 rounded-full bg-[#F5F2ED] border border-stone-200 flex items-center justify-center mx-auto mb-5">
+                      <span className="text-2xl font-light text-stone-400">
+                        {initials(member.name)}
+                      </span>
+                    </div>
+                  )}
+                  <h3 className="text-base font-medium mb-1">{member.name}</h3>
+                  <div className="text-[10px] tracking-[2px] uppercase text-[#8C3B2E] mb-4">
+                    {role}
                   </div>
-                )}
-                <h3 className="text-base font-medium mb-1">{member.name}</h3>
-                <div className="text-[10px] tracking-[2px] uppercase text-[#8C3B2E] mb-4">
-                  {member.role}
+                  <p className="text-sm leading-relaxed text-stone-500 mb-4">{bio}</p>
+                  <div className="text-[10px] tracking-[1.5px] uppercase text-stone-400">
+                    {t('speaks')}: {member.languages.map((l) => langNames[l] ?? l).join(', ')}
+                  </div>
                 </div>
-                <p className="text-sm leading-relaxed text-stone-500 mb-4">{member.bio}</p>
-                <div className="text-[10px] tracking-[1.5px] uppercase text-stone-400">
-                  {t('speaks')}: {member.languages.map((l) => langNames[l] ?? l).join(', ')}
-                </div>
-              </div>
-            ))}
+              );
+            })}
           </div>
         </div>
       </section>
