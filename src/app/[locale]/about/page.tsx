@@ -204,7 +204,7 @@ export default async function AboutPage({ params: { locale } }: { params: { loca
               href={`/${locale}#trips`}
               className="inline-flex items-center justify-center px-8 py-3 text-xs font-medium tracking-[2px] uppercase rounded-sm border border-white/20 text-white/70 hover:text-white hover:border-white/40 transition-colors"
             >
-              View routes
+              {t('viewRoutes')}
             </Link>
           </div>
         </div>

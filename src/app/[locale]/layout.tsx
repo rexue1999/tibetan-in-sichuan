@@ -6,6 +6,8 @@ import { locales, defaultLocale } from '../../i18n';
 import { SITE_URL, buildLocalizedAlternates } from '../../lib/seo';
 import '../globals.css';
 import MobileMenu from './mobile-menu';
+import { SocialLinks } from '../../components/SocialLinks';
+import { activeSocialLinks } from '../../content/company';
 
 const ogLocales: Record<string, string> = {
   en: 'en_US',
@@ -93,6 +95,7 @@ export default async function LocaleLayout({
   const messages = await getMessages();
   const t = await getTranslations({ locale, namespace: 'nav' });
   const ts = await getTranslations({ locale, namespace: 'seoPages' });
+  const tf = await getTranslations({ locale, namespace: 'footer' });
 
   const jsonLd = {
     '@context': 'https://schema.org',
@@ -124,7 +127,13 @@ export default async function LocaleLayout({
           email: 'info@chengdujourneys.com',
           availableLanguage: ['English', 'Chinese', 'Thai', 'Spanish', 'Tibetan'],
         },
-        sameAs: ['https://wa.me/8619045478878'],
+        // Profiles that Google can verify as belonging to this organisation.
+        // Only the configured ones are listed, so a null URL never ships an
+        // empty string or a placeholder into the structured data.
+        sameAs: [
+          'https://wa.me/8619045478878',
+          ...activeSocialLinks().map(({ url }) => url),
+        ],
       },
       {
         '@type': 'TravelAgency',
@@ -268,8 +277,9 @@ export default async function LocaleLayout({
             dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
           />
           <footer className="bg-[#1F1F1F] py-12 px-6">
-            <div className="max-w-7xl mx-auto text-center text-white/50 text-[10px] tracking-[2px] uppercase">
-              <p>© 2026 Chengdu Journeys. All rights reserved.</p>
+            <div className="max-w-7xl mx-auto flex flex-col items-center gap-6 text-white/50 text-[10px] tracking-[2px] uppercase">
+              <SocialLinks tone="dark" label={tf('follow')} />
+              <p>{tf('copyright')}</p>
             </div>
           </footer>
         </NextIntlClientProvider>

@@ -501,6 +501,7 @@
     "text": "Esto es solo el comienzo — muchos de nuestros viajeros continúan hacia las montañas del oeste de Sichuan."
   },
   "footer": {
+    "follow": "Síguenos",
     "copyright": "© 2026 Chengdu Journeys. Todos los derechos reservados."
   },
   "seoPages": {
@@ -1217,7 +1218,8 @@
     },
     "ctaTitle": "¿Preguntas antes de reservar?",
     "ctaText": "Escríbenos y responderemos con honestidad, incluso cuando una ruta no encaje.",
-    "ctaButton": "Contactar"
+    "ctaButton": "Contactar",
+    "viewRoutes": "Ver rutas"
   },
   "reviews": {
     "label": "En sus palabras",

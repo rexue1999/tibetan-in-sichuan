@@ -93,3 +93,74 @@ export const CONTACT = {
   email: 'info@chengdujourneys.com',
   phone: '+86-19045478878',
 } as const;
+
+/**
+ * Social profiles, rendered in the site footer and on the booking page, and
+ * declared to Google in the Organization `sameAs` list.
+ *
+ * ─────────────────────────────────────────────────────────────────────────
+ *  FILL-IN: replace each TODO url with the real profile address.
+ * ─────────────────────────────────────────────────────────────────────────
+ *  Set a url to null for any platform you have not set up yet — the icon is
+ *  then left out entirely, which is better than a link that goes nowhere.
+ *
+ *  Accepted shapes (all work):
+ *    'https://www.instagram.com/yourhandle/'
+ *    'https://www.facebook.com/yourpage'
+ *    'https://www.tiktok.com/@yourhandle'
+ *
+ *  Do NOT paste a bare handle here — the loader below builds the URL from
+ *  either form, but a full URL is clearer for whoever edits this next.
+ */
+export type SocialPlatform = 'instagram' | 'facebook' | 'tiktok';
+
+export const SOCIAL: { platform: SocialPlatform; url: string | null }[] = [
+  // TODO: replace with the real Instagram profile URL.
+  { platform: 'instagram', url: null },
+  // TODO: replace with the real Facebook page URL.
+  { platform: 'facebook', url: null },
+  // TODO: replace with the real TikTok profile URL.
+  { platform: 'tiktok', url: null },
+];
+
+/**
+ * Normalise a social entry into a link we can actually render, or null when
+ * the platform has not been filled in yet. Accepts a full URL or a bare
+ * handle (with or without a leading '@') so a half-filled config still works.
+ */
+export function resolveSocialUrl(platform: SocialPlatform, raw: string | null): string | null {
+  if (raw === null) return null;
+  const value = raw.trim();
+  if (value === '') return null;
+
+  // Already a full address — use as given, but force https.
+  if (/^https?:\/\//i.test(value)) return value.replace(/^http:\/\//i, 'https://');
+
+  // Bare handle — strip the sigils and build the canonical profile URL.
+  const handle = value.replace(/^@/, '').replace(/^\/+|\/+$/g, '');
+  if (handle === '') return null;
+
+  switch (platform) {
+    case 'instagram':
+      return `https://www.instagram.com/${handle}/`;
+    case 'facebook':
+      return `https://www.facebook.com/${handle}`;
+    case 'tiktok':
+      return `https://www.tiktok.com/@${handle}`;
+  }
+}
+
+/** The social links that are actually configured, ready to render. */
+export function activeSocialLinks(): { platform: SocialPlatform; url: string }[] {
+  return SOCIAL.flatMap(({ platform, url }) => {
+    const resolved = resolveSocialUrl(platform, url);
+    return resolved ? [{ platform, url: resolved }] : [];
+  });
+}
+
+/** Display names, used for the icon's accessible label. */
+export const SOCIAL_LABEL: Record<SocialPlatform, string> = {
+  instagram: 'Instagram',
+  facebook: 'Facebook',
+  tiktok: 'TikTok',
+};

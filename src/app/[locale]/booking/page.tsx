@@ -2,6 +2,7 @@ import { getTranslations } from 'next-intl/server';
 import Link from 'next/link';
 import { locales, defaultLocale } from '../../../i18n';
 import { SITE_URL, buildLocalizedAlternates } from '../../../lib/seo';
+import { SocialLinks } from '../../../components/SocialLinks';
 
 const WHATSAPP_URL = 'https://wa.me/8619045478878';
 
@@ -76,6 +77,9 @@ export default async function BookingPage({ params: { locale } }: { params: { lo
   const tb = await getTranslations({ locale, namespace: 'booking' });
   const th = await getTranslations({ locale, namespace: 'howItWorks' });
   const tr = await getTranslations({ locale, namespace: 'routes' });
+  // Reuse the footer's label rather than duplicating the same four strings
+  // into the booking namespace.
+  const tf = await getTranslations({ locale, namespace: 'footer' });
 
   return (
     <>
@@ -110,6 +114,12 @@ export default async function BookingPage({ params: { locale } }: { params: { lo
                 </a>
               </div>
             ))}
+          </div>
+          <div className="mt-12 text-center">
+            <p className="text-[10px] font-medium tracking-[3px] uppercase text-stone-400 mb-4">
+              {tf('follow')}
+            </p>
+            <SocialLinks tone="light" size={20} className="justify-center" label={tf('follow')} />
           </div>
         </div>
       </section>

@@ -501,6 +501,7 @@
     "text": "This experience is just the beginning — many of our travelers continue into the mountains of Western Sichuan."
   },
   "footer": {
+    "follow": "Follow us",
     "copyright": "© 2026 Chengdu Journeys. All rights reserved."
   },
   "seoPages": {
@@ -1217,7 +1218,8 @@
     },
     "ctaTitle": "Questions before you book?",
     "ctaText": "Write to us and we will answer honestly, including when a route is not a good fit.",
-    "ctaButton": "Contact us"
+    "ctaButton": "Contact us",
+    "viewRoutes": "View routes"
   },
   "reviews": {
     "label": "In their words",
