@@ -59,12 +59,17 @@ export async function generateMetadata({ params: { locale } }: { params: { local
 
 function LangSwitcher({ locale }: { locale: string }) {
   return (
-    <div className="flex items-center gap-1 text-xs">
+    /*
+      Tighter on phones: the four chips plus the burger have to share the row
+      with the wordmark, and at 320px every pixel counts. `gap-0.5` + `px-1.5`
+      on small screens keeps all four codes tappable without wrapping.
+    */
+    <div className="flex items-center gap-0.5 sm:gap-1 text-[11px] sm:text-xs shrink-0">
       {locales.map((loc) => (
         <Link
           key={loc}
           href={`/${loc}`}
-          className={`px-2 py-1 rounded transition-colors ${
+          className={`px-1.5 sm:px-2 py-1 rounded transition-colors ${
             loc === locale
               ? 'bg-[#8C3B2E] text-white'
               : 'text-stone-400 hover:text-white'
@@ -255,14 +260,42 @@ export default async function LocaleLayout({
       <body className="bg-[#F5F2ED] text-[#1F1F1F] min-h-screen">
         <NextIntlClientProvider messages={messages}>
           <nav className="fixed top-0 w-full z-50 bg-[#F5F2ED]/90 backdrop-blur-md border-b border-black/5 transition-all">
-            <div className="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
-              <Link href={`/${locale}`} className="flex items-center gap-3 text-[#1F1F1F]">
-                <Image src="/icon.svg" alt="Chengdu Journeys — Sichuan & Tibet small-group tours" width={36} height={36} />
-                <span className="text-lg font-light tracking-[4px]">CHENGDU JOURNEYS</span>
+            <div className="max-w-7xl mx-auto px-4 sm:px-6 h-16 flex items-center justify-between gap-3">
+              {/*
+                The wordmark needs ~245px on one line at text-lg / tracking-[4px].
+                Below 540px there is not that much room, so it used to wrap to two
+                lines and the second line ran underneath the language switcher.
+                `whitespace-nowrap` stops the wrap; the responsive font size and
+                letter-spacing bring the required width down to roughly:
+                  phone   text-[11px] tracking-[1.5px] -> ~118px
+                  sm      text-sm     tracking-[2.5px] -> ~165px
+                  md+     text-lg     tracking-[4px]   -> ~245px
+                The icon also hides on the narrowest screens to free up width.
+              */}
+              <Link
+                href={`/${locale}`}
+                className="flex items-center gap-2 sm:gap-3 text-[#1F1F1F] shrink-0 min-w-0"
+              >
+                <Image
+                  src="/icon.svg"
+                  alt="Chengdu Journeys — Sichuan & Tibet small-group tours"
+                  width={36}
+                  height={36}
+                  className="hidden xs:block sm:block w-7 h-7 sm:w-9 sm:h-9 shrink-0"
+                />
+                <span className="text-[11px] xs:text-xs sm:text-sm md:text-lg font-light tracking-[1.5px] xs:tracking-[2px] sm:tracking-[2.5px] md:tracking-[4px] whitespace-nowrap">
+                  CHENGDU JOURNEYS
+                </span>
               </Link>
-              <div className="hidden md:flex items-center gap-8 text-xs tracking-[2px] uppercase">
+              {/*
+                Inline nav starts at `lg`, not `md`. At 768-1023px the wordmark
+                (~245px) + five nav links + four language chips cannot all fit,
+                which is what pushed the wordmark onto a second line on tablets.
+                Below `lg` the burger menu carries the links instead.
+              */}
+              <div className="hidden lg:flex items-center gap-6 xl:gap-8 text-xs tracking-[2px] uppercase">
                 {navLinks.map(({ href, key }) => (
-                  <Link key={key} href={`/${locale}${href}`} className="text-stone-500 hover:text-[#8C3B2E] transition-colors">
+                  <Link key={key} href={`/${locale}${href}`} className="text-stone-500 hover:text-[#8C3B2E] transition-colors whitespace-nowrap">
                     {t(key)}
                   </Link>
                 ))}

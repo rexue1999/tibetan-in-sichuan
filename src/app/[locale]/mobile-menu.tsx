@@ -24,9 +24,14 @@ export default function MobileMenu({ locale, navLinks }: { locale: string; navLi
 
   return (
     <>
+      {/*
+        `lg:hidden`, matching the inline nav which now starts at `lg`. If this
+        stayed `md:hidden` there would be a 768-1023px dead zone with no way to
+        reach the routes at all.
+      */}
       <button
         onClick={() => setOpen(!open)}
-        className="md:hidden flex flex-col gap-1 p-2 relative z-50"
+        className="lg:hidden flex flex-col gap-1 p-2 relative z-50"
         aria-label={open ? 'Close menu' : 'Open menu'}
       >
         <span className={`block w-5 h-px bg-[#1F1F1F] transition-all ${open ? 'rotate-45 translate-y-[3px]' : ''}`} />
@@ -34,7 +39,7 @@ export default function MobileMenu({ locale, navLinks }: { locale: string; navLi
         <span className={`block w-5 h-px bg-[#1F1F1F] transition-all ${open ? '-rotate-45 -translate-y-[3px]' : ''}`} />
       </button>
 
-      <div className={`fixed inset-0 z-40 bg-[#F5F2ED] md:hidden transition-opacity duration-300 ${open ? 'opacity-100 pointer-events-auto' : 'opacity-0 pointer-events-none'}`}>
+      <div className={`fixed inset-0 z-40 bg-[#F5F2ED] lg:hidden transition-opacity duration-300 ${open ? 'opacity-100 pointer-events-auto' : 'opacity-0 pointer-events-none'}`}>
         <div className="flex flex-col items-center justify-center h-full gap-8 text-lg tracking-[3px] uppercase">
           <Link href={`/${locale}`} className="text-[#1F1F1F] hover:text-[#8C3B2E] transition-colors">Home</Link>
           {navLinks.map(({ href, label }) => (

@@ -8,6 +8,12 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      screens: {
+        // `xs` covers small-but-not-tiny phones (iPhone SE/mini at 375px and up).
+        // Needed by the header, where the wordmark has to step up in size before
+        // the `sm` breakpoint at 640px.
+        xs: '375px',
+      },
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
