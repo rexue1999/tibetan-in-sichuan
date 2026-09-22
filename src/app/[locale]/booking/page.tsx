@@ -101,10 +101,11 @@ export default async function BookingPage({ params: { locale } }: { params: { lo
           <div className="grid sm:grid-cols-3 gap-4 max-w-2xl mx-auto">
             {contactChannels.map(({ key, href, external, labelKey }) => {
               const { icon, color } = channelStyle[key];
-              // The card heading labels the channel; the button says what
-              // happens when you use it. Rendering the same string twice read
-              // as a duplication, so the phone card shows the number itself.
-              const buttonText = key === 'phone' ? CONTACT.phoneDisplay : tb(labelKey as any);
+              // The heading names the action ("Chat on WhatsApp", "Call us"),
+              // so the button must NOT repeat it — it shows where the link
+              // actually goes, which the card does not otherwise say.
+              const buttonText =
+                key === 'email' ? tb('emailHandle' as any) : CONTACT.phoneDisplay;
               return (
                 <div key={key} className="border border-stone-200 rounded-sm p-6 flex flex-col items-center text-center gap-3">
                   <div className="text-stone-600 mb-1">{icon}</div>
@@ -114,7 +115,9 @@ export default async function BookingPage({ params: { locale } }: { params: { lo
                   <a
                     href={href}
                     {...(external ? { target: '_blank', rel: 'noopener noreferrer' } : {})}
-                    className={`inline-flex items-center justify-center gap-2 px-5 py-2.5 text-xs font-medium tracking-[1.5px] uppercase rounded-sm transition-all mt-auto whitespace-nowrap ${color}`}
+                    className={`inline-flex items-center justify-center gap-2 px-5 py-2.5 text-xs font-medium tracking-[1.5px] rounded-sm transition-all mt-auto whitespace-nowrap ${color} ${
+                      key === 'email' ? 'normal-case' : 'uppercase'
+                    }`}
                   >
                     {buttonText}
                   </a>
