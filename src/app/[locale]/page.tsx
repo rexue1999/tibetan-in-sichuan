@@ -203,7 +203,23 @@ export default async function Home({ params: { locale } }: { params: { locale: s
       <section id="gallery" className="py-24 md:py-32 px-6 bg-[#F5F2ED]">
         <div className="max-w-7xl mx-auto">
           <SectionTitle label={tg('label')} title={tg('title')} />
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mt-12" style={{ gridTemplateRows: 'repeat(3, 240px)' }}>
+          {/*
+            Row heights must be declared for EVERY row the tiles need, at every
+            breakpoint — not just the ones the desktop grid happens to use.
+
+            The lead tile spans two columns, so the tile count and the row count
+            differ by breakpoint: 4 columns need 4 rows for 13 tiles (1 lead
+            occupying 2x2, plus 12), while 2 columns need 7. `gridTemplateRows`
+            only declares the first four; the remaining rows are implicit, and an
+            implicit row over an empty div has height 0. The last six photos were
+            therefore invisible on phones — invisible, not missing, which is why
+            the HTML check passed and the screenshot had to be looked at.
+
+            `auto-rows` covers the implicit rows at the phone breakpoint, and
+            `md:grid-rows-[repeat(4,240px)]` restores the fixed-height desktop
+            grid, where every tile is exactly one row tall.
+          */}
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mt-12 auto-rows-[168px] md:auto-rows-auto md:grid-rows-[repeat(4,240px)]">
             <div
               className="md:row-span-2 col-span-2 rounded-sm overflow-hidden relative bg-cover bg-center"
               style={{ backgroundImage: 'url(/images/litang.jpg?v=2)' }}
@@ -266,6 +282,42 @@ export default async function Home({ params: { locale } }: { params: { locale: s
             >
               <div className="absolute inset-0 bg-[#1F1F1F]/15" />
               <span className="absolute bottom-3 left-3 text-[9px] tracking-[2px] uppercase text-white/80">{tg('caption9')}</span>
+            </div>
+            {/*
+              Four more tiles, added once real photographs of the Yunnan and
+              Lhasa legs came out of the drive. The grid above is nine frames of
+              Sichuan and western Sichuan, which made the site read as a single
+              region; these four give the gallery a second and third country in
+              it. Four rows, not three, because the lead tile takes a 2x2 block
+              and 12 small tiles fill the remaining twelve cells exactly.
+            */}
+            <div
+              className="rounded-sm overflow-hidden relative bg-cover bg-center"
+              style={{ backgroundImage: 'url(/images/erhai-cangshan.jpg?v=1)' }}
+            >
+              <div className="absolute inset-0 bg-[#1F1F1F]/15" />
+              <span className="absolute bottom-3 left-3 text-[9px] tracking-[2px] uppercase text-white/80">{tg('caption10')}</span>
+            </div>
+            <div
+              className="rounded-sm overflow-hidden relative bg-cover bg-center"
+              style={{ backgroundImage: 'url(/images/meili-sunrise.jpg?v=1)' }}
+            >
+              <div className="absolute inset-0 bg-[#1F1F1F]/15" />
+              <span className="absolute bottom-3 left-3 text-[9px] tracking-[2px] uppercase text-white/80">{tg('caption11')}</span>
+            </div>
+            <div
+              className="rounded-sm overflow-hidden relative bg-cover bg-center"
+              style={{ backgroundImage: 'url(/images/potala-panorama.jpg?v=1)' }}
+            >
+              <div className="absolute inset-0 bg-[#1F1F1F]/15" />
+              <span className="absolute bottom-3 left-3 text-[9px] tracking-[2px] uppercase text-white/80">{tg('caption12')}</span>
+            </div>
+            <div
+              className="rounded-sm overflow-hidden relative bg-cover bg-center"
+              style={{ backgroundImage: 'url(/images/lugu-lake.jpg?v=1)' }}
+            >
+              <div className="absolute inset-0 bg-[#1F1F1F]/15" />
+              <span className="absolute bottom-3 left-3 text-[9px] tracking-[2px] uppercase text-white/80">{tg('caption13')}</span>
             </div>
           </div>
 
