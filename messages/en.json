@@ -14,7 +14,15 @@
     "title": "Start in Chengdu. <em>Go beyond.</em>",
     "subtitle": "Small-group journeys into Tibetan culture and the wild landscapes of Western China.",
     "cta": "View Experiences",
-    "learnMore": "Learn More"
+    "learnMore": "Learn More",
+    "photo1": "Meili Snow Range at first light · Yunnan",
+    "photo2": "Nu River gorge in cloud · Yunnan",
+    "photo3": "The Potala Palace · Lhasa",
+    "photo4": "Cuopu Valley, Batang · western Sichuan",
+    "photo5": "Bingzhongluo forest · Nujiang, Yunnan",
+    "slideOf": "Slide {n} of {total}",
+    "previousSlide": "Previous photograph",
+    "nextSlide": "Next photograph"
   },
   "expect": {
     "label": "Beyond the postcard",

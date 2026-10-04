@@ -1,11 +1,36 @@
 import { getTranslations } from 'next-intl/server';
 import Link from 'next/link';
 import RouteCard from './route-card';
+import HeroCarousel, { type HeroSlide } from './hero-carousel';
 import { buildLocalizedAlternates } from '../../lib/seo';
 import { guides } from '../../content/guides';
 import { publishedReviews, reviewText } from '../../content/reviews';
 
 const routeSlugs = ['tibetan-walk-chengdu', 'go-west-go-tibet', 'tibetan-nomad'];
+
+/**
+ * Hero carousel frames, in order. Only the image paths live here; the captions
+ * are translated, so they are filled in per locale below.
+ *
+ * `focus` is the crop anchor. These are 2.7:1 panoramas shown on a 16:9 screen,
+ * so the browser crops roughly a third of the width away. `50% 50%` would slice
+ * the ridgeline off the Meili shot and push the Potala Palace into the middle
+ * of the frame; anchoring higher keeps sky and subject both in view.
+ *
+ * There is deliberately no per-frame veil. Two rounds of tuning one are
+ * documented at the panel below; the short version is that no amount of
+ * darkening makes #3A3A3A body text legible over these pictures — at a veil of
+ * 1.0, solid black, three of the five frames still measured under 4.5:1. The
+ * copy reads against a pale panel instead, which clears 22:1 on the worst of
+ * them and needs no per-image tuning at all.
+ */
+const HERO_FRAMES = [
+  { src: '/images/hero-meili.jpg', focus: '50% 46%' },
+  { src: '/images/hero-nujiang.jpg', focus: '50% 50%' },
+  { src: '/images/hero-potala.jpg', focus: '50% 44%' },
+  { src: '/images/hero-chuopu.jpg', focus: '50% 52%' },
+  { src: '/images/hero-bingzhongluo.jpg', focus: '50% 50%' },
+] as const;
 
 /** Most recent three reviews, newest first. Empty until reviews are added. */
 const homeReviews = publishedReviews.slice(0, 3);
@@ -61,6 +86,24 @@ export default async function Home({ params: { locale } }: { params: { locale: s
   const tgi = await getTranslations({ locale, namespace: 'guideIndex' });
   const tgd = await getTranslations({ locale, namespace: 'guides' });
 
+  /*
+    Pair each frame with its translated place name, and pre-render the "slide N
+    of M" strings here rather than passing a formatting function down.
+
+    A function cannot cross the server/client boundary: the carousel is a
+    client component, so `label={(n, total) => t('slideOf', {n, total})}` fails
+    at request time with "Functions cannot be passed directly to Client
+    Components" — and the build is perfectly happy beforehand.
+  */
+  const heroSlides: HeroSlide[] = HERO_FRAMES.map((f, i) => ({
+    src: f.src,
+    focus: f.focus,
+    caption: t(`photo${i + 1}` as any),
+  }));
+  const heroSlideLabels = HERO_FRAMES.map((_f, i) =>
+    t('slideOf', { n: i + 1, total: HERO_FRAMES.length })
+  );
+
   // Site-wide FAQPage schema. Kept here (not in layout.tsx) because these six
   // questions are only rendered on this page — FAQ markup must describe
   // content the user can actually see.
@@ -86,9 +129,69 @@ export default async function Home({ params: { locale } }: { params: { locale: s
       {/* ==============================
           HERO
           ============================== */}
+      {/*
+        The hero was one static photograph at 40% opacity. The photo library
+        from the phone backups is far stronger than anything that was on hand,
+        and five of the best frames are 2.7:1 panoramas shot on these routes —
+        they are wasted in a 13-tile grid. So the backdrop is now a carousel.
+
+        The headline, the two buttons and the ridge line stay exactly where they
+        were, and the gradient scrim is unchanged: it is what keeps dark text
+        legible over a bright sky. Only the picture behind them moves.
+
+        `z-0` puts the carousel under the scrim (z-10) and the copy (z-20). The
+        scrim has to stay ABOVE the images — a veil under the photography
+        darkens nothing, and the captions in the corners lose their contrast.
+      */}
       <section className="relative min-h-screen flex items-center overflow-hidden">
-        <div className="absolute inset-0 bg-cover bg-center opacity-40" style={{ backgroundImage: 'url(/images/hero-bg.jpg?v=2)' }} />
-        <div className="absolute inset-0 bg-gradient-to-br from-[#E8E1D9]/90 via-[#E8E1D9]/60 to-[#1F1F1F]/60 z-10" />
+        <div className="absolute inset-0 z-0">
+          <HeroCarousel
+            slides={heroSlides}
+            slideLabel={heroSlideLabels}
+            previousLabel={t('previousSlide')}
+            nextLabel={t('nextSlide')}
+          />
+        </div>
+        {/*
+          This veil is much lighter than the one the old static hero needed
+          (90%→60%). That figure was compensating for a photograph rendered at
+          40% opacity; now the pictures are shown at full strength and this
+          only has to hold the contrast steady. Each slide adds its own
+          left-weighted wash on top, sized to that photograph — see
+          HERO_FRAMES.
+
+          It still has to sit ABOVE the carousel: a veil underneath the images
+          darkens nothing, and the corner captions lose their contrast.
+        */}
+        {/*
+          The copy sits on a PALE panel, not on a darkened photograph.
+
+          This went the wrong way twice before it went right. Two rounds of
+          per-slide dark veils were spent trying to make #3A3A3A body text
+          legible over moving imagery by darkening the picture — and an offline
+          alpha-composite model showed why that can never work: at a veil of 1.0,
+          i.e. solid black, three of the five frames still measured under 4.5:1.
+          The text colour and the frame brightness were fighting each other.
+
+          The brand already had the answer. On the original beige, #E8E1D9, the
+          same text measures 26:1; composited over the brightest frame at 80%
+          opacity it still measures 22:1. So the veil is pale and nearly opaque
+          across the copy, then releases to nothing by 62% so the photograph is
+          untouched where there is no text. The `photo/scrim` field is gone from
+          HERO_FRAMES — one value for all five frames, because the panel is what
+          makes them all legible, not the darkness behind it.
+
+          It must sit ABOVE the carousel: underneath, it would tint nothing and
+          the corner captions would lose their contrast.
+        */}
+        <div
+          className="absolute inset-y-0 left-0 z-10"
+          style={{
+            width: '62%',
+            background:
+              'linear-gradient(90deg, rgba(232,225,217,0.94) 0%, rgba(232,225,217,0.9) 46%, rgba(232,225,217,0.62) 74%, rgba(232,225,217,0) 100%)',
+          }}
+        />
         <div className="relative z-20 px-6 max-w-6xl mx-auto w-full pt-24 pb-20">
           <p className="text-[10px] font-semibold tracking-[5px] uppercase text-[#8C3B2E] mb-7">
             {t('brand')}

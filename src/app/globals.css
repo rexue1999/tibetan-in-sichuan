@@ -5,3 +5,47 @@
 body {
   font-family: 'Helvetica Neue', 'Inter', system-ui, -apple-system, sans-serif;
 }
+
+/*
+  Hero carousel animations.
+
+  They live here rather than in a `<style jsx>` block inside the component:
+  this project does not depend on styled-jsx, so that syntax is a build error,
+  not a style. Both keyframes are only ever referenced from Tailwind arbitrary
+  values, e.g. `animate-[progress_6s_linear_forwards]`.
+*/
+@keyframes heroCaptionIn {
+  from {
+    opacity: 0;
+    transform: translateY(6px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@keyframes heroProgress {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+/*
+  A visitor who asks their OS for reduced motion still gets the carousel — it
+  simply never advances on its own. The animation classes are neutralised
+  rather than the component being torn out, so the manual arrows keep working.
+*/
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+}

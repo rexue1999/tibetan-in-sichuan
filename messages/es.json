@@ -14,7 +14,15 @@
     "title": "Empieza en Chengdu. <em>Ve más allá.</em>",
     "subtitle": "Viajes en grupos pequeños por la cultura tibetana y los paisajes salvajes del oeste de China.",
     "cta": "Ver experiencias",
-    "learnMore": "Saber más"
+    "learnMore": "Saber más",
+    "photo1": "Cumbres del Meili al alba · Yunnan",
+    "photo2": "Garganta del Nu Jiang entre nubes · Yunnan",
+    "photo3": "El Palacio Potala · Lhasa",
+    "photo4": "Valle de Cuopu, Batang · Sichuan occidental",
+    "photo5": "Bosque de Bingzhongluo · Nujiang, Yunnan",
+    "slideOf": "Diapositiva {n} de {total}",
+    "previousSlide": "Fotografía anterior",
+    "nextSlide": "Fotografía siguiente"
   },
   "expect": {
     "label": "Más allá de la postal",
