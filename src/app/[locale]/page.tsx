@@ -12,10 +12,15 @@ const routeSlugs = ['tibetan-walk-chengdu', 'go-west-go-tibet', 'tibetan-nomad']
  * Hero carousel frames, in order. Only the image paths live here; the captions
  * are translated, so they are filled in per locale below.
  *
- * `focus` is the crop anchor. These are 2.7:1 panoramas shown on a 16:9 screen,
- * so the browser crops roughly a third of the width away. `50% 50%` would slice
- * the ridgeline off the Meili shot and push the Potala Palace into the middle
- * of the frame; anchoring higher keeps sky and subject both in view.
+ * The crop is baked into the files, not left to the browser. Four of the five
+ * sources are 4:3, so exporting the whole frame and letting `object-fit: cover`
+ * trim it in the browser would ship three-quarters of a picture for pixels no
+ * visitor will ever see — about 2.4MB across five files. The exported JPEGs are
+ * already 16:9, cropped at the anchor chosen in `export-hero-frames.py`.
+ *
+ * That is also why there is no `focus` on these entries any more: cropping
+ * twice, once in the file and once with `object-position`, is two places to
+ * change when a frame needs to move, and only the first one is real.
  *
  * There is deliberately no per-frame veil. Two rounds of tuning one are
  * documented at the panel below; the short version is that no amount of
@@ -25,11 +30,11 @@ const routeSlugs = ['tibetan-walk-chengdu', 'go-west-go-tibet', 'tibetan-nomad']
  * them and needs no per-image tuning at all.
  */
 const HERO_FRAMES = [
-  { src: '/images/hero-meili.jpg', focus: '50% 46%' },
-  { src: '/images/hero-nujiang.jpg', focus: '50% 50%' },
-  { src: '/images/hero-potala.jpg', focus: '50% 44%' },
-  { src: '/images/hero-chuopu.jpg', focus: '50% 52%' },
-  { src: '/images/hero-bingzhongluo.jpg', focus: '50% 50%' },
+  { src: '/images/hero-batang.jpg' },
+  { src: '/images/hero-gongga.jpg' },
+  { src: '/images/hero-genie.jpg' },
+  { src: '/images/hero-ya318.jpg' },
+  { src: '/images/hero-potala.jpg' },
 ] as const;
 
 /** Most recent three reviews, newest first. Empty until reviews are added. */
@@ -97,7 +102,6 @@ export default async function Home({ params: { locale } }: { params: { locale: s
   */
   const heroSlides: HeroSlide[] = HERO_FRAMES.map((f, i) => ({
     src: f.src,
-    focus: f.focus,
     caption: t(`photo${i + 1}` as any),
   }));
   const heroSlideLabels = HERO_FRAMES.map((_f, i) =>

@@ -5,15 +5,8 @@ import Image from 'next/image';
 
 export type HeroSlide = {
   src: string;
-  /** Place name shown bottom-left. Already localized by the caller. */
+  /** Place name shown bottom-right. Already localized by the caller. */
   caption: string;
-  /**
-   * Where the crop should sit. These are 2.7:1 panoramas being shown on a
-   * 16:9 screen, so `center` would slice off the ridgeline on the Meili shot
-   * and bury the Potala Palace in the middle of the frame. `50% 42%` keeps the
-   * sky and the peaks both in view.
-   */
-  focus?: string;
 };
 
 const INTERVAL_MS = 6000;
@@ -120,7 +113,6 @@ export default function HeroCarousel({
               sizes="100vw"
               quality={82}
               className="object-cover"
-              style={{ objectPosition: s.focus || '50% 50%' }}
             />
           </div>
         );
