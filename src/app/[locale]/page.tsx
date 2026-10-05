@@ -219,12 +219,20 @@ export default async function Home({ params: { locale } }: { params: { locale: s
             </Link>
           </div>
         </div>
-        {/* Mountain silhouette */}
-        <div className="absolute bottom-0 left-0 right-0 h-[35vh] opacity-[0.07] z-0">
-          <svg viewBox="0 0 1440 200" preserveAspectRatio="none" className="w-full h-full">
-            <polygon points="0,200 180,80 260,110 340,55 440,100 500,65 600,120 680,90 760,130 840,75 920,110 1020,60 1120,105 1200,70 1300,115 1440,80 1440,200" fill="#1F1F1F"/>
-          </svg>
-        </div>
+        {/*
+          The decorative SVG ridgeline that used to sit here is gone.
+
+          It was drawn at 7% opacity to be almost invisible over a single
+          40%-opacity photograph. Over full-strength photography that reasoning
+          stopped holding, and it read as a second image showing through: a row
+          of hard-edged triangular peaks lying across the bottom of the frame,
+          plainly not part of the landscape behind it. On the Bingzhongluo
+          forest frame — pale mist, low contrast — it was the most obvious thing
+          on the screen.
+
+          A backdrop made of real photographs does not need a drawn mountain
+          range. The genuine ridgeline in the picture is the one worth keeping.
+        */}
       </section>
 
       {/* ==============================
