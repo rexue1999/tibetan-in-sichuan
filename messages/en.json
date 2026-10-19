@@ -440,7 +440,34 @@
       ]
     },
     "tierHead": "Per person",
-    "tierLabel": "Option"
+    "tierLabel": "Option",
+    "labels": {
+      "duration": "Duration",
+      "meeting": "Meeting Point",
+      "time": "Meeting Time",
+      "price": "Price",
+      "itinerary": "Itinerary",
+      "highlights": "Highlights",
+      "bookTrip": "Book This Trip",
+      "askWA": "Ask on WhatsApp",
+      "back": "All trips",
+      "day": "Days",
+      "stay": "Stay",
+      "dayLabel": "Day",
+      "included": "What's included",
+      "includedTitle": "Included",
+      "excludedTitle": "Not included",
+      "faq": "Common questions",
+      "groupSize": "Group size",
+      "hotel": "Accommodation",
+      "cancellation": "Cancellation policy",
+      "home": "Home",
+      "trips": "Trips"
+    },
+    "indexTitle": "Three ways to go deeper",
+    "indexSubtitle": "A two-hour city walk, a highland loop, or four days with a nomad family — every trip runs as a small group with someone who lives here.",
+    "indexCtaTitle": "Not sure which one fits?",
+    "indexCtaText": "Tell us your dates, your group size and what you want to see — we will match the route, or build a private one around you."
   },
   "why": {
     "label": "The difference",
@@ -1029,160 +1056,409 @@
       ]
     },
     "tibet-permit-explained": {
-          "title": "Do you need a Tibet permit for Western Sichuan?",
-          "excerpt": "The single most common question we get from foreign travellers — and the answer surprises almost everyone. If your trip stays in Sichuan, you do not need a Tibet permit. Here is exactly where the line falls.",
-          "metaTitle": "Tibet Permit for Western Sichuan? What You Need",
-          "metaDesc": "Do you need a Tibet permit for Kangding, Tagong or Danba? No — Western Sichuan needs only a China visa. Here is where the permit line actually falls.",
-          "sections": [
-            {
-              "heading": "The short answer",
-              "body": [
-                "If your itinerary stays inside Sichuan Province — Chengdu, Kangding, Xinduqiao, Tagong, Danba, Siguniang Mountain, the Zoige and Hongyuan grasslands — you do not need a Tibet Travel Permit.",
-                "You need a valid Chinese visa (or visa-free entry, depending on your nationality), your passport, and nothing else in the way of special paperwork. All three of our routes are entirely within Sichuan."
-              ]
-            },
-            {
-              "heading": "Why this confuses almost everyone",
-              "body": [
-                "The confusion is understandable, and it is not the traveller’s fault. Two entirely different places both get called \"Tibet\" in English.",
-                "The first is the Tibet Autonomous Region, usually shortened to TAR — the area administered from Lhasa, covering roughly the western half of the Tibetan plateau. This is the Tibet of Everest Base Camp, Lhasa and Shigatse. Entry here requires a Tibet Travel Permit, and foreign travellers must also join an organised tour with a licensed guide for the whole duration.",
-                "The second is the Tibetan cultural world outside the TAR. The Tibetan plateau spills far beyond the TAR’s borders into Sichuan, Qinghai, Gansu and Yunnan. These areas are historically and culturally Tibetan, and the people living there are Tibetan — but they are administratively part of those other provinces, and they are not the TAR.",
-                "Western Sichuan is entirely in the second category. When a tour is called \"Tibetan Sichuan\", \"Kham\" or \"Eastern Tibet\", it almost always means this second kind."
-              ]
-            },
-            {
-              "heading": "Where the line actually falls",
-              "body": [
-                "The practical rule is administrative, not cultural. A place inside the Tibet Autonomous Region needs a permit. A place outside it does not.",
-                "Everything in the table below is in Sichuan and needs no permit:"
-              ],
-              "table": {
-                "headers": [
-                  "Place",
-                  "Province",
-                  "Tibet permit needed?"
-                ],
-                "rows": [
-                  [
-                    "Chengdu",
-                    "Sichuan",
-                    "No"
-                  ],
-                  [
-                    "Kangding",
-                    "Sichuan",
-                    "No"
-                  ],
-                  [
-                    "Xinduqiao",
-                    "Sichuan",
-                    "No"
-                  ],
-                  [
-                    "Tagong",
-                    "Sichuan",
-                    "No"
-                  ],
-                  [
-                    "Danba",
-                    "Sichuan",
-                    "No"
-                  ],
-                  [
-                    "Siguniang Mountain",
-                    "Sichuan",
-                    "No"
-                  ],
-                  [
-                    "Hongyuan / Zoige grasslands",
-                    "Sichuan",
-                    "No"
-                  ],
-                  [
-                    "Litang",
-                    "Sichuan",
-                    "No"
-                  ],
-                  [
-                    "Daocheng Yading",
-                    "Sichuan",
-                    "No"
-                  ],
-                  [
-                    "Seda (Larung Gar)",
-                    "Sichuan",
-                    "No"
-                  ],
-                  [
-                    "Lhasa",
-                    "Tibet Autonomous Region",
-                    "Yes"
-                  ],
-                  [
-                    "Shigatse / Everest Base Camp",
-                    "Tibet Autonomous Region",
-                    "Yes"
-                  ],
-                  [
-                    "Nyingchi",
-                    "Tibet Autonomous Region",
-                    "Yes"
-                  ]
-                ]
-              }
-            },
-            {
-              "heading": "What you do need for Western Sichuan",
-              "body": [
-                "A valid passport with at least six months’ validity remaining, and a current Chinese visa — or entry under a visa-free arrangement if your nationality qualifies.",
-                "Carry your passport with you on the road. Scenic areas, some hotels and a number of checkpoints in Ganzi and Aba prefectures will ask to see it. Keep a photo of your passport and visa on your phone as a backup.",
-                "That is the entire list. There is no additional permit to apply for, no agency paperwork, and no minimum group size for Western Sichuan."
-              ]
-            },
-            {
-              "heading": "What changes if you extend into the TAR",
-              "body": [
-                "If you later decide to continue west from Sichuan into the Tibet Autonomous Region — for example Chengdu overland to Lhasa on the G318 — the rules change completely at the border, and they are considerably stricter.",
-                "You will need a Tibet Travel Permit, which can only be arranged through a licensed Tibetan travel agency, not applied for directly. You must travel with an organised tour and a licensed guide for the whole time you are inside the TAR. Independent travel is not permitted for foreign visitors.",
-                "Processing takes time and the permit is issued for specific dates against a fixed itinerary. It cannot be obtained at short notice, and you cannot simply turn up at the boundary and buy one.",
-                "This is worth knowing early, because it is easy to assume a long overland trip needs a permit from day one. It does not — only the TAR portion does."
-              ]
-            },
-            {
-              "heading": "One honest caveat",
-              "body": [
-                "Permit policy is administrative and it does change. Areas that have been open can close temporarily for conservation, weather, road works or local restrictions, and notice is sometimes short.",
-                "For any of our Sichuan routes this is a non-issue, because the permit question simply does not arise. But if your wider plans include the TAR, always confirm the current position with a licensed agency shortly before you travel rather than relying on a guide written months earlier."
-              ]
-            }
+      "title": "Do you need a Tibet permit for Western Sichuan?",
+      "excerpt": "The single most common question we get from foreign travellers — and the answer surprises almost everyone. If your trip stays in Sichuan, you do not need a Tibet permit. Here is exactly where the line falls.",
+      "metaTitle": "Tibet Permit for Western Sichuan? What You Need",
+      "metaDesc": "Do you need a Tibet permit for Kangding, Tagong or Danba? No — Western Sichuan needs only a China visa. Here is where the permit line actually falls.",
+      "sections": [
+        {
+          "heading": "The short answer",
+          "body": [
+            "If your itinerary stays inside Sichuan Province — Chengdu, Kangding, Xinduqiao, Tagong, Danba, Siguniang Mountain, the Zoige and Hongyuan grasslands — you do not need a Tibet Travel Permit.",
+            "You need a valid Chinese visa (or visa-free entry, depending on your nationality), your passport, and nothing else in the way of special paperwork. All three of our routes are entirely within Sichuan."
+          ]
+        },
+        {
+          "heading": "Why this confuses almost everyone",
+          "body": [
+            "The confusion is understandable, and it is not the traveller’s fault. Two entirely different places both get called \"Tibet\" in English.",
+            "The first is the Tibet Autonomous Region, usually shortened to TAR — the area administered from Lhasa, covering roughly the western half of the Tibetan plateau. This is the Tibet of Everest Base Camp, Lhasa and Shigatse. Entry here requires a Tibet Travel Permit, and foreign travellers must also join an organised tour with a licensed guide for the whole duration.",
+            "The second is the Tibetan cultural world outside the TAR. The Tibetan plateau spills far beyond the TAR’s borders into Sichuan, Qinghai, Gansu and Yunnan. These areas are historically and culturally Tibetan, and the people living there are Tibetan — but they are administratively part of those other provinces, and they are not the TAR.",
+            "Western Sichuan is entirely in the second category. When a tour is called \"Tibetan Sichuan\", \"Kham\" or \"Eastern Tibet\", it almost always means this second kind."
+          ]
+        },
+        {
+          "heading": "Where the line actually falls",
+          "body": [
+            "The practical rule is administrative, not cultural. A place inside the Tibet Autonomous Region needs a permit. A place outside it does not.",
+            "Everything in the table below is in Sichuan and needs no permit:"
           ],
-          "faq": [
-            {
-              "q": "Do I need a Tibet permit to visit Kangding, Tagong or Danba?",
-              "a": "No. All three are in Sichuan Province, not the Tibet Autonomous Region. A valid Chinese visa and your passport are all you need. There is no additional permit and no minimum group size."
-            },
-            {
-              "q": "Is \"Tibetan Sichuan\" the same as Tibet?",
-              "a": "No. Western Sichuan is culturally Tibetan and home to many Tibetan communities, but it is administratively part of Sichuan Province. The Tibet Autonomous Region is a separate administrative area administered from Lhasa, and that is where a Tibet Travel Permit applies."
-            },
-            {
-              "q": "Can I travel independently in Western Sichuan?",
-              "a": "Yes. Unlike the Tibet Autonomous Region, Western Sichuan places no requirement on foreign visitors to join an organised tour. You can travel independently, hire a driver, or join a small group — it is entirely your choice."
-            },
-            {
-              "q": "What if I want to continue from Sichuan into the Tibet Autonomous Region?",
-              "a": "Then you will need a Tibet Travel Permit, arranged in advance through a licensed Tibetan travel agency, and you must travel with an organised tour and licensed guide throughout the TAR. Independent travel is not permitted there for foreign visitors."
-            },
-            {
-              "q": "How far in advance should I arrange a permit if I do need one?",
-              "a": "Allow several weeks at minimum, and more in peak season. Permits are issued against specific dates and a fixed itinerary, so late applications and last-minute changes are difficult. For our Sichuan-only routes, none of this applies."
-            },
-            {
-              "q": "Do I need to carry my passport in Western Sichuan?",
-              "a": "Yes, carry it. Scenic areas, some hotels and various checkpoints in Ganzi and Aba prefectures may ask to see it. Keep a phone photo of your passport and visa as a backup."
-            }
+          "table": {
+            "headers": [
+              "Place",
+              "Province",
+              "Tibet permit needed?"
+            ],
+            "rows": [
+              [
+                "Chengdu",
+                "Sichuan",
+                "No"
+              ],
+              [
+                "Kangding",
+                "Sichuan",
+                "No"
+              ],
+              [
+                "Xinduqiao",
+                "Sichuan",
+                "No"
+              ],
+              [
+                "Tagong",
+                "Sichuan",
+                "No"
+              ],
+              [
+                "Danba",
+                "Sichuan",
+                "No"
+              ],
+              [
+                "Siguniang Mountain",
+                "Sichuan",
+                "No"
+              ],
+              [
+                "Hongyuan / Zoige grasslands",
+                "Sichuan",
+                "No"
+              ],
+              [
+                "Litang",
+                "Sichuan",
+                "No"
+              ],
+              [
+                "Daocheng Yading",
+                "Sichuan",
+                "No"
+              ],
+              [
+                "Seda (Larung Gar)",
+                "Sichuan",
+                "No"
+              ],
+              [
+                "Lhasa",
+                "Tibet Autonomous Region",
+                "Yes"
+              ],
+              [
+                "Shigatse / Everest Base Camp",
+                "Tibet Autonomous Region",
+                "Yes"
+              ],
+              [
+                "Nyingchi",
+                "Tibet Autonomous Region",
+                "Yes"
+              ]
+            ]
+          }
+        },
+        {
+          "heading": "What you do need for Western Sichuan",
+          "body": [
+            "A valid passport with at least six months’ validity remaining, and a current Chinese visa — or entry under a visa-free arrangement if your nationality qualifies.",
+            "Carry your passport with you on the road. Scenic areas, some hotels and a number of checkpoints in Ganzi and Aba prefectures will ask to see it. Keep a photo of your passport and visa on your phone as a backup.",
+            "That is the entire list. There is no additional permit to apply for, no agency paperwork, and no minimum group size for Western Sichuan."
+          ]
+        },
+        {
+          "heading": "What changes if you extend into the TAR",
+          "body": [
+            "If you later decide to continue west from Sichuan into the Tibet Autonomous Region — for example Chengdu overland to Lhasa on the G318 — the rules change completely at the border, and they are considerably stricter.",
+            "You will need a Tibet Travel Permit, which can only be arranged through a licensed Tibetan travel agency, not applied for directly. You must travel with an organised tour and a licensed guide for the whole time you are inside the TAR. Independent travel is not permitted for foreign visitors.",
+            "Processing takes time and the permit is issued for specific dates against a fixed itinerary. It cannot be obtained at short notice, and you cannot simply turn up at the boundary and buy one.",
+            "This is worth knowing early, because it is easy to assume a long overland trip needs a permit from day one. It does not — only the TAR portion does."
+          ]
+        },
+        {
+          "heading": "One honest caveat",
+          "body": [
+            "Permit policy is administrative and it does change. Areas that have been open can close temporarily for conservation, weather, road works or local restrictions, and notice is sometimes short.",
+            "For any of our Sichuan routes this is a non-issue, because the permit question simply does not arise. But if your wider plans include the TAR, always confirm the current position with a licensed agency shortly before you travel rather than relying on a guide written months earlier."
           ]
         }
+      ],
+      "faq": [
+        {
+          "q": "Do I need a Tibet permit to visit Kangding, Tagong or Danba?",
+          "a": "No. All three are in Sichuan Province, not the Tibet Autonomous Region. A valid Chinese visa and your passport are all you need. There is no additional permit and no minimum group size."
+        },
+        {
+          "q": "Is \"Tibetan Sichuan\" the same as Tibet?",
+          "a": "No. Western Sichuan is culturally Tibetan and home to many Tibetan communities, but it is administratively part of Sichuan Province. The Tibet Autonomous Region is a separate administrative area administered from Lhasa, and that is where a Tibet Travel Permit applies."
+        },
+        {
+          "q": "Can I travel independently in Western Sichuan?",
+          "a": "Yes. Unlike the Tibet Autonomous Region, Western Sichuan places no requirement on foreign visitors to join an organised tour. You can travel independently, hire a driver, or join a small group — it is entirely your choice."
+        },
+        {
+          "q": "What if I want to continue from Sichuan into the Tibet Autonomous Region?",
+          "a": "Then you will need a Tibet Travel Permit, arranged in advance through a licensed Tibetan travel agency, and you must travel with an organised tour and licensed guide throughout the TAR. Independent travel is not permitted there for foreign visitors."
+        },
+        {
+          "q": "How far in advance should I arrange a permit if I do need one?",
+          "a": "Allow several weeks at minimum, and more in peak season. Permits are issued against specific dates and a fixed itinerary, so late applications and last-minute changes are difficult. For our Sichuan-only routes, none of this applies."
+        },
+        {
+          "q": "Do I need to carry my passport in Western Sichuan?",
+          "a": "Yes, carry it. Scenic areas, some hotels and various checkpoints in Ganzi and Aba prefectures may ask to see it. Keep a phone photo of your passport and visa as a backup."
+        }
+      ]
+    },
+    "yading-guide": {
+      "title": "Yading Nature Reserve — the complete guide",
+      "excerpt": "The three sacred peaks of Yading are the most photographed corner of Western Sichuan. Here is the honest version: what the hike actually costs, how high it goes, and why the reservation system matters more than the ticket price.",
+      "metaTitle": "Yading Nature Reserve Guide — Trekking, Tickets, Altitude",
+      "metaDesc": "How to plan Daocheng Yading: the three sacred peaks, the milk lake hike, tickets and online reservation, altitude, and the best season.",
+      "sections": [
+        {
+          "heading": "What Yading actually is",
+          "body": [
+            "Yading (稻城亚丁) is a nature reserve in Daocheng County, in the far south-west of the Ganzi Tibetan Autonomous Prefecture. It is built around three sacred peaks — Chenresig (仙乃日, 6,032 m), Jampelyang (央迈勇, 5,958 m) and Chenadorje (夏诺多吉, 5,958 m) — which Tibetans regard as incarnations of compassion, wisdom and power.",
+            "The reserve is a real pilgrimage landscape, not a theme park. The peaks tower over glacial valleys, high pastures and two alpine lakes that are the destination of the famous long hike.",
+            "The key to enjoying it is altitude. The gateway town, Shangri-La Town (香格里拉镇), sits at about 2,900 m, the Yading village inside the reserve at 3,900 m, and the two lakes the hikers aim for at 4,600 m and 4,700 m."
+          ]
+        },
+        {
+          "heading": "Getting there from Chengdu",
+          "body": [
+            "There are two honest ways in. Fly to Daocheng Yading Airport (DCY), the world's highest civil airport at 4,411 m, then drive about two hours to Shangri-La Town. The flight is fast but the altitude arrives all at once — landing at 4,411 m and then climbing is harder on the body than driving up slowly.",
+            "Or drive overland, which is what we recommend. The road follows the G318 through Kangding, Xinduqiao and Litang, then turns south to Daocheng. It is roughly 800 km from Chengdu and best split over two days each way. The slow ascent gives your body a day to adapt before you stand at 4,600 m."
+          ],
+          "list": [
+            "Chengdu → Kangding (2,560 m) — ~4 h, overnight acclimatisation.",
+            "Kangding → Litang (4,014 m) via Xinduqiao — ~6 h, the big climbing day.",
+            "Litang → Shangri-La Town (2,900 m) — ~4 h, descend and sleep low."
+          ]
+        },
+        {
+          "heading": "Inside the reserve: the two hikes",
+          "body": [
+            "Everyone does one of two things. The short line (短线) runs from Chonggu Monastery to Pearl Lake (珍珠海, Zhomala Tso), a gentle three-to-four-kilometre return that stays low and finishes with a view of Chenresig reflected in the lake.",
+            "The long line (长线) is the famous one: from Luorong Pasture (洛绒牛场, 4,180 m) up to Milk Lake (牛奶海, 4,600 m) and Five-Color Lake (五色海, 4,700 m). It is about ten to twelve kilometres return, most of it climbing, at the very top of the altitude range where it stops being fun. The trail to the two lakes — the \"Vajra challenge line\" — opens roughly 15 April to 25 November and closes when snow makes it unsafe.",
+            "Do the short line on day one, sleep, and only attempt the long line the next morning with an early start."
+          ]
+        },
+        {
+          "heading": "Tickets, reservation, and what it costs",
+          "body": [
+            "Yading is online reservation only — there is no walk-up ticket window. Reserve through the official WeChat mini-program or a major OTA platform, and do it days ahead: the daily cap is around 15,000 and popular dates sell out well in advance.",
+            "The standard entrance fee is 146 yuan in high season and 120 in low season, plus a shuttle bus and an electric cart. For much of 2026 the entrance, shuttle and cart have been temporarily free while the pricing is re-audited. That changes without much notice, so check the official mini-program for the price that applies on your dates rather than trusting any fixed figure.",
+            "Foreign passport holders can reserve through OTA platforms, but it is worth confirming with the platform that your passport is accepted as the ID type before you pay."
+          ]
+        },
+        {
+          "heading": "Altitude and how to manage it",
+          "body": [
+            "Sleep in Shangri-La Town at 2,900 m, not inside the reserve. Spend your first afternoon doing nothing strenuous, drink water, skip alcohol, and let the short line be your first test the next day.",
+            "The long line takes you to 4,700 m, which is higher than a person can comfortably arrive at without adaptation. If a headache, nausea or breathlessness sets in and worsens, turn back — the lakes are not worth an emergency descent.",
+            "Travel insurance that covers high-altitude evacuation is not optional here; check yours before you book."
+          ]
+        },
+        {
+          "heading": "Best season and timing",
+          "body": [
+            "September to late October is the classic season: golden larch, clear air and the peaks standing sharp. April to May brings spring flowers and snow still on the ridges. June to August is green but rainy, and November to March often sees the long line closed by snow while the valley stays open for the short line.",
+            "If you can only come once, aim for mid-October and accept the crowds that come with the colour."
+          ]
+        }
+      ],
+      "faq": [
+        {
+          "q": "Do I need a Tibet permit for Yading?",
+          "a": "No. Yading is in Sichuan Province, so you need only a valid China visa — no Tibet Travel Permit is required. The paperwork you cannot skip is the online reservation for the reserve itself."
+        },
+        {
+          "q": "Can I do the Milk Lake hike in one day?",
+          "a": "Yes, most people do it as a single day starting from Luorong Pasture. Start early, watch the last shuttle down, and be honest about your fitness — it is ten to twelve kilometres of steady climbing at high altitude."
+        },
+        {
+          "q": "How many days do I need?",
+          "a": "Two days inside the reserve (short line then long line), plus the travel to get there. Overland from Chengdu realistically means five days minimum for the whole trip."
+        }
+      ]
+    },
+    "g318-highway-guide": {
+      "title": "Driving the G318 — the Sichuan–Tibet highway explained",
+      "excerpt": "The G318 is the most famous road in China: 2,100 km from Chengdu to Lhasa, over passes above 4,000 m. This is the part we actually drive, and what has changed since the tunnels arrived.",
+      "metaTitle": "G318 Sichuan–Tibet Highway Guide — Route, Passes, Altitude",
+      "metaDesc": "The G318 from Chengdu into Tibet: the key passes and their altitudes, how the road has changed with the new tunnels, when to go, and whether to drive or hire a driver.",
+      "sections": [
+        {
+          "heading": "The road in one paragraph",
+          "body": [
+            "The G318 runs the width of China, from Shanghai to the Nepal border. The stretch travellers mean when they say \"the G318\" is the Sichuan–Tibet southern line: roughly 2,100 km from Chengdu to Lhasa, climbing from the Sichuan basin onto the Tibetan plateau and over a chain of passes above 4,000 m.",
+            "A Chengdu-based trip covers the eastern half of it — the part inside Sichuan — and that is the stretch where the scenery changes fastest: from warm river towns to alpine grassland to bare high plateau in the space of a few days."
+          ]
+        },
+        {
+          "heading": "The Sichuan section, pass by pass",
+          "body": [
+            "The classic progression east to west. The altitudes are the thing to watch: the road spends most of its time high, and the towns sit low in the valleys between the passes."
+          ],
+          "table": {
+            "headers": [
+              "Place",
+              "Altitude",
+              "Note"
+            ],
+            "rows": [
+              [
+                "Luding (泸定)",
+                "1,330 m",
+                "The Dadu River gorge and the old iron bridge"
+              ],
+              [
+                "Kangding (康定)",
+                "2,560 m",
+                "The gateway town; sleep here on night one"
+              ],
+              [
+                "Zheduo Pass (折多山)",
+                "4,298 m",
+                "The first pass above 4,000 m — the real test"
+              ],
+              [
+                "Xinduqiao (新都桥)",
+                "3,300 m",
+                "\"Photographer's paradise\"; poplar and Tibetan houses"
+              ],
+              [
+                "Yajiang (雅江)",
+                "2,600 m",
+                "A good low place to sleep"
+              ],
+              [
+                "Litang (理塘)",
+                "4,014 m",
+                "The \"high city\" — avoid sleeping here on day one"
+              ],
+              [
+                "Kazila Pass (卡子拉山)",
+                "4,718 m",
+                "One of the highest points on the Sichuan stretch"
+              ],
+              [
+                "Batang (巴塘)",
+                "2,580 m",
+                "Last Sichuan town before the Tibet border"
+              ]
+            ]
+          }
+        },
+        {
+          "heading": "How the road has changed",
+          "body": [
+            "The G318 today is not the road of the old travelogues. A string of tunnels — Erlangshan, Goloshan, Jianziwan and others — now bypasses the highest passes, so a drive that once climbed over every ridge now dives under several of them.",
+            "That is mostly good news: faster, safer and open more of the year. The cost is that some of the famous viewpoints now sit on the old, abandoned road above the tunnel mouth. If a view matters to you, ask your driver to take the old pass road where it still exists — several are still drivable in good weather."
+          ]
+        },
+        {
+          "heading": "Drive it yourself or hire a driver?",
+          "body": [
+            "Self-driving the G318 as a foreign visitor means a Chinese-recognised licence, a registered rental, and insurance that actually covers mountain roads. The driving itself is not hard — the road is paved throughout — but it is long, high and busy with trucks, and a flat tyre at 4,700 m is a different problem from one near town.",
+            "What we do is put a driver who knows the road, the altitude and the stops behind the wheel, and keep the itinerary flexible. That is not a sales line — it is the honest trade-off for a road where the point is to look at it, not to manage it."
+          ]
+        },
+        {
+          "heading": "Altitude and where to sleep",
+          "body": [
+            "The rule that makes the trip comfortable: climb high, sleep low. Kangding, Yajiang and Batang all sit under 2,900 m, and those are the towns to spend the night in. Litang at 4,014 m is a highlight to see, not a first night to sleep through.",
+            "Acclimatise for a night in Kangding before crossing Zheduo Pass, and the rest of the route is far easier on the body."
+          ]
+        },
+        {
+          "heading": "When to go, and the weather",
+          "body": [
+            "May to June and September to October are the dependable windows: clear air, green or golden scenery, and passes reliably open. July and August are the rainy season, when the landslide risk on the gorge sections is highest. Winter brings ice on the passes and some of the tunnels' approach roads close in bad weather.",
+            "Avoid the Chinese national holidays in early May and October if you can — the road and every stop fill to capacity."
+          ]
+        }
+      ],
+      "faq": [
+        {
+          "q": "Do I need a permit to drive the Sichuan section?",
+          "a": "No. As long as your trip stays inside Sichuan, you need only a valid China visa. The Tibet Travel Permit is required only if you continue west of the border into Tibet itself."
+        },
+        {
+          "q": "How long does Chengdu to Lhasa take overland?",
+          "a": "Six to ten days at a sane pace. We recommend spending the Sichuan section slowly rather than racing to the border — that is where the scenery is densest."
+        },
+        {
+          "q": "Is the road safe?",
+          "a": "The road is fully paved and well used, but it is high, winding and shared with heavy trucks. Drive by daylight, not by schedule, and let the weather — not the itinerary — decide the day."
+        }
+      ]
+    },
+    "serta-larung-gar-guide": {
+      "title": "Seda (Sertar) Larung Gar — can you still visit?",
+      "excerpt": "The sea of red houses at Larung Gar is one of the most striking sights in Western Sichuan — and one of the least straightforward to visit. Here is exactly how access works now, including the part that affects foreign travellers.",
+      "metaTitle": "Seda Larung Gar 2026 — Visiting Rules, Reservation, Altitude",
+      "metaDesc": "Larung Gar Buddhist Academy in Seda is stunning but access has tightened. The current reservation system, who can enter, and what international visitors need to know.",
+      "sections": [
+        {
+          "heading": "What Larung Gar is",
+          "body": [
+            "Larung Gar (喇荣五明佛学院) in Seda County, in the north of the Ganzi Tibetan Autonomous Prefecture, is the largest Tibetan Buddhist academy in the world. Founded in 1980, it spills down a hillside as thousands of crimson wooden houses at roughly 3,900–4,000 m.",
+            "It is a place of religious practice first, a spectacle second. The people who live there are monks, nuns and students, and the reason the visit rules are strict is that it is their home, not an attraction."
+          ]
+        },
+        {
+          "heading": "How access works now",
+          "body": [
+            "Access is by reservation only, and the system is tight. You must reserve through the official WeChat mini-program (喇荣沟进沟预约), which releases slots three days ahead at 18:00; the daily cap runs roughly 1,200–3,200 people and peak dates sell out in minutes.",
+            "Private cars are not allowed up. You take a shuttle bus from the Luoruo Town centre or the Seda town centre, and your visit runs on a timed 60–90 minute slot, with a refundable deposit for a positioning bracelet. Only the mandala and the west viewing platform are open to visitors — the monks' and nuns' quarters and the teaching halls are strictly off-limits, and drones are banned."
+          ]
+        },
+        {
+          "heading": "The part that matters for foreign travellers",
+          "body": [
+            "Here is the honest version. The reservation system currently requires a Chinese ID card (身份证) to register, and international visitors are generally not admitted to the viewing areas under the rules in force through 2026.",
+            "This is not a Tibet-permit issue — Seda is in Sichuan — it is an access rule specific to the academy. It has changed before and may change again, so before you commit to the roughly 600 km drive from Chengdu, check the current position with us or a local operator. If entry is not possible, do not plan a trip around it."
+          ]
+        },
+        {
+          "heading": "What you can still see around Seda",
+          "body": [
+            "The region is worth the road even if the academy itself is closed to you. Seda town (3,890 m), the Dongga Monastery, the Golden Horse grasslands and the valley viewpoints all sit along the route, and the approach itself — up the G317 through Wenchuan and Ma'erkang — is one of the best drives in northern Sichuan.",
+            "If you can enter, the west viewing platform at sunset is the image everyone knows: the crimson houses glowing against the dark hills."
+          ]
+        },
+        {
+          "heading": "Getting there",
+          "body": [
+            "Seda is about 600 km north-west of Chengdu, via Wenchuan, Ma'erkang and Wengda — roughly ten to twelve hours by road, best split into two days. Sleep the first night in Ma'erkang (2,600 m) to start adapting to the altitude.",
+            "There is also a direct bus from Chengdu's Chadianzi station, but it is long and the road is best enjoyed broken up."
+          ]
+        },
+        {
+          "heading": "Etiquette if you do enter",
+          "body": [
+            "Walk clockwise around the mandala. Never photograph monks or nuns without asking, and accept a refusal. Dress modestly, keep your voice down, and leave the monks' and nuns' living areas alone. If you visit the sky-burial site, silence and absolutely no photography — it is a funeral rite, not a show.",
+            "The academy is someone's home and place of study. The rule that covers everything: behave like a guest, because you are one."
+          ]
+        }
+      ],
+      "faq": [
+        {
+          "q": "Can foreign tourists visit Larung Gar in 2026?",
+          "a": "Under the current rules, generally no — the reservation system requires a Chinese ID card, and international visitors are not admitted to the viewing areas. This has changed before; check the current position before you travel."
+        },
+        {
+          "q": "Do I need a permit for Seda?",
+          "a": "No Tibet Travel Permit — Seda is in Sichuan, so a valid China visa is enough. The real gate is the academy's own reservation system, not any government permit."
+        },
+        {
+          "q": "Is the drive to Seda worth it if I cannot enter?",
+          "a": "Yes, for the region — the G317 route and the grasslands around Seda are genuinely worth seeing. But be honest with yourself that the famous red-houses view may not be accessible to you, and plan around that."
+        }
+      ]
+    }
   },
   "about": {
     "label": "Who we are",
@@ -1200,7 +1476,6 @@
     "story": [
       "After 39 countries and every kind of travel I could find, one thing kept making the difference: a local guide. Not just someone who gets you there, but someone who gives you the cultural link — who takes you into a place instead of past it.",
       "So we want to start you in Chengdu and take you into the Tibetan lands — the snow mountains, the grasslands, the monasteries, and the stories behind them."
-
     ],
     "valuesTitle": "What we commit to",
     "values": {
@@ -1234,7 +1509,6 @@
         "bio": "Has lived and worked in both Europe and the United States, and stayed in western Sichuan because of the Tibetan highlands. Professional, and genuinely in love with the place. A career without a single bad review — every trip built around the guests."
       }
     },
-
     "langNames": {
       "en": "English",
       "zh": "Chinese",
@@ -1267,6 +1541,8 @@
     "aboutTitle": "About Chengdu Journeys - Small-Group Sichuan & Tibet Tours",
     "aboutDesc": "Meet the small team behind Chengdu Journeys. Small-group journeys from Chengdu into Tibetan Western Sichuan, led by guides from the communities we visit.",
     "reviewsTitle": "Traveller Reviews - Chengdu Journeys Sichuan & Tibet Tours",
-    "reviewsDesc": "Read what travellers say about our small-group journeys from Chengdu into the Tibetan highlands of Western Sichuan. Verified guest feedback."
+    "reviewsDesc": "Read what travellers say about our small-group journeys from Chengdu into the Tibetan highlands of Western Sichuan. Verified guest feedback.",
+    "routesIndexTitle": "Small-Group Tours from Chengdu - Western Sichuan & Tibet Trips",
+    "routesIndexDesc": "Compare our small-group trips: a Chengdu Tibetan culture walk, a 3-7 day Western Sichuan highland loop, and a nomad family stay on the Zoige grasslands."
   }
 }

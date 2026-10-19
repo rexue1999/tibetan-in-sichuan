@@ -83,7 +83,9 @@ function LangSwitcher({ locale }: { locale: string }) {
 }
 
 const navLinks = [
-  { href: '/#trips', key: 'trips' },
+  // "Trips" points at the routes hub — a real index page — not at the
+  // homepage's #trips anchor, which is invisible to the nav from inner pages.
+  { href: '/routes', key: 'trips' },
   { href: '/guides', key: 'guides' },
   { href: '/about', key: 'about' },
   { href: '/reviews', key: 'reviews' },

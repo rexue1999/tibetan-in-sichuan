@@ -440,7 +440,34 @@
       ]
     },
     "tierHead": "Precio por persona",
-    "tierLabel": "Opción"
+    "tierLabel": "Opción",
+    "labels": {
+      "duration": "Duración",
+      "meeting": "Punto de encuentro",
+      "time": "Hora de encuentro",
+      "price": "Precio",
+      "itinerary": "Itinerario",
+      "highlights": "Destacados",
+      "bookTrip": "Reservar este viaje",
+      "askWA": "Consultar por WhatsApp",
+      "back": "Todos los viajes",
+      "day": "Días",
+      "stay": "Pernoctación",
+      "dayLabel": "Día",
+      "included": "Qué incluye",
+      "includedTitle": "Incluido",
+      "excludedTitle": "No incluido",
+      "faq": "Preguntas frecuentes",
+      "groupSize": "Tamaño del grupo",
+      "hotel": "Alojamiento",
+      "cancellation": "Política de cancelación",
+      "home": "Inicio",
+      "trips": "Viajes"
+    },
+    "indexTitle": "Tres maneras de ir más lejos",
+    "indexSubtitle": "Un paseo de dos horas por la ciudad, un circuito por las tierras altas o cuatro días con una familia nómada: cada viaje se hace en grupo pequeño y con alguien que vive aquí.",
+    "indexCtaTitle": "¿No sabes cuál te encaja?",
+    "indexCtaText": "Cuéntanos tus fechas, el tamaño de tu grupo y qué quieres ver: te decimos qué ruta encaja, o armamos una privada para ti."
   },
   "why": {
     "label": "La diferencia",
@@ -1029,160 +1056,409 @@
       ]
     },
     "tibet-permit-explained": {
-          "title": "¿Se necesita permiso del Tíbet para el oeste de Sichuan?",
-          "excerpt": "La pregunta más frecuente que recibimos de viajeros extranjeros, y la respuesta sorprende a casi todos. Si tu viaje se queda en Sichuan, no necesitas permiso del Tíbet. Aquí te explicamos exactamente dónde está la frontera.",
-          "metaTitle": "¿Permiso del Tíbet para el oeste de Sichuan?",
-          "metaDesc": "¿Necesitas permiso del Tíbet para Kangding, Tagong o Danba? No: el oeste de Sichuan solo requiere visado chino. Aquí está la línea real del permiso.",
-          "sections": [
-            {
-              "heading": "La respuesta corta",
-              "body": [
-                "Si tu itinerario se mantiene dentro de la provincia de Sichuan — Chengdu, Kangding, Xinduqiao, Tagong, Danba, la montaña Siguniang, las praderas de Zoige y Hongyuan — no necesitas el Permiso de Viaje del Tíbet.",
-                "Necesitas un visado chino válido (o entrar sin visado, según tu nacionalidad), tu pasaporte, y nada más en cuanto a papeleo especial. Nuestras tres rutas están íntegramente dentro de Sichuan."
-              ]
-            },
-            {
-              "heading": "Por qué esto confunde a casi todos",
-              "body": [
-                "La confusión es comprensible y no es culpa del viajero. En inglés se llama \"Tíbet\" a dos lugares completamente distintos.",
-                "El primero es la Región Autónoma del Tíbet, abreviada RAT — el área administrada desde Lhasa, que cubre aproximadamente la mitad occidental de la meseta tibetana. Este es el Tíbet del campo base del Everest, Lhasa y Shigatse. Entrar aquí exige un Permiso de Viaje del Tíbet, y los viajeros extranjeros además deben unirse a un tour organizado con guía autorizado durante toda la estancia.",
-                "El segundo es el mundo cultural tibetano fuera de la RAT. La meseta tibetana se extiende mucho más allá de las fronteras de la RAT hacia Sichuan, Qinghai, Gansu y Yunnan. Estas zonas son histórica y culturalmente tibetanas, y sus habitantes son tibetanos, pero administrativamente forman parte de esas otras provincias y no son la RAT.",
-                "El oeste de Sichuan está completamente en la segunda categoría. Cuando un tour se llama \"Sichuan tibetano\", \"Kham\" o \"Tíbet oriental\", casi siempre se refiere a esta segunda acepción."
-              ]
-            },
-            {
-              "heading": "Dónde está realmente la frontera",
-              "body": [
-                "La regla práctica es administrativa, no cultural. Un lugar dentro de la Región Autónoma del Tíbet necesita permiso. Un lugar fuera de ella, no.",
-                "Todo lo que aparece en la tabla siguiente está en Sichuan y no necesita permiso:"
-              ],
-              "table": {
-                "headers": [
-                  "Lugar",
-                  "Provincia",
-                  "¿Permiso del Tíbet?"
-                ],
-                "rows": [
-                  [
-                    "Chengdu",
-                    "Sichuan",
-                    "No"
-                  ],
-                  [
-                    "Kangding",
-                    "Sichuan",
-                    "No"
-                  ],
-                  [
-                    "Xinduqiao",
-                    "Sichuan",
-                    "No"
-                  ],
-                  [
-                    "Tagong",
-                    "Sichuan",
-                    "No"
-                  ],
-                  [
-                    "Danba",
-                    "Sichuan",
-                    "No"
-                  ],
-                  [
-                    "Montaña Siguniang",
-                    "Sichuan",
-                    "No"
-                  ],
-                  [
-                    "Praderas de Hongyuan / Zoige",
-                    "Sichuan",
-                    "No"
-                  ],
-                  [
-                    "Litang",
-                    "Sichuan",
-                    "No"
-                  ],
-                  [
-                    "Daocheng Yading",
-                    "Sichuan",
-                    "No"
-                  ],
-                  [
-                    "Seda (Larung Gar)",
-                    "Sichuan",
-                    "No"
-                  ],
-                  [
-                    "Lhasa",
-                    "Región Autónoma del Tíbet",
-                    "Sí"
-                  ],
-                  [
-                    "Shigatse / Campo base del Everest",
-                    "Región Autónoma del Tíbet",
-                    "Sí"
-                  ],
-                  [
-                    "Nyingchi",
-                    "Región Autónoma del Tíbet",
-                    "Sí"
-                  ]
-                ]
-              }
-            },
-            {
-              "heading": "Lo que sí necesitas para el oeste de Sichuan",
-              "body": [
-                "Un pasaporte válido con al menos seis meses de vigencia y un visado chino vigente, o entrada sin visado si tu nacionalidad cumple los requisitos.",
-                "Lleva el pasaporte contigo durante el viaje. Zonas escénicas, algunos hoteles y varios controles en las prefecturas de Ganzi y Aba pueden pedir verlo. Guarda una foto del pasaporte y del visado en el móvil por si acaso.",
-                "Esa es toda la lista. No hay ningún permiso adicional que solicitar, ni trámite de agencia, ni tamaño mínimo de grupo para el oeste de Sichuan."
-              ]
-            },
-            {
-              "heading": "Qué cambia si te extiendes hacia la RAT",
-              "body": [
-                "Si más adelante decides continuar hacia el oeste desde Sichuan hacia la Región Autónoma del Tíbet — por ejemplo de Chengdu a Lhasa por la G318 — las reglas cambian por completo en la frontera, y son bastante más estrictas.",
-                "Necesitarás un Permiso de Viaje del Tíbet, que solo puede gestionarse a través de una agencia tibetana autorizada, no se solicita directamente. Debes viajar con un tour organizado y un guía autorizado durante todo el tiempo que estés dentro de la RAT. No se permite el viaje independiente a visitantes extranjeros.",
-                "El trámite lleva tiempo y el permiso se emite para fechas concretas y un itinerario fijo. No se consigue con poca antelación, y no basta con presentarse en el límite y comprarlo.",
-                "Conviene saberlo pronto, porque es fácil dar por hecho que un largo viaje por tierra necesita permiso desde el primer día. No es así: solo la parte de la RAT lo requiere."
-              ]
-            },
-            {
-              "heading": "Una advertencia honesta",
-              "body": [
-                "La política de permisos es administrativa y cambia. Zonas que estaban abiertas pueden cerrarse temporalmente por conservación, meteorología, obras en carretera o restricciones locales, y los avisos a veces son con poca antelación.",
-                "Para cualquiera de nuestras rutas por Sichuan esto no supone problema alguno, porque la cuestión del permiso simplemente no se plantea. Pero si tus planes más amplios incluyen la RAT, confirma siempre la situación actual con una agencia autorizada poco antes de viajar, en lugar de fiarte de una guía escrita meses antes."
-              ]
-            }
+      "title": "¿Se necesita permiso del Tíbet para el oeste de Sichuan?",
+      "excerpt": "La pregunta más frecuente que recibimos de viajeros extranjeros, y la respuesta sorprende a casi todos. Si tu viaje se queda en Sichuan, no necesitas permiso del Tíbet. Aquí te explicamos exactamente dónde está la frontera.",
+      "metaTitle": "¿Permiso del Tíbet para el oeste de Sichuan?",
+      "metaDesc": "¿Necesitas permiso del Tíbet para Kangding, Tagong o Danba? No: el oeste de Sichuan solo requiere visado chino. Aquí está la línea real del permiso.",
+      "sections": [
+        {
+          "heading": "La respuesta corta",
+          "body": [
+            "Si tu itinerario se mantiene dentro de la provincia de Sichuan — Chengdu, Kangding, Xinduqiao, Tagong, Danba, la montaña Siguniang, las praderas de Zoige y Hongyuan — no necesitas el Permiso de Viaje del Tíbet.",
+            "Necesitas un visado chino válido (o entrar sin visado, según tu nacionalidad), tu pasaporte, y nada más en cuanto a papeleo especial. Nuestras tres rutas están íntegramente dentro de Sichuan."
+          ]
+        },
+        {
+          "heading": "Por qué esto confunde a casi todos",
+          "body": [
+            "La confusión es comprensible y no es culpa del viajero. En inglés se llama \"Tíbet\" a dos lugares completamente distintos.",
+            "El primero es la Región Autónoma del Tíbet, abreviada RAT — el área administrada desde Lhasa, que cubre aproximadamente la mitad occidental de la meseta tibetana. Este es el Tíbet del campo base del Everest, Lhasa y Shigatse. Entrar aquí exige un Permiso de Viaje del Tíbet, y los viajeros extranjeros además deben unirse a un tour organizado con guía autorizado durante toda la estancia.",
+            "El segundo es el mundo cultural tibetano fuera de la RAT. La meseta tibetana se extiende mucho más allá de las fronteras de la RAT hacia Sichuan, Qinghai, Gansu y Yunnan. Estas zonas son histórica y culturalmente tibetanas, y sus habitantes son tibetanos, pero administrativamente forman parte de esas otras provincias y no son la RAT.",
+            "El oeste de Sichuan está completamente en la segunda categoría. Cuando un tour se llama \"Sichuan tibetano\", \"Kham\" o \"Tíbet oriental\", casi siempre se refiere a esta segunda acepción."
+          ]
+        },
+        {
+          "heading": "Dónde está realmente la frontera",
+          "body": [
+            "La regla práctica es administrativa, no cultural. Un lugar dentro de la Región Autónoma del Tíbet necesita permiso. Un lugar fuera de ella, no.",
+            "Todo lo que aparece en la tabla siguiente está en Sichuan y no necesita permiso:"
           ],
-          "faq": [
-            {
-              "q": "¿Necesito permiso del Tíbet para visitar Kangding, Tagong o Danba?",
-              "a": "No. Los tres están en la provincia de Sichuan, no en la Región Autónoma del Tíbet. Con un visado chino válido y el pasaporte es suficiente. No hay permiso adicional ni tamaño mínimo de grupo."
-            },
-            {
-              "q": "¿Es lo mismo \"Sichuan tibetano\" que el Tíbet?",
-              "a": "No. El oeste de Sichuan es culturalmente tibetano y alberga muchas comunidades tibetanas, pero administrativamente forma parte de la provincia de Sichuan. La Región Autónoma del Tíbet es un área administrativa distinta, gobernada desde Lhasa, y es ahí donde se aplica el Permiso de Viaje del Tíbet."
-            },
-            {
-              "q": "¿Puedo viajar de forma independiente por el oeste de Sichuan?",
-              "a": "Sí. A diferencia de la Región Autónoma del Tíbet, el oeste de Sichuan no exige a los visitantes extranjeros unirse a un tour organizado. Puedes viajar por libre, contratar un conductor o unirte a un grupo pequeño: es enteramente tu elección."
-            },
-            {
-              "q": "¿Y si quiero continuar desde Sichuan hacia la Región Autónoma del Tíbet?",
-              "a": "Entonces necesitarás un Permiso de Viaje del Tíbet, gestionado con antelación a través de una agencia tibetana autorizada, y deberás viajar con un tour organizado y guía autorizado durante toda la estancia en la RAT. El viaje independiente no está permitido allí para visitantes extranjeros."
-            },
-            {
-              "q": "¿Con cuánta antelación debo gestionar el permiso si lo necesito?",
-              "a": "Calcula varias semanas como mínimo, y más en temporada alta. Los permisos se emiten para fechas concretas y un itinerario fijo, así que las solicitudes tardías y los cambios de última hora son difíciles. Para nuestras rutas solo por Sichuan, nada de esto aplica."
-            },
-            {
-              "q": "¿Debo llevar el pasaporte en el oeste de Sichuan?",
-              "a": "Sí, llévalo. Zonas escénicas, algunos hoteles y diversos controles en las prefecturas de Ganzi y Aba pueden pedir verlo. Guarda una foto del pasaporte y del visado en el móvil como respaldo."
-            }
+          "table": {
+            "headers": [
+              "Lugar",
+              "Provincia",
+              "¿Permiso del Tíbet?"
+            ],
+            "rows": [
+              [
+                "Chengdu",
+                "Sichuan",
+                "No"
+              ],
+              [
+                "Kangding",
+                "Sichuan",
+                "No"
+              ],
+              [
+                "Xinduqiao",
+                "Sichuan",
+                "No"
+              ],
+              [
+                "Tagong",
+                "Sichuan",
+                "No"
+              ],
+              [
+                "Danba",
+                "Sichuan",
+                "No"
+              ],
+              [
+                "Montaña Siguniang",
+                "Sichuan",
+                "No"
+              ],
+              [
+                "Praderas de Hongyuan / Zoige",
+                "Sichuan",
+                "No"
+              ],
+              [
+                "Litang",
+                "Sichuan",
+                "No"
+              ],
+              [
+                "Daocheng Yading",
+                "Sichuan",
+                "No"
+              ],
+              [
+                "Seda (Larung Gar)",
+                "Sichuan",
+                "No"
+              ],
+              [
+                "Lhasa",
+                "Región Autónoma del Tíbet",
+                "Sí"
+              ],
+              [
+                "Shigatse / Campo base del Everest",
+                "Región Autónoma del Tíbet",
+                "Sí"
+              ],
+              [
+                "Nyingchi",
+                "Región Autónoma del Tíbet",
+                "Sí"
+              ]
+            ]
+          }
+        },
+        {
+          "heading": "Lo que sí necesitas para el oeste de Sichuan",
+          "body": [
+            "Un pasaporte válido con al menos seis meses de vigencia y un visado chino vigente, o entrada sin visado si tu nacionalidad cumple los requisitos.",
+            "Lleva el pasaporte contigo durante el viaje. Zonas escénicas, algunos hoteles y varios controles en las prefecturas de Ganzi y Aba pueden pedir verlo. Guarda una foto del pasaporte y del visado en el móvil por si acaso.",
+            "Esa es toda la lista. No hay ningún permiso adicional que solicitar, ni trámite de agencia, ni tamaño mínimo de grupo para el oeste de Sichuan."
+          ]
+        },
+        {
+          "heading": "Qué cambia si te extiendes hacia la RAT",
+          "body": [
+            "Si más adelante decides continuar hacia el oeste desde Sichuan hacia la Región Autónoma del Tíbet — por ejemplo de Chengdu a Lhasa por la G318 — las reglas cambian por completo en la frontera, y son bastante más estrictas.",
+            "Necesitarás un Permiso de Viaje del Tíbet, que solo puede gestionarse a través de una agencia tibetana autorizada, no se solicita directamente. Debes viajar con un tour organizado y un guía autorizado durante todo el tiempo que estés dentro de la RAT. No se permite el viaje independiente a visitantes extranjeros.",
+            "El trámite lleva tiempo y el permiso se emite para fechas concretas y un itinerario fijo. No se consigue con poca antelación, y no basta con presentarse en el límite y comprarlo.",
+            "Conviene saberlo pronto, porque es fácil dar por hecho que un largo viaje por tierra necesita permiso desde el primer día. No es así: solo la parte de la RAT lo requiere."
+          ]
+        },
+        {
+          "heading": "Una advertencia honesta",
+          "body": [
+            "La política de permisos es administrativa y cambia. Zonas que estaban abiertas pueden cerrarse temporalmente por conservación, meteorología, obras en carretera o restricciones locales, y los avisos a veces son con poca antelación.",
+            "Para cualquiera de nuestras rutas por Sichuan esto no supone problema alguno, porque la cuestión del permiso simplemente no se plantea. Pero si tus planes más amplios incluyen la RAT, confirma siempre la situación actual con una agencia autorizada poco antes de viajar, en lugar de fiarte de una guía escrita meses antes."
           ]
         }
+      ],
+      "faq": [
+        {
+          "q": "¿Necesito permiso del Tíbet para visitar Kangding, Tagong o Danba?",
+          "a": "No. Los tres están en la provincia de Sichuan, no en la Región Autónoma del Tíbet. Con un visado chino válido y el pasaporte es suficiente. No hay permiso adicional ni tamaño mínimo de grupo."
+        },
+        {
+          "q": "¿Es lo mismo \"Sichuan tibetano\" que el Tíbet?",
+          "a": "No. El oeste de Sichuan es culturalmente tibetano y alberga muchas comunidades tibetanas, pero administrativamente forma parte de la provincia de Sichuan. La Región Autónoma del Tíbet es un área administrativa distinta, gobernada desde Lhasa, y es ahí donde se aplica el Permiso de Viaje del Tíbet."
+        },
+        {
+          "q": "¿Puedo viajar de forma independiente por el oeste de Sichuan?",
+          "a": "Sí. A diferencia de la Región Autónoma del Tíbet, el oeste de Sichuan no exige a los visitantes extranjeros unirse a un tour organizado. Puedes viajar por libre, contratar un conductor o unirte a un grupo pequeño: es enteramente tu elección."
+        },
+        {
+          "q": "¿Y si quiero continuar desde Sichuan hacia la Región Autónoma del Tíbet?",
+          "a": "Entonces necesitarás un Permiso de Viaje del Tíbet, gestionado con antelación a través de una agencia tibetana autorizada, y deberás viajar con un tour organizado y guía autorizado durante toda la estancia en la RAT. El viaje independiente no está permitido allí para visitantes extranjeros."
+        },
+        {
+          "q": "¿Con cuánta antelación debo gestionar el permiso si lo necesito?",
+          "a": "Calcula varias semanas como mínimo, y más en temporada alta. Los permisos se emiten para fechas concretas y un itinerario fijo, así que las solicitudes tardías y los cambios de última hora son difíciles. Para nuestras rutas solo por Sichuan, nada de esto aplica."
+        },
+        {
+          "q": "¿Debo llevar el pasaporte en el oeste de Sichuan?",
+          "a": "Sí, llévalo. Zonas escénicas, algunos hoteles y diversos controles en las prefecturas de Ganzi y Aba pueden pedir verlo. Guarda una foto del pasaporte y del visado en el móvil como respaldo."
+        }
+      ]
+    },
+    "yading-guide": {
+      "title": "Reserva Natural de Yading — la guía completa",
+      "excerpt": "Los tres picos sagrados de Yading son el rincón más fotografiado de Sichuan Occidental. Esta es la versión honesta: lo que realmente cuesta la caminata, a qué altitud llega y por qué el sistema de reserva importa más que el precio de la entrada.",
+      "metaTitle": "Guía de Yading — Trekking en Daocheng, Entradas y Altitud",
+      "metaDesc": "Cómo planificar Daocheng Yading: los tres picos sagrados, la caminata al lago de leche, entradas y reserva en línea, altitud y la mejor temporada.",
+      "sections": [
+        {
+          "heading": "Qué es Yading en realidad",
+          "body": [
+            "Yading (稻城亚丁) es una reserva natural en el condado de Daocheng, en el extremo suroeste de la prefectura autónoma tibetana de Ganzi. Gira en torno a tres picos sagrados — Chenresig (仙乃日, 6.032 m), Jampelyang (央迈勇, 5.958 m) y Chenadorje (夏诺多吉, 5.958 m) — que los tibetanos consideran encarnaciones de la compasión, la sabiduría y el poder.",
+            "La reserva es un paisaje de peregrinación, no un parque temático. Los picos se alzan sobre valles glaciares, pastos altos y dos lagos alpinos que son el destino de la famosa caminata larga.",
+            "La clave para disfrutarla es la altitud. El pueblo de acceso, Shangri-La Town (香格里拉镇), está a unos 2.900 m, el pueblo de Yading dentro de la reserva a 3.900 m, y los dos lagos a los que apuntan los excursionistas a 4.600 m y 4.700 m."
+          ]
+        },
+        {
+          "heading": "Cómo llegar desde Chengdu",
+          "body": [
+            "Hay dos formas honestas. Vuela al aeropuerto de Daocheng Yading (DCY), el aeropuerto civil más alto del mundo a 4.411 m, y luego conduce unas dos horas hasta Shangri-La Town. El vuelo es rápido, pero la altitud llega de golpe: aterrizar a 4.411 m y luego subir es más duro para el cuerpo que ascender despacio.",
+            "O conduce por tierra, que es lo que recomendamos. La carretera sigue la G318 por Kangding, Xinduqiao y Litang, y luego baja hacia el sur hasta Daocheng. Son unos 800 km desde Chengdu, mejor repartidos en dos días por sentido. El ascenso lento da a tu cuerpo un día para adaptarse antes de estar a 4.600 m."
+          ],
+          "list": [
+            "Chengdu → Kangding (2.560 m) — ~4 h, noche de aclimatación.",
+            "Kangding → Litang (4.014 m) vía Xinduqiao — ~6 h, el gran día de subida.",
+            "Litang → Shangri-La Town (2.900 m) — ~4 h, desciende y duerme bajo."
+          ]
+        },
+        {
+          "heading": "Dentro de la reserva: las dos caminatas",
+          "body": [
+            "Todo el mundo hace una de dos cosas. La línea corta (短线) va del monasterio de Chonggu al Lago Perla (珍珠海, Zhomala Tso), un suave recorrido de tres a cuatro kilómetros que se mantiene bajo y termina con la vista de Chenresig reflejado en el lago.",
+            "La línea larga (长线) es la famosa: desde el pasto de Luorong (洛绒牛场, 4.180 m) hasta el Lago de Leche (牛奶海, 4.600 m) y el Lago de Cinco Colores (五色海, 4.700 m). Son unos diez a doce kilómetros de ida y vuelta, casi todo subida, en la cima del rango de altitud donde deja de ser divertido. El sendero hacia los dos lagos — la \"línea del desafío Vajra\" — abre aproximadamente del 15 de abril al 25 de noviembre y cierra cuando la nieve lo hace inseguro.",
+            "Haz la línea corta el primer día, duerme, y solo intenta la larga a la mañana siguiente saliendo temprano."
+          ]
+        },
+        {
+          "heading": "Entradas, reserva y cuánto cuesta",
+          "body": [
+            "Yading es solo con reserva en línea: no hay taquilla presencial. Reserva por el mini-programa oficial de WeChat o por una OTA importante, con días de antelación: el cupo diario ronda las 15.000 personas y las fechas populares se agotan.",
+            "La entrada estándar cuesta 146 yuanes en temporada alta y 120 en baja, más un autobús y un carrito eléctrico. Durante gran parte de 2026 la entrada, el autobús y el carrito han estado temporalmente gratis mientras se reaudita el precio. Eso cambia sin mucho aviso, así que consulta el mini-programa oficial para el precio de tus fechas en lugar de confiar en una cifra fija.",
+            "Los titulares de pasaporte extranjero pueden reservar por las plataformas OTA, pero conviene confirmar con la plataforma que acepta el pasaporte como tipo de identificación antes de pagar."
+          ]
+        },
+        {
+          "heading": "La altitud y cómo manejarla",
+          "body": [
+            "Duerme en Shangri-La Town a 2.900 m, no dentro de la reserva. Pasa la primera tarde sin esfuerzo, bebe agua, evita el alcohol y deja que la línea corta sea tu primera prueba al día siguiente.",
+            "La línea larga te lleva a 4.700 m, más alto de lo que una persona puede alcanzar cómodamente sin aclimatarse. Si el dolor de cabeza, las náuseas o la falta de aire aparecen y empeoran, date la vuelta: los lagos no valen un descenso de emergencia.",
+            "Un seguro de viaje que cubra evacuación en altura no es opcional aquí; revísalo antes de reservar."
+          ]
+        },
+        {
+          "heading": "Mejor temporada y momento",
+          "body": [
+            "De septiembre a finales de octubre es la temporada clásica: alerce dorado, aire claro y los picos nítidos. De abril a mayo trae flores de primavera y nieve en las cumbres. De junio a agosto es verde pero lluvioso, y de noviembre a marzo la línea larga suele cerrarse por nieve mientras el valle sigue abierto para la corta.",
+            "Si solo puedes venir una vez, apunta a mediados de octubre y acepta las multitudes que llegan con el color."
+          ]
+        }
+      ],
+      "faq": [
+        {
+          "q": "¿Necesito permiso para el Tíbet para ir a Yading?",
+          "a": "No. Yading está en la provincia de Sichuan, así que solo necesitas una visa china válida, no el Permiso de Viaje al Tíbet. El trámite que no puedes saltarte es la reserva en línea de la propia reserva."
+        },
+        {
+          "q": "¿Puedo hacer la caminata al Lago de Leche en un día?",
+          "a": "Sí, la mayoría lo hace como una jornada única desde el pasto de Luorong. Sal temprano, vigila el último autobús de bajada y sé honesto con tu forma física: son diez a doce kilómetros de subida constante en altura."
+        },
+        {
+          "q": "¿Cuántos días necesito?",
+          "a": "Dos días dentro de la reserva (línea corta y luego larga), más el viaje para llegar. Por tierra desde Chengdu, de forma realista, son cinco días como mínimo para todo el viaje."
+        }
+      ]
+    },
+    "g318-highway-guide": {
+      "title": "Conducir por la G318 — la carretera Sichuan–Tíbet explicada",
+      "excerpt": "La G318 es la carretera más famosa de China: 2.100 km de Chengdu a Lhasa, por puertos por encima de los 4.000 m. Esta es la parte que conducimos de verdad, y lo que ha cambiado desde que llegaron los túneles.",
+      "metaTitle": "Guía de la carretera G318 Sichuan–Tíbet — Ruta, Puertos, Altitud",
+      "metaDesc": "La G318 de Chengdu hacia el Tíbet: los puertos clave y sus altitudes, cómo ha cambiado la carretera con los nuevos túneles, cuándo ir y si conducir o contratar conductor.",
+      "sections": [
+        {
+          "heading": "La carretera en un párrafo",
+          "body": [
+            "La G318 cruza China de ancho, de Shanghái a la frontera con Nepal. El tramo al que los viajeros se refieren al decir \"la G318\" es la línea sur Sichuan–Tíbet: unos 2.100 km de Chengdu a Lhasa, subiendo desde la cuenca de Sichuan a la meseta tibetana por una cadena de puertos por encima de los 4.000 m.",
+            "Un viaje con base en Chengdu cubre la mitad oriental, la que queda dentro de Sichuan, y es el tramo donde el paisaje cambia más rápido: de pueblos de río cálidos a praderas alpinas y luego a meseta desnuda en cuestión de días."
+          ]
+        },
+        {
+          "heading": "El tramo de Sichuan, puerto a puerto",
+          "body": [
+            "La progresión clásica de este a oeste. Lo que hay que vigilar son las altitudes: la carretera pasa casi todo el tiempo en alto, y los pueblos se sientan bajos en los valles entre puertos."
+          ],
+          "table": {
+            "headers": [
+              "Lugar",
+              "Altitud",
+              "Nota"
+            ],
+            "rows": [
+              [
+                "Luding (泸定)",
+                "1.330 m",
+                "La garganta del río Dadu y el viejo puente de hierro"
+              ],
+              [
+                "Kangding (康定)",
+                "2.560 m",
+                "El pueblo de acceso; duerme aquí la primera noche"
+              ],
+              [
+                "Puerto de Zheduo (折多山)",
+                "4.298 m",
+                "El primer puerto sobre 4.000 m: la verdadera prueba"
+              ],
+              [
+                "Xinduqiao (新都桥)",
+                "3.300 m",
+                "\"El paraíso del fotógrafo\": álamos y casas tibetanas"
+              ],
+              [
+                "Yajiang (雅江)",
+                "2.600 m",
+                "Un buen lugar bajo para dormir"
+              ],
+              [
+                "Litang (理塘)",
+                "4.014 m",
+                "La \"ciudad alta\": evita dormir aquí el primer día"
+              ],
+              [
+                "Puerto de Kazila (卡子拉山)",
+                "4.718 m",
+                "Uno de los puntos más altos del tramo de Sichuan"
+              ],
+              [
+                "Batang (巴塘)",
+                "2.580 m",
+                "Último pueblo de Sichuan antes de la frontera con el Tíbet"
+              ]
+            ]
+          }
+        },
+        {
+          "heading": "Cómo ha cambiado la carretera",
+          "body": [
+            "La G318 de hoy no es la de los viejos relatos de viaje. Una serie de túneles — Erlangshan, Goloshan, Jianziwan y otros — ya evita los puertos más altos, de modo que una ruta que antes subía por cada cresta ahora se sumerge bajo varias de ellas.",
+            "En su mayoría es una buena noticia: más rápido, más seguro y abierto más meses del año. El coste es que algunos miradores famosos quedan ahora en la vieja carretera abandonada sobre la boca del túnel. Si una vista te importa, pide a tu conductor que tome la carretera antigua del puerto donde aún existe: varias siguen siendo transitables con buen tiempo."
+          ]
+        },
+        {
+          "heading": "¿Conducir tú o contratar conductor?",
+          "body": [
+            "Conducir la G318 por tu cuenta como extranjero exige un permiso reconocido en China, un alquiler registrado y un seguro que de verdad cubra carreteras de montaña. Conducir no es difícil — la carretera está asfaltada en todo su recorrido — pero es larga, alta y con mucho camión, y un pinchazo a 4.700 m es un problema distinto a uno cerca de un pueblo.",
+            "Lo que hacemos es poner al volante a un conductor que conoce la carretera, la altitud y las paradas, y mantener el itinerario flexible. No es una frase comercial: es el intercambio honesto en una carretera cuyo sentido es mirarla, no gestionarla."
+          ]
+        },
+        {
+          "heading": "La altitud y dónde dormir",
+          "body": [
+            "La regla que hace cómodo el viaje: sube alto, duerme bajo. Kangding, Yajiang y Batang están por debajo de los 2.900 m, y esos son los pueblos para pasar la noche. Litang, a 4.014 m, es un punto que ver, no una primera noche que soportar.",
+            "Aclimátate una noche en Kangding antes de cruzar el puerto de Zheduo, y el resto de la ruta será mucho más llevadera."
+          ]
+        },
+        {
+          "heading": "Cuándo ir, y el clima",
+          "body": [
+            "De mayo a junio y de septiembre a octubre son las ventanas fiables: aire claro, paisaje verde o dorado y puertos abiertos con seguridad. Julio y agosto son la temporada de lluvias, cuando el riesgo de corrimientos en los desfiladeros es mayor. En invierno hay hielo en los puertos y algunos accesos a túneles cierran con mal tiempo.",
+            "Evita los festivos nacionales chinos de principios de mayo y octubre si puedes: la carretera y cada parada se llenan al máximo."
+          ]
+        }
+      ],
+      "faq": [
+        {
+          "q": "¿Necesito permiso para conducir el tramo de Sichuan?",
+          "a": "No. Mientras tu viaje se quede dentro de Sichuan, solo necesitas una visa china válida. El Permiso de Viaje al Tíbet solo hace falta si continúas al oeste de la frontera, ya dentro del Tíbet."
+        },
+        {
+          "q": "¿Cuánto se tarda de Chengdu a Lhasa por tierra?",
+          "a": "De seis a diez días a un ritmo sensato. Recomendamos dedicar el tramo de Sichuan con calma en lugar de correr a la frontera: ahí es donde el paisaje es más denso."
+        },
+        {
+          "q": "¿Es segura la carretera?",
+          "a": "Está asfaltada en su totalidad y muy transitada, pero es alta, sinuosa y compartida con camiones pesados. Conduce de día, no contra el reloj, y deja que el tiempo — no el itinerario — decida la jornada."
+        }
+      ]
+    },
+    "serta-larung-gar-guide": {
+      "title": "Seda (Sertar) Larung Gar — ¿todavía se puede visitar?",
+      "excerpt": "El mar de casas rojas de Larung Gar es una de las imágenes más impactantes de Sichuan Occidental, y una de las menos sencillas de visitar. Así funciona el acceso ahora, incluida la parte que afecta a los viajeros extranjeros.",
+      "metaTitle": "Seda Larung Gar 2026 — Normas de Visita, Reserva, Altitud",
+      "metaDesc": "La academia budista de Larung Gar en Seda es impresionante, pero el acceso se ha endurecido. Reservas, quién puede entrar y qué saber si eres extranjero.",
+      "sections": [
+        {
+          "heading": "Qué es Larung Gar",
+          "body": [
+            "Larung Gar (喇荣五明佛学院), en el condado de Seda, al norte de la prefectura autónoma tibetana de Ganzi, es la academia budista tibetana más grande del mundo. Fundada en 1980, se derrama por una ladera en miles de casas de madera carmesí a unos 3.900–4.000 m.",
+            "Es un lugar de práctica religiosa primero y un espectáculo después. Quienes viven allí son monjes, monjas y estudiantes, y el motivo de que las normas de visita sean estrictas es que es su hogar, no una atracción."
+          ]
+        },
+        {
+          "heading": "Cómo funciona el acceso ahora",
+          "body": [
+            "El acceso es solo con reserva, y el sistema es estricto. Hay que reservar por el mini-programa oficial de WeChat (喇荣沟进沟预约), que libera cupos con tres días de antelación a las 18:00; el cupo diario ronda las 1.200–3.200 personas y las fechas altas se agotan en minutos.",
+            "No se permiten coches privados. Se sube en autobús desde el centro de Luoruo Town o de Seda, y la visita dura un turno cronometrado de 60–90 minutos, con un depósito reembolsable por una pulsera de localización. Solo el mandala y el mirador oeste están abiertos al público: los barrios de monjes y monjas y las salas de enseñanza están terminantemente prohibidos, y los drones están vetados."
+          ]
+        },
+        {
+          "heading": "La parte que importa a los viajeros extranjeros",
+          "body": [
+            "Esta es la versión honesta. El sistema de reserva exige actualmente un documento de identidad chino (身份证) para registrarse, y los visitantes extranjeros en general no son admitidos en las zonas de visita bajo las normas vigentes durante 2026.",
+            "No es un tema de permiso para el Tíbet — Seda está en Sichuan — sino una norma de acceso específica de la academia. Ha cambiado antes y puede cambiar de nuevo, así que antes de comprometerte a los ~600 km en coche desde Chengdu, consulta la situación actual con nosotros o con un operador local. Si no se puede entrar, no planees el viaje en torno a eso."
+          ]
+        },
+        {
+          "heading": "Qué se puede ver alrededor de Seda",
+          "body": [
+            "La región merece el camino aunque la academia en sí esté cerrada para ti. El pueblo de Seda (3.890 m), el monasterio de Dongga, las praderas del Caballo Dorado y los miradores del valle quedan en la ruta, y la aproximación misma — subiendo por la G317 por Wenchuan y Ma'erkang — es una de las mejores carreteras del norte de Sichuan.",
+            "Si puedes entrar, el mirador oeste al atardecer es la imagen que todos conocen: las casas carmesí brillando contra las colinas oscuras."
+          ]
+        },
+        {
+          "heading": "Cómo llegar",
+          "body": [
+            "Seda está a unos 600 km al noroeste de Chengdu, por Wenchuan, Ma'erkang y Wengda: unas diez a doce horas por carretera, mejor repartidas en dos días. Duerme la primera noche en Ma'erkang (2.600 m) para empezar a aclimatarte.",
+            "También hay un autobús directo desde la estación de Chadianzi en Chengdu, pero es largo y la carretera se disfruta más por tramos."
+          ]
+        },
+        {
+          "heading": "Etiqueta si llegas a entrar",
+          "body": [
+            "Camina en el sentido de las agujas del reloj alrededor del mandala. Nunca fotografíes a monjes o monjas sin pedir permiso, y acepta una negativa. Viste con modestia, baja la voz y deja en paz las zonas de vivienda. Si visitas el lugar del entierro celestial, silencio y absolutamente ninguna foto: es un rito funerario, no un espectáculo.",
+            "La academia es el hogar y el lugar de estudio de alguien. La regla que lo cubre todo: compórtate como un invitado, porque lo eres."
+          ]
+        }
+      ],
+      "faq": [
+        {
+          "q": "¿Pueden los turistas extranjeros visitar Larung Gar en 2026?",
+          "a": "Con las normas actuales, en general no: el sistema de reserva exige un documento de identidad chino y los visitantes extranjeros no son admitidos en las zonas de visita. Esto ha cambiado antes; comprueba la situación actual antes de viajar."
+        },
+        {
+          "q": "¿Necesito un permiso para Seda?",
+          "a": "No necesitas el Permiso de Viaje al Tíbet: Seda está en Sichuan, así que basta una visa china válida. La verdadera barrera es el sistema de reserva de la academia, no un permiso gubernamental."
+        },
+        {
+          "q": "¿Merece la pena el viaje a Seda si no puedo entrar?",
+          "a": "Sí, por la región: la ruta G317 y las praderas alrededor de Seda merecen verse de verdad. Pero sé honesto contigo mismo: la famosa vista de las casas rojas puede no ser accesible para ti, y planea en consecuencia."
+        }
+      ]
+    }
   },
   "about": {
     "label": "Quiénes somos",
@@ -1200,7 +1476,6 @@
     "story": [
       "Después de 39 países y de probar todas las formas de viajar que encontré, una cosa marcaba siempre la diferencia: un guía local. No solo alguien que te lleva hasta allí, sino alguien que te da el vínculo cultural, que te mete en un lugar en vez de pasar por delante de él.",
       "Por eso queremos que empieces en Chengdu y entres con nosotros en las tierras del Tíbet: las montañas nevadas, las praderas, los monasterios y las historias que hay detrás."
-
     ],
     "valuesTitle": "Nuestro compromiso",
     "values": {
@@ -1234,7 +1509,6 @@
         "bio": "Ha vivido y trabajado en Europa y en Estados Unidos, y se quedó en el oeste de Sichuan por las tierras altas del Tíbet. Profesional y verdaderamente enamorado del lugar. Una trayectoria sin una sola mala reseña: cada viaje se construye en torno a los viajeros."
       }
     },
-
     "langNames": {
       "en": "Inglés",
       "zh": "Chino",
@@ -1267,6 +1541,8 @@
     "aboutTitle": "Sobre Chengdu Journeys - Tours en Grupo Reducido",
     "aboutDesc": "Conoce al equipo de Chengdu Journeys. Viajes en grupos reducidos desde Chengdu al oeste tibetano de Sichuan, guiados por personas de las comunidades que visitamos.",
     "reviewsTitle": "Opiniones de Viajeros - Chengdu Journeys Sichuan y Tíbet",
-    "reviewsDesc": "Lee lo que dicen los viajeros sobre nuestros viajes en grupo reducido desde Chengdu al altiplano tibetano del oeste de Sichuan."
+    "reviewsDesc": "Lee lo que dicen los viajeros sobre nuestros viajes en grupo reducido desde Chengdu al altiplano tibetano del oeste de Sichuan.",
+    "routesIndexTitle": "Tours en Grupo Pequeño desde Chengdu - Viajes por Sichuan Occidental y el Tíbet",
+    "routesIndexDesc": "Compara nuestros viajes en grupo pequeño: un paseo de cultura tibetana por Chengdu, un circuito de 3-7 días por las tierras altas de Sichuan Occidental y una estancia con una familia nómada en las praderas de Zoige."
   }
 }

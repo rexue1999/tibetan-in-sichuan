@@ -1,41 +1,29 @@
 import Link from 'next/link';
 import type { useTranslations } from 'next-intl';
+import type { RouteMeta } from '../../content/routes';
 
 type Translations = ReturnType<typeof useTranslations<'routes'>>;
 
-const images = [
-  '/images/walk-tour.jpg?v=2',
-  '/images/highland-trip.jpg?v=2',
-  '/images/nomad.jpg?v=2',
-];
-
-const tiers = [
-  { color: 'bg-[#5B7B5A]', label: 'tier' as const },
-  { color: 'bg-[#B8934E]', label: 'tier' as const },
-  { color: 'bg-[#8C3B2E]', label: 'tier' as const },
-];
-
 interface Props {
-  slug: string;
+  route: RouteMeta;
   locale: string;
-  routeKey: 'route1' | 'route2' | 'route3';
   tr: Translations;
 }
 
-export default function RouteCard({ slug, locale, routeKey, tr }: Props) {
-  const idx = parseInt(routeKey.replace('route', '')) - 1;
+export default function RouteCard({ route, locale, tr }: Props) {
+  const routeKey = route.key;
 
   return (
     <Link
-      href={`/${locale}/routes/${slug}`}
+      href={`/${locale}/routes/${route.slug}`}
       className="group block bg-white rounded-sm overflow-hidden border border-black/5 hover:border-[#8C3B2E]/20 transition-all hover:-translate-y-1 hover:shadow-lg hover:shadow-black/3"
     >
       <div className="h-48 overflow-hidden relative">
         <div
           className="h-full w-full bg-cover bg-center group-hover:scale-105 transition-transform duration-500"
-          style={{ backgroundImage: `url(${images[idx]})` }}
+          style={{ backgroundImage: `url(${route.image})` }}
         />
-        <span className={`absolute top-4 left-4 text-[9px] font-semibold tracking-[2px] uppercase px-3 py-1.5 rounded-sm text-white ${tiers[idx].color}`}>
+        <span className={`absolute top-4 left-4 text-[9px] font-semibold tracking-[2px] uppercase px-3 py-1.5 rounded-sm text-white ${route.tierColor}`}>
           {tr(`${routeKey}.tier` as any)}
         </span>
       </div>

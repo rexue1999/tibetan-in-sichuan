@@ -2,22 +2,17 @@ import { locales } from '../i18n';
 import { SITE_URL } from '../lib/seo';
 import { guideSlugs } from '../content/guides';
 import { publishedReviews } from '../content/reviews';
+import { routes as allRoutes } from '../content/routes';
 
 /**
  * Content revision date. Bump this when route copy or page content changes so
  * crawlers see a meaningful lastmod instead of a timestamp that shifts on every
  * deploy (which Google learns to ignore).
  */
-const CONTENT_UPDATED = new Date('2026-09-20');
+const CONTENT_UPDATED = new Date('2026-10-19');
 
 /** Guide articles were added on this date. */
-const GUIDES_UPDATED = new Date('2026-09-21');
-
-const routes = [
-  { slug: 'tibetan-walk-chengdu', priority: 0.8 },
-  { slug: 'go-west-go-tibet', priority: 0.9 },
-  { slug: 'tibetan-nomad', priority: 0.9 },
-];
+const GUIDES_UPDATED = new Date('2026-10-19');
 
 export default function sitemap() {
   const entries: {
@@ -47,7 +42,14 @@ export default function sitemap() {
       priority: 0.6,
     });
 
-    for (const route of routes) {
+    // Routes hub + individual route pages.
+    entries.push({
+      url: `${SITE_URL}/${locale}/routes`,
+      lastModified: CONTENT_UPDATED,
+      changeFrequency: 'weekly',
+      priority: 0.8,
+    });
+    for (const route of allRoutes) {
       entries.push({
         url: `${SITE_URL}/${locale}/routes/${route.slug}`,
         lastModified: CONTENT_UPDATED,

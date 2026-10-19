@@ -5,8 +5,7 @@ import HeroCarousel, { type HeroSlide } from './hero-carousel';
 import { buildLocalizedAlternates } from '../../lib/seo';
 import { guides } from '../../content/guides';
 import { publishedReviews, reviewText } from '../../content/reviews';
-
-const routeSlugs = ['tibetan-walk-chengdu', 'go-west-go-tibet', 'tibetan-nomad'];
+import { routes } from '../../content/routes';
 
 /**
  * Hero carousel frames, in order. Only the image paths live here; the captions
@@ -268,19 +267,25 @@ export default async function Home({ params: { locale } }: { params: { locale: s
         <div className="max-w-7xl mx-auto">
           <SectionTitle label={tr('subtitle')} title={tr('title')} />
           <div className="grid md:grid-cols-3 gap-6 mt-12">
-            {routeSlugs.map((slug, i) => (
+            {routes.map((route) => (
               <RouteCard
-                key={slug}
-                slug={slug}
+                key={route.slug}
+                route={route}
                 locale={locale}
-                routeKey={`route${i + 1}` as 'route1' | 'route2' | 'route3'}
                 tr={tr}
               />
             ))}
           </div>
+          {/*
+            "Explore All Trips" goes to the routes hub, not to the section it
+            already sits in. It used to link to `#trips` on this same page — a
+            button labelled "explore all" that scrolls nowhere is a dead end,
+            and there was no /routes index for it to point at. Both problems
+            are fixed by the hub page.
+          */}
           <div className="text-center mt-12">
             <Link
-              href={`/${locale}#trips`}
+              href={`/${locale}/routes`}
               className="inline-flex items-center gap-2 bg-[#1F1F1F] text-[#E8E1D9] px-8 py-4 text-xs font-medium tracking-[2px] uppercase hover:bg-[#8C3B2E] transition-all"
             >
               {tr('ctaAll')} →

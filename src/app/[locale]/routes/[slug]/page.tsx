@@ -5,6 +5,7 @@ import ItinerarySection from './itinerary-section';
 import { locales, defaultLocale } from '../../../../i18n';
 import { SITE_URL, buildLocalizedAlternates } from '../../../../lib/seo';
 import { CONTACT } from '../../../../content/company';
+import { getRoute } from '../../../../content/routes';
 
 type RouteLabels = {
   duration: string;
@@ -28,46 +29,12 @@ type RouteLabels = {
   cancellation: string;
 };
 
-const routeMap: Record<string, { key: 'route1' | 'route2' | 'route3'; image: string; keywords: string[] }> = {
-  'tibetan-walk-chengdu': {
-    key: 'route1',
-    image: '/images/walk-tour.jpg?v=2',
-    keywords: [
-      'Chengdu Tibetan walking tour',
-      'Tibetan culture Chengdu',
-      'Wuhouci Tibetan quarter',
-      'Chengdu cultural tour',
-    ],
-  },
-  'go-west-go-tibet': {
-    key: 'route2',
-    image: '/images/highland-trip.jpg?v=2',
-    keywords: [
-      'Chengdu to Tibet tour',
-      'Kangding Tagong tour',
-      'Western Sichuan highland tour',
-      'Xinduqiao photographer paradise',
-      'Zheduo Pass 4298m',
-    ],
-  },
-  'tibetan-nomad': {
-    key: 'route3',
-    image: '/images/nomad.jpg?v=2',
-    keywords: [
-      'Tibetan nomad homestay',
-      'Zoige grasslands tour',
-      'Hongyuan nomad experience',
-      'Sichuan nomad family stay',
-    ],
-  },
-};
-
 export async function generateMetadata({
   params: { locale, slug },
 }: {
   params: { locale: string; slug: string };
 }) {
-  const route = routeMap[slug];
+  const route = getRoute(slug);
   if (!route) return { title: 'Not Found' };
 
   const tr = await getTranslations({ locale, namespace: 'routes' });
@@ -110,7 +77,7 @@ export default async function RouteDetail({
 }: {
   params: { locale: string; slug: string };
 }) {
-  const route = routeMap[slug];
+  const route = getRoute(slug);
   if (!route) notFound();
 
   const tr = await getTranslations({ locale, namespace: 'routes' });
@@ -150,46 +117,34 @@ export default async function RouteDetail({
     if (tier.days) pricesByDay[tier.days] = tier.price;
   }
 
-  const labelMap: Record<string, RouteLabels> = {
-    en: {
-      duration: 'Duration', meeting: 'Meeting Point', time: 'Meeting Time', price: 'Price',
-      itinerary: 'Itinerary', highlights: 'Highlights', bookTrip: 'Book This Trip',
-      askWA: 'Ask on WhatsApp', back: 'Back to Home', day: 'Days', stay: 'Stay', dayLabel: 'Day',
-      included: "What's included", includedTitle: 'Included', excludedTitle: 'Not included',
-      faq: 'Common questions',
-      groupSize: 'Group size', hotel: 'Accommodation', cancellation: 'Cancellation policy',
-    },
-    es: {
-      duration: 'Duración', meeting: 'Punto de encuentro', time: 'Hora de encuentro', price: 'Precio',
-      itinerary: 'Itinerario', highlights: 'Destacados', bookTrip: 'Reservar este viaje',
-      askWA: 'Consultar por WhatsApp', back: 'Volver al inicio', day: 'Días', stay: 'Alojamiento', dayLabel: 'Día',
-      included: 'Qué incluye', includedTitle: 'Incluido', excludedTitle: 'No incluido',
-      faq: 'Preguntas frecuentes',
-      groupSize: 'Tamaño del grupo', hotel: 'Alojamiento', cancellation: 'Política de cancelación',
-    },
-    th: {
-      duration: 'ระยะเวลา', meeting: 'จุดนัดพบ', time: 'เวลานัดพบ', price: 'ราคา',
-      itinerary: 'กำหนดการ', highlights: 'ไฮไลท์', bookTrip: 'จองเส้นทางนี้',
-      askWA: 'สอบถามทาง WhatsApp', back: 'กลับหน้าแรก', day: 'วัน', stay: 'พัก', dayLabel: 'วันที่',
-      included: 'ราคารวมอะไรบ้าง', includedTitle: 'รวมอยู่ด้วย', excludedTitle: 'ไม่รวม',
-      faq: 'คำถามที่พบบ่อย',
-      groupSize: 'ขนาดกลุ่ม', hotel: 'ที่พัก', cancellation: 'นโยบายการยกเลิก',
-    },
-    zh: {
-      duration: '时长', meeting: '集合地点', time: '集合时间', price: '价格',
-      itinerary: '行程安排', highlights: '行程亮点', bookTrip: '预订此行程',
-      askWA: 'WhatsApp 咨询', back: '返回首页', day: '天', stay: '住', dayLabel: '第',
-      included: '费用说明', includedTitle: '费用包含', excludedTitle: '费用不含',
-      faq: '常见问题',
-      groupSize: '成团人数', hotel: '住宿标准', cancellation: '取消政策',
-    },
+  // All UI labels live in `routes.labels` in the locale files, like every
+  // other string on the site. This page used to carry its own four-language
+  // label map inside the component — the one place in the app where copy was
+  // not in messages, so changing a label meant editing source code.
+  const labels: RouteLabels = {
+    duration: tr('labels.duration' as any),
+    meeting: tr('labels.meeting' as any),
+    time: tr('labels.time' as any),
+    price: tr('labels.price' as any),
+    itinerary: tr('labels.itinerary' as any),
+    highlights: tr('labels.highlights' as any),
+    bookTrip: tr('labels.bookTrip' as any),
+    askWA: tr('labels.askWA' as any),
+    back: tr('labels.back' as any),
+    day: tr('labels.day' as any),
+    stay: tr('labels.stay' as any),
+    dayLabel: tr('labels.dayLabel' as any),
+    included: tr('labels.included' as any),
+    includedTitle: tr('labels.includedTitle' as any),
+    excludedTitle: tr('labels.excludedTitle' as any),
+    faq: tr('labels.faq' as any),
+    groupSize: tr('labels.groupSize' as any),
+    hotel: tr('labels.hotel' as any),
+    cancellation: tr('labels.cancellation' as any),
   };
-  const labels: RouteLabels = labelMap[locale] ?? labelMap.en;
 
-  const homeLabel =
-    locale === 'zh' ? '首页' : locale === 'th' ? 'หน้าแรก' : locale === 'es' ? 'Inicio' : 'Home';
-  const tripsLabel =
-    locale === 'zh' ? '行程' : locale === 'th' ? 'เส้นทาง' : locale === 'es' ? 'Viajes' : 'Trips';
+  const homeLabel = tr('labels.home' as any);
+  const tripsLabel = tr('labels.trips' as any);
   const routeName = tr(`${route.key}.name` as any);
 
   const breadcrumbJsonLd = {
@@ -470,8 +425,10 @@ export default async function RouteDetail({
               {labels.askWA}
             </a>
           </div>
+          {/* Back to the routes hub — the index page exists now, so "back"
+              means "back to the list of trips", not "back to the homepage". */}
           <Link
-            href={`/${locale}`}
+            href={`/${locale}/routes`}
             className="inline-flex items-center gap-1 text-xs font-semibold tracking-[2px] uppercase text-[#8C3B2E] hover:text-[#1F1F1F] transition-colors"
           >
             ← {labels.back}

@@ -13,6 +13,9 @@
  */
 
 export type GuideSlug =
+  | 'yading-guide'
+  | 'g318-highway-guide'
+  | 'serta-larung-gar-guide'
   | 'altitude-sickness'
   | 'best-time-to-visit'
   | 'tibetan-culture-etiquette'
@@ -35,6 +38,48 @@ export type GuideMeta = {
 };
 
 export const guides: GuideMeta[] = [
+  {
+    slug: 'yading-guide',
+    image: '/images/yading-autumn.jpg',
+    published: '2026-10-19',
+    updated: '2026-10-19',
+    minutes: 8,
+    keywords: [
+      'Yading travel guide',
+      'Daocheng Yading trekking',
+      'Yading milk lake hike',
+      'Yading altitude',
+      'Yading tickets reservation',
+    ],
+  },
+  {
+    slug: 'g318-highway-guide',
+    image: '/images/g318-hairpins.jpg',
+    published: '2026-10-19',
+    updated: '2026-10-19',
+    minutes: 7,
+    keywords: [
+      'G318 Sichuan Tibet highway',
+      'Chengdu to Lhasa overland',
+      'Zheduo Pass altitude',
+      'Litang world high city',
+      'drive G318 western Sichuan',
+    ],
+  },
+  {
+    slug: 'serta-larung-gar-guide',
+    image: '/images/serta-mandala.jpg',
+    published: '2026-10-19',
+    updated: '2026-10-19',
+    minutes: 6,
+    keywords: [
+      'Seda Larung Gar visit',
+      'Larung Gar reservation',
+      'Seda Buddhist academy',
+      'can foreigners visit Seda',
+      'Seda travel guide',
+    ],
+  },
   {
     slug: 'altitude-sickness',
     image: '/images/gongga.jpg?v=2',

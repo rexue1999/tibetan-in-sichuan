@@ -175,7 +175,7 @@ export default async function BookingPage({ params: { locale } }: { params: { lo
           <h2 className="text-lg font-medium tracking-[-0.3px] mb-3">{tb('pricing')}</h2>
           <p className="text-sm text-stone-500 leading-relaxed mb-8">{tb('pricingNote')}</p>
           <Link
-            href={`/${locale}#trips`}
+            href={`/${locale}/routes`}
             className="text-xs tracking-[2px] uppercase text-stone-400 hover:text-[#8C3B2E] transition-colors"
           >
             ← {tr('ctaAll')}
