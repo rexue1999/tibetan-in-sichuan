@@ -1,0 +1,134 @@
+{
+  "en": {
+    "label": "The map, corrected",
+    "title": "Tibet is three regions. The permit line is drawn somewhere else.",
+    "lede": "Ü-Tsang, Amdo, Kham. They differ in dialect, in dress, in whether you herd yaks or grow barley — and have done for a thousand years. Sichuan holds the heart of Kham and a share of Amdo. The permit is issued for the Tibet Autonomous Region: an administrative line that cuts through Kham and through Amdo without asking either of them.",
+    "cards": [
+      {
+        "cn": "卫藏",
+        "rom": "Ü-Tsang",
+        "where": "Lhasa · Shigatse · Lhoka · Ngari",
+        "text": "The Tibet of the postcards — the Potala, the Jokhang, Tashilhunpo, the great monasteries of the central valley. Classical Tibetan is written in its dialect. It is the only one of the three that lies entirely inside the Tibet Autonomous Region, and so the only one entirely behind the permit.",
+        "status": "Permit required",
+        "state": "closed"
+      },
+      {
+        "cn": "安多",
+        "rom": "Amdo",
+        "where": "Qinghai · Gannan · northern Aba",
+        "text": "The northeast: the grasslands of Qinghai, Gannan in Gansu, and the northern counties of Aba in Sichuan. Horse country, and home to Labrang and Kumbum — the two great monasteries of the northeast. Almost all of it lies outside the Autonomous Region — the Tibet permit does not apply, though a few western counties ask for a separate local one.",
+        "status": "No Tibet permit",
+        "state": "open"
+      },
+      {
+        "cn": "康巴",
+        "rom": "Kham",
+        "where": "Garzê · Chamdo · Diqing · Yushu",
+        "text": "The southeast: river gorges, forest, and the old trade roads towards China. Garzê prefecture is its heart — Kangding, Tagong, Dêgê, Litang, Sêrtar — and the Rgyalrong valleys of Danba and Xiaojin are usually counted with it. Kham is the one that gets cut in half: Chamdo lies inside the Autonomous Region and needs the permit; Garzê, four hours from Chengdu, does not.",
+        "status": "Chamdo needs it, Garzê does not",
+        "state": "split"
+      }
+    ],
+    "punch": "The permit follows a provincial border. The culture does not.",
+    "note": "When people say the plateau is closed, they mean the administrative shape — the Tibet Autonomous Region. The cultural shape is three regions wide, and most of the other two are reachable from Chengdu without a permit."
+  },
+  "zh": {
+    "label": "先把地图说清楚",
+    "title": "藏区分三块，许可线却画在别处",
+    "lede": "卫藏、安多、康巴。方言不同、衣服不同、放牦牛还是种青稞也不同，这么分了上千年。四川有康区的核心，也有一块安多。而入藏函是发给「西藏自治区」的——这条行政界线横着切过康区，也切过安多，并不问它们同不同意。",
+    "cards": [
+      {
+        "cn": "卫藏",
+        "rom": "Ü-Tsang",
+        "where": "拉萨 · 日喀则 · 山南 · 阿里",
+        "text": "明信片上的那个西藏——布达拉宫、大昭寺、扎什伦布寺，还有雅砻河谷一片大寺院。藏文经典是用它的方言写的。三个藏区里，只有它整个都在西藏自治区境内，所以也只有它整个都在入藏函后面。",
+        "status": "需要入藏函",
+        "state": "closed"
+      },
+      {
+        "cn": "安多",
+        "rom": "Amdo",
+        "where": "青海 · 甘南 · 阿坝北部",
+        "text": "东北那一块：青海的草原、甘肃的甘南、四川阿坝州的北部几个县。产马的地方，拉卜楞寺和塔尔寺都在这儿，东北藏区的两座大寺。它几乎整个在自治区外面——入藏函管不到，只有西边少数几个县要另办一张地方通行证。",
+        "status": "不需要入藏函",
+        "state": "open"
+      },
+      {
+        "cn": "康巴",
+        "rom": "Kham",
+        "where": "甘孜 · 昌都 · 迪庆 · 玉树",
+        "text": "东南那一块：河谷、森林，还有通往内地的老商道。甘孜州是它的核心——康定、塔公、德格、理塘、色达——丹巴和小金的嘉绒河谷一般也算在里面。康区是唯一被切开的那一个：昌都在自治区境内，要入藏函；离成都四小时的甘孜，不要。",
+        "status": "昌都要，甘孜不要",
+        "state": "split"
+      }
+    ],
+    "punch": "界线是按省划的，文化不是。",
+    "note": "别人说高原去不了，说的是行政那个形状——西藏自治区。文化那个形状有三个藏区宽，而另外两个的大部分，从成都出发都不需要入藏函。"
+  },
+  "es": {
+    "label": "El mapa, corregido",
+    "title": "El Tíbet son tres regiones. La línea del permiso está en otro sitio.",
+    "lede": "Ü-Tsang, Amdo, Kham. Se distinguen por el dialecto, la ropa y por si se crían yaks o se cultiva cebada; llevan mil años haciéndolo. Sichuan contiene el corazón de Kham y una parte de Amdo. El permiso se expide para la Región Autónoma del Tíbet: una línea administrativa que atraviesa Kham y Amdo sin preguntarles nada.",
+    "cards": [
+      {
+        "cn": "卫藏",
+        "rom": "Ü-Tsang",
+        "where": "Lhasa · Shigatse · Lhoka · Ngari",
+        "text": "El Tíbet de las postales: el Potala, el Jokhang, Tashilhunpo y los grandes monasterios del valle central. El tibetano clásico se escribe en su dialecto. Es la única de las tres regiones que queda entera dentro de la Región Autónoma del Tíbet, y por tanto la única entera detrás del permiso.",
+        "status": "Permiso obligatorio",
+        "state": "closed"
+      },
+      {
+        "cn": "安多",
+        "rom": "Amdo",
+        "where": "Qinghai · Gannan · norte de Aba",
+        "text": "El noreste: las praderas de Qinghai, Gannan en Gansu y los condados del norte de Aba, en Sichuan. Tierra de caballos y sede de Labrang y Kumbum, los dos grandes monasterios del noreste. Casi toda está fuera de la Región Autónoma: el permiso del Tíbet no se aplica, aunque unos pocos condados occidentales piden un permiso local aparte.",
+        "status": "Sin permiso del Tíbet",
+        "state": "open"
+      },
+      {
+        "cn": "康巴",
+        "rom": "Kham",
+        "where": "Garzê · Chamdo · Diqing · Yushu",
+        "text": "El sureste: gargantas de río, bosque y las antiguas rutas comerciales hacia China. La prefectura de Garzê es su corazón —Kangding, Tagong, Dêgê, Litang, Sêrtar— y los valles rgyalrong de Danba y Xiaojin suelen contarse con ella. Kham es la que queda partida: Chamdo está dentro de la Región Autónoma y necesita permiso; Garzê, a cuatro horas de Chengdu, no.",
+        "status": "Chamdo sí, Garzê no",
+        "state": "split"
+      }
+    ],
+    "punch": "El permiso sigue una frontera provincial. La cultura, no.",
+    "note": "Cuando alguien dice que la meseta está cerrada, habla de la forma administrativa: la Región Autónoma del Tíbet. La forma cultural abarca tres regiones, y a buena parte de las otras dos se llega desde Chengdu sin permiso."
+  },
+  "th": {
+    "label": "แก้แผนที่ก่อน",
+    "title": "ทิเบตมีสามภูมิภาค แต่เส้นแบ่งใบอนุญาตลากไว้ที่อื่น",
+    "lede": "อวีจั้ง อามโด และคัม ต่างกันทั้งภาษาถิ่น การแต่งกาย และวิถีชีวิต เลี้ยงจามรีหรือปลูกข้าวบาร์เลย์ เป็นเช่นนี้มาพันปี เสฉวนมีหัวใจของคัม และมีอามโดอยู่บางส่วน ใบอนุญาตทิเบตออกให้กับเขตปกครองตนเองทิเบต ซึ่งเป็นเส้นแบ่งทางการปกครองที่พาดผ่านคัมและอามโด โดยไม่ถามสองภูมิภาคนั้นเลย",
+    "cards": [
+      {
+        "cn": "卫藏",
+        "rom": "Ü-Tsang",
+        "where": "ลาซา · ซีกาเจ · ลโฮกา · งารี",
+        "text": "ทิเบตในโปสการ์ด — พระราชวังโปตาลา วัดโจคัง ตาชิลุนโป และอารามใหญ่ในหุบเขาตอนกลาง วรรณกรรมทิเบตคลาสสิกเขียนด้วยภาษาถิ่นของที่นี่ เป็นภูมิภาคเดียวในสามภูมิภาคที่อยู่ในเขตปกครองตนเองทิเบตทั้งหมด จึงเป็นภูมิภาคเดียวที่อยู่หลังใบอนุญาตทั้งหมด",
+        "status": "ต้องมีใบอนุญาต",
+        "state": "closed"
+      },
+      {
+        "cn": "安多",
+        "rom": "Amdo",
+        "where": "ชิงไห่ · กานหนาน · อะป้าเหนือ",
+        "text": "ภาคตะวันออกเฉียงเหนือ — ทุ่งหญ้าของชิงไห่ กานหนานในกานซู่ และอำเภอตอนเหนือของอะป้าในเสฉวน แดนม้า และที่ตั้งของลาบรังกับคุมบุม สองอารามใหญ่แห่งภาคตะวันออกเฉียงเหนือ เกือบทั้งหมดอยู่นอกเขตปกครองตนเองทิเบต ใบอนุญาตทิเบตจึงใช้ไม่ได้ มีเพียงไม่กี่อำเภอทางตะวันตกที่ขอใบอนุญาตท้องถิ่นแยก",
+        "status": "ไม่ต้องใช้ใบอนุญาต",
+        "state": "open"
+      },
+      {
+        "cn": "康巴",
+        "rom": "Kham",
+        "where": "กานจื · ชัมโด · ตี๋ชิง · ยวี่ซู่",
+        "text": "ภาคตะวันออกเฉียงใต้ — หุบเขาแม่น้ำ ป่าไม้ และเส้นทางค้าเก่าสู่จีนแผ่นดินใหญ่ เขตปกครองตนเองกานจืเป็นหัวใจของคัม — คังติง ท่าโก้ง เต๋อเก๋อ หลี่ถาง เซ่อต๋า — และหุบเขาจยารงของตานปากับเสี่ยวจินก็มักนับรวมอยู่ด้วย คัมคือภูมิภาคเดียวที่ถูกผ่าครึ่ง: ชัมโดอยู่ในเขตปกครองตนเองทิเบตจึงต้องมีใบอนุญาต ส่วนกานจืซึ่งห่างจากเฉิงตูสี่ชั่วโมงไม่ต้อง",
+        "status": "ชัมโดต้องมี กานจืไม่ต้อง",
+        "state": "split"
+      }
+    ],
+    "punch": "ใบอนุญาตลากตามเส้นจังหวัด วัฒนธรรมไม่ได้ลากตาม",
+    "note": "เวลาใครบอกว่าที่ราบสูงไปไม่ได้ เขาหมายถึงรูปร่างเชิงปกครอง คือเขตปกครองตนเองทิเบต ส่วนรูปร่างเชิงวัฒนธรรมกว้างถึงสามภูมิภาค และอีกสองภูมิภาคส่วนใหญ่ไปถึงได้จากเฉิงตูโดยไม่ต้องมีใบอนุญาต"
+  }
+}

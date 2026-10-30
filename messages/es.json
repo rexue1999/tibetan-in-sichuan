@@ -2,19 +2,20 @@
   "nav": {
     "home": "Inicio",
     "trips": "Viajes",
-    "why": "Por qué nosotros",
+    "why": "Por qué Sichuan",
     "gallery": "Galería",
     "contact": "Contacto",
     "guides": "Guías",
     "about": "Nosotros",
-    "reviews": "Opiniones"
+    "reviews": "Opiniones",
+    "three": "Tres Tíbet"
   },
   "hero": {
     "brand": "CHENGDU JOURNEYS",
-    "title": "Empieza en Chengdu. <em>Ve más allá.</em>",
-    "subtitle": "Viajes en grupos pequeños por la cultura tibetana y los paisajes salvajes del oeste de China.",
-    "cta": "Ver experiencias",
-    "learnMore": "Saber más",
+    "title": "La meseta tibetana, <em>sin el permiso.</em>",
+    "subtitle": "La Región Autónoma del Tíbet exige un permiso, un guía oficial y tres semanas de antelación. El oeste de Sichuan solo exige cuatro horas de coche desde Chengdu. Los mismos monasterios, los mismos nómadas, la misma montaña de 7.556 metros.",
+    "cta": "Ver rutas",
+    "learnMore": "¿Por qué no el Tíbet?",
     "photo1": "Pradera de Batang bajo el cielo azul · Sichuan occidental",
     "photo2": "Monte Gongga, 7.556 m · Sichuan occidental",
     "photo3": "Mar de nubes sobre el macizo de Genie · Sichuan occidental",
@@ -22,7 +23,8 @@
     "photo5": "El Palacio Potala · Lhasa",
     "slideOf": "Diapositiva {n} de {total}",
     "previousSlide": "Fotografía anterior",
-    "nextSlide": "Fotografía siguiente"
+    "nextSlide": "Fotografía siguiente",
+    "kicker": "Tíbet, sin el papeleo"
   },
   "expect": {
     "label": "Más allá de la postal",
@@ -546,8 +548,8 @@
     "copyright": "© 2026 Chengdu Journeys. Todos los derechos reservados."
   },
   "seoPages": {
-    "homeTitle": "Tours de Chengdu al Tibet y Sichuan Occidental en Grupo Pequeno",
-    "homeDesc": "Tours en grupo pequeno desde Chengdu hacia el Tibet y el oeste de Sichuan: paseos culturales tibetanos en la ciudad, rutas de altura por Kangding y Tagong, estancias con familias nomadas, monasterios de Kham y la carretera Sichuan-Tibet. Guias locales, grupos de 2 a 8 personas.",
+    "homeTitle": "Tíbet sin permiso | Viajes a la meseta tibetana desde Chengdu",
+    "homeDesc": "Sin permiso, sin itinerario fijo y sin grupo organizado. Kham y Amdo, dos de las tres regiones del Tíbet, empiezan a cuatro horas de Chengdu. Grupos de 2 a 8.",
     "bookingTitle": "Reservar un tour por Chengdu o Sichuan Occidental - Contactanos",
     "bookingDesc": "Reserva un tour en grupo pequeno por Chengdu, el Tibet o el oeste de Sichuan. Escribenos por WhatsApp, correo o WeChat con tus fechas y numero de viajeros y preparamos un itinerario a medida en 24 horas."
   },
@@ -568,8 +570,8 @@
     "a6": "Si. Nuestros guias hablan ingles, mandarin y tibetano, y tambien organizamos viajes en espanol y tailandes bajo peticion. Podemos arreglar comidas vegetarianas, veganas, halal y sin gluten en la ruta - indicalo al reservar para avisar a cada alojamiento con antelacion."
   },
   "seo": {
-    "tagline": "Viajes en grupo pequeño por la cultura tibetana y el oeste de China",
-    "description": "Viajes en grupos pequeños desde Chengdu hacia la cultura tibetana, paisajes de tierras altas y la vida nómada en el oeste de Sichuan. Tours tibetanos a pie, rutas de templos y experiencias auténticas de estancia."
+    "tagline": "La meseta tibetana sin permiso — viajes en pequeño grupo desde Chengdu",
+    "description": "La Región Autónoma del Tíbet exige un permiso, un guía oficial y tres semanas de antelación. El oeste de Sichuan exige cuatro horas de coche. Viajes en pequeño grupo por los monasterios, campamentos nómadas y picos de 7.000 metros de Kham."
   },
   "guideIndex": {
     "label": "Notas de viaje",
@@ -1544,5 +1546,165 @@
     "reviewsDesc": "Lee lo que dicen los viajeros sobre nuestros viajes en grupo reducido desde Chengdu al altiplano tibetano del oeste de Sichuan.",
     "routesIndexTitle": "Tours en Grupo Pequeño desde Chengdu - Viajes por Sichuan Occidental y el Tíbet",
     "routesIndexDesc": "Compara nuestros viajes en grupo pequeño: un paseo de cultura tibetana por Chengdu, un circuito de 3-7 días por las tierras altas de Sichuan Occidental y una estancia con una familia nómada en las praderas de Zoige."
+  },
+  "permit": {
+    "label": "Una de las tres",
+    "title": "Hasta Lhasa no hay un vuelo, sino cuatro barreras.",
+    "lede": "Ü-Tsang es el Tíbet de las postales, y la única de las tres regiones que queda entera detrás de un régimen de permisos. Si ese era tu viaje, esto es lo que hace falta de verdad.",
+    "facts": [
+      {
+        "n": "01",
+        "title": "Un permiso que no puedes solicitar tú",
+        "text": "Lo emite la Oficina de Turismo del Tíbet y solo se tramita a través de una agencia licenciada en Lhasa. Tarda de 15 a 30 días, exige tu pasaporte y tu visado chino, y el original en papel tiene que llegar a tu hotel en China continental antes de que puedas embarcar."
+      },
+      {
+        "n": "02",
+        "title": "Un guía, todos los días",
+        "text": "Los extranjeros no pueden viajar por su cuenta en la región. Un guía oficial te acompaña todo el tiempo y el permiso fija el itinerario de antemano. No puedes añadir un valle porque alguien te lo haya contado en una casa de té."
+      },
+      {
+        "n": "03",
+        "title": "No puedes conducir",
+        "text": "Los visitantes extranjeros no pueden conducir. Vas en un vehículo autorizado, por la ruta aprobada, con controles que escanean el permiso varias veces al día."
+      },
+      {
+        "n": "04",
+        "title": "Dos vuelos y un aterrizaje a 3.650 m",
+        "text": "No hay vuelos internacionales a Lhasa. Aterrizas en Chengdu, Pekín o Xi'an y sigues; o tomas veintiuna horas de tren desde Qinghai. En cualquier caso bajas del avión en altura, sin aclimatación."
+      }
+    ],
+    "turnTitle": "Todo eso es cierto.",
+    "turnText": "Nada de ello significa renunciar a la meseta. Significa entrar por otra puerta: cuatro horas al oeste de Chengdu, con la misma cultura y sin el papeleo."
+  },
+  "compare": {
+    "label": "La misma meseta, otra puerta",
+    "title": "Al oeste de Chengdu, nada de eso se aplica.",
+    "lede": "Las zonas tibetanas de Sichuan —el corazón de Kham y una parte de Amdo— ocupan unos 235.000 km², casi el tamaño del Reino Unido. No sustituyen a Lhasa: son la misma civilización, a la misma altitud, sin el régimen de permisos.",
+    "head": [
+      "",
+      "Región Autónoma del Tíbet",
+      "Oeste de Sichuan · Kham"
+    ],
+    "rows": [
+      {
+        "k": "Permiso",
+        "tar": "Obligatorio, solo por agencia, 15-30 días",
+        "kham": "Ninguno. Pasaporte y visado chino."
+      },
+      {
+        "k": "Guía",
+        "tar": "Guía oficial obligatorio",
+        "kham": "Opcional: el nuestro, o ninguno"
+      },
+      {
+        "k": "Itinerario",
+        "tar": "Fijado y aprobado de antemano",
+        "kham": "Cambia con el tiempo"
+      },
+      {
+        "k": "Conducir",
+        "tar": "Prohibido a extranjeros",
+        "kham": "Permitido"
+      },
+      {
+        "k": "Cómo llegar",
+        "tar": "Vuelo a un hub chino y luego Lhasa, o 21 h de tren",
+        "kham": "4-5 h en coche desde Chengdu, o 1 h en avión"
+      },
+      {
+        "k": "Altitud",
+        "tar": "3.650 m al aterrizar; 5.200 m en el campo base",
+        "kham": "Subida progresiva; se duerme entre 2.000 y 3.730 m"
+      },
+      {
+        "k": "Grupo",
+        "tar": "Salidas fijas, 4-12 personas",
+        "kham": "Privado, 2-8, tus fechas"
+      },
+      {
+        "k": "Idiomas",
+        "tar": "Tibetano, mandarín, inglés",
+        "kham": "Inglés, francés, español, mandarín"
+      }
+    ],
+    "note": "Las normas de permiso las fija la Oficina de Turismo del Tíbet y se revisan antes de cada presupuesto. Aquí no hay ningún atajo: son dos regiones con reglas distintas."
+  },
+  "land": {
+    "label": "A qué vienes",
+    "title": "Lo que ibas a buscar a Lhasa.",
+    "lede": "Monasterios con su propio calendario. Campamentos nómadas a 4.000 m. Una imprenta que talla bloques de escritura a mano desde 1729. Nada montado para turistas; casi nada con taquilla.",
+    "items": [
+      {
+        "name": "Monasterio de Tagong",
+        "meta": "3.730 m · Garzê",
+        "text": "Sakya, más de mil años, en la pradera donde Kham se encuentra con la cordillera de Yala. Llegan peregrinos de toda la meseta; los extranjeros son tan raros que los niños todavía saludan."
+      },
+      {
+        "name": "Dege Parkhang",
+        "meta": "3.240 m · Dêgê",
+        "text": "La imprenta de escrituras de 1729. Trescientos mil bloques tallados a mano, entintados y prensados a diario en salas que se iluminan por la puerta. Los monjes trabajan; tú miras desde el umbral."
+      },
+      {
+        "name": "Larung Gar",
+        "meta": "4.000 m · Sêrtar",
+        "text": "Decenas de miles de casas rojas en un solo valle: uno de los mayores centros de estudio budista del mundo. No es una atracción, es un pueblo que resulta ser extraordinario."
+      },
+      {
+        "name": "Gongga Shan",
+        "meta": "7.556 m · Kangding",
+        "text": "La cima más alta de Sichuan y la más oriental de las grandes montañas de escala himaláyica. En una mañana clara llena todo el cielo del oeste desde el paso de Zheduo."
+      },
+      {
+        "name": "El año nómada",
+        "meta": "4.000 m · noroeste",
+        "text": "Dos noches con una familia que aún se mueve con la hierba. Yaks, té con mantequilla, una estufa en el centro de la tienda y nada de electricidad al anochecer."
+      },
+      {
+        "name": "Thangka, dos días",
+        "meta": "Tagong · taller",
+        "text": "Moler el mineral, ligarlo, trazar la línea, rellenar el color y solo entonces el rostro. Dos días te enseñan por qué un rostro lleva cuatro."
+      }
+    ]
+  },
+  "who": {
+    "label": "Con quién vas",
+    "title": "Dos personas, no un centro de llamadas.",
+    "lede": "Lo que hace que esto funcione no es el itinerario. Es viajar con gente que vive aquí, habla los idiomas y cambiará el plan cuando la montaña lo pida.",
+    "aaronQuote": "He vivido y trabajado en Europa y en Estados Unidos, y me quedé aquí por la meseta. En todos estos años, ningún cliente se ha ido decepcionado.",
+    "yinnQuote": "Nací en Wuhan y estudié en España. Salgo en moto siempre que puedo; el resto del tiempo subo a la meseta. Las visitas a los monasterios y el campamento nómada son míos.",
+    "cta": "Conocer al equipo"
+  },
+  "three": {
+    "label": "El mapa, corregido",
+    "title": "El Tíbet son tres regiones. La línea del permiso está en otro sitio.",
+    "lede": "Ü-Tsang, Amdo, Kham. Se distinguen por el dialecto, la ropa y por si se crían yaks o se cultiva cebada; llevan mil años haciéndolo. Sichuan contiene el corazón de Kham y una parte de Amdo. El permiso se expide para la Región Autónoma del Tíbet: una línea administrativa que atraviesa Kham y Amdo sin preguntarles nada.",
+    "cards": [
+      {
+        "cn": "卫藏",
+        "rom": "Ü-Tsang",
+        "where": "Lhasa · Shigatse · Lhoka · Ngari",
+        "text": "El Tíbet de las postales: el Potala, el Jokhang, Tashilhunpo y los grandes monasterios del valle central. El tibetano clásico se escribe en su dialecto. Es la única de las tres regiones que queda entera dentro de la Región Autónoma del Tíbet, y por tanto la única entera detrás del permiso.",
+        "status": "Permiso obligatorio",
+        "state": "closed"
+      },
+      {
+        "cn": "安多",
+        "rom": "Amdo",
+        "where": "Qinghai · Gannan · norte de Aba",
+        "text": "El noreste: las praderas de Qinghai, Gannan en Gansu y los condados del norte de Aba, en Sichuan. Tierra de caballos y sede de Labrang y Kumbum, los dos grandes monasterios del noreste. Casi toda está fuera de la Región Autónoma: el permiso del Tíbet no se aplica, aunque unos pocos condados occidentales piden un permiso local aparte.",
+        "status": "Sin permiso del Tíbet",
+        "state": "open"
+      },
+      {
+        "cn": "康巴",
+        "rom": "Kham",
+        "where": "Garzê · Chamdo · Diqing · Yushu",
+        "text": "El sureste: gargantas de río, bosque y las antiguas rutas comerciales hacia China. La prefectura de Garzê es su corazón —Kangding, Tagong, Dêgê, Litang, Sêrtar— y los valles rgyalrong de Danba y Xiaojin suelen contarse con ella. Kham es la que queda partida: Chamdo está dentro de la Región Autónoma y necesita permiso; Garzê, a cuatro horas de Chengdu, no.",
+        "status": "Chamdo sí, Garzê no",
+        "state": "split"
+      }
+    ],
+    "punch": "El permiso sigue una frontera provincial. La cultura, no.",
+    "note": "Cuando alguien dice que la meseta está cerrada, habla de la forma administrativa: la Región Autónoma del Tíbet. La forma cultural abarca tres regiones, y a buena parte de las otras dos se llega desde Chengdu sin permiso."
   }
 }

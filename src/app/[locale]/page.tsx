@@ -2,6 +2,13 @@ import { getTranslations } from 'next-intl/server';
 import Link from 'next/link';
 import RouteCard from './route-card';
 import HeroCarousel, { type HeroSlide } from './hero-carousel';
+import {
+  ThreeRegionsSection,
+  PermitSection,
+  CompareSection,
+  LandSection,
+  WhoSection,
+} from './reposition-sections';
 import { buildLocalizedAlternates } from '../../lib/seo';
 import { guides } from '../../content/guides';
 import { publishedReviews, reviewText } from '../../content/reviews';
@@ -79,8 +86,6 @@ function SectionTitle({ label, title }: { label: string; title: string }) {
 export default async function Home({ params: { locale } }: { params: { locale: string } }) {
   const t = await getTranslations({ locale, namespace: 'hero' });
   const tr = await getTranslations({ locale, namespace: 'routes' });
-  const te = await getTranslations({ locale, namespace: 'expect' });
-  const tw = await getTranslations({ locale, namespace: 'why' });
   const tg = await getTranslations({ locale, namespace: 'gallery' });
   const tv = await getTranslations({ locale, namespace: 'videos' });
   const tc = await getTranslations({ locale, namespace: 'cta' });
@@ -197,7 +202,7 @@ export default async function Home({ params: { locale } }: { params: { locale: s
         />
         <div className="relative z-20 px-6 max-w-6xl mx-auto w-full pt-24 pb-20">
           <p className="text-[10px] font-semibold tracking-[5px] uppercase text-[#8C3B2E] mb-7">
-            {t('brand')}
+            {t('kicker')}
           </p>
           <h1 className="text-4xl md:text-7xl font-light tracking-[-1px] leading-[1.05] text-[#1F1F1F] max-w-2xl mb-7">
             {t.rich('title', {
@@ -215,7 +220,7 @@ export default async function Home({ params: { locale } }: { params: { locale: s
               {t('cta')} →
             </Link>
             <Link
-              href={`/${locale}#why`}
+              href={`/${locale}#permit`}
               className="inline-flex items-center gap-2 border border-[#1F1F1F] text-[#1F1F1F] px-8 py-4 text-xs font-medium tracking-[2px] uppercase hover:bg-[#1F1F1F] hover:text-[#E8E1D9] transition-all"
             >
               {t('learnMore')}
@@ -239,26 +244,27 @@ export default async function Home({ params: { locale } }: { params: { locale: s
       </section>
 
       {/* ==============================
-          NOT WHAT YOU EXPECT
-          ============================== */}
-      <section className="py-24 md:py-32 px-6 bg-white">
-        <div className="max-w-7xl mx-auto">
-          <div className="grid md:grid-cols-2 gap-16 items-center">
-            <div>
-              <p className="text-[10px] font-semibold tracking-[4px] uppercase text-[#8C3B2E] mb-5">{te('label')}</p>
-              <h2 className="text-3xl md:text-5xl font-light tracking-[-0.5px] leading-tight mb-6">{te('title')}</h2>
-              <p className="text-base leading-relaxed text-stone-500 max-w-md">{te('text')}</p>
-            </div>
-            <div
-              className="aspect-[4/5] rounded-sm relative overflow-hidden bg-cover bg-center"
-              style={{ backgroundImage: 'url(/images/wuhouhengjie.jpg)' }}
-            >
-              <div className="absolute inset-0 bg-[#1F1F1F]/10" />
-              <span className="absolute bottom-4 left-4 text-[9px] tracking-[2px] uppercase text-white/80">Wuhou Hengjie, Chengdu</span>
-            </div>
-          </div>
-        </div>
-      </section>
+          THE ARGUMENT
+          ==============================
+          These four blocks replace two sections that used to sit here and were
+          both made of adjectives: "not what you expect" and "why travel with
+          us". Neither said anything a competitor could not copy in an
+          afternoon, and neither answered the only question this product has to
+          answer — why come here instead of to Tibet.
+
+          Order matters. First the map (the plateau is three cultures, and only
+          one of them sits behind the permit), because without it "Tibet
+          without the permit" reads as "not really Tibet" — the one suspicion
+          that would kill this page. Then the objection (what the permit regime
+          actually costs), then the answer (the same plateau, different rules),
+          then desire (what is actually there), then the people. The product
+          grid follows; by the time it arrives the reader already knows what
+          they are buying.
+      */}
+      <ThreeRegionsSection locale={locale} />
+      <PermitSection locale={locale} />
+      <CompareSection locale={locale} />
+      <LandSection locale={locale} />
 
       {/* ==============================
           PRODUCT TIERS
@@ -295,27 +301,9 @@ export default async function Home({ params: { locale } }: { params: { locale: s
       </section>
 
       {/* ==============================
-          WHY US
+          WHO TAKES YOU
           ============================== */}
-      <section id="why" className="py-24 md:py-32 px-6 bg-white">
-        <div className="max-w-7xl mx-auto">
-          <SectionTitle label={tw('label')} title={tw('title')} />
-          <div className="grid md:grid-cols-2 mt-12">
-            {(['item1', 'item2', 'item3', 'item4'] as const).map((item, i) => (
-              <div
-                key={item}
-                className={`flex gap-6 p-10 ${i > 1 ? '' : 'border-b'} ${i % 2 === 1 ? 'md:border-l' : ''} border-black/5`}
-              >
-                <span className="text-2xl font-light text-[#8C3B2E] leading-none pt-1">0{i + 1}</span>
-                <div>
-                  <h4 className="text-base font-medium mb-2">{tw(`${item}.title` as any)}</h4>
-                  <p className="text-sm leading-relaxed text-stone-500">{tw(`${item}.text` as any)}</p>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
+      <WhoSection locale={locale} />
 
       {/* ==============================
           GALLERY

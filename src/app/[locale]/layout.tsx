@@ -86,6 +86,9 @@ const navLinks = [
   // "Trips" points at the routes hub — a real index page — not at the
   // homepage's #trips anchor, which is invisible to the nav from inner pages.
   { href: '/routes', key: 'trips' },
+  // The three-region block is the argument the whole site rests on, so it gets
+  // a top-level entry rather than sitting buried below the fold.
+  { href: '/#three', key: 'three' },
   { href: '/guides', key: 'guides' },
   { href: '/about', key: 'about' },
   { href: '/reviews', key: 'reviews' },
@@ -291,11 +294,15 @@ export default async function LocaleLayout({
               </Link>
               {/*
                 Inline nav starts at `lg`, not `md`. At 768-1023px the wordmark
-                (~245px) + five nav links + four language chips cannot all fit,
+                (~245px) + six nav links + four language chips cannot all fit,
                 which is what pushed the wordmark onto a second line on tablets.
                 Below `lg` the burger menu carries the links instead.
+
+                The gap is 16px at `lg` and opens up at `xl`: with the sixth
+                entry ("Three Tibets") the Spanish labels overflowed the row by
+                15px at exactly 1024, and Spanish is the longest of the four.
               */}
-              <div className="hidden lg:flex items-center gap-6 xl:gap-8 text-xs tracking-[2px] uppercase">
+              <div className="hidden lg:flex items-center gap-4 xl:gap-8 text-xs tracking-[2px] uppercase">
                 {navLinks.map(({ href, key }) => (
                   <Link key={key} href={`/${locale}${href}`} className="text-stone-500 hover:text-[#8C3B2E] transition-colors whitespace-nowrap">
                     {t(key)}
