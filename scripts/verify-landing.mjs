@@ -27,6 +27,7 @@ import fs from 'node:fs';
 import os from 'node:os';
 import path from 'node:path';
 import http from 'node:http';
+import https from 'node:https';
 import { spawn } from 'node:child_process';
 
 const BASE = process.argv[2] || 'http://localhost:3000';
@@ -52,15 +53,21 @@ function check(ok, label, detail) {
 }
 
 function get(u) {
+  // Same script runs against localhost (http) and production (https); pick the
+  // client from the URL rather than assuming.
+  const client = u.startsWith('https:') ? https : http;
   return new Promise((r) => {
-    const q = http.get(u, (s) => {
+    const q = client.get(u, (s) => {
       let d = '';
       s.setEncoding('utf8');
       s.on('data', (c) => (d += c));
       s.on('end', () => r(d));
     });
     q.on('error', () => r(''));
-    q.setTimeout(20000, () => {
+    // The homepage HTML is ~400 kB. Twenty seconds was not enough on a cold
+    // production request: the socket timed out mid-body and the partial string
+    // made /th look like it had lost the permit block.
+    q.setTimeout(45000, () => {
       q.destroy();
       r('');
     });
@@ -157,20 +164,33 @@ function get(u) {
     await S('Page.navigate', { url: `${BASE}${FORCED_PATH || `/${locale}/${PAGE}`}` });
 
     /*
-      Wait for a styled page, not merely a parsed one. Selector presence only
-      proves the HTML arrived; measuring before the stylesheet lands reads the
-      unstyled document and has already produced false failures once on this
-      project (a nav that "wrapped" at 1024). `position: fixed` on the nav comes
-      only from Tailwind, and text width depends on the web font.
+      Wait for a finished, styled, streamed-in page.
+
+      Two separate traps, both already seen on this project:
+
+      - Selector presence proves nothing about CSS. Measuring before the
+        stylesheet lands reads the unstyled document (a nav that "wraps" to
+        137 px, a table with no layout).
+      - Production streams the response. `document.querySelector('#map')` can
+        succeed while the FAQ has not arrived yet, so counting rows mid-stream
+        returns 3 instead of 6 — which is exactly how es and th failed against
+        production while en and zh happened to pass on warm pages.
+
+      So: readyState complete (the stream closed), Tailwind applied, fonts
+      loaded, and — unless this is the negative control — the last section's
+      six answers actually present.
     */
+    const expectContent = !FORCED_PATH;
     for (let i = 0; i < 60; i++) {
-      const styled = await evaluate(`(() => {
+      const ready = await evaluate(`(() => {
         const nav = document.querySelector('nav');
-        if (!nav) return document.readyState === 'complete';
-        return getComputedStyle(nav).position === 'fixed'
+        const styled = (!nav || getComputedStyle(nav).position === 'fixed')
           && document.fonts.status === 'loaded';
+        const complete = document.readyState === 'complete';
+        const content = !${expectContent} || document.querySelectorAll('#faq dt').length === 6;
+        return styled && complete && content;
       })()`);
-      if (styled) break;
+      if (ready) break;
       await sleep(250);
     }
 
