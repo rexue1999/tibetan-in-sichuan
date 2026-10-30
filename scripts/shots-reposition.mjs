@@ -121,7 +121,23 @@ function get(u) {
       if (await evaluate(probe)) break;
       await sleep(250);
     }
-    await sleep(600);
+
+    /*
+      A present section is not a styled section. Against production the
+      stylesheet can arrive after the HTML, and a screenshot taken in between
+      captures the unstyled document — nav stacked, no type scale. Text width
+      also depends on the web font, so hold until both are in place.
+    */
+    for (let i = 0; i < 60; i++) {
+      const styled = await evaluate(`(() => {
+        const nav = document.querySelector('nav');
+        const okNav = !nav || getComputedStyle(nav).position === 'fixed';
+        return okNav && document.fonts.status === 'loaded';
+      })()`);
+      if (styled) break;
+      await sleep(250);
+    }
+    await sleep(300);
 
     let clip;
     if (s.viewport) {

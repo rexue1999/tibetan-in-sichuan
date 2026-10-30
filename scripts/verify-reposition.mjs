@@ -159,14 +159,35 @@ function keyPaths(o, prefix = '', out = []) {
       mobile: w < 500,
     });
     await S('Page.navigate', { url: `${BASE}${FORCED_PATH || '/' + locale}` });
-    // 40 × 250 ms. Long enough for a cold production render, short enough that
-    // the negative control (a page with no #who) fails in 10 s per locale
-    // instead of hanging until the shell gives up.
-    for (let i = 0; i < 40; i++) {
-      if (await evaluate(`!!document.querySelector('#who')`)) break;
+
+    /*
+      Wait for a *styled* page, not merely a parsed one.
+
+      #who existing only proves the HTML arrived. On a cold production request
+      the stylesheet lands a beat later, and anything measured in that window
+      reads the unstyled document — nav items stacked, header 137px instead of
+      65px. Running this against https://chengdujourneys.com produced four
+      false "header keeps one row" failures that way, while a manual re-probe
+      a second later measured 65px every time.
+
+      `position: fixed` on the nav comes only from Tailwind's `fixed` utility,
+      and `document.fonts.status === 'loaded'` covers the web font, which
+      changes every text width. Both are real conditions rather than a sleep.
+
+      The gate deliberately does not require #who: the negative control points
+      at a page that has no such section, and should reach the assertions
+      quickly to report the missing sections.
+    */
+    for (let i = 0; i < 60; i++) {
+      const styled = await evaluate(`(() => {
+        const nav = document.querySelector('nav');
+        if (!nav) return document.readyState === 'complete';
+        return getComputedStyle(nav).position === 'fixed'
+          && document.fonts.status === 'loaded';
+      })()`);
+      if (styled) break;
       await sleep(250);
     }
-    await sleep(300);
     return evaluate(`(() => {
       const q = (s) => !!document.querySelector(s);
 
