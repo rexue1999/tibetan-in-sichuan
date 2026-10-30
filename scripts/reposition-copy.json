@@ -70,7 +70,7 @@
         {
           "k": "Driving",
           "tar": "Not permitted for foreign visitors",
-          "kham": "Permitted"
+          "kham": "Possible with a Chinese licence; a driver is the norm"
         },
         {
           "k": "Getting there",
@@ -111,9 +111,9 @@
           "text": "The scripture printing house of 1729. Three hundred thousand hand-cut blocks, inked and pressed every day in rooms lit by a doorway. Monks work; you watch from the threshold."
         },
         {
-          "name": "Larung Gar",
-          "meta": "4,000 m · Sêrtar",
-          "text": "Tens of thousands of red residences across a single valley — one of the largest Buddhist study centres anywhere. Not an attraction: a town that happens to be extraordinary."
+          "name": "Litang",
+          "meta": "4,010 m · Garzê",
+          "text": "A town at four thousand metres where the grassland reaches the main street. The monastery above it dates from 1580; in August the horse fair draws Khampa riders from every pasture."
         },
         {
           "name": "Gongga Shan",
@@ -212,7 +212,7 @@
         {
           "k": "自驾",
           "tar": "外宾不允许",
-          "kham": "允许"
+          "kham": "持中国驾照可以自驾；通常配司机"
         },
         {
           "k": "怎么去",
@@ -253,9 +253,9 @@
           "text": "1729 年的印经院。三十万块手刻经版，每天还在上墨、覆纸、刷印。僧人靠门口那点光干活，你站在门槛外面看。"
         },
         {
-          "name": "色达",
-          "meta": "4000 米 · 色达",
-          "text": "几万间红房子铺满一整条山谷，是世上最大的佛学修学地之一。它不是景点，是一座恰好很惊人的镇子。"
+          "name": "理塘",
+          "meta": "4,010 米 · 甘孜",
+          "text": "四千米的县城，草原一直铺到主街。山上的长青春科尔寺建于 1580 年；八月赛马会，康巴骑手从各处牧场赶来。"
         },
         {
           "name": "贡嘎山",
@@ -354,7 +354,7 @@
         {
           "k": "Conducir",
           "tar": "Prohibido a extranjeros",
-          "kham": "Permitido"
+          "kham": "Posible con carné chino; lo normal es chófer"
         },
         {
           "k": "Cómo llegar",
@@ -395,9 +395,9 @@
           "text": "La imprenta de escrituras de 1729. Trescientos mil bloques tallados a mano, entintados y prensados a diario en salas que se iluminan por la puerta. Los monjes trabajan; tú miras desde el umbral."
         },
         {
-          "name": "Larung Gar",
-          "meta": "4.000 m · Sêrtar",
-          "text": "Decenas de miles de casas rojas en un solo valle: uno de los mayores centros de estudio budista del mundo. No es una atracción, es un pueblo que resulta ser extraordinario."
+          "name": "Litang",
+          "meta": "4.010 m · Garzê",
+          "text": "Una villa a cuatro mil metros donde la pradera llega a la calle principal. El monasterio de arriba es de 1580; en agosto la feria del caballo trae jinetes khampa de todos los pastos."
         },
         {
           "name": "Gongga Shan",
@@ -496,7 +496,7 @@
         {
           "k": "ขับรถเอง",
           "tar": "ชาวต่างชาติทำไม่ได้",
-          "kham": "ทำได้"
+          "kham": "ขับเองได้ถ้ามีใบขับขี่จีน ปกติมีคนขับ"
         },
         {
           "k": "การเดินทาง",
@@ -537,9 +537,9 @@
           "text": "โรงพิมพ์พระคัมภีร์ปี 1729 แม่พิมพ์ไม้แกะมือสามแสนแผ่น ยังถูกทาหมึกและพิมพ์ทุกวันในห้องที่แสงส่องมาจากประตู พระทำงาน คุณยืนดูอยู่ที่ธรณีประตู"
         },
         {
-          "name": "Larung Gar",
-          "meta": "4,000 ม. · เซ่อต๋า",
-          "text": "บ้านสีแดงหลายหมื่นหลังเต็มหุบเขาเดียว เป็นศูนย์ศึกษาพระพุทธศาสนาที่ใหญ่ที่สุดแห่งหนึ่งของโลก ไม่ใช่สถานที่ท่องเที่ยว แต่เป็นเมืองที่บังเอิญน่าทึ่ง"
+          "name": "หลี่ถัง",
+          "meta": "4,010 ม. · กานจื",
+          "text": "เมืองที่ความสูงสี่พันเมตร ทุ่งหญ้าไหลมาถึงถนนสายหลัก อารามบนเนินสร้างปี 1580 และงานแข่งม้าเดือนสิงหาคมดึงนักขี่คัมมาจากทุกทุ่ง"
         },
         {
           "name": "Gongga Shan",

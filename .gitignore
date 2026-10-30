@@ -38,6 +38,7 @@ yarn-error.log*
 *.tsbuildinfo
 next-env.d.ts
 
-# local verification artefacts (screenshots from scripts/shots-reposition.mjs)
+# local verification artefacts (screenshots from scripts/shots-*.mjs)
 /rp-*.png
 /crop-*.png
+/lp-*.png

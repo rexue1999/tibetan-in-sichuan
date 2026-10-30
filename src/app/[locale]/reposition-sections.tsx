@@ -1,4 +1,5 @@
 import { getTranslations } from 'next-intl/server';
+import Link from 'next/link';
 import { teamMembers } from '../../content/company';
 
 /**
@@ -180,6 +181,7 @@ export async function ThreeRegionsSection({ locale }: { locale: string }) {
  */
 export async function PermitSection({ locale }: { locale: string }) {
   const t = await getTranslations({ locale, namespace: 'permit' });
+  const tl = await getTranslations({ locale, namespace: 'permitPage' });
   const facts = t.raw('facts') as Fact[];
 
   return (
@@ -214,6 +216,19 @@ export async function PermitSection({ locale }: { locale: string }) {
           <p className="text-sm md:text-base leading-relaxed text-[#E8E1D9]/70 max-w-2xl">
             {t('turnText')}
           </p>
+          {/*
+            The homepage states the claim; /tibet-without-permit argues it in
+            full. Without this link the long page has no internal referrer at
+            all, and the only people who ever read it are the ones who search
+            for the exact phrase.
+          */}
+          <Link
+            href={`/${locale}/tibet-without-permit`}
+            className="inline-flex items-center gap-2 mt-8 text-[11px] font-semibold tracking-[2.5px] uppercase text-[#C97F6B] hover:text-[#E8E1D9] transition-colors"
+          >
+            {tl('link')}
+            <span aria-hidden>→</span>
+          </Link>
         </div>
       </div>
     </section>

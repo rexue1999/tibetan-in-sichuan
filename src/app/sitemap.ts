@@ -14,6 +14,12 @@ const CONTENT_UPDATED = new Date('2026-10-19');
 /** Guide articles were added on this date. */
 const GUIDES_UPDATED = new Date('2026-10-19');
 
+/**
+ * /tibet-without-permit. Dated separately so the landing page can be re-crawled
+ * after a copy change without pretending every route page changed as well.
+ */
+const LANDING_UPDATED = new Date('2026-10-30');
+
 export default function sitemap() {
   const entries: {
     url: string;
@@ -48,6 +54,16 @@ export default function sitemap() {
       lastModified: CONTENT_UPDATED,
       changeFrequency: 'weekly',
       priority: 0.8,
+    });
+
+    // The positioning landing page. Priority sits just under the homepage
+    // because it is the only URL here written to answer a search query rather
+    // than to convert someone who already knows the brand.
+    entries.push({
+      url: `${SITE_URL}/${locale}/tibet-without-permit`,
+      lastModified: LANDING_UPDATED,
+      changeFrequency: 'monthly',
+      priority: 0.9,
     });
     for (const route of allRoutes) {
       entries.push({

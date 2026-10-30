@@ -1545,7 +1545,9 @@
     "reviewsTitle": "Traveller Reviews - Chengdu Journeys Sichuan & Tibet Tours",
     "reviewsDesc": "Read what travellers say about our small-group journeys from Chengdu into the Tibetan highlands of Western Sichuan. Verified guest feedback.",
     "routesIndexTitle": "Small-Group Tours from Chengdu - Western Sichuan & Tibet Trips",
-    "routesIndexDesc": "Compare our small-group trips: a Chengdu Tibetan culture walk, a 3-7 day Western Sichuan highland loop, and a nomad family stay on the Zoige grasslands."
+    "routesIndexDesc": "Compare our small-group trips: a Chengdu Tibetan culture walk, a 3-7 day Western Sichuan highland loop, and a nomad family stay on the Zoige grasslands.",
+    "permitPageTitle": "Tibet Without a Permit: What You Can and Cannot Do",
+    "permitPageDesc": "The Tibet Autonomous Region needs a permit, a licensed guide and a fixed itinerary. Two of Tibet’s three regions do not. What that means in practice."
   },
   "permit": {
     "label": "One of the three",
@@ -1604,7 +1606,7 @@
       {
         "k": "Driving",
         "tar": "Not permitted for foreign visitors",
-        "kham": "Permitted"
+        "kham": "Possible with a Chinese licence; a driver is the norm"
       },
       {
         "k": "Getting there",
@@ -1645,9 +1647,9 @@
         "text": "The scripture printing house of 1729. Three hundred thousand hand-cut blocks, inked and pressed every day in rooms lit by a doorway. Monks work; you watch from the threshold."
       },
       {
-        "name": "Larung Gar",
-        "meta": "4,000 m · Sêrtar",
-        "text": "Tens of thousands of red residences across a single valley — one of the largest Buddhist study centres anywhere. Not an attraction: a town that happens to be extraordinary."
+        "name": "Litang",
+        "meta": "4,010 m · Garzê",
+        "text": "A town at four thousand metres where the grassland reaches the main street. The monastery above it dates from 1580; in August the horse fair draws Khampa riders from every pasture."
       },
       {
         "name": "Gongga Shan",
@@ -1706,5 +1708,237 @@
     ],
     "punch": "The permit follows a provincial border. The culture does not.",
     "note": "When people say the plateau is closed, they mean the administrative shape — the Tibet Autonomous Region. The cultural shape is three regions wide, and most of the other two are reachable from Chengdu without a permit."
+  },
+  "permitPage": {
+    "seo": {
+      "title": "Tibet Without a Permit: What You Can and Cannot Do",
+      "desc": "The Tibet Autonomous Region needs a permit, a licensed guide and a fixed itinerary. Two of Tibet’s three regions do not. What that means in practice."
+    },
+    "hero": {
+      "kicker": "The short answer",
+      "title": "Can you visit Tibet without a permit?",
+      "lede": "Not the Tibet Autonomous Region. That needs a permit, a licensed guide and an itinerary approved before you fly. But Tibet is three regions, and only one of them is the Autonomous Region. The other two begin four hours west of Chengdu."
+    },
+    "answer": {
+      "label": "In three lines",
+      "items": [
+        "The Autonomous Region — Lhasa, Shigatse, Ngari — requires a Tibet Travel Permit. Only a registered agency in Lhasa can apply, 15 to 30 days ahead, and the paper original has to be in your hand before you board.",
+        "Tibetans live in three regions: Ü-Tsang, Kham and Amdo. Only Ü-Tsang lies inside the Autonomous Region. Kham runs through Sichuan, Yunnan, Qinghai and the Autonomous Region’s own Chamdo.",
+        "The Kham and Amdo parts of Sichuan need no permit at all. A passport and a valid Chinese visa are enough. That is where we travel."
+      ]
+    },
+    "regions": {
+      "label": "The map, first",
+      "title": "Three regions. One of them has a gate.",
+      "lede": "Most confusion about “visiting Tibet” is a geography problem. The permit line follows a provincial border, not a cultural one.",
+      "cards": [
+        {
+          "cn": "卫藏",
+          "rom": "Ü-Tsang",
+          "where": "Lhasa · Shigatse · Shannan · Ngari",
+          "status": "Permit required",
+          "state": "closed",
+          "text": "The Tibet of the postcards, and the only region that lies entirely inside the Tibet Autonomous Region."
+        },
+        {
+          "cn": "康巴",
+          "rom": "Kham",
+          "where": "Garzê · Chamdo · Diqing · Yushu",
+          "status": "Cut by the border",
+          "state": "split",
+          "text": "One people, cut in two by a provincial line. Chamdo is inside the Autonomous Region and needs the permit. Garzê is in Sichuan and does not."
+        },
+        {
+          "cn": "安多",
+          "rom": "Amdo",
+          "where": "Qinghai · Gansu · northern Ngawa",
+          "status": "Open",
+          "state": "open",
+          "text": "The northeast of the plateau: horse country, and home to Labrang and Kumbum."
+        }
+      ]
+    },
+    "barriers": {
+      "label": "What the permit involves",
+      "title": "Four things, none of them negotiable.",
+      "items": [
+        {
+          "n": "01",
+          "title": "The permit itself",
+          "text": "Applied for by a registered travel agency in Lhasa, on your behalf. Not by you, not by your hotel, and not on arrival. Fifteen to thirty days is normal; ten is possible and is a gamble."
+        },
+        {
+          "n": "02",
+          "title": "The paper original",
+          "text": "It is a physical document. It has to be in your hand before you check in for the flight or the train into the region — which usually means couriering it to your hotel in Chengdu or Xining first."
+        },
+        {
+          "n": "03",
+          "title": "The guide and the itinerary",
+          "text": "A licensed guide accompanies you for the whole stay, and the route is submitted in advance. Changing it mid-trip is not a matter of asking nicely."
+        },
+        {
+          "n": "04",
+          "title": "The altitude",
+          "text": "Most routes land at Lhasa, 3,650 m, on the first day. There is no gradual approach by road unless you have three spare weeks."
+        }
+      ]
+    },
+    "limits": {
+      "label": "What you give up",
+      "title": "The honest list.",
+      "lede": "If you take the Kham route, this is what you will not see. We would rather name it now than let you find out afterwards.",
+      "items": [
+        "Lhasa: the Potala, the Jokhang, the Barkhor at dusk.",
+        "Tashilhunpo in Shigatse, and the road west towards Everest.",
+        "Everest north base camp at 5,200 m — the Tibetan side.",
+        "Mount Kailash and the three-day kora around it.",
+        "Samye, Yamdrok, and the train across the plateau."
+      ],
+      "note": "If those are the point of the trip, apply for the permit and go. It is a remarkable journey and worth the paperwork. This page is not an argument that you should skip it — only that the plateau neither begins nor ends at that border."
+    },
+    "instead": {
+      "label": "The other side of the line",
+      "title": "The same civilisation, at the same altitude.",
+      "lede": "Not replicas, and not a theme park. Working monasteries, working printing houses, herders who still move with the grass.",
+      "items": [
+        {
+          "name": "Tagong Monastery",
+          "meta": "3,730 m · Garzê",
+          "text": "Sakya, over a thousand years old, on the grassland where the Khampa come to circle."
+        },
+        {
+          "name": "Dege Parkhang",
+          "meta": "3,240 m · Dêgê",
+          "text": "The scripture printing house of 1729. Three hundred thousand woodblocks still in use, two men to a sheet: one inks, one presses."
+        },
+        {
+          "name": "Litang",
+          "meta": "4,010 m · Garzê",
+          "text": "A town at four thousand metres where the grassland reaches the main street. The monastery above it dates from 1580; in August the horse fair draws Khampa riders from every pasture."
+        },
+        {
+          "name": "Gongga Shan",
+          "meta": "7,556 m · Kangding",
+          "text": "The highest peak in Sichuan, and the easternmost of the great ranges."
+        },
+        {
+          "name": "The nomad year",
+          "meta": "4,000 m · northwest plateau",
+          "text": "Two nights with a family that still moves with the grass. Yak, butter, and a winter ground the tents return to."
+        },
+        {
+          "name": "Thangka, two days",
+          "meta": "Tagong · studio",
+          "text": "Grind the mineral, bind it, draw the line, fill the flat colour. Two days will not finish a piece, but it will explain why it takes months."
+        }
+      ]
+    },
+    "table": {
+      "label": "Side by side",
+      "title": "Two routes, the same plateau.",
+      "head": [
+        "",
+        "Tibet Autonomous Region",
+        "Sichuan · Kham and Amdo"
+      ],
+      "rows": [
+        {
+          "k": "Permit",
+          "tar": "Tibet Travel Permit, agency only, 15–30 days",
+          "kham": "None. Passport and a Chinese visa."
+        },
+        {
+          "k": "Guide",
+          "tar": "Licensed guide, mandatory",
+          "kham": "Optional — ours, or nobody"
+        },
+        {
+          "k": "Itinerary",
+          "tar": "Fixed, approved in advance",
+          "kham": "Changes with the weather"
+        },
+        {
+          "k": "Driving",
+          "tar": "No self-drive for foreign visitors",
+          "kham": "Possible with a Chinese licence; a driver is the norm"
+        },
+        {
+          "k": "Altitude on arrival",
+          "tar": "3,650 m the day you land",
+          "kham": "500 m in Chengdu, then climbed over days"
+        },
+        {
+          "k": "From Chengdu",
+          "tar": "A flight to a hub, then to Lhasa",
+          "kham": "4–5 hours by road"
+        }
+      ]
+    },
+    "practical": {
+      "label": "How it works",
+      "title": "Four things that matter on the ground.",
+      "items": [
+        {
+          "n": "1",
+          "title": "Fly into Chengdu",
+          "text": "Chengdu is 500 m. Sleep there, eat there, and let the first night be an easy one."
+        },
+        {
+          "n": "2",
+          "title": "Drive west",
+          "text": "Four to five hours on the expressway to Kangding at 2,560 m, then up onto the grassland. Tagong is 3,730 m and six to seven hours from the city."
+        },
+        {
+          "n": "3",
+          "title": "Climb over two days, not one",
+          "text": "We put a night at 2,000–2,500 m between the two climbs. It is the single most useful thing anyone can do about altitude."
+        },
+        {
+          "n": "4",
+          "title": "Carry your passport",
+          "text": "Hotels register foreign guests with the police, and not every guesthouse in a remote town is licensed to do it. We book the ones that are."
+        }
+      ]
+    },
+    "faq": {
+      "label": "Questions people actually ask",
+      "title": "Before you book.",
+      "items": [
+        {
+          "q": "Do I need a permit for western Sichuan?",
+          "a": "No. The Tibetan areas of Sichuan are visited on a valid Chinese visa. A few remote border counties have their own rules; we check each one before confirming a route."
+        },
+        {
+          "q": "Can I go to Lhasa without a permit?",
+          "a": "No. Every foreign passport holder needs a Tibet Travel Permit to enter the Autonomous Region, and there is no exception for independent travel."
+        },
+        {
+          "q": "Is Sichuan really Tibetan?",
+          "a": "In part. Garzê and Ngawa are Tibetan autonomous prefectures — the heart of Kham and a share of Amdo. People speak Tibetan, circle the monastery, herd yak; it is the same culture as in Lhasa."
+        },
+        {
+          "q": "Can I drive myself in western Sichuan?",
+          "a": "China does not recognise an international driving permit, so a foreign licence is not valid here. In practice you travel with a driver and set the route yourself. In the Autonomous Region even that is not allowed."
+        },
+        {
+          "q": "Can I enter overland on the G318?",
+          "a": "The Sichuan section, yes, as far as the Jinsha river. Cross it and the permit and guide regime begins. That is why most people run the G318 as a loop inside Sichuan instead."
+        },
+        {
+          "q": "Is the altitude hard?",
+          "a": "Going from 500 m to 3,730 m in two days, you will feel something. That is why the itinerary puts a night at 2,000 m in between and checks oxygen saturation daily. If it goes wrong, descending works better than enduring."
+        }
+      ]
+    },
+    "cta": {
+      "title": "If you want to go, start with dates.",
+      "text": "Private groups of two to eight, your dates, and a route that bends to how you are coping with the altitude.",
+      "primary": "See the routes",
+      "secondary": "Ask us directly"
+    },
+    "breadcrumb": "Tibet without the permit",
+    "home": "Home",
+    "link": "The full answer, with altitudes and drive times"
   }
 }
